@@ -1,13 +1,15 @@
 ---
 title: 統合  [!DNL AEM Assets]  コンテンツのオーサリング中  [!DNL Edge Delivery Services]
 description: ' [!DNL AEM Assets] with [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] with [!DNL Microsoft Word] and [!DNL Google Docs], integrate [!DNL AEM Assets] with [!DNL Universal Editor], integrate [!DNL Dynamic Media] with [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Universal Editor] and integrate [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Microsoft Word] and [!DNL Google Docs] を統合する方法を説明します。'
+tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 84fde065602d8303a03eb2c82bfa4c4bef0c1193
+source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 6%
 
 ---
+
 
 # [!DNL Edge Delivery Services] 用コンテンツのオーサリング時の [!DNL AEM Assets] の統合 {#integrate-aem-assets-with-edge-delivery-services}
 
@@ -86,7 +88,7 @@ ht-degree: 6%
 * すぐに使用できるアダプティブビデオストリーミングや PDF 用のオリジナルアセット配信など、リッチメディアの最適化と配信。
 * アセットレベルのインプレッションレポート（限定提供 [） ](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)。
 
-機能について詳しくは、ドキュメントを参照 [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) てください。
+機能について詳しくは、ドキュメントを参照 [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) てください。
 
 ### 前提条件 {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
