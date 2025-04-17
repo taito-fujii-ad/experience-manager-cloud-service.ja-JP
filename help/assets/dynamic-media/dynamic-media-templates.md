@@ -4,9 +4,9 @@ description: WYSIWYG テンプレートエディターを使用して Dynamic Me
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 7bb15e0b8aa24f9737f70f86c78dc09be1ea4750
+source-git-commit: c9b007626fc9ed8518ae6be054fc147be88c6a3c
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '3072'
 ht-degree: 92%
 
 ---
@@ -87,6 +87,7 @@ Dynamic Media テンプレートを作成するには、次の操作が必要で
 
 DM テンプレートを作成するには、次の手順に従います。
 
+1. [!DNL AEM Assets] ホームページに移動して、画像を [ アップロードおよび  [!DNL AEM]  同時に公開 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) し、テンプレートの作成に使用します  [!DNL Dynamic Media] 。
 1. [空のキャンバスを作成](#create-a-canvas)
 1. [キャンバスに画像を追加](#add-images-to-the-canvas)
 1. [キャンバスにテキストレイヤーを追加](#add-text-to-the-canvas)
@@ -306,7 +307,7 @@ URL 内でパラメーターを直接編集するのは面倒な場合があり�
 3. テンプレートを選択します。
 4. 「**[!UICONTROL テンプレートを編集]**」をクリックします。テンプレートキャンバスには、テンプレートと、レイヤーパネル内のすべてのレイヤーのリストが表示されます。必要に応じて、テンプレートの編集を開始します。
 
-## テンプレートレイヤーへのコールトゥアクション リンクの追加{#add-CTA-in-dynamic-media-templates}
+## テンプレートレイヤーにコールトゥアクション（CTA）リンクを追加します{#add-CTA-in-dynamic-media-templates}
 
 Dynamic Media テンプレートにターゲットページに誘導するCTA リンクを追加して、テンプレートの画像やテキストレイヤーをハイパーリンクに変換します。 レイヤーにCTA リンクを追加するには、次の手順を実行します。
 
@@ -341,7 +342,7 @@ Dynamic Media テンプレートにターゲットページに誘導するCTA �
 
 テンプレートレイヤーにCTA リンクを追加する方法については、この手順のビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3457577)
+>[!VIDEO](https://video.tv.adobe.com/v/3457616)
 
 ## 重要な注意点 {#important-points-to-note}
 
