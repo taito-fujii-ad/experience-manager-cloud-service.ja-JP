@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager 2025.4.0 のリリースノート
-description: Adobe Experience Manager as a Cloud ServiceのCloud Manager 2025.4.0 のリリースについて説明します。
+description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.4.0 のリリースについて説明します。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6d6e3e452b7910148e22d95a222c1a3b674ea83b
+source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 60%
+source-wordcount: '614'
+ht-degree: 100%
 
 ---
 
@@ -28,23 +28,23 @@ AEM as a Cloud Service の Cloud Manager 2025.4.0 のリリース日は 2025年4
 
 ## 新機能 {#what-is-new}
 
-* **（UI）デプロイメントの可視性の向上**
+* **（UI）デプロイメントの表示の向上**
 
-  デプロイメントが別のデプロイメントの完了を待っている場合に、Cloud Managerのパイプライン実行の詳細ページにステータスメッセージ（「*待機中 – その他の更新が進行中*」）が表示されるようになりました。 このワークフローにより、環境のデプロイメント中の順序を理解しやすくなります。 <!-- CMGR-66890 -->
+  Cloud Manager のパイプライン実行の詳細ページに、デプロイメントが別のデプロイメントの完了を待機している際に、ステータスメッセージ（「*待機中 - その他の更新中*」）が表示されるようになりました。このワークフローにより、環境のデプロイメント中にシーケンスの理解が容易になります。<!-- CMGR-66890 -->
 
-  ![ 詳細と分類を表示する開発デプロイメントダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
+  ![詳細と分類を表示する開発デプロイメントダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
 
 * **（UI）ドメイン検証の機能強化**
 
-  ドメインを追加する際に、ドメインが既に Fastly アカウントにインストールされている場合、Cloud Managerでエラーが表示されるようになりました。「*ドメインは既に Fastly アカウントにインストールされています。 Cloud Serviceに追加する前に、まずここから削除してください。*」
+  ドメインを追加する際に、ドメインが既に Fastly アカウントにインストールされている場合、Cloud Manager に次のエラーが表示されるようになりました。「*ドメインは既に Fastly アカウントにインストールされています。Cloud Service に追加する前に、まずここから削除してください。*」
 
 ## 早期導入プログラム {#early-adoption}
 
-Cloud Managerの早期導入プログラムに参加すると、一般リリース前に今後の機能を独占的に利用できます。
+Cloud Manager の早期導入プログラムに参加すると、一般リリース前に今後の機能に排他的にアクセスできます。
 
 現在、次の早期導入の機会が利用可能です。
 
-### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました {#gitlab-bitbucket}
+### 独自の Git の導入 - GitLab と Bitbucket をサポートするようになりました。 {#gitlab-bitbucket}
 
 <!-- BOTH CS & AMS -->
 
@@ -60,32 +60,33 @@ Cloud Managerの早期導入プログラムに参加すると、一般リリー�
 >
 >現在、標準のプルリクエストコード品質チェックは、GitHub でホストされるリポジトリ専用ですが、この機能を他の Git ベンダーに拡張する更新が進行中です。
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
+この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
 
-### AEM ホーム {#aem-home}
+<!--
+### AEM Home {#aem-home}
 
-AEM ホームでは、Adobe Experience Manager 内でコンテンツ、アセット、サイトを管理する一元的な開始点が導入されています。パーソナライズされたエクスペリエンスを提供するように設計された AEM ホームを使用すると、役割と目標に応じて AEM エコシステムをシームレスに操作できます。ガイドとして機能し、目的を効率的に達成するのに役立つ重要なインサイトと推奨されるアクションを提供します。AEM ホームは、明確でペルソナ主導型のレイアウトにより、重要なツールにすばやくアクセスでき、すべての AEM 機能にわたって効率化された効果的なエクスペリエンスをサポートします。
+AEM Home introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Home lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Home ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
-早期導入者が使用できる AEM ホームは、ワークフローの改善、目標の優先順位付け、結果の提供に焦点を当てた最適化されたエクスペリエンスを提供します。オプトインすると、AEM ホームの今後を形成し、AEM コミュニティ全体の価値を高めるフィードバックを提供することで、AEM ホームの開発に影響を与えることができます。
+Available to early adopters, AEM Home offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Home's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) にメールを送信してください。次の情報を必ず含めてください。
+If you are interested in testing this new capability and sharing your feedback, send an email to [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) from your email address associated with your Adobe ID. Be sure to include the following information:
 
-* プロファイルに最適な役割：コンテンツ作成者、開発者、ビジネス所有者、管理者、その他（説明を入力）。
-* プライマリ AEM アクセスサーフェス：AEM Sites、AEM Assets、AEM Forms、Cloud Manager、その他（説明を入力）。
+* The role that best fits your profile: Content author, Developer, Business owner, Admin, or Other (provide a description).
+* Your primary AEM access surface: AEM Sites, AEM Assets, AEM Forms, Cloud Manager, or Other (provide a description). -->
 
 ## バグ修正
 
-* **証明書に共通名（CN）フィールドがない問題**
+* **証明書に「共通名（CN）」フィールドが欠落している問題**
 
-  サブジェクト フィールドに共通名（CN）を含まない EV/OV 証明書を処理する際に、Cloud Managerが NullPointerException （NPE）と 500 HTTP 応答をスローしなくなりました。 最新の証明書では、多くの場合、CN が省略され、代わりにサブジェクトの代替名（SAN）が使用されます。 この修正により、SAN が存在する場合の構成の構築プロセス中に、CN が存在しない場合でも障害が発生しなくなりました。<!-- CMGR-67548 -->
+  Cloud Manager では、「サブジェクト」フィールドに共通名（CN）が含まれていない EV/OV 証明書を処理する際に、NullPointerException（NPE）および 500 HTTP 応答をスローしなくなりました。最新の証明書では、多くの場合、CN が省略され、代わりにサブジェクト代替名（SAN）が使用されます。この修正により、SAN が存在する場合に CN が存在しないことで設定ビルドプロセス中に障害が発生しなくなりました。<!-- CMGR-67548 -->
 
-* **間違った証明書一致を伴うドメイン検証の問題**
+* **証明書の一致が正しくない場合のドメイン検証の問題**
 
-  Cloud Managerでは、間違った証明書を使用してドメインを誤って検証しなくなりました。 以前は、検証ロジックで完全一致ではなくパターンベースの一致が使用されていたため、`should-not-be-verified.example.com` などのドメインが `example.com` に対して有効な証明書と重複するので、検証済みとして表示されていました。 この修正により、ドメインの検証で完全一致がチェックされ、誤った証明書の関連付けが防がれるようになりました。<!-- CMGR-67225 -->
+  Cloud Manager では、間違った証明書を使用してドメインを誤って検証しなくなりました。以前は、検証ロジックで完全一致ではなくパターンベースの一致が使用されていたので、`should-not-be-verified.example.com` などのドメインは `example.com` の有効な証明書との重複により検証済みとして表示されていました。この修正により、ドメイン検証で完全一致が確認され、エラーのある証明書の関連付けが防止されるようになりました。<!-- CMGR-67225 -->
 
-* **高度なネットワークポート転送名に適用される一意性**
+* **高度なネットワークポート転送名の一意性の適用**
 
-  Cloud Managerでは、高度なネットワークポート転送用に一意の名前が適用されるようになりました。 以前は、重複した名前が許可されていたため、競合が発生する可能性がありました。 この修正により、ネットワーク構成の整合性のベスト プラクティスに合わせて、各ポート転送エントリに個別の名前が付けられます。<!-- CMGR-67082 -->
+  Cloud Manager では、高度なネットワークポート転送に一意の名前が適用されるようになりました。以前は、重複する名前が許可されていたので、競合が発生する可能性がありました。この修正により、ネットワーク設定の整合性に関するベストプラクティスに合わせて、各ポート転送エントリに個別の名前が付けられます。<!-- CMGR-67082 -->
 
 
 <!-- ## Known issues {#known-issues} -->
