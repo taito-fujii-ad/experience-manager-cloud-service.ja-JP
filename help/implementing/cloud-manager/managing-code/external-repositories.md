@@ -1,12 +1,13 @@
 ---
-title: Cloud Managerでの外部リポジトリの追加 – 早期導入
+title: Cloud Managerでの外部リポジトリの追加
 description: Cloud Manager に外部リポジトリを追加する方法について説明します。Cloud Manager は、GitHub Enterprise、GitLab、Bitbucket リポジトリとの統合をサポートしています。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+badge: label="早期導入者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: a01bda5218b7cba488c490b6c29e5f5a535416d5
+source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1871'
 ht-degree: 97%
 
 ---

@@ -5,24 +5,18 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 95%
+source-wordcount: '2230'
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントモデルの定義 {#defining-content-fragment-models}
 
->[!IMPORTANT]
->
->コンテンツフラグメントモデルの様々な機能は、早期導入プログラムを通じて使用できます。
->
->ステータスを確認し、興味がある場合に適用する方法について詳しくは、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
-
 Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントモデルでは、[コンテンツフラグメント](/help/sites-cloud/administering/content-fragments/overview.md)のコンテンツの構造を定義します。これらのフラグメントは、ページオーサリングまたはヘッドレスコンテンツの基盤として使用できます。
 
-このページでは、専用のエディターを使用してコンテンツフラグメントモデルを定義する方法について説明します。 [ コンテンツフラグメントコンソールから使用できるアクション ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)、[ フォルダーにモデルを許可 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions)、[ モデルの公開 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model) など、フラグメントの作成後に使用できるタスクやオプションについて詳しくは、[ コンテンツフラグメントモデルの管理 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder) を参照してください。
+このページでは、専用のエディターを使用してコンテンツフラグメントモデルを定義する方法について説明します。[コンテンツフラグメントコンソールから実行できるアクション](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#actions)、[フォルダーでのモデルの許可](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)、[モデルの公開](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)など、フラグメントの作成後に実行できるタスクとオプションについて詳しくは、[コンテンツフラグメントモデルの管理](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)を参照してください。
 
 >[!CAUTION]
 >
@@ -38,11 +32,11 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 >
 >既存のコンテンツフラグメントで既に使用されているモデルを編集すると、それらの依存フラグメントに影響を与える可能性があります。
 
-1. コンテンツフラグメントコンソールで、[ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#basic-structure-handling-content-fragment-models-console) のパネルを選択し、コンテンツフラグメントモデルが含まれているフォルダーに移動します。
+1. コンテンツフラグメントコンソールで、[コンテンツフラグメントモデル](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#basic-structure-handling-content-fragment-models-console)のパネルを選択し、コンテンツフラグメントモデルが格納されているフォルダーに移動します。
 
    >[!NOTE]
    >
-   >[ 作成 ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model) した直後にモデルを開くこともできます。
+   >また、モデルを[作成](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)した後に直接開くこともできます。
 
 1. 必要なモデルを **編集** 用に開きます。クイック操作を使用するか、モデルを選択してツールバーから操作を選択します。
 
@@ -65,14 +59,14 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
    * フィールドがモデルに追加されると、その特定のデータタイプに対して定義できる&#x200B;**プロパティ**&#x200B;が右側のパネルに表示されます。ここで、そのフィールドに必要な項目を定義することができます。
 
-      * プロパティの多くは自明であり、詳しくは [ プロパティ（データタイプ） ](#properties) を参照してください。
+      * 多くのプロパティは自明です。詳しくは、[プロパティ（データタイプ）](#properties)を参照してください。
       * 「**フィールドラベル**」を入力すると、「**プロパティ名**」が空欄の場合は自動入力され、後で手動で更新できます。
 
         >[!CAUTION]
         >
-        データタイプのプロパティの「**プロパティ名**」を手動で更新する場合、名前には、A～Z、a～z、0～9 および特殊文字のアンダースコア「_」*のみ*&#x200B;を使用することができます。
+        >データタイプのプロパティの「**プロパティ名**」を手動で更新する場合、名前には、A～Z、a～z、0～9 および特殊文字のアンダースコア「_」*のみ*&#x200B;を使用することができます。
         >
-        以前のバージョンの AEM で作成されたモデルに不正な文字が含まれている場合は、それらの文字を削除または更新します。
+        >以前のバージョンの AEM で作成されたモデルに不正な文字が含まれている場合は、それらの文字を削除または更新します。
 
      例：
 
@@ -104,9 +98,9 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
   >[!NOTE]
   >
-  テキストエリアがリッチテキスト、プレーンテキストまたはマークダウンのどれであるかは、モデル内で、プロパティの&#x200B;**デフォルトのタイプ**&#x200B;によって定義されます。
+  >テキストエリアがリッチテキスト、プレーンテキストまたはマークダウンのどれであるかは、モデル内で、プロパティの&#x200B;**デフォルトのタイプ**&#x200B;によって定義されます。
   >
-  この形式は、[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)から変更はできませんが、モデルからのみ変更できます。
+  >この形式は、[コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)から変更はできませんが、モデルからのみ変更できます。
 
 * **数値**
    * 数値フィールドを追加
@@ -165,11 +159,11 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
      >[!NOTE]
      >
-     このデータタイプは書式設定にのみ使用され、AEM GraphQL スキーマでは無視されます。
+     >このデータタイプは書式設定にのみ使用され、AEM GraphQL スキーマでは無視されます。
 
 ## プロパティ（データタイプ） {#properties}
 
-多くのプロパティは自明です。プロパティによっては次に示す追加の詳細情報があります。
+多くのプロパティは一目瞭然です。プロパティによっては、次に示す追加の詳細情報があります。
 
 * **プロパティ名**
 
@@ -177,7 +171,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
   >[!CAUTION]
   >
-  以前のバージョンの AEM で作成されたモデルに不正な文字が含まれている場合は、それらの文字を削除または更新します。
+  >以前のバージョンの AEM で作成されたモデルに不正な文字が含まれている場合は、それらの文字を削除または更新します。
 
 * **レンダリング形式**
 
@@ -208,11 +202,11 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
   >[!NOTE]
   >
-  言語ルートごとに一意性が確保されます。
+  >言語ルートごとに一意性が確保されます。
 
   >[!NOTE]
   >
-  バリエーションは、同じフラグメントのバリエーションと同じ&#x200B;*一意の*&#x200B;値を持つことができますが、他のフラグメントのバリエーションで使用されている値とは異なります。
+  >バリエーションは、同じフラグメントのバリエーションと同じ&#x200B;*一意の*&#x200B;値を持つことができますが、他のフラグメントのバリエーションで使用されている値とは異なります。
 
 * 特定のデータタイプとそのプロパティについて詳しくは、**[コンテンツ参照](#content-reference)**&#x200B;を参照してください。
 
@@ -268,28 +262,28 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 
      >[!NOTE]
      >
-     このメソッドは、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)を使用する場合、特に重要になります。
+     >このメソッドは、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)を使用する場合、特に重要になります。
    * （結果のフラグメント内で）1 つまたは複数の参照に対して設定できます。
 
 >[!NOTE]
 >
-コンテンツ／フラグメント参照およびコンテンツ／フラグメント参照（UUID）と、UUID ベースのデータタイプへのアップグレードについて詳しくは、[UUID 参照用のコンテンツフラグメントのアップグレード](/help/headless/graphql-api/uuid-reference-upgrade.md)を参照してください。
+>コンテンツ／フラグメント参照およびコンテンツ／フラグメント参照（UUID）と、UUID ベースのデータタイプへのアップグレードについて詳しくは、[UUID 参照用のコンテンツフラグメントのアップグレード](/help/headless/graphql-api/uuid-reference-upgrade.md)を参照してください。
 
 >[!NOTE]
 >
-AEM では次の繰り返しを防止できます。
+>AEM では次の繰り返しを防止できます。
 >
-* コンテンツ参照
-これにより、ユーザーは現在のフラグメントに参照を追加できなくなり、フラグメント参照ピッカーダイアログが空になる場合があります。
+>* コンテンツ参照
+>これにより、ユーザーは現在のフラグメントに参照を追加できなくなり、フラグメント参照ピッカーダイアログが空になる場合があります。
 >
-* GraphQL のフラグメント参照
-相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
+>* GraphQL のフラグメント参照
+>相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
 
 >[!CAUTION]
 >
-複数の参照されたフラグメントに対してクエリを実行する場合は、様々なフラグメントモデルに同じ名前でタイプが異なるフィールド名を付けることはお勧めしません。
+>複数の参照されたフラグメントに対してクエリを実行する場合は、様々なフラグメントモデルに同じ名前でタイプが異なるフィールド名を付けることはお勧めしません。
 >
-詳しくは、[コンテンツフラグメントと共に使用する AEM GraphQL API - 制限事項](/help/headless/graphql-api/content-fragments.md#limitations)を参照してください。
+>詳しくは、[コンテンツフラグメントと共に使用する AEM GraphQL API - 制限事項](/help/headless/graphql-api/content-fragments.md#limitations)を参照してください。
 
 ### コンテンツ参照 {#content-reference}
 
@@ -300,16 +294,16 @@ AEM では次の繰り返しを防止できます。
 * 参照コンテンツを保存する場所を指定または表す&#x200B;**ルートパス**
   >[!NOTE]
   >
-  これは、コンテンツフラグメントエディターの使用時に、このフィールドで画像を直接アップロードして参照する場合に必須です。
+  >これは、コンテンツフラグメントエディターの使用時に、このフィールドで画像を直接アップロードして参照する場合に必須です。
   >
-  詳しくは、[参照画像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)を参照してください。
+  >詳しくは、[参照画像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)を参照してください。
 
 * 参照可能なコンテンツタイプ
   >[!NOTE]
   >
-  コンテンツフラグメントエディターの使用時に、このフィールドで画像を直接アップロードして参照する場合は、**画像**&#x200B;を含める必要があります。
+  >コンテンツフラグメントエディターの使用時に、このフィールドで画像を直接アップロードして参照する場合は、**画像**&#x200B;を含める必要があります。
   >
-  詳しくは、[参照画像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)を参照してください。
+  >詳しくは、[参照画像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)を参照してください。
 
 * ファイルサイズの制限
 * 画像が参照されている場合：
@@ -343,7 +337,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-フラグメント参照は、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)で特に重要になります。
+>フラグメント参照は、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)で特に重要になります。
 
 標準プロパティに加えて、次のものを定義できます。
 
@@ -369,6 +363,6 @@ type CompanyModel {
 
 >[!NOTE]
 >
-繰り返し防止メカニズムが設定されます。これにより、ユーザーがフラグメント参照で現在のコンテンツフラグメントを選択できなくなり、フラグメント参照ピッカーダイアログが空になる場合があります。
+>繰り返し防止メカニズムが設定されます。これにより、ユーザーがフラグメント参照で現在のコンテンツフラグメントを選択できなくなり、フラグメント参照ピッカーダイアログが空になる場合があります。
 >
-GraphQL にも、フラグメント参照の繰り返しを防止する機能があります。相互に参照する 2 つのコンテンツフラグメントにわたるディープクエリを作成すると、null が返されます。
+>GraphQL にも、フラグメント参照の繰り返しを防止する機能があります。相互に参照する 2 つのコンテンツフラグメントにわたるディープクエリを作成すると、null が返されます。
