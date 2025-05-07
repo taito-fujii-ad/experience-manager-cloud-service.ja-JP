@@ -33,7 +33,7 @@ ht-degree: 27%
 
 2022.7.0 リリースで追加された機能の概要については、2022年7月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3454197/?quality=12&captions=jpn)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -118,7 +118,7 @@ Adobe Experience Manager Assetsを設定して [ ユーザーがアップロー�
 
 ## Adobe Learning Manager コネクタ {#learn-manage}
 
-* 新しいAdobe Learning Managerには、Adobe Experience Manager Sites、Marketo EngageおよびAdobe Commerceへのコネクタが含まれています。 詳しくは、[Adobe Learning Manager ユーザーガイド ](https://helpx.adobe.com/learning-manager/user-guide.html) を参照してください。
+* 新しいAdobe Learning Managerには、Adobe Experience Manager Sites、Marketo EngageおよびAdobe Commerceへのコネクタが含まれています。 詳しくは、[Adobe Learning Manager ユーザーガイド ](https://helpx.adobe.com/jp/learning-manager/user-guide.html) を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 

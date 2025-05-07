@@ -169,7 +169,7 @@ ht-degree: 97%
 >[!IMPORTANT]
 >
 >フロントエンドパイプラインでは、以下の IP 許可リストを事前に Cloud Manager に追加する必要があります。
->必要に応じて、以下のアドレスのブロックをコピーして ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加[します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
+>必要に応じて、以下のアドレスのブロックをコピーして [&#128279;](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
 >フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
 >
 >**Cloud Manager の IP 許可リスト**
@@ -222,7 +222,7 @@ ht-degree: 97%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 

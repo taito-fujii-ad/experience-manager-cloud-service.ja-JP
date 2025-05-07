@@ -90,9 +90,9 @@ AEM は次のユースケースをサポートしています。この記事で�
 ![Experience Manager Assets 検索結果インターフェイスについて](assets/aem-search-interface.png)
 *図：[!DNL Experience Manager Assets] 検索結果インターフェイスについて理解する。*
 
-**A：**検索をスマートコレクションとして保存。
-**B：**検索結果を絞り込むフィルターまたは述語。
-**C：**ファイル、フォルダー、またはその両方を表示。
+**A：**&#x200B;検索をスマートコレクションとして保存。
+**B：**&#x200B;検索結果を絞り込むフィルターまたは述語。
+**C：**&#x200B;ファイル、フォルダー、またはその両方を表示。
 **D.** 検索場所は DAM です。
 **E.** 保存済みの検索結果にアクセスします。
 **F.** 「フィルター」をクリックして、左側のパネルを開閉します。
@@ -186,7 +186,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、「[ での検索](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=ja)」を参照してください。 [!DNL Experience Manager]
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/3410338/?quality=6&captions=jpn)
 
 *ビデオ：検索結果のランク付けの方法とランクへの影響について*
 

@@ -58,7 +58,7 @@ ht-degree: 4%
 
 ウィザード レイアウト
 
-[ ウィザードコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) を使用して、フォームにウィザードレイアウトを追加できます。 ウィザードコンポーネントの様々なプロパティを設定する方法について詳しくは、[ ウィザードコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) の記事を参照してください。
+[ ウィザードコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) を使用して、フォームにウィザードレイアウトを追加できます。 ウィザードコンポーネントの様々なプロパティを設定する方法について詳しくは、[ ウィザードコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) の記事を参照してください。
 
 >[!TAB  垂直タブのレイアウト ]
 
@@ -80,7 +80,7 @@ ht-degree: 4%
 
 水平タブレイアウト
 
-[ 水平タブコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) を使用して、フォームに水平タブレイアウトを追加できます。 水平タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[ 水平タブコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) の記事を参照してください。
+[ 水平タブコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) を使用して、フォームに水平タブレイアウトを追加できます。 水平タブコンポーネントの様々なプロパティを設定する方法について詳しくは、[ 水平タブコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) の記事を参照してください。
 
 
 >[!TAB  アコーディオンレイアウト ]
@@ -91,7 +91,7 @@ ht-degree: 4%
 
 アコーディオンレイアウト
 
-[ アコーディオンコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) を使用して、フォームにアコーディオンレイアウトを追加できます。 アコーディオンコンポーネントの様々なプロパティを設定する方法について詳しくは、[ アコーディオンコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) の記事を参照してください。
+[ アコーディオンコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) を使用して、フォームにアコーディオンレイアウトを追加できます。 アコーディオンコンポーネントの様々なプロパティを設定する方法について詳しくは、[ アコーディオンコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) の記事を参照してください。
 
 >[!ENDTABS]
 
@@ -116,7 +116,7 @@ ht-degree: 4%
 
 ![ レイアウトおよびフォームコンポーネントを追加するためのワークフロー ](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
 
-「アダプティブFormsのレイアウトタイプ **** の節に示されている [IT リクエストフォーム ](#adaptive-forms-layout-types) について考えてみます。 このフォームは、ネットワークまたはラップトップに関連する技術的な問題を抱えている従業員から情報を収集します。 次の 3 つのパネルがあります。
+「アダプティブFormsのレイアウトタイプ **&#x200B;**&#x200B;の節に示されている [IT リクエストフォーム ](#adaptive-forms-layout-types) について考えてみます。 このフォームは、ネットワークまたはラップトップに関連する技術的な問題を抱えている従業員から情報を収集します。 次の 3 つのパネルがあります。
 
 * **従業員の詳細**：パネルには、従業員に関する情報が収集され、名前、メール ID、部門というラベルの付いた 3 つのテキストボックスが含まれています。
 

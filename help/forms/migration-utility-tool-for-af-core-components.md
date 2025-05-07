@@ -136,7 +136,7 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
 
    ここでは、「**ターゲットにコピー** オプションが選択されています。 「**ターゲットにコピー**」オプションが選択されている場合、「**[!UICONTROL Sourceのパス]**」および「**[!UICONTROL ターゲットパス]**」オプションが表示されます。
 
-1. `source folder`1}Source Path} に ]**名」を入力します。**[!UICONTROL 
+1. `source folder`1&rbrace;Source Path&rbrace; に **名」を入力します。**
 1. **[!UICONTROL ターゲットパス]** で `target folder` 名を指定します。
 1. 「**[!UICONTROL 次へ]**」を選択します。
 1. **[!UICONTROL Formsを追加]** をクリックします。 `source folder` 内のすべてのフォームが画面に表示されます。
@@ -165,5 +165,5 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
 
 ## ベストプラクティス {#best-practices}
 
-* 基盤コンポーネントベースのフォームは、同等の [ コアコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) を使用できるコンポーネントのみを使用します。 同等のコアコンポーネントを持たない基盤コンポーネントを使用する場合、基盤コンポーネントは変換されません。 その結果、フォームのオーサリング中に正しく機能しません
+* 基盤コンポーネントベースのフォームは、同等の [ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) を使用できるコンポーネントのみを使用します。 同等のコアコンポーネントを持たない基盤コンポーネントを使用する場合、基盤コンポーネントは変換されません。 その結果、フォームのオーサリング中に正しく機能しません
 * 基盤コンポーネントをコアコンポーネントに変換するルールは、XML 形式で指定してください。

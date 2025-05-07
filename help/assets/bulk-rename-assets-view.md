@@ -75,7 +75,7 @@ AI で生成されたプロンプトを使用して一度にアセットのバ�
 
 1. [ オプション ] ![ 取り消しアイコン ](assets/do-not-localize/undo.svg) をクリックして、最後に実行したアクションを取り消したりキャンセルしたりします。
 
-1. [!UICONTROL  新しい名前のプレビュー ] 列で変更を確認し、**[!UICONTROL 保存]** をクリックします。
+1. [!UICONTROL &#x200B; 新しい名前のプレビュー &#x200B;] 列で変更を確認し、**[!UICONTROL 保存]** をクリックします。
 
    ![AI 一括名前変更 ](assets/ai-bulk-rename.png)
 
@@ -104,4 +104,4 @@ AI を使用して、AI プロンプトに基づいてアセットの名前を�
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&amp;lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&amp;lang=ja#support)に問い合わせる

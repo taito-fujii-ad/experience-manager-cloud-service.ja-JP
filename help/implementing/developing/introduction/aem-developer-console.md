@@ -56,7 +56,7 @@ There are multiple ways of accessing it:
 ![ 開発コンソール UI の「Java パッケージ」タブ ](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)
 
 * 環境の OSGI システムでアクティブなパッケージを検索するために使用できる検索プロンプト。 この場所には、パッケージを書き出す（または提供する）バンドルと、パッケージを読み込む（または使用する）バンドルが表示されます。 パッケージの重複（同じパッケージ、異なるバージョン）をチェックすることもできます。これにより、問題が発生する場合があります。
-* **ユースケースの例：**[ 動的クラスローダー ](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) を使用するカスタムサービスが、バージョンを指定せずにクラスを読み込む。 複数のバンドルが異なるバージョンを書き出すので、実装が異なり、動作が変更されます。 開発者は、機能モデルを分析せずに、環境内にどのパッケージがあるかを確認したいと考えています。 パッケージを検索し、書き出されたすべてのバージョンを表示します。 この機能により、より良いバージョン範囲を入力するための情報が提供されます。
+* **ユースケースの例：**&#x200B;[ 動的クラスローダー ](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html) を使用するカスタムサービスが、バージョンを指定せずにクラスを読み込む。 複数のバンドルが異なるバージョンを書き出すので、実装が異なり、動作が変更されます。 開発者は、機能モデルを分析せずに、環境内にどのパッケージがあるかを確認したいと考えています。 パッケージを検索し、書き出されたすべてのバージョンを表示します。 この機能により、より良いバージョン範囲を入力するための情報が提供されます。
 
 ## サーブレット {#servlets}
 
@@ -106,5 +106,5 @@ There are multiple ways of accessing it:
 
 実稼動プログラムの場合、Adobe Admin Consoleの「Cloud Manager – 開発者ロール」がAEM as a Cloud Service Developer Consoleへのアクセスを制御します。 サンドボックスプログラムの場合、AEM アクセス権を付与する製品プロファイルを持つすべてのユーザーがDeveloper Consoleを使用できます。 すべてのプログラムで、ステータスダンプとリポジトリブラウザーへのアクセスに「Cloud Manager - デベロッパーロール」が必要です。 オーサーサービスとパブリッシュサービスの両方のデータを表示するには、ユーザーを両方のサービスの「AEM ユーザー」または「AEM管理者」製品プロファイルに割り当てる必要もあります。
 
-ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) を参照してください。
+ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/users-and-roles) を参照してください。
 

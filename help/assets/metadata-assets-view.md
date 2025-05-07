@@ -228,8 +228,8 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 次の手順を実行して、タグコンポーネントを設定します。
 
 1. メタデータエディターに移動し、**[!UICONTROL タグ]** に移動してキャンバスに配置します。
-1. キャンバスのコンポーネントの名前を変更します。 これをおこなうには、設定パネルの **[!UICONTROL メタデータプロパティ]** の下の [!UICONTROL  ラベル ] に移動して、識別するテキストを追加します。
-1. 設定パネルの [!UICONTROL  メタデータプロパティ ] の下で、コンポーネントに割り当てるメタデータプロパティを検索します。
+1. キャンバスのコンポーネントの名前を変更します。 これをおこなうには、設定パネルの **[!UICONTROL メタデータプロパティ]** の下の [!UICONTROL &#x200B; ラベル &#x200B;] に移動して、識別するテキストを追加します。
+1. 設定パネルの [!UICONTROL &#x200B; メタデータプロパティ &#x200B;] の下で、コンポーネントに割り当てるメタデータプロパティを検索します。
 1. **[!UICONTROL 特定の分類に制限]** をクリックして、分類のルートパスを制限します。 これを行うには、タグを参照し、特定のパスに対する分類を選択します。
 1. 「**[!UICONTROL 保存]**」をクリックして、変更を保存します。
 
@@ -259,7 +259,7 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&amp;lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&amp;lang=ja#support)に問い合わせる
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

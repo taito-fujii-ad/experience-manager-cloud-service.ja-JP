@@ -60,6 +60,7 @@ ht-degree: 99%
    * ビデオアセットをプレビューして公開します。
 
       * ソースビデオとビデオのエンコードされたレンディションを、関連するサムネールと共に表示します。
+
         [ビデオをプレビュー](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)するか[アセットをプレビュー](/help/assets/dynamic-media/previewing-assets.md)します。
         [ビデオレンディションを管理します](/help/assets/manage-digital-assets.md#managing-renditions)。
 
@@ -69,6 +70,7 @@ ht-degree: 99%
    * ビデオのメタデータを操作します。
 
       * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集します。
+
         [ビデオのプロパティを編集します](/help/assets/manage-digital-assets.md#editing-properties)。
 
       * [デジタルアセットのメタデータの管理](/help/assets/manage-metadata.md)
@@ -93,9 +95,11 @@ ht-degree: 99%
    * サードパーティの WCM システムを使用している場合、web ページにビデオをリンクするか、ビデオを埋め込むことができます。
 
       * URL を使用したビデオの統合：
+
         [Web アプリケーションに URL をリンクします](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。
 
       * Web ページの埋め込みコードを使用したビデオの統合：
+
         [Web ページにビデオビューアを埋め込みます](/help/assets/dynamic-media/embed-code.md)。
 
    * [ビデオレポートを生成します](#viewing-video-reports)。
@@ -271,8 +275,8 @@ Dynamic Media を有効にし、ビデオクラウドサービスを設定済み
 
 <!-- For advice about video encoding, see the following:
 
-* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
-* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_jp).
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_jp). -->
 
 ### ソースビデオファイル {#source-video-files}
 
@@ -452,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=ja).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -1500,7 +1504,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

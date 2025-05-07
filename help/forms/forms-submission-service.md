@@ -33,11 +33,11 @@ Forms送信サービスを使用すると、フォーム送信データを OneDr
 Forms Submission サービスを使用するための前提条件を以下に示します。
 
 * AEM プロジェクトに最新のアダプティブフォームブロックが含まれていることを確認します。
-* Forms送信サービスを使用するには、Git リポジトリが許可リストに追加されていることを確認してください。 Forms送信サービスを使用する ](mailto:aem-forms-ea@adobe.com)許可リストに追加するには、[mailto:aem-forms-ea@adobe.com} と、GitHub の組織名およびリポジトリ名を入力してください。
+* Forms送信サービスを使用するには、Git リポジトリが許可リストに追加されていることを確認してください。 Forms送信サービスを使用する [&#128279;](mailto:aem-forms-ea@adobe.com)許可リストに追加するには、mailto:aem-forms-ea@adobe.com&rbrace; と、GitHub の組織名およびリポジトリ名を入力してください。
 
 ## Forms送信サービスの設定
 
-アダプティブ AEM ブロックが設定された新しいForms プロジェクトを作成します。 新しいAEM プロジェクトの作成方法については、[ はじめに – 開発者向けチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) を参照してください。 プロジェクトの `fstab.yaml` ファイルを更新します。 既存の参照を、`forms@adobe.com` と共有したフォルダーのパスに置き換えます。
+アダプティブ AEM ブロックが設定された新しいForms プロジェクトを作成します。 新しいAEM プロジェクトの作成方法については、[ はじめに – 開発者向けチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) を参照してください。 プロジェクトの `fstab.yaml` ファイルを更新します。 既存の参照を、`forms@adobe.com` と共有したフォルダーのパスに置き換えます。
 
 [Forms Submission サービスを手動で設定する ](#configuring-the-forms-submission-service-manually) または [API を使用するForms Submission サービスを設定する ](#configuring-the-forms-submission-service-using-api) ことができます。
 
@@ -47,7 +47,7 @@ Forms Submission サービスを使用するための前提条件を以下に示
 
 #### 1. フォーム定義を使用してフォームを作成する
 
-Google シートまたはMicrosoft Excel を使用してフォームを作成します。 Microsoft Excel またはGoogle Sheets のフォーム定義を使用してフォームを作成する方法については、[ ここをクリック ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms) してください。
+Google シートまたはMicrosoft Excel を使用してフォームを作成します。 Microsoft Excel またはGoogle Sheets のフォーム定義を使用してフォームを作成する方法については、[ ここをクリック ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms) してください。
 
 次のスクリーンショットは、フォームの作成に使用されたフォーム定義を示しています。
 
@@ -55,7 +55,7 @@ Google シートまたはMicrosoft Excel を使用してフォームを作成し
 
 #### 2. スプレッドシートを有効にしてデータを受け入れます。
 
-フォームを作成してプレビューしたら、対応するスプレッドシートを有効にしてデータの受信を開始します。 新しいシートを `incoming` のように追加します。 [ スプレッドシートを手動で有効にしてデータを受け入れる ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data) ことができます。
+フォームを作成してプレビューしたら、対応するスプレッドシートを有効にしてデータの受信を開始します。 新しいシートを `incoming` のように追加します。 [ スプレッドシートを手動で有効にしてデータを受け入れる ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data) ことができます。
 
 ![ 受信シート ](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -153,8 +153,8 @@ Postmanで「**送信**」ボタンをクリックすると、`201 Created` の�
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —header &quot;Content-Type: application/json&quot; \
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-     – データ &#39;{
-    &quot;data&quot;: {
+     – データ &#39;&lbrace;
+    &quot;data&quot;: &lbrace;
     &quot;startDate&quot;: &quot;2025-01-20&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destination&quot;: &quot;Australia&quot;,
@@ -165,11 +165,11 @@ Postmanで「**送信**」ボタンをクリックすると、`201 Created` の�
     &quot;age&quot;: &quot;35&quot;,
     &quot;subscribe&quot;: null,
     &quot;email&quot;: &quot;mary@gmail.com&quot;
-    }
+    &rbrace;
      
     
      
-}&#39;s
+&rbrace;&#39;s
 >[!TAB Windows OS の場合 ]
 
     &quot;&#39;json

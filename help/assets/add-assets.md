@@ -183,7 +183,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 このツールは、Azure または S3 データストアからのアセットの大規模な取り込みに使用する目的で管理者グループにのみ提供されます。設定と取り込みの手順を紹介するビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341389/?quality=12&learn=on&captions=jpn)
 
 次の図は、データストアから Experience Manager にアセットを取り込む際の様々な段階を示しています。
 
@@ -224,7 +224,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. （オプション）「**[!UICONTROL MIME タイプを除外]**」フィールドで、取り込みから除外する MIME タイプのコンマ区切りリストを指定します。（例：`image/jpeg, image/.*, video/mp4`）。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
 
-1.  「**[!UICONTROL MIME タイプを含める]**」フィールドで、取り込みから含める MIME タイプのコンマ区切りリストを指定します。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
+1. 「**[!UICONTROL MIME タイプを含める]**」フィールドで、取り込みから含める MIME タイプのコンマ区切りリストを指定します。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
 
 1. ファイルが [!DNL Experience Manager] に読み込まれた後、ソースデータストアから元のファイルを削除するには、「**[!UICONTROL 読み込み後にソースファイルを削除]**」オプションを選択します。
 

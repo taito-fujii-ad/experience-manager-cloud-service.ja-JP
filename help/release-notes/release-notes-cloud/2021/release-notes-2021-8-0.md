@@ -30,7 +30,7 @@ ht-degree: 58%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、](https://video.tv.adobe.com/v/336277)2021年8月リリースの概要ビデオ[をご覧ください。
+追加された機能の概要については、[&#128279;](https://video.tv.adobe.com/v/336277)2021年8月リリースの概要ビデオをご覧ください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -56,7 +56,7 @@ ht-degree: 58%
 ### [!DNL Assets] で修正されたバグ  {#assets-bugs-fixed}
 
 * 投稿者グループのメンバーが [!DNL Assets] Console に移動すると、追加の `POST` リクエストが生成されて、コレクションが作成されます。 このリクエストは必須ではありません。権限の問題が原因で失敗し、ログに多くのエラーが記録されます。 （CQ-4328856）
-* ユーザーがアセットを表示し、左パネルのポップアップメニューから [!UICONTROL  タイムライン ] を選択すると、エラーが表示されます。 ログには、無効なクエリが原因で多数の警告が記録されます。（CQ-4328919）
+* ユーザーがアセットを表示し、左パネルのポップアップメニューから [!UICONTROL &#x200B; タイムライン &#x200B;] を選択すると、エラーが表示されます。 ログには、無効なクエリが原因で多数の警告が記録されます。（CQ-4328919）
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -66,7 +66,7 @@ ht-degree: 58%
 
 * **AcroForm ベースのレコードのドキュメント**：AEM Forms as a Cloud Service では、XFA ベースのフォームテンプレート以外に、[Adobe Acrobat フォーム PDF（AcroForm PDF）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja)をレコードのドキュメントのテンプレートとして使用できます。
 
-* **Microsoft® Azure データストアコネクタ**: [ フォームデータモデルをMicrosoft® Azure ストレージに接続 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html) できるようになりました。 アダプティブフォームデータを取得して、BLOB としてMicrosoft® Azure ストレージに保存できます。
+* **Microsoft® Azure データストアコネクタ**: [ フォームデータモデルをMicrosoft® Azure ストレージに接続 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=ja) できるようになりました。 アダプティブフォームデータを取得して、BLOB としてMicrosoft® Azure ストレージに保存できます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 

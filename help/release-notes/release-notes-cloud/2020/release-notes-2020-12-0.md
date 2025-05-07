@@ -27,11 +27,11 @@ ht-degree: 47%
 
 * [!DNL Adobe InDesign Server] との統合が [!DNL Cloud Service] as a [!DNL Experience Manager] で利用できるようになりました。[!DNL Adobe InDesign Server] スクリプティングを使用して [!DNL Adobe InDesign] ファイルを処理する自動化機能を提供し、[!DNL Assets] テンプレートユーザーインターフェイスを使用してパンフレットや広告を作成できます。[!DNL Adobe Managed Services] でホストされる [!DNL InDesign Server] のみが [!DNL Experience Manager as a Cloud Service] に対してサポートされます。<!-- TBD: Add link to article. -->
 
-* [!DNL Experience Manager] は、Connected Assets 機能を使用したリモート [!DNL Experience Manager Sites] デプロイメントでアセットが使用された場合に、アセット参照を追跡および表示するように拡張されました。アセットの [!UICONTROL  プロパティ ] ページに新しい [!UICONTROL  参照 ] タブに、アセットのローカル参照とリモート参照がリストされるようになりました。 この参照により、DAM ユーザーは [!DNL Sites] ページ内および [!DNL Assets] 内の複合アセット内のアセットの使用状況を追跡できます。「[Connected Assets の設定と使用](/help/assets/use-assets-across-connected-assets-instances.md)」を参照してください。
+* [!DNL Experience Manager] は、Connected Assets 機能を使用したリモート [!DNL Experience Manager Sites] デプロイメントでアセットが使用された場合に、アセット参照を追跡および表示するように拡張されました。アセットの [!UICONTROL &#x200B; プロパティ &#x200B;] ページに新しい [!UICONTROL &#x200B; 参照 &#x200B;] タブに、アセットのローカル参照とリモート参照がリストされるようになりました。 この参照により、DAM ユーザーは [!DNL Sites] ページ内および [!DNL Assets] 内の複合アセット内のアセットの使用状況を追跡できます。「[Connected Assets の設定と使用](/help/assets/use-assets-across-connected-assets-instances.md)」を参照してください。
 
 * [!DNL Dynamic Media] の機能に、AEM [!DNL Sites] 画像ベースのコアコンポーネントからアクセスできるようになりました。 作成者は、Web ページの作成時に画像プリセット、スマート切り抜き、画像修飾子を使用するように、コンポーネントをすばやく設定できます。[コアコンポーネント 2.13.0 リリース](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)を参照してください。
 
-* [!DNL Experience Manager] デスクトップアプリケーションを使用すると、デスクトップアプリケーションインターフェイス上の Windows エクスプローラーまたはMac Finder からファイルをドラッグして、ファイルやフォルダーをアップロードできます。 [ デスクトップアプリケーションを使用したアセットの追加 ](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem) を参照してください。
+* [!DNL Experience Manager] デスクトップアプリケーションを使用すると、デスクトップアプリケーションインターフェイス上の Windows エクスプローラーまたはMac Finder からファイルをドラッグして、ファイルやフォルダーをアップロードできます。 [ デスクトップアプリケーションを使用したアセットの追加 ](https://experienceleague.adobe.com/ja/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem) を参照してください。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -65,7 +65,7 @@ Adobe Experience Manager（AEM as a Cloud Service）のCloud Manager 2020.12.0 �
 
 ### [!DNL Code Refactoring Tools] の新機能  {#what-is-new-crt}
 
-* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンは、AEM Dispatcher コンバーターと Repository Modernizer のバグ修正を含んでいるほか、新しいユーティリティであるインデックスコンバーターもサポートしています。 このプラグインの詳細については、[ 統合エクスペリエンス ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) を参照してください。
+* AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンは、AEM Dispatcher コンバーターと Repository Modernizer のバグ修正を含んでいるほか、新しいユーティリティであるインデックスコンバーターもサポートしています。 このプラグインの詳細については、[ 統合エクスペリエンス ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits) を参照してください。
 
 * インデックスコンバーターは、顧客のカスタム Oak インデックス定義をAEM as a Cloud Service互換のOak インデックス定義に変換するために使用できるユーティリティです。 詳しくは、[ インデックスコンバーター ](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) を参照してください。
 
