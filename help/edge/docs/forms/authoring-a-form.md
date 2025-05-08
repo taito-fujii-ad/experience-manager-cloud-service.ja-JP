@@ -3,9 +3,7 @@ title: AEMでのフォームの作成方法
 description: Adobe Experience Manager（AEM）で使用可能な様々なフォームオーサリングプラットフォームと、要件に基づいて適切なフォームオーサリングプラットフォームを選択する方法について説明します。
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: f6c6b4c17482eb519fb0d4287704d775d0a5da00
+source-git-commit: ec5d15d6ca0e4dc75d1f8abbbd6f794534d8bed7
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 12%
