@@ -4,9 +4,9 @@ description: AEM as a Cloud Service 内の様々なエディターからアク�
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1401'
 ht-degree: 95%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->このバージョンの使用をお勧めします。スタンドアロンバージョンの [ バリエーションを生成 ](/help/generative-ai/generate-variations.md) には引き続き直接アクセスできますが、今後非推奨となる予定です。
+>スタンドアロンバージョンの[「バリエーションを生成」は引き続き直接アクセスできます](/help/generative-ai/generate-variations.md)が、今後非推奨となる予定なので、このバージョンを使用することをお勧めします。
 
 これにより、以下のことが可能になります。
 
@@ -63,7 +63,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 >[!NOTE]
 >
->AEMでのバリエーションの生成に関して詳しくは、[ セキュリティファクトシート ](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf) を参照してください。
+>[AEM での「バリエーションを生成」について詳しくは、セキュリティファクトシート](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf)を参照してください。
 
 ## 概要 {#overview}
 
@@ -313,7 +313,10 @@ AEM Sidekick からのアクセスは、[ドキュメントベースのオーサ
 
 ### AEM ユニバーサルエディターからのアクセス {#access-aem-universal-editor}
 
-[AEM ユニバーサルエディター](/help/sites-cloud/authoring/universal-editor/authoring.md)からのアクセスは、拡張機能として実装されます。詳しくは、[AEM Experience Manager の Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) を参照してください。
+[AEM ユニバーサルエディター ](/help/sites-cloud/authoring/universal-editor/authoring.md) からのアクセスは、拡張機能として実装されます。
+
+* ユニバーサルエディターからバリエーションを生成にアクセスする方法について詳しくは、ドキュメント [ ユニバーサルエディターを使用したコンテンツのオーサリング ](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations) を参照してください。
+* 拡張機能を有効にする方法について詳しくは、AEM Experience Managerのドキュメント [Extension Managerを参照してください ](https://developer.adobe.com/uix/docs/extension-manager/)。
 
 ### AEM コンテンツフラグメントエディターからのアクセス {#access-aem-content-fragment-editor}
 

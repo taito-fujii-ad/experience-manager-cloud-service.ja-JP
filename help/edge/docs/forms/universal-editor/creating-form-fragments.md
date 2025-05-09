@@ -7,7 +7,7 @@ exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
   >[!NOTE]
   >
-  > 「1 回変更し、すべての場所を反映」アプローチを使用すると、フラグメントに対して行われた更新は、プレビューモードですべてのフォームに自動的に適用されます。 ただし、公開モードでは、変更を反映するために、フラグメントを公開するか、フォームを再公開する必要があります。
+  > 「1 回の変更でどこにでも反映」アプローチを使用すると、フラグメントに対する更新はプレビューモードのすべてのフォームに自動的に適用されます。ただし、公開モードで、変更を反映するには、フラグメントを公開するか、フォームを再公開する必要があります。
 
 * **フォーム内でフォームフラグメントを複数回追加**
 フォーム内でフォームフラグメントを複数回追加し、そのデータバインディングプロパティをデータソースまたはスキーマに設定できます。
@@ -44,13 +44,13 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 ## Edge Delivery Services フォームフラグメント使用時の考慮事項
 
 * フラグメントと、フラグメントを使用するフォームの両方に、同じ GitHub URL を追加する必要があります。
-* フォーム内でフォームフラグメントを編集することはできません。 変更を加えるには、スタンドアロンのフォームフラグメントを変更します。
+* フォーム内のフォームフラグメントは編集できません。変更を行うには、スタンドアロンのフォームフラグメントを変更します。
 
 ## 前提条件
 
 * [GitHub リポジトリを設定](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)して、AEM 環境と GitHub リポジトリの間の接続を確立します。
 * 既に Edge Delivery Services を使用している場合は、最新バージョンの[アダプティブフォームブロック](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)を GitHub リポジトリに追加します。
-* AEM Forms オーサーインスタンスには、Edge Delivery Servicesに基づくテンプレートが含まれています。
+* AEM Forms オーサーインスタンスには、Edge Delivery Services に基づくテンプレートが含まれます。
 * AEM Forms as a Cloud Service オーサーインスタンスの URL と GitHub リポジトリをすぐに使用できる状態にします。
 
 ## Edge Delivery Services フォームフラグメントの操作
@@ -114,7 +114,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
 ### フォームへのフォームフラグメントの追加
 
-従業員と管理者の両方の情報を含むシンプルな `Employee Details` フォームを作成しましょう。 `Contact Details` フラグメントは、従業員パネルとスーパーバイザーパネルの両方で使用できます。フォームフラグメントをフォームで使用するには、次の手順を実行します。
+従業員とスーパーバイザーの両方の情報を含むシンプルな `Employee Details` フォームを作成しましょう。`Contact Details` フラグメントは、従業員パネルとスーパーバイザーパネルの両方で使用できます。フォームフラグメントをフォームで使用するには、次の手順を実行します。
 
 1. フォームを編集モードで開きます。
 1. フォームフラグメントコンポーネントをフォームに追加します。
@@ -138,7 +138,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
 1. 「**[!UICONTROL 選択]**」をクリックします。
 
-   フォームフラグメントは、参照によってフォームに追加され、スタンドアロンのフォームフラグメントと同期されたままになります。
+   フォームフラグメントは、フォームへの参照により追加され、スタンドアロンのフォームフラグメントと同期を維持します。
 
    ![フォーム内のフラグメント](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
