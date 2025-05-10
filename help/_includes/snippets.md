@@ -1,8 +1,8 @@
 ---
-source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: ht
-source-wordcount: '1467'
-ht-degree: 100%
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 98%
 
 ---
 # スニペット {#snippets}
@@ -169,7 +169,7 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >フロントエンドパイプラインでは、以下の IP 許可リストを事前に Cloud Manager に追加する必要があります。
->必要に応じて、以下のアドレスのブロックをコピーして ](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加[します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
+>必要に応じて、以下のアドレスのブロックをコピーして [&#128279;](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
 >フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
 >
 >**Cloud Manager の IP 許可リスト**
@@ -259,3 +259,9 @@ ht-degree: 100%
 * [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
 * [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
 * [フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
+
+## ユニバーサルエディターのヘッドレス認証 {#ue-headless-auth}
+
+>[!NOTE]
+>
+>ヘッドレスユースケースでユニバーサルエディターを使用している場合、ヘッドレスアプリは独自の認証を管理する必要があります。
