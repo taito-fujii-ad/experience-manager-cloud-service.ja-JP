@@ -1,7 +1,7 @@
 ---
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1523'
 ht-degree: 98%
 
 ---
@@ -265,3 +265,11 @@ ht-degree: 98%
 >[!NOTE]
 >
 >ヘッドレスユースケースでユニバーサルエディターを使用している場合、ヘッドレスアプリは独自の認証を管理する必要があります。
+
+## PWA廃止 {#pwa-deprecation}
+
+>[!IMPORTANT]
+>
+>AEM Sites のプログレッシブ web アプリ（PWA）機能は[非推奨（廃止予定）になりました](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features)。
+>
+>この機能を使用している既存のプロジェクトは引き続きサポートされますが、新しいプロジェクトではこの機能を使用しないでください。
