@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a35378389765538fc085fdf009816807c417f1f
+source-git-commit: b3254d0a2194cb90d9eafd39978dcbdbd5e93610
 workflow-type: tm+mt
 source-wordcount: '6157'
 ht-degree: 99%
@@ -744,7 +744,7 @@ ht-degree: 99%
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [AEM Sites ページへのアダプティブフォームの埋め込み](/help/forms/embed-adaptive-form-aem-sites.md)
          + [コアコンポーネントに基づくアダプティブフォームを外部 web ページに埋め込む](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [AEM FormsとAdobe Experience Platformの統合（AEP）](/help/forms/aem-forms-aep-connector.md)
+         + [AEM Forms と Adobe Experience Platform（AEP）の統合](/help/forms/aem-forms-aep-connector.md)
          + [基盤コンポーネントに基づくアダプティブフォームを外部 web ページに埋め込む](/help/forms/embed-adaptive-form-external-web-page.md)
          + アダプティブフォームと Adobe Marketo Engage の統合{#integrate-adaptive-form-with-market-engage}
             + [Adobe Marketo Engage と AEM Forms の統合](/help/forms/integrate-form-to-marketo-engage.md)
@@ -765,7 +765,7 @@ ht-degree: 99%
          + [アダプティブフォームの XML スキーマのデザイン](/help/forms/adaptive-form-xml-schema-form-model.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
       + [アダプティブフォームの作成](/help/forms/create-an-adaptive-form.md)
-      + [ 最適なアダプティブFormsはどれですか？](/help/edge/docs/forms/authoring-a-form.md)
+      + [最適なアダプティブフォームの種類](/help/edge/docs/forms/authoring-a-form.md)
       + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments.md)
       + [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + コアコンポーネント {#authoring-adaptive-forms-core-components}
@@ -1241,9 +1241,9 @@ ht-degree: 99%
          + [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL 証明書エラーのトラブルシューティング](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + CDN 設定 {#cdn-configurations}
-         + [CDN 設定の追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [CDN 設定の管理](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+      + ドメインマッピング {#cdn-configurations}
+         + [ドメインマッピングの追加](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [ドメインマッピングの管理](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 許可リスト {#ip-allow-lists}
          + [IP 許可リストの概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
