@@ -4,10 +4,10 @@ description: OpenAPI ベースの API のAEM as a Cloud Service サポートに�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
-source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
+source-git-commit: 7feb0c4061ebc9e7a581537fb6e9cad104cda65d
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 2%
+source-wordcount: '638'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,8 @@ ht-degree: 2%
 一部の OpenAPI ベースのAEM API には認証が必要で、[Adobe Developer Console](https://developer.adobe.com/developer-console/) を使用して資格情報を生成する必要があります。 設定には次の手順が含まれます。
 
 1. AEM as a Cloud Service環境の最新化。
-1. AEM API へのアクセスを有効にします [ 製品プロファイルを使用 ](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles)。
+1. 製品プロファイルを使用してAEM API へのアクセスを有効にします。 製品プロファイルは、事前定義されたアクセス制御リスト（ACL）を持つAEM ユーザーグループを表すサービスに関連付けられています。 デフォルトでは一部のサービスは特定の製品プロファイルに関連付けられますが、明示的に関連付ける必要があるサービスもあります。例えば、AEM Assets API Users Service は [ 製品プロファイル ](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles) に関連付けられていないので、AEM Assets API を使用するには有効にする必要があります。 詳しくは、チュートリアルの手順の [AEM API アクセスの有効化 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#enable-aem-apis-access) を参照してください。
+1. サーバー間認証を追加するには、integration を設定するユーザーが組織のAdobe Admin Console管理者であるか、サービスが関連付けられている製品プロファイルに開発者として追加されている必要があります。 詳しくは、チュートリアルの手順の [AEM API アクセスの有効化 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup#enable-aem-apis-access) を参照してください。
 1. Adobe Developer Console（ADC）プロジェクトを作成します。
 1. ADC プロジェクトの設定 これにより、API の呼び出し時にベアラートークンと交換するために後で使用される資格情報が生成されます。
 1. AEM インスタンスを設定して、ADC プロジェクト通信を有効にします。 これには、以下の [ クライアント ID の登録 ](#registering-a-client-id) の節で説明されているように、YAML ファイルを設定してデプロイすることでクライアント ID を環境に登録することが含まれます。
