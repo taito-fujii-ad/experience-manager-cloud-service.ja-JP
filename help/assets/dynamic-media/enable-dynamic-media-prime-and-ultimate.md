@@ -4,10 +4,10 @@ description: ' [!DNL Dynamic Media]  Prime と Ultimate のサービスを有効
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
-workflow-type: ht
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+workflow-type: tm+mt
 source-wordcount: '1077'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 OpenAPI を備えた [!DNL Dynamic Media] 機能では、DAM をアジャイルで効率的なコンテンツサプライチェーンエコシステムのコアに置き、アセットのガバナンスと配信を確実に行います。
 
-[!DNL Dynamic Media] Ultimate を有効にするプロセスの最初の手順は、Cloud Service 環境の OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) を備えた [[!DNL Dynamic Media]  を使用してアクティベートすることです。
+[!DNL Dynamic Media] Ultimate を有効にするプロセスの最初の手順は、Cloud Service 環境の OpenAPI[&#128279;](/help/assets/dynamic-media-open-apis-overview.md) を備えた [!DNL Dynamic Media]  を使用してアクティベートすることです。
 
 #### 開始する準備を整える {#prerequisites}
 
@@ -94,7 +94,7 @@ Cloud Service 環境で [!DNL Dynamic Media with OpenAPI] を有効にするに�
 
 1. 確認ダイアログで「**[!UICONTROL アクティベート]**」をクリックして、[!DNL Dynamic Media with OpenAPI] アクティベーションプロセスを開始します。アクティベーションが成功すると、Cloud Manager に次のステータス更新が表示されます。
    1. **[!UICONTROL 環境ステージ]**：**[!UICONTROL 実行中]**
-   1. ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL  Dynamic Media ]**：**[!UICONTROL  OpenAPI 機能がアクティベートされています&#x200B;]**
+   1. ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL &#x200B; Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B; OpenAPI 機能がアクティベートされています&#x200B;]**
 
       ![アクティベーション成功](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -103,7 +103,7 @@ Cloud Service 環境で [!DNL Dynamic Media with OpenAPI] を有効にするに�
 アクティベーションに失敗した場合、Cloud Manager に次のステータス更新が表示されます。
 
 * **[!UICONTROL 環境ステージ]**：**[!UICONTROL OpenAPI を使用した DM にエラーが発生しました]**
-* ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL  Dynamic Media ]**：**[!UICONTROL  OpenAPI 機能のアクティベートに失敗しました&#x200B;]**
+* ![DM のアクティベート](/help/assets/assets/Images_icon.svg)**[!UICONTROL &#x200B; Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B; OpenAPI 機能のアクティベートに失敗しました&#x200B;]**
 
   ![アクティベーションを再試行](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
@@ -216,7 +216,7 @@ Cloud Manager で次の手順を実行して、配信層にカスタムドメイ
 
 1. [カスタムドメイン名を追加](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)します。
 
-1. 環境の詳細ページに移動して、[CDN 設定を追加](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cdn-configurations/add-cdn-config)します。設定を追加する際に、**[!UICONTROL CDN を設定]**&#x200B;ダイアログボックスの「**[!UICONTROL 層]**」フィールドで「**[!UICONTROL 配信]**」を選択します。
+1. 環境の詳細ページに移動して、[CDN 設定を追加](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping)します。設定を追加する際に、**[!UICONTROL CDN を設定]**&#x200B;ダイアログボックスの「**[!UICONTROL 層]**」フィールドで「**[!UICONTROL 配信]**」を選択します。
 
    ![CDN を設定](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 

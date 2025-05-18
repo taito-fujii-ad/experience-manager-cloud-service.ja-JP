@@ -5,18 +5,18 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
-workflow-type: ht
+source-git-commit: c1040572085183f0ddd2a12f159f74e399c12df3
+workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# ドメインマッピングの管理 {#manage-cdn-configurations}
+# ドメインマッピングの管理 {#manage-domain-mappings}
 
 Cloud Manager を使用して、Edge Delivery サイトまたは Cloud Manager 環境の CDN 設定を編集または削除する方法について説明します。
 
-## ドメインマッピングページからの CDN 設定の編集 {#edit-cdn}
+## ドメインマッピングページからの CDN 設定の編集 {#edit-domain-mapping}
 
 Adobe Cloud Manager では、いくつかの理由により、環境層（パブリッシュまたはプレビュー）や SSL 証明書を含む CDN（コンテンツ配信ネットワーク）設定を編集する必要がある場合があります。
 
@@ -61,7 +61,7 @@ Adobe Cloud Manager では、いくつかの理由により、環境層（パブ
 
 1. ポップアップメニューで、「**編集**」をクリックします。
 
-1. **CDN 設定を編集**&#x200B;ダイアログボックスで、それぞれのドロップダウンリストのオプションを 1 つ以上設定します。
+1. **ドメインマッピングを編集** ダイアログボックスで、それぞれのドロップダウンリストに 1 つ以上のオプションを設定します。
 
    ダイアログボックスに表示されるオプションは、**アドビが管理する CDN** を使用しているか、**その他の CDN プロバイダー**（顧客が管理する CDN）を使用しているかによって異なります。
 
@@ -109,7 +109,7 @@ Cloud Manager でアドビが管理する CDN または顧客が管理する CDN
 
 1. ドメインマッピングテーブルで、削除する CDN に対応する行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」をクリックします。
 
-1. **CDN 設定を削除**&#x200B;ダイアログボックスで、「**削除**」をクリックします。
+1. **ドメインマッピングを削除** ダイアログボックスで、「**削除**」をクリックします。
 
 1. 「**削除**」をもう一度クリックして、サイトの CDN の削除を確認します。
 
@@ -128,6 +128,6 @@ Cloud Manager でアドビが管理する CDN または顧客が管理する CDN
 
 1. 環境の詳細ページの **ドメインマッピング**&#x200B;グループで、削除する CDN 設定に対応する ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**削除**」をクリックします。
 
-1. **CDN 設定を削除**&#x200B;ダイアログボックスで、「**削除**」をクリックします。
+1. **ドメインマッピングを削除** ダイアログボックスで、「**削除**」をクリックします。
 
 1. 「**削除**」をもう一度クリックして、サイトの CDN の削除を確認します。

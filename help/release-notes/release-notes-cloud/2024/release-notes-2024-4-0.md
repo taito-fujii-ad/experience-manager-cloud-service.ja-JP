@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.4.0 リ�
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 7069ee2453b0c589f92f9899db0b8307e4133756
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '2707'
 ht-degree: 97%
@@ -170,7 +170,7 @@ Experience Manager Assets では、[シングルクリックでアセットま�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### CDN 設定 {#cdn-config}
+### ドメインマッピング {#cdn-config}
 
 次の方法で、アドビの CDN でのトラフィックを設定します。
 
