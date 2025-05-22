@@ -8,10 +8,10 @@ role: Admin, Architect, Developer
 badge: label="早期導入者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 hide: true
 hidefromtoc: true
-source-git-commit: cc3023f0451e0b1d852c497714d6b46fdaed5cfe
+source-git-commit: 22289138be1fa63caa1beda83e98ffa75dfabc2a
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 45%
+ht-degree: 51%
 
 ---
 
