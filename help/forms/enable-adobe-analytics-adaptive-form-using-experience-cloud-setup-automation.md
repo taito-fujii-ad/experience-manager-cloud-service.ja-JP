@@ -5,14 +5,19 @@ keywords: Experience Cloud 設定自動化を使用してアダプティブフ�
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
+source-git-commit: a58f7e8de662255e3fce1c168b2293a72a9863df
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 100%
+source-wordcount: '1597'
+ht-degree: 98%
 
 ---
 
-# Experience Cloud 設定自動化を使用してアダプティブフォームの Adobe Analytics を有効にする {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+# （非推奨）Experience Cloud設定自動処理を使用した、アダプティブフォーム用のAdobe Analyticsの有効化 {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+
+>[!CAUTION]
+>
+>Experience Cloud設定の自動化機能は廃止されました。
+
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

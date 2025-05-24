@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
+source-git-commit: b246b1729d7e598dc593ecce05bd8975d4752f5a
 workflow-type: tm+mt
-source-wordcount: '6162'
+source-wordcount: '6173'
 ht-degree: 99%
 
 ---
@@ -255,6 +255,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [AEM as a Cloud Service の IMS 統合の設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+   + [権限管理のプリンシパルビュー](/help/security/touch-ui-principal-view.md)
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service の顧客管理キー](/help/security/customer-managed-keys.md)
 + オンボーディング {#onboarding}
@@ -494,7 +495,7 @@ ht-degree: 99%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-   + [AEM as a Cloud Service の実際の使用のモニタリング](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+   + [AEM as a Cloud Serviceの運用上のテレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
@@ -1077,7 +1078,7 @@ ht-degree: 99%
          + [フォームのグローバル化：フォーム翻訳ガイド](/help/edge/docs/forms/translate-forms.md)
          + [フォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
-         + [フォームのパフォーマンスの監視：実際の使用のモニタリングガイド](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [ フォームのパフォーマンスの監視：運用テレメトリガイド ](/help/edge/docs/forms/operational-telemetry-for-forms.md)
    + Edge Delivery リソース {#resources}
       + サイドキック {#sidekick}
          + [Sidekick の使用](/help/edge/docs/sidekick.md)
@@ -1166,8 +1167,9 @@ ht-degree: 99%
          + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
          + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
 + 生成 AI {#generative-ai}
-   + [バリエーションを生成](/help/generative-ai/generate-variations.md)
+   + [AEM as a Cloud Serviceのジェネレーティブ AI](/help/generative-ai/generative-ai-in-aem.md)
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
+   + [バリエーションを生成](/help/generative-ai/generate-variations.md)
    + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
