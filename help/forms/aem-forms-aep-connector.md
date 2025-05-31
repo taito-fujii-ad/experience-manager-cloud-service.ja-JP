@@ -5,15 +5,15 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
-source-git-commit: 052f8425c3c7bc2c12882af4f7b88d559ea34fb3
+exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
+source-git-commit: 628e60e43d0810ef9e871dd77ed1674d7646072b
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 1%
+source-wordcount: '1554'
+ht-degree: 2%
 
 ---
 
-
-# AEM FormsとAdobe Experience Platformの統合（AEP） {#aem-forms-aep-integration}
+# AEM Forms と Adobe Experience Platform（AEP）の統合 {#aem-forms-aep-integration}
 
 <span class="preview"> アダプティブForms（AEM Forms）とAdobe Experience Platform（AEP）を連携させる機能は、早期アクセスプログラムに基づいています。 機能へのアクセスをリクエストするには、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D) にメールを送信するだけです。 また、<a href="/help/forms/early-access-ea-features.md"> 早期アクセスプログラム </a> ページでは、利用可能なすべてのイノベーションと機能を確認できます。. </span>
 
@@ -70,7 +70,7 @@ AEM FormsでAEP コネクタを設定する前に、Adobe Experience Platformで
 
 ## 実装手順
 
-### 1. AEP クラウド設定の作成
+### &#x200B;1. AEP クラウド設定の作成
 
 1. **Adobe Experience Manager インスタンス** / **ツール** / **Cloud Services** / **Adobe Experience Platform** に移動します。
 1. **設定コンテナ** を選択して、設定を保存します。
@@ -81,12 +81,14 @@ AEM FormsでAEP コネクタを設定する前に、Adobe Experience Platformで
    * クライアントの秘密鍵（developer console から取得）
    * OAuth URL （デフォルトの URL がありますが、開発者コンソールからも取得できます）
 
+   ![AEP クラウド設定 ](/help/forms/assets/aep-cloud-configuration.png)
+
 1. **接続** をクリックして、接続を確立します。 接続を確立したら、次の追加設定を行います。
    * ベース URL:platform.adobe.io （これはデフォルトの URL で、開発者コンソールから取得できます。oauth および platform の URL は実稼動 URL にデフォルト設定されます。 場合によっては、ステージに接続する必要があります（ステージ URL を使用する必要があります）。
    * 組織 ID （これは、クライアント ID/シークレットと共に Developer Console から取得されます）
    * サンドボックス名（開発環境と実稼動環境の両方で必要）
 
-### 2. XDM スキーマ統合によるフォームの作成 {#form-creation}
+### &#x200B;2. XDM スキーマ統合によるフォームの作成 {#form-creation}
 
 1. フォーム作成ウィザードにアクセスします。
    * **Adobe Experience Manager インスタンス** / **Forms** / **Formsとドキュメント** に移動します。
@@ -94,13 +96,18 @@ AEM FormsでAEP コネクタを設定する前に、Adobe Experience Platformで
 1. 「**ソース**」タブで、テンプレートを選択します
 1. 「**Data**」タブで、「**Adobe Experience Platform**」オプションを選択します。
 
-1. プロパティペインで、クラウド設定を選択します。 使用可能なすべてのスキーマがAdobe Experience Platformから読み込まれます
+1. プロパティペインで、クラウド設定を選択します。
+
+   ![](/help/forms/assets/xdm-schema-integration.png)
+
+   使用可能なすべてのスキーマがAdobe Experience Platformから読み込まれます
 
    >[!NOTE]
    >
    >
    > * プロファイルが有効なスキーマとシステムで生成されていないスキーマのみが取得されます。
    > * 最初のスキーマの読み込みには、時間がかかる場合があります。
+
 1. スキーマの適切なフィールド/必須フィールドを選択します。 （詳しい手順についてはビデオを参照してください）
 1. 「送信」タブで、次の手順に従います。
    * **Adobe Experience Platformに送信** 送信アクションを選択します
@@ -230,5 +237,3 @@ Schema markup for technical documentation
   "keywords": "AEM Forms, Adobe Experience Platform, XDM schema, data integration, form submission, customer profiles, personalization"
 }
 -->
-
-
