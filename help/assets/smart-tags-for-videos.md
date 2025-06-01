@@ -1,13 +1,12 @@
 ---
 title: ビデオアセットのスマートタグ
 description: Adobe Experience Manager では、 [!DNL Adobe Sensei] を使用して、状況に応じた説明的なスマートタグをビデオに自動的に追加します。
-feature: Smart Tags
-role: Admin, User
-exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+feature: Smart Tags,Tagging
+role: Admin,User
+source-git-commit: fac18920ef0fdaa36a7547bd4f652829366dcc47
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 97%
+source-wordcount: '1235'
+ht-degree: 100%
 
 ---
 
@@ -16,19 +15,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
         </td>
     </tr>
     <tr>
@@ -56,7 +55,7 @@ ht-degree: 97%
 
 ## アップロードのビデオのスマートタグ {#smart-tag-assets-on-ingestion}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に[ビデオアセットをアップロード](add-assets.md#upload-assets)すると、ビデオが処理されます。処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、ビデオの[!UICONTROL スマートタグ]に自動的に追加されます。アセットマイクロサービスは、[!DNL Adobe Sensei] を使用してこれらのスマートタグを作成します。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に[ビデオアセットをアップロード](add-assets.md#upload-assets)すると、ビデオが処理されます。処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、ビデオの[!UICONTROL スマートタグ]に自動的に追加されます。アセットマイクロサービスは、[!DNL Adobe Sensei] を利用してこれらのスマートタグを作成します。
 
 ![スマートタグはビデオに追加され、アセットプロパティの「基本」タブに表示されます](assets/smart-tags-added-to-videos.png)
 
@@ -170,22 +169,6 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 * ファイルサイズが 300 MB 未満のビデオのみ自動的にタグ付けされます。[!DNL Adobe Sensei] サービスは、サイズが大きいビデオファイルをスキップします。
 
 * [スマートタグ](/help/assets/smart-tags.md#smart-tags-supported-file-formats)で言及されているファイル形式とサポート対象コーデックのビデオのみタグ付けされます。
-
-**関連情報**
-
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
-* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
