@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
-workflow-type: ht
-source-wordcount: '2230'
-ht-degree: 100%
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+workflow-type: tm+mt
+source-wordcount: '2280'
+ht-degree: 97%
 
 ---
 
@@ -125,6 +125,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
       * 適切なモデルに基づいた新しいコンテンツフラグメントの作成
       * フィールドの新しいインスタンスの作成
    * 参照は、参照先リソースへのパスを指定します。例：`/content/dam/path/to/resource`
+
 * **フラグメント参照（UUID）**
    * 他のコンテンツフラグメントの参照を[ネストされたコンテンツの作成](#using-references-to-form-nested-content)に使用可能
    * このデータタイプは、フラグメント作成者が次の操作を行えるように設定可能です。
@@ -134,17 +135,26 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    * エディターでは、参照は参照先リソースへのパスを指定します。内部的には、参照はリソースを参照する Universally Unique ID（UUID）として保持されます
       * UUID を知らなくても、フラグメントエディターで必要なフラグメントを参照できます
 
+  >[!NOTE]
+  >
+  >UUID はリポジトリに固有です。 [ コンテンツのコピーツール ](/help/implementing/developing/tools/content-copy.md) を使用してコンテンツフラグメントをコピーすると、ターゲット環境で UUID が再計算されます。
+
 * **コンテンツ参照**
    * 任意のタイプの他のコンテンツの参照を[ネストされたコンテンツの作成](#using-references-to-form-nested-content)に使用可能
    * 画像が参照されている場合は、サムネールを表示するように選択可能
    * フィールドは、フラグメント作成者がフィールドの新しいインスタンスを作成できるように設定可能
    * 参照は、参照先リソースへのパスを指定します。例：`/content/dam/path/to/resource`
+
 * **コンテンツ参照（UUID）**
    * 任意のタイプの他のコンテンツの参照を[ネストされたコンテンツの作成](#using-references-to-form-nested-content)に使用可能
    * 画像が参照されている場合は、サムネールを表示するように選択可能
    * フィールドは、フラグメント作成者がフィールドの新しいインスタンスを作成できるように設定可能
    * エディターでは、参照は参照先リソースへのパスを指定します。内部的には、参照はリソースを参照する Universally Unique ID（UUID）として保持されます
       * UUID を知らなくても、フラグメントエディターで必要なアセットリソースを参照できます
+
+  >[!NOTE]
+  >
+  >UUID はリポジトリに固有です。 [ コンテンツのコピーツール ](/help/implementing/developing/tools/content-copy.md) を使用してコンテンツフラグメントをコピーすると、ターゲット環境で UUID が再計算されます。
 
 * **JSON オブジェクト**
    * コンテンツフラグメントの作成者がフラグメントの対応する要素に JSON 構文を入力できます。

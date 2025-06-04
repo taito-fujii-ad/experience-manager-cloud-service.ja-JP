@@ -5,16 +5,16 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 1%
+source-wordcount: '906'
+ht-degree: 6%
 
 ---
 
 # Edge Delivery Services Formsを使用したForms送信サービス
 
-<span class="preview"> この機能は、早期アクセスプログラムを通じて利用できます。 アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL がhttps://github.com/adobe/abcの場合、組織名は adobe で、リポジトリ名は abc.</span> です
+<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
 
 Forms送信サービスを使用すると、フォーム送信データを OneDrive、SharePoint、Google Sheets などの任意のスプレッドシートに保存でき、目的のスプレッドシートプラットフォーム内でフォームデータに簡単にアクセスして管理できます。
 
@@ -45,7 +45,7 @@ Forms Submission サービスを使用するための前提条件を以下に示
 
 ![Forms 送信サービスのワークフロー ](/help/forms/assets/forms-submission-service-workflow.png)
 
-#### 1. フォーム定義を使用してフォームを作成する
+#### &#x200B;1. フォーム定義を使用してフォームを作成する
 
 Google シートまたはMicrosoft Excel を使用してフォームを作成します。 Microsoft Excel またはGoogle Sheets のフォーム定義を使用してフォームを作成する方法については、[ ここをクリック ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms) してください。
 
@@ -53,7 +53,11 @@ Google シートまたはMicrosoft Excel を使用してフォームを作成し
 
 ![ フォームの定義 ](/help/forms/assets/form-submission-definition.png)
 
-#### 2. スプレッドシートを有効にしてデータを受け入れます。
+>[!IMPORTANT]
+>
+>**フォームを作成するシートには、名前の付け方に制限があります。 シート名として使用できるのは `helix-default` と `shared-aem` のみです。**
+
+#### &#x200B;2. スプレッドシートを有効にしてデータを受け入れます。
 
 フォームを作成してプレビューしたら、対応するスプレッドシートを有効にしてデータの受信を開始します。 新しいシートを `incoming` のように追加します。 [ スプレッドシートを手動で有効にしてデータを受け入れる ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data) ことができます。
 
@@ -63,7 +67,7 @@ Google シートまたはMicrosoft Excel を使用してフォームを作成し
 >
 > `incoming` シートが存在しない場合、AEMではこのブックにデータが送信されません。
 
-#### 3. スプレッドシートを共有し、リンクを生成します。
+#### &#x200B;3. スプレッドシートを共有し、リンクを生成します。
 
 スプレッドシートを `forms@adobe.com` アカウントと共有してリンクを生成するには、次の手順を実行します。
 
@@ -77,7 +81,7 @@ Google シートまたはMicrosoft Excel を使用してフォームを作成し
 
    ![ 受信シートのリンクをコピー ](/help/forms/assets/form-submission-copy-link.png)
 
-#### 4. フォーム定義でスプレッドシートをリンクする
+#### &#x200B;4. フォーム定義でスプレッドシートをリンクする
 
 Forms Submission サービスをGoogle Sheets またはMicrosoft Excel で設定するには、次の手順を実行します。
 
