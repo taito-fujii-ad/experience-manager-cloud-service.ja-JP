@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e44c109a8e64c2162f209bcf85b81336764ee9fe
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
-source-wordcount: '6184'
-ht-degree: 99%
+source-wordcount: '6208'
+ht-degree: 98%
 
 ---
 
@@ -339,8 +339,10 @@ ht-degree: 99%
             + [重要な検討事項](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [ユーザーマッピングツールの使用](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + コードリファクタリングツール {#refactoring-tools}
+      + [リファクタリングツールの概要](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [Unified Experience](/help/journey-migration/unified-experience.md)
       + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
+      + [Repository Modernizer （CAM）](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
       + [インデックスコンバーター](/help/journey-migration/refactoring-tools/index-converter.md)
       + [アセットワークフローの移行](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher コンバーター](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
@@ -1173,6 +1175,8 @@ ht-degree: 99%
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
    + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEM Forms用 AI アシスタント（Forms Experience Builder）（早期導入）](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM Forms AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}

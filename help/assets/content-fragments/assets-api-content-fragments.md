@@ -4,10 +4,10 @@ description: AEM ヘッドレス配信機能の重要な部分である、Assets
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1827'
-ht-degree: 100%
+source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+workflow-type: tm+mt
+source-wordcount: '1857'
+ht-degree: 98%
 
 ---
 
@@ -20,13 +20,19 @@ ht-degree: 100%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
+>[!CAUTION]
+>
+>Assets HTTP API でのコンテンツフラグメントのサポートが [ 非推奨 ](/help/release-notes/deprecated-removed-features.md) になりました。
+>
+>[OpenAPI を使用したコンテンツフラグメント配信 ](/help/headless/aem-content-fragment-delivery-with-openapi.md) および [ コンテンツフラグメントおよびコンテンツフラグメントモデル管理 OpenAPI](/help/headless/content-fragment-openapis.md) に置き換えられました。
+
 AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて学びます。
 
 >[!NOTE]
 >
 >使用可能な様々な API の概要と、関連する概念のいくつかの比較について詳しくは、[構造化コンテンツの配信と管理用の AEM API](/help/headless/apis-headless-and-content-fragments.md) を参照してください。
 >
->この[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
+>[コンテンツフラグメントおよびコンテンツフラグメントモデルの OpenAPI](/help/headless/content-fragment-openapis.md) も利用できます。
 
 >[!NOTE]
 >

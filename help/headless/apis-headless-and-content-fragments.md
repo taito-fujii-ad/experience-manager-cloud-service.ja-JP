@@ -4,12 +4,13 @@ description: 構造化コンテンツの配信とコンテンツフラグメン�
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
-workflow-type: ht
-source-wordcount: '591'
-ht-degree: 100%
+source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+workflow-type: tm+mt
+source-wordcount: '516'
+ht-degree: 94%
 
 ---
+
 
 # 構造化コンテンツの配信と管理用の AEM API {#aem-apis-structured-content-delivery-and-management}
 
@@ -27,27 +28,10 @@ Adobe Experience Manager（AEM）as a Cloud Service では、コンテンツフ�
    * これらの API は、構造化コンテンツ管理を目的としています。
    * それぞれの GET 演算子は、コンテンツ配信用に最適化されていません。
    * この API は REST ベースです。
-* [AEM Assets HTTP API での コンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * AEM の構造化コンテンツ配信用の JSON 出力の元の API。
-      * この API は堅牢で実証済みですが、*完全にハイドレート*&#x200B;された JSON 出力を提供しません。参照はパスとしてのみ出力されるので、さらにコンテンツを取得するには 2 番目の API リクエストが必要になります。
-   * また、Assets HTTP API は、コンテンツフラグメントおよびコンテンツフラグメントモデル（CRUD）の管理にも使用できます。
-   * この API は REST ベースです。
-   * Assets HTTP API のコンテンツフラグメントサポートは、Edge Delivery Services JSON REST API によって継承されるので、今後、廃止される予定です。時間スケールは、まだ決定されていません。
 
-<!--
-## JSON vs HTML {#json-vs-HTML}
-
-The content delivery format used is driven by frontend implementation. Unstructured content/HTML for full-stack implementations, structured content/JSON for headless implementations, or a combination of both in hybrid implementations. 
-
-Key considerations include:
-
-* Definition
-  * JSON (JavaScript Object Notation) - used to represent, access and process structured data. 
-  * HTML (HyperText Markup Language) - a markup language of tags and elements in a hierarchical structure.
-* Primary Purpose
-  * JSON is often used for transferring structure content between the server and client app.
-  * HTML is the standard markup language for creating and rendering web pages in a browser.
--->
+>[!NOTE]
+>
+>[Assets HTTP API でのコンテンツフラグメントのサポート ](/help/assets/content-fragments/assets-api-content-fragments.md) が [ 非推奨 ](/help/release-notes/deprecated-removed-features.md) になりました。 [OpenAPI を使用したコンテンツフラグメント配信 ](/help/headless/aem-content-fragment-delivery-with-openapi.md) および [ コンテンツフラグメントおよびコンテンツフラグメントモデル管理 OpenAPI](/help/headless/content-fragment-openapis.md) に置き換えられました。
 
 ## REST と GraphQL {#rest-vs-graphql}
 

@@ -4,7 +4,7 @@ description: 既存のプロジェクトパッケージを再構築し、Adobe E
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6920651420da9b427510518b7add0637479adef5
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%
@@ -28,6 +28,7 @@ Repository Modenizer は、次のデプロイメント構造を作成するこ�
 * `all` パッケージは、`ui.apps` サブパッケージおよび `ui.content` サブパッケージを含むコンテナパッケージです。
 
 >[!NOTE]
+>
 >プロジェクト構造は、パッケージおよびその `pom.xml/filter.xml files` に対して、*アーキタイプ 24* に基づいています。詳しくは、[アーキタイプ 24](https://github.com/adobe/aem-project-archetype) を参照してください。
 
 ## Repository Modernizer の使用 {#using-repo-modernizer}
