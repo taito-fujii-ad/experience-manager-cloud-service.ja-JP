@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f01e5f505074ea32f313ba781ddb4e026cd47888
+source-git-commit: 6f4c2a8d6e4d4e67bfd0bd4da68bcef11668b8c5
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 32%
@@ -231,7 +231,7 @@ OSGi プロパティ：
 
 * これらのデフォルトは、OSGi 設定の上書きで変更できます。
 
-詳しくは、[ メンテナンスタスクの記事 ](/help/operations/maintenance.md#default) を参照してください。
+詳しくは、[ メンテナンスタスクの記事 ](/help/operations/maintenance.md#defaults) を参照してください。
 
 ### Edge Computing （Alpha プログラム） {#edge-computing}
 

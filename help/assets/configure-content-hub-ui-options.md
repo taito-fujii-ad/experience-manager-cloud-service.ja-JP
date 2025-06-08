@@ -2,10 +2,10 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
+source-git-commit: b12c650719ac6bcaed1e6181688e89df482132ad
 workflow-type: tm+mt
-source-wordcount: '1987'
-ht-degree: 78%
+source-wordcount: '2110'
+ht-degree: 74%
 
 ---
 
@@ -112,6 +112,8 @@ Experience Manager Assets を使用すると、管理者はコンテンツハブ
 * [レンディション](#renditions-content-hub)
 
 * [カスタムリンク](#configure-custom-links-content-hub)
+
+* [コレクションと共有](#configure-collections-sharing-content-hub)
 
 ### 読み込み {#configure-import-options-content-hub}
 
@@ -308,3 +310,22 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 カスタムリンクは、コンテンツハブのホームページの「インサイト」タブの横に新規タブとして表示されます。
 
 ![コンテンツハブの設定 UI の「カスタムリンク」タブ](assets/configuration-ui-custom-link-tab.png)
+
+### コレクションと共有 {#configure-collections-sharing-content-hub}
+
+管理者は、コレクションを作成する際にユーザー権限を定義し、Content Hub ユーザーが公開リンクを生成できるようにします。 これらの設定を有効にするには、次の手順に従います。
+
+1. [ 設定 ](#access-configuration-options-content-hub) ユーザーインターフェイスで、「**[!UICONTROL コレクションと共有]**」をクリックします。
+
+1. 「**[!UICONTROL 読み取り専用コレクション]**」切替スイッチを有効にして、すべてのユーザーがアクセスできるが、作成者と管理者のみが編集できるコレクションを許可します。
+
+1. **[!UICONTROL 公開コレクション]** 切替スイッチを有効にして、すべてのユーザーがアクセスおよび編集できるコレクションを許可します。
+
+1. **[!UICONTROL 公開リンクを有効にする]** 切替スイッチを有効にして、Content Hub ユーザーが公開リンクを生成できるようにします。
+
+1. 「**[!UICONTROL 保存]**」をクリックして、変更内容を適用します。
+
+   ![Content Hubの「設定コレクション」タブ ](assets/collections-link-sharing.png)
+
+
+   コレクションとアセットの共有について詳しくは、[Content Hubでのコレクションの管理 ](/help/assets/collections-content-hub.md) および [ でのアセットの共有  [!DNL Content Hub]](share-assets-content-hub.md) を参照してください。

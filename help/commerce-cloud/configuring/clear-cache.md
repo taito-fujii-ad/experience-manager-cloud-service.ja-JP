@@ -4,9 +4,9 @@ description: AEM CIFでキャッシュ消去機能を有効にし検証する方
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: f6d3ffd80e84f7c1d56fe24a395c9998ec209908
+source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 2%
 # コンポーネントとGraphQLのキャッシュのクリア {#clear-cache}
 
 このドキュメントでは、AEM CIFのクリアキャッシュ機能を有効にし検証するための包括的なガイドを提供します。
+
+>[!NOTE]
+>
+> この機能は実験的なものです。
 
 ## CIF設定でのキャッシュ消去機能の有効化 {#enable-clear-cache}
 
@@ -28,9 +32,9 @@ ht-degree: 2%
    * 設定は、オーサーインスタンスとパブリッシュインスタンスの両方で有効にする必要があります。
    * Dispatcherのキャッシュを有効にする（オプション）：上記の設定で `enableDispatcherCacheInvalidation` プロパティを true に設定することで、Dispatcher のキャッシュの消去設定を有効にできます。 これにより、Dispatcher からキャッシュをクリアする機能が提供されます。
 
-  >[!NOTE]
-  >
-  > これは、パブリッシュインスタンスでのみ機能します。
+     >[!NOTE]
+     >
+     > これは、パブリッシュインスタンスでのみ機能します。
 
    * また、上記の設定ファイルに商品、カテゴリ、CMSページに適したパターンを追加して、Dispatcher のキャッシュから削除する必要があります。
 
@@ -98,7 +102,6 @@ ht-degree: 2%
 | プロパティ | 値 | タイプ（配列/文字列/ブール値） | これにより、Dispatcher のキャッシュはクリアされますか。 | コメント |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | キャッシュの削除元となるサイトパスの対応する値（例：venia プロジェクトとの参照としての `/content/venia/us/en`）。 | 文字列 | はい | これは、`invalidateType.` の組み合わせで指定する必要があります |
-
 
 ### API リクエストのサンプル
 
