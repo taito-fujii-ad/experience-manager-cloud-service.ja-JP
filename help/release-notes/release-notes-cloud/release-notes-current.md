@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6f4c2a8d6e4d4e67bfd0bd4da68bcef11668b8c5
+source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2062'
 ht-degree: 32%
 
 ---
@@ -64,7 +64,7 @@ AEM Assetsは Figma とネイティブに統合されているので、デザイ
 
 **属性ベースのアクセス制御（ABAC）**
 
-Content Hubでは、アセットへのアクセスにルールベースの制限を適用できるようになりました。 アセット権限を使用すると、ガバナンスが確保され、ユーザーは関連するアセットにのみアクセスできるようになります。
+[Content Hubで、アセット ](/help/assets/attribute-based-access-control.md) にアクセスする際に、ルールベースの制限を適用できるようになりました。 アセット権限を使用すると、ガバナンスが確保され、ユーザーは関連するアセットにのみアクセスできるようになります。
 
 アセット制限ルールはメタデータに基づいており、ルールで定義された条件がアセットメタデータに一致する場合、アセットはユーザーグループに表示されます。
 
@@ -78,21 +78,21 @@ Content Hubでは、アセットへのアクセスにルールベースの制限
 
 **UI ブランディング**
 
-Content Hubのプライマリカラーとセカンダリカラーに加え、バナー画像、バナータイトル、本文テキストなど、ブランド固有の要素を使用してユーザーインターフェイスをカスタマイズできるようになりました。 これらの機能強化により、ブランドの一貫性の確保、ユーザーのオンボーディングの簡素化、信頼の構築が可能になります。
+Content Hubでは、プライマリ色とセカンダリ色に加え、バナー画像、バナータイトル、本文テキストなど [&#128279;](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub) ブランド固有の要素を使用してユーザーインターフェイスをカスタマイズ  できます。 これらの機能強化により、ブランドの一貫性の確保、ユーザーのオンボーディングの簡素化、信頼の構築が可能になります。
 
 ![UI ブランディング ](/help/assets/assets/content-hub-ui-branding.png)
 
 **公開リンクの共有**
 
-Content Hubで共有可能なリンクの生成がサポートされるようになりました。これにより、アプリケーションにアクセスすることなく、外部ユーザーがアセットのメタデータを表示したり、アセットをダウンロードしたりできるようになりました。
+Content Hubでは、アプリケーションにアクセスすることなく [ アセットのメタデータを表示したり、アセットをダウンロードしたりできるように ](/help/assets/share-assets-content-hub.md##share-assets) 共有可能なリンクを生成」できるようになりました。
 
 ![UI ブランディング ](/help/assets/assets/public-and-private-link.png)
 
 **回収ガバナンス**
 
-Content Hubでは、作成時にコレクションへのアクセスを制御できるようになり、許可されたユーザーのみがグループ化されたアセットを表示または管理できるようになりました。 これにより、セキュリティの向上、共同作業の向上、組織的なアセット管理、ガバナンスの効率化が実現します。
+Content Hubでは、[ 作成時のコレクションへのアクセスを制御し、許可されたユーザーのみがグループ化されたアセットを表示または管理できるようにする ](/help/assets/collections-content-hub.md##create-collections) ことができるようになりました。 これにより、セキュリティの向上、共同作業の向上、組織的なアセット管理、ガバナンスの効率化が実現します。
 
-![ 回収ガバナンス ](/help/assets/assets/collection-permissions.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
@@ -100,11 +100,11 @@ Content Hubでは、作成時にコレクションへのアクセスを制御で
 
 **複数のアセットを ZIP としてダウンロードする**
 
-また、Content Hubでは、選択したアセットとそのレンディションを、ファイル管理を簡素化する個別のファイルとしてダウンロードするのではなく、ZIP ファイルでダウンロードできるようになりました。
+また、Content Hubでは、ファイル管理を簡単にする個別のファイルとして使用するのではなく [&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions) 選択したアセットとそのレンディションを ZIP ファイルでダウンロード  できるようになりました。
 
 **Content Hubの Dynamic Media レンディション**
 
-Content Hub ユーザーインターフェイス内から直接、すべての Dynamic Media プリセットレンディションおよびダウンロード用のスマート切り抜きにアクセスします。
+すべての [Dynamic Media プリセットレンディションおよびダウンロード用のスマート切り抜き ](/help/assets/download-assets-content-hub.md#download-asset-renditions) には、Content Hub ユーザーインターフェイス内から直接アクセスします。
 
 &#x200B;![Dynamic Media レンディション ](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Content Hub ユーザーインターフェイス内から直接、すべての D
 
 **AJO B2C と Dynamic Media のネイティブ統合&#x200B;**
 
-Experience Manager（AEM） Dynamic Media とJourney Optimizer（AJO） B2C のネイティブ統合により、マーケターはAEM Dynamic Media アセット（レンディションおよび DM テンプレート）をAJO コンテンツに簡単に埋め込み、チャネル間でリアルタイムに更新され、高度にパーソナライズされたエクスペリエンスを提供できます。
+[Experience Manager（AEM） Dynamic Media とJourney Optimizer（AJO） B2C](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/aem-dynamic) のネイティブ統合により、マーケターはAEM Dynamic Media アセット（レンディションおよび DM テンプレート）をAJO コンテンツに簡単に埋め込み、チャネル間でリアルタイムに更新され、高度にパーソナライズされたエクスペリエンスを提供できます。
 
-&#x200B;![Dynamic Media レンディション ](/help/assets/assets/dm-ajo-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
