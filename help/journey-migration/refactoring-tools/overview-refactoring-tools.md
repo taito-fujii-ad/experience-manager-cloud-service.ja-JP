@@ -1,13 +1,13 @@
 ---
 title: リファクタリングツールの概要
 description: AEM リファクタリングツールの基本を学ぶ
-source-git-commit: a77dfef8dce9f4ed549135087f7b63f6d46a4ea1
+exl-id: b8137e01-87e8-4298-b0cc-b376330cb730
+source-git-commit: 879f4f3476ee369554188d6e3b7973d32454ed4b
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
 
 ---
-
 
 <!-- Alexandru: temporarily commeting this out, since it breaks validation
 

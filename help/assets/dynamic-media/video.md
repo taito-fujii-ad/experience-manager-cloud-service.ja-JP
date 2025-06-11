@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 6cc21d0e7330b3dd4254ad15b64dc94c065417f7
+source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
 workflow-type: tm+mt
-source-wordcount: '9849'
-ht-degree: 99%
+source-wordcount: '10070'
+ht-degree: 97%
 
 ---
 
@@ -558,17 +558,17 @@ Dynamic Media で複数のキャプションとオーディオトラック機能
 1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
 1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
    ![ビデオのサムネール画像の上にチェックマークが付いている、選択したビデオアセットと、ツールバーでハイライト表示されている「プロパティを表示」。](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*カード表示で選択したビデオアセット。*
-1. ビデオのプロパティページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
+1. ビデオのプロパティページで、「**[!UICONTROL キャプションとオーディオトラック]** タブを選択します。
 
    >[!TIP]
-   >「**[!UICONTROL キャプションとオーディオトラック]**」タブが表示されない場合、次の 2 つのいずれかを意味します。
+   >「**[!UICONTROL キャプションとオーディオトラック]**」タブが表示されない場合は、次の 2 つのいずれかを意味します。
    >
    >* 選択したビデオが存在するフォルダーには、ビデオプロファイルが割り当てられていません。その場合は、[フォルダーへのビデオプロファイルの適用](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)を参照してください。
    >* または、Dynamic Media でビデオを再処理する必要があります。その場合は、[フォルダー内の Dynamic Media アセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
    >
    >上記のいずれかのタスクを完了したら、次の手順に戻ります。
 
-   ![プロパティページの「キャプションとオーディオトラック」タブ。](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   ![ プロパティページの「キャプションとオーディオトラック」タブ ](/help/assets/dynamic-media/assets/msma-audiotracks.png)
    *ビデオのプロパティページの「キャプションとオーディオトラック」タブ。*
 
 1. ビデオに 1 つまたは複数のオーディオトラックを追加するには、次の手順を実行します。
@@ -728,16 +728,45 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 1. 通常どおりにビデオを公開します。
 キャプション修飾子を持つ既存の URL で、複数のキャプションを読み込めるようになりました。
 
+
+### ビデオのサブタイトルを編集
+
+ビデオアセットのサブタイトル（キャプション）は、Dynamic Media ユーザーインターフェイス内で直接編集できます。 この機能を使用すると、字幕ファイル `.vtt` 編集、更新のプレビュー、変更の公開をシームレスに行うことができます。
+
+* 字幕が公開されると、変更内容が自動的に同期されて公開されます。
+* 編集エラーが発生し、字幕を再生成する必要がある場合：
+   * 既存のサブタイトルファイルを削除します。
+   * [ ビデオへの複数のキャプションとオーディオトラックの追加 ](#add-msma) の手順 7 のオプション 2 （オーディオトラックを変換）を使用します。
+   * **保存** または **保存して閉じる** をクリックして、新しいサブタイトルファイルを生成します。
+* エディター内の字幕プレビューは編集専用で、最終的なビデオ再生ユーザーインターフェイスでの字幕の表示方法を反映していません。
+
+**ビデオのサブタイトルを編集するには：**
+
+1. サブタイトルを編集するビデオアセットに移動します。
+1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
+1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
+1. プロパティページで、「**[!UICONTROL キャプションとオーディオトラック]** タブを選択します。
+1. **キャプション** 見出しの下で、キャプションファイル名の右側にある ![ アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ProjectEdit_18_N.svg) をクリックします。
+
+   ![ 「キャプション」見出しの下の「サブタイトルを編集」アイコン ](/help/assets/dynamic-media/assets/msma-editcaption.png)
+
+1. **サブタイトルを編集** ダイアログボックスで、必要に応じて WebVTT ファイルのテキストを編集します。
+
+   ![ サブタイトルを編集ダイアログボックス ](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
+
+1. ダイアログボックスの右下隅にある「**保存**」をクリックします。
+
+
 ### アップロードされたキャプションファイルとオーディオトラックファイルのライフサイクルステータスを表示する {#lifecycle-status-video}
 
-プライマリビデオにアップロードされたキャプションやオーディオトラックのファイルのライフサイクルステータスを確認できます。これは、**プロパティ**&#x200B;の「**キャプションとオーディオトラック**」タブから行うことができます。
+プライマリビデオにアップロードされたキャプションやオーディオトラックのファイルのライフサイクルステータスを確認できます。これを行うには、「プロパティ **の「** キャプションとオーディオトラック **」タブを使用** ます。
 
 **ビデオのライフサイクルステータスを表示するには：**
 
 1. ライフサイクルステータスを表示するビデオアセットに移動します。
 1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
 1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
-1. **プロパティ**&#x200B;ページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
+1. **プロパティ** ページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
 1. **[!UICONTROL ステータス]**&#x200B;列で、各キャプションファイルまたはオーディオファイルのステートをメモします。
 
 | キャプションとオーディオトラックのステータス | 説明 |
@@ -753,7 +782,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 
 デフォルトでは、ビデオの元々のオーディオが、再生されるオーディオとしてデフォルトで設定されます。
 
-ただし、アップロードしたオーディオトラックファイルは、ビデオをビューアーに読み込んだ後に再生されるデフォルトのオーディオとして設定できます。プロパティのユーザインターフェイスの「**キャプションとオーディオトラック**」タブでは、`Default` ラベルは、ビデオ再生用のオーディオトラックファイルの右側に適用されます。
+ただし、アップロードしたオーディオトラックファイルは、ビデオをビューアーに読み込んだ後に再生されるデフォルトのオーディオとして設定できます。プロパティ ユーザーインターフェイスの **キャプションとオーディオトラック** タブでは、ビデオ再生用のオーディオトラックファイルの右側に `Default` ラベルが適用されます。
 
 >[!NOTE]
 >
@@ -767,7 +796,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 1. デフォルトのオーディオトラックを設定するビデオアセットに移動します。
 1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
 1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
-1. プロパティページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
+1. プロパティページで、「**[!UICONTROL キャプションとオーディオトラック]** タブを選択します。
 1. **オーディオトラック**&#x200B;の見出しで、ビデオのデフォルトとして設定するオーディオトラックファイルを選択します。
 1. ![オーディオアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg)「**[!UICONTROL デフォルトとして設定]**」をクリックします。
 1. **デフォルトとして設定**&#x200B;ダイアログボックスで、「**[!UICONTROL 置換]**」をクリックします。
@@ -819,7 +848,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 1. デフォルトのオーディオトラックを設定するビデオアセットに移動します。
 1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
 1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
-1. プロパティページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
+1. プロパティページで、「**[!UICONTROL キャプションとオーディオトラック]** タブを選択します。
 1. 次のいずれかの操作を行います。
 
    * キャプション - **キャプション**&#x200B;の見出しで、ビデオから削除する 1 つまたは複数のキャプションファイルを選択し、![削除アイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg)「**[!UICONTROL 削除]**」をクリックします。
@@ -841,7 +870,7 @@ Dynamic Media では、URL 修飾子を使用して、ビデオにキャプシ�
 1. デフォルトのオーディオトラックを設定するビデオアセットに移動します。
 1. アセット選択モードで、![カードを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg)（カード表示）または ![リストを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)（リスト表示）からビデオアセットを選択します。
 1. ツールバーで、![情報アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) プロパティをクリックします。
-1. **プロパティ**&#x200B;ページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
+1. **プロパティ** ページで、「**[!UICONTROL キャプションとオーディオトラック]**」タブを選択します。
 1. 次のいずれかの操作を行います。
 
    * キャプション - **キャプション**&#x200B;見出しで、ビデオからダウンロードする 1 つ以上のキャプションファイルを選択し、![ダウンロードアイコン](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg)「**[!UICONTROL ダウンロード]**」をクリックします。
@@ -895,7 +924,7 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
    [WebVTT：Web Video Text Tracks 形式（英語）](https://w3c.github.io/webvtt/)を参照してください。
 
-   Dynamic Media 以外で WebVTT キャプションファイルの作成に使用できる、無料と有料の両方のツールやサービスを提供する web サイトが多くあります。
+   Dynamic Media 以外で WebVTT キャプションファイルの作成に使用できる、無料と有料のツールやサービスを提供している web サイトが多数あります。
 
 サイトの画面に表示される指示に従って、WebVTT ファイルを作成して保存します。終了したら、キャプションファイルの内容をコピーし、空のテキストエディターに貼り付けて、ファイル拡張子 VTT を付けて保存します。
 
@@ -1566,11 +1595,11 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
    ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
 
-1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio tracks]** tab.
 
 
    >[!TIP]
-   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
+   >If you do not see the [!UICONTROL Captions & Audio tracks] tab, it means either one of two things:
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
