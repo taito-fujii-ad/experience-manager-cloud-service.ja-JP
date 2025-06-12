@@ -3,10 +3,10 @@ title: アセットセレクターと Dynamic Media Open API の統合
 description: アセットセレクターを様々なアドビ、アドビ以外、サードパーティのアプリケーションと統合します。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 99%
+source-wordcount: '949'
+ht-degree: 97%
 
 ---
 
@@ -206,6 +206,10 @@ OpenAPI 機能を備えた Dynamic Media のアセットセレクターを使用
 * **F**：[昇順または降順での並べ替え](#sorting)
 * **G**：選択をキャンセル
 * **H**：1 つまたは複数のアセットを選択
+
+>[!NOTE]
+>
+>フォルダーは、オーサーリポジトリに接続する場合にのみサポートされ、OpenAPI リポジトリを使用した Dynamic Media ではサポートされません。
 
 >[!MORELIKETHIS]
 >

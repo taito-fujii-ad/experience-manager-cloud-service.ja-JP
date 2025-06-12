@@ -4,10 +4,10 @@ description: ユニバーサルエディターは、マーケティング組織�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ae59b00e7e8149477a87d0b0b63493a6c2cfebe7
-workflow-type: ht
-source-wordcount: '956'
-ht-degree: 100%
+source-git-commit: 08997c760bf1d609dce1dd17de0c549a26083917
+workflow-type: tm+mt
+source-wordcount: '948'
+ht-degree: 96%
 
 ---
 
@@ -49,10 +49,12 @@ ht-degree: 100%
 ユニバーサルエディターは、以下でサポートされています。
 
 * AEM as a Cloud Service（リリース `2023.8.13099` 以降）
-* AEM 6.5（サービスパック 21 または 22 と機能パック）
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+   * オンプレミスと AMS ホスティングの両方がサポートされています。
+* [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * オンプレミスと AMS ホスティングの両方がサポートされています。
 
-このドキュメントは、AEM as a Cloud Service でユニバーサルエディターを使用するためのものです。AEM 6.5 でのユニバーサルエディターの使用について詳しくは、[AEM 6.5 ドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)を参照してください。
+このドキュメントは、AEM as a Cloud Serviceでユニバーサルエディターを使用する場合に使用します。
 
 ## 機能 {#features}
 
@@ -102,7 +104,7 @@ ht-degree: 100%
 ユニバーサルエディターを探索し、独自のプロジェクトへの実装を進める際には、次の制限事項に留意してください。
 
 * 単一ページの実装として参照できる AEM リソース（コンテンツフラグメント、ページ、エクスペリエンスフラグメント、アセットなど）は 25 個以下にする必要があります。
-* サポートされている AEM バックエンドは、AEM as a Cloud Service と ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)AEM 6.5[ のみです。
+* AEM as a Cloud Service、[AEM 6.5 LTS](https://experienceleague.adobe.com/ja/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) および [AEM 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) が、サポートされているAEM バックエンドです。
 * AEM as a Cloud Service にはリリース `2023.8.13099` 以降が必要です。
 * コンテンツ作成者は、独自の Experience Cloud アカウントを持つ必要があります。
 * AEM の一部として、ユニバーサルエディターは [AEM と同じデスクトップブラウザーをサポート](/help/overview/supported-platforms.md)します。

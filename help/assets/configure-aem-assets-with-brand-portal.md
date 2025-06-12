@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 93972ed9e4c0f8bca4e378737cd0cd78e76e5fcb
+source-git-commit: c7da2adca9e31b7cd59cb7107a27716269f7fbbb
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 91%
+source-wordcount: '709'
+ht-degree: 89%
 
 ---
 
@@ -60,9 +60,9 @@ Adobe Experience Manager Assets Brand Portal を設定すると、承認済み�
 
 >[!IMPORTANT]
 >
-> * Brand Portalは現在メンテナンス中です。
-> * ユースケースの詳細と、Cloud Managerを使用してAdobeをアクティブ化するための具体的な要件について、Brand Portal担当者にお問い合わせください。
-> * Brand Portalは、Assets PrimeまたはAssets Ultimateでは使用できません。 ただし、既にAssetsへのアクセス権を持つ既存のAssets Cloud Services のお客様は、Brand Portal Ultimateに移行する際にアクセス権を保持できます。
+> * Brand Portalはメンテナンスモードになっています。 すべての新製品が [&#128279;](/help/assets/product-overview.md)0&rbrace;Content Hub&rbrace; で利用可能です。
+> * それでもBrand Portalをアクティブ化する必要がある場合は、ユースケースとその他の具体的な要件の詳細をAdobe担当者にお問い合わせください。
+> * Brand Portalは、[Assets Prime](/help/assets/assets-prime.md) または [Assets Ultimate](/help/assets/assets-ultimate-overview.md) では使用できません。 ただし、既にAssetsへのアクセス権を持つ既存のAssets as a Cloud Service ユーザーは、Brand Portal Ultimateに移行する際に引き続き使用できます。
 
 <!--
 
