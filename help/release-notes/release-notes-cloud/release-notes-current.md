@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
+source-git-commit: 628d254ee130d436f0ac1728ab464d24db583b81
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 32%
+source-wordcount: '2074'
+ht-degree: 31%
 
 ---
 
@@ -55,9 +55,9 @@ AEM Assetsでは [AI を使用して、タイトル、説明、キーワード�
 
 **Figma との統合**
 
-AEM Assetsは Figma とネイティブに統合されているので、デザイナーは Figma ユーザーインターフェイス内からAEM Assetsに保存されているアセットに直接アクセスできます。 AEM Assetsで管理されているコンテンツを Figma キャンバスに配置してから、新しいコンテンツや編集したコンテンツをAEM Assets リポジトリに保存することができます。
+AEM Assetsは Figma とネイティブに統合されているので、デザイナーは Figma ユーザーインターフェイス内からAEM Assetsに保存されているアセットに直接アクセスできます。 AEM Assetsで管理されているコンテンツを Figma キャンバスに配置してから、新しいコンテンツや編集したコンテンツをAEM Assets リポジトリに保存することができます。 Figma コミュニティページで利用可能なAEM Assets コネクタにアクセスするには、[ ここ ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) をクリックします。
 
-![Figma との統合 ](/help/assets/assets/figma-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
 
 ### Content Hubの新機能 {#new-features-content-hub}
@@ -114,7 +114,7 @@ Content Hubでは、[ 作成時のコレクションへのアクセスを制御�
 
 [Experience Manager（AEM） Dynamic Media とJourney Optimizer（AJO） B2C](https://experienceleague.adobe.com/ja/docs/journey-optimizer/using/content-management/combine/aem-dynamic) のネイティブ統合により、マーケターはAEM Dynamic Media アセット（レンディションおよび DM テンプレート）をAJO コンテンツに簡単に埋め込み、チャネル間でリアルタイムに更新され、高度にパーソナライズされたエクスペリエンスを提供できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463783/?learn=on&enablevpops=&autoplay=true&captions=jpn)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
