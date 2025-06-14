@@ -3,13 +3,13 @@ title: ' [!DNL Adobe Sensei] スマートサービスを使用したアセット
 description: コンテキストタグと説明的なビジネスタグを適用する人工知能サービスを使用したアセットのタグ付け。
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
+source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2457'
 ht-degree: 24%
 
 ---
-
 
 # AEM Assetsのスマートタグ {#using-smart-tags}
 
@@ -213,13 +213,25 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## AI で生成されたスマートタグによるコンテンツ検出の強化 {#ai-smart-tags}
+## AI で生成されたメタデータを使用したコンテンツ検出の強化 {#ai-smart-tags}
 
 AI は、手動の入力に依存するのではなく、デジタルアセットに説明的なタグを自動的に割り当てます。 これらの AI で生成されるタグは、メタデータの品質を向上させ、アセットの検索、分類およびレコメンデーションを容易にします。 このアプローチは、手動でのタグ付けを排除することで効率を向上させるだけでなく、大量のデジタルコンテンツ間の一貫性と拡張性も確保します。 例えば、アセットが画像の場合、AI はアセット内のオブジェクト、シーン、感情、さらにはブランドロゴを識別し、「サンセット」、「ビーチ」、「休暇」、「笑顔」など、関連するタグを生成できます。 AI で生成されたコンテンツは、意味論的検索と辞書的検索の両方の手法を活用することで、アセットの検索を強化できます。 詳しくは、[Assetsを検索 ](search-assets.md) を参照してください。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![ 拡張スマートタグ ](assets/enhanced-smart-tags1.png)
 
-### AI が生成したスマートタグの使用 {#using-ai-generated-smart-tags}
+### AI で生成されたメタデータを有効にする方法 {#enable-ai-generated-metadata}
+
+AI で生成されたメタデータを有効にするには：
+
+* 最低限必要なAEMのリリースバージョンは `20626` です。
+
+* GenAI Rider 契約に署名する必要があります。 詳しくは、Adobe担当者にお問い合わせください。
+
+  >[!IMPORTANT]
+  >
+  > AI が生成したアセットのタイトルは、アセットのタイトルを定義していない場合にのみ、アセットカードに表示されます。 指定したアセットタイトルは上書きされません。
+
+### AI が生成したメタデータの使用 {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -232,7 +244,7 @@ AI は、手動の入力に依存するのではなく、デジタルアセッ�
 
 1. 新しくアップロードされたアセットが処理されるまで待ちます。 完了したら、アセットプロパティに移動します。
 
-1. 「**[!UICONTROL AI で生成]**」タブに移動します。 互換性 [!DNL Experience Manager] ないバージョンや更新されていないバージョンの場合、このタブは表示されません。 必要なAEMの最小リリースバージョンは `20626` です。 次のフィールドがあります。
+1. 「**[!UICONTROL AI で生成]**」タブに移動します。 互換性 [!DNL Experience Manager] ないバージョンや更新されていないバージョンの場合、このタブは表示されません。 次のフィールドがあります。
 
    * **[!UICONTROL 生成されたタイトル &#x200B;]:** このタイトルは、アップロードされたアセットの中心的概念を捕捉する明確で簡潔な見出しを提供し、一目でわかりやすくします。 アセットを追加する際に、（`dc:title` で）タイトルを指定すると、アセットの参照表示に表示されます。 空白の場合、AI で生成されたタイトルが自動的に割り当てられます。
    * **[!UICONTROL 生成された説明 &#x200B;]:** 説明では、アセットの概要を簡潔にしながら情報を提供し、ユーザーや検索モジュールが関連性をすばやく把握できるようにします。
