@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.3.0 リ�
 feature: Release Information
 role: Admin
 exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
-source-git-commit: 420b02e8398a433d0ff93ed0f60e01560ae786b8
+source-git-commit: 81e5cfd699fee811fc2b072e3b65e9d463a338b2
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 100%
+source-wordcount: '1122'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 2025.3.0 リリースで追加された機能の概要については、2025年3月のリリースに関する概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463860?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3463877?quality=12&captions=jpn)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -126,7 +126,7 @@ Edge コンピューティングには、データ処理がブラウザーに近
 
 * [Sites Content Fragments API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites and Assets Folders API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* Sites およびAssets Folders API
 * [Forms Communications API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### 新しい AEM Developer Console（パブリックベータ版） {#aem-developer-console-beta}

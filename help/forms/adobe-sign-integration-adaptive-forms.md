@@ -5,10 +5,10 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 31a4a8b5b86439483b058c1fb132979476aab2e5
+source-git-commit: 82a3016149645701abe829ad89c493f480956267
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 96%
 
 [!DNL Adobe Acrobat Sign] を [!DNL AEM Forms] に統合するには、以下の設定が必要になります。
 
-1. 有効な [Adobe Acrobat Sign デベロッパーアカウント](https://acrobat.adobe.com/jp/ja/sign/developer-form.html)。
+1. 有効な [Adobe Acrobat Sign開発者アカウント。](https://www.adobe.com/acrobat/business/developer-form.html)
 1. [Adobe Acrobat Sign API アプリケーション](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)。
 1. [!DNL Adobe Acrobat Sign] API アプリケーションの資格情報（クライアント ID およびクライアントの秘密鍵）。
 1. （行政 ID に基づいた認証の場合のみ）行政 ID 認証による[認証方法を有効にします](https://helpx.adobe.com/jp/sign/using/adobesign-authentication-government-id.html#AuditReport)。
@@ -58,7 +58,7 @@ ht-degree: 96%
 1. これで、**[!UICONTROL ソリューションを選択]**&#x200B;して、[!DNL Adobe Acrobat Sign] を選択できます。
 
    <!--![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)-->
-   ![Adobe Acrobat Sign Solutionsの設定 ](assets/adobe-sign-solution-config.png)
+   ![Adobe Acrobat Sign Solutions 設定](assets/adobe-sign-solution-config.png)
 
 <!--
 
@@ -72,14 +72,14 @@ ht-degree: 96%
 
      `https://<shard>/public/oauth/v2`
 
-     次に例を示します。
+     例：
      `https://secure.na1.echosign.com/public/oauth/v2`
 
    * **[!UICONTROL トークン URL にアクセス]** フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。URL の形式は次の通りです。
 
      `https://<shard>/oauth/v2/token`
 
-     次に例を示します。
+     例：
      `https://api.na1.echosign.com/oauth/v2/token`
 
    各パラメーターの意味は次のとおりです。
@@ -106,7 +106,7 @@ ht-degree: 96%
    * [!DNL workflow_read]
 
    >[!NOTE]
-   > 手順 12 で示したように、スコープ修飾子を `self` から `account` にAEM UI から直接変更できます。
+   > 手順 12 に示すように、AEM UI から範囲修飾子を `self` から `account` に直接変更できます。
 
    [!DNL Adobe Acrobat Sign] アプリケーション用に OAuth 設定を構成してキーを取得するための詳しい手順については、開発者用ドキュメントの[アプリケーション用に OAuth 設定を構成する](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)を参照してください。
 
@@ -114,8 +114,8 @@ ht-degree: 96%
 
 1. **[!UICONTROL Adobe Acrobat Sign 設定を作成]**&#x200B;ページに戻ります。「**[!UICONTROL 設定]**」タブで、「**[!UICONTROL クライアント ID]**（アプリケーション ID）と&#x200B;**[!UICONTROL クライアントシークレット]**」の値を指定します。前述の手順で作成した [Adobe Acrobat Sign アプリケーションのクライアント ID とクライアントシークレット](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)を使用します。
 
-1. [!UICONTROL &#x200B; 認証範囲 &#x200B;] セクションでは、必要に応じてプレフィックス「self」または「account」を範囲に追加することで、範囲を「account」または「self」に変更できます。
-   ![ 認定の範囲 ](/help/forms/assets/authorization-scope.png)
+1. 「[!UICONTROL 認証範囲]」セクションでは、必要に応じて、範囲に接頭辞「self」または「account」を追加して、範囲を「account」または「self」に変更できます。
+   ![認証範囲](/help/forms/assets/authorization-scope.png)
 
 1. 「**[!UICONTROL 添付ファイルの Adobe Acrobat Sign を有効にする]**」オプションを選択すると、アダプティブフォームに添付されているファイルが、署名用に送信された対応する [!DNL Adobe Acrobat Sign] ドキュメントに添付されます。
 
@@ -160,7 +160,7 @@ AEM Forms と Adobe Acrobat Sign Solutions for Government の接続は、複数�
 
 AEM Formsas a Cloud Service は、開発環境、ステージ環境、実稼動環境を提供します。まずは開発環境を Adobe Acrobat Sign Solutions for Government に接続し、後でステージ環境と運用環境に接続することができます。
 
-### 事前準備 {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
+### 始める前に {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
 
 AEM Forms と Adobe Acrobat Sign Solution の接続を開始する前に、[Adobe Acrobat Sign Solutions for Government](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#account-provisioning) アカウントがプロビジョニングされていることを確認してください。
 
@@ -213,14 +213,14 @@ Adobe Acrobat Sign for Government Solutions チームには、AEM Forms と Adob
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/authorize`
 
-     次に例を示します。
+     例：
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/authorize`
 
    * **[!UICONTROL トークン URL にアクセス]** フィールドには、Adobe Sign データベースシャードを含むデフォルトの URL が含まれます。URL の形式は次の通りです。
 
      `https://<shard>/api/gateway/adobesignauthservice/api/v1/token`
 
-     次に例を示します。
+     例：
      `https://secure.na1.adobesign.us/api/gateway/adobesignauthservice/api/v1/token`
 
    各パラメーターの意味は次のとおりです。
@@ -272,8 +272,8 @@ AEM Forms as a Cloud Service では、定義された間隔で署名者のステ
 
 ## よくある質問
 
-* **Q:iframe でAdobe Sign GovCloud Signature ページをレンダリングできますか？**
-* **A:** はい。iframe でAdobe Sign GovCloud Signature ページをレンダリングできます。
+* **Q：Adobe Sign GovCloud 署名ページを iframe でレンダリングできますか？**
+* **A：**&#x200B;はい、Adobe Sign GovCloud 署名ページを iframe でレンダリングできます。
 
 >[!MORELIKETHIS]
 >
