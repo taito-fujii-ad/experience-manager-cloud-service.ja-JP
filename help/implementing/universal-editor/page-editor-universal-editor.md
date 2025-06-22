@@ -4,7 +4,7 @@ description: ページエディターは引き続きAdobeでサポートされ�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 16%
@@ -73,7 +73,7 @@ AEMの長い歴史の中で [ ページエディター ](/help/sites-cloud/autho
 | コンテンツツリー | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | ツリー内で並べ替えることもできます |
 | 医療機器シミュレーション | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | [ 設定されたデバイスをシミュレートできます ](/help/sites-cloud/administering/responsive-layout.md) が、ユーザーがシミュレートするために別の画面サイズを手動で入力することはできません。 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | [ シミュレーションする画面のサイズは手動で入力できますが ](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) デフォルトのブレークポイントは設定できません。 |
 | [ ページロック ](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | エディターでページのロック/ロック解除に使用できる拡張機能を使用して、サイトコンソールのロックステータス設定を尊重します |
-| [ ページプロパティ ](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | サイト管理から使用でき、エディターからページのプロパティにアクセスすることもできます。 |
+| [ ページプロパティ ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | サイト管理から使用でき、エディターからページのプロパティにアクセスすることもできます。 |
 | 複数フィールドのプロパティ | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 計画済み |
 | [ リモート DAM](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
 | [ ページバージョン管理 ](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
