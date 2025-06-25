@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
 source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1596'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!CAUTION]
 >
->Experience Cloud設定の自動化機能は廃止されました。
+>Experience Cloud 設定の自動化機能は廃止されました。
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |

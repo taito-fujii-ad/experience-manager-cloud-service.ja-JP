@@ -102,7 +102,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    * コメントを使用して他の作成者と共同作業する
 * [分析](/help/sites-cloud/administering/content-fragments/analysis.md)  エディターを使用したコンテンツフラグメントの構造
 * [GraphQL を使用してフラグメントにアクセスし、アプリケーションへのヘッドレス配信を実現します](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
-* [Adobe Journey Optimizerでのコンテンツフラグメントの統合と使用 ](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+* [Adobe Journey Optimizer でのコンテンツフラグメントの統合と使用](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
 * [または、フラグメントをページオーサリングに使用します。](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
