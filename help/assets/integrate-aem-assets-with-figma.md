@@ -3,13 +3,13 @@ title: ' [!DNL AEM Assets]  と  [!DNL Figma] の統合'
 description: ' [!DNL AEM Assets]  と  [!DNL Figma]  を統合して、デザインワークフロー内の組織のアセットにアクセスして使用する方法  [!DNL Figma]  説明します。'
 hide: false
 role: User
-source-git-commit: 25434ebc76096055940d8d85640b28ce4db36d3a
+exl-id: 530561ca-497b-4331-a014-72c561e1ca84
+source-git-commit: 1d4dc40497113aded6abbf3d9a92b24f94f0b25b
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 11%
 
 ---
-
 
 # [!DNL AEM Assets] と [!DNL Figma] の統合{#integrate-aem-assets-with-figma}
 
@@ -101,6 +101,3 @@ Figma デザインの準備が整ったら、[ アセットをAEM Assets リポ�
 
 * [!DNL AEM] アセットを Figma に読み込む場合、サポートされる形式は **JPEG**、**PNG** です。
 * [!DNL Figma] から [!DNL AEM Assets] にデザインを書き出す場合、サポートされている形式は **PNG**、**PDF**、**JPG**、**SVG** です。
-
-
-

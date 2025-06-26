@@ -3,10 +3,10 @@ title: アセットセレクターと Dynamic Media Open API の統合
 description: アセットセレクターを様々なアドビ、アドビ以外、サードパーティのアプリケーションと統合します。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
+source-git-commit: f171bbeaf01e2d9be3a8f3b5172919a5e8ca7d97
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 98%
+source-wordcount: '982'
+ht-degree: 91%
 
 ---
 
@@ -97,7 +97,7 @@ aemTierType:[1: "delivery"]
 | オブジェクト | JSON |
 |---|---|
 | ホスト | `assetJsonObj["repo:repositoryId"]` |
-| API ルート | `/adobe/dynamicmedia/deliver` |
+| API ルート | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | format | `.jpg` |
@@ -105,25 +105,27 @@ aemTierType:[1: "delivery"]
 #### 承認済みアセット配信 API 仕様 {#approved-assets-delivery-api-specification}
 
 URL 形式：
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 ここで、
 
 * ホストは `https://delivery-pxxxxx-exxxxxx.adobe.com` です
-* API ルートは `"/adobe/dynamicmedia/deliver"` です
+* API ルートは `"/adobe/assets"` です
 * `<asset-id>` はアセット識別子です
+* `as` は、アセットを何と呼ぶかを示す、オープン API 仕様の定数部分です
 * `<seo-name>` はアセットの名前です
 * `<format>` は出力形式です
-* `<image modification query parameters>` は、承認済みアセットの配信 API 仕様でサポートされています
+* 承認済みアセットの配信 API 仕様でサポートされている `<image modification query parameters>`
 
-#### 承認済みアセット配信 API {#approved-assets-delivery-api}
+#### 承認されたアセットオリジナルレンディション配信 API {#approved-assets-delivery-api}
 
 動的配信 URL の構文は次のとおりです。
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`、ここで、
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`、ここで、
 
 * ホストは `https://delivery-pxxxxx-exxxxxx.adobe.com` です
-* 元のレンディション配信の API ルートは `"/adobe/assets/deliver"` です。
+* 元のレンディション配信の API ルートは `"/adobe/assets"` です。
 * `<asset-id>` はアセット識別子です
+* `/original/as` は、元のレンディションが何と呼ばれるかを示す、オープン API 仕様の定数部分です
 * `<seo-name>` は、拡張子がある場合とない場合があるアセットの名前です。
 
 ### 動的配信 URL を選択する準備の完了 {#ready-to-pick-dynamic-delivery-url}
@@ -133,7 +135,7 @@ URL 形式：
 | オブジェクト | JSON |
 |---|---|
 | ホスト | `assetJsonObj["repo:repositoryId"]` |
-| API ルート | `/adobe/assets/deliver` |
+| API ルート | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"]` |
 
@@ -153,12 +155,12 @@ PDF タイプのアセットには、次のレンディションセットを使�
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
 
-上記のスクリーンショットでは、PDF が必要でサムネールは不要な場合は、PDF の元のレンディションの配信 URL をターゲットエクスペリエンスに組み込む必要があります。例えば、`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1` のように指定します。
+上記のスクリーンショットでは、PDF が必要でサムネールは不要な場合は、PDF の元のレンディションの配信 URL をターゲットエクスペリエンスに組み込む必要があります。例えば、`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf` のように指定します。
 
 * **ビデオ：**&#x200B;埋め込み iFrame を使用するビデオタイプのアセットには、ビデオプレーヤーの URL を使用できます。ターゲットエクスペリエンスでは、次の配列レンディションを使用できます。
   <!--![Video dynamic delivery url](image.png)-->
@@ -167,7 +169,7 @@ PDF タイプのアセットには、次のレンディションセットを使�
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -176,7 +178,7 @@ PDF タイプのアセットには、次のレンディションセットを使�
 
   上記のスクリーンショットのコードスニペットは、ビデオアセットの例です。これには、レンディションリンク配列が含まれます。抜粋の `selection[5]` は、ターゲットエクスペリエンス内のビデオサムネールのプレースホルダーとして使用できる画像サムネールの例です。レンディション配列の `selection[5]` は、ビデオプレーヤー用です。これは、HTML を提供し、iframe の `src` として設定できます。ビデオの web に最適化された配信であるアダプティブビットレートストリーミングをサポートします。
 
-  上記の例では、ビデオ プレーヤーの URL は、`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1` です。
+  上記の例では、ビデオ プレーヤーの URL は、`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play` です。
 
 ### カスタムフィルターの設定 {#configure-custom-filters-dynamic-media-open-api}
 
@@ -198,12 +200,12 @@ OpenAPI 機能を備えた Dynamic Media のアセットセレクターを使用
 
 ![OpenAPI 機能を備えた Dynamic Media の UI](assets/polaris-ui.png)
 
-* **A**：[パネルの非表示／表示](#hide-show-panel)
-* **B**：[アセット](#repository)
-* **C**：[並べ替え](#sorting)
-* **D**：[フィルター](#filters)
-* **E**：[検索バー](#search-bar)
-* **F**：[昇順または降順での並べ替え](#sorting)
+* **A**：パネルの非表示/表示
+* **B**:Assets
+* **C**：並べ替え
+* **D**: フィルター
+* **E**：検索バー
+* **F**：昇順または降順での並べ替え
 * **G**：選択をキャンセル
 * **H**：1 つまたは複数のアセットを選択
 
