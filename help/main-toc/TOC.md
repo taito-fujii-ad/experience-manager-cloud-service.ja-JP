@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1d4dc40497113aded6abbf3d9a92b24f94f0b25b
+source-git-commit: 41fc6cc1c852c25215a804c2d1f9c5872a46e0a4
 workflow-type: tm+mt
-source-wordcount: '6281'
+source-wordcount: '6298'
 ht-degree: 98%
 
 ---
@@ -95,6 +95,7 @@ ht-degree: 98%
    + AEMaaCS メンテナンスリリースノート {#maintenance}
       + [最新のメンテナンスリリースノート](/help/release-notes/maintenance/latest.md)
       + 2025 {#2025}
+         + [メンテナンスリリースノート（2025.6.0）](/help/release-notes/maintenance/2025/2025-6-0.md)
          + [メンテナンスリリースノート（2025.5.0）](/help/release-notes/maintenance/2025/2025-5-0.md)
          + [メンテナンスリリースノート（2025.4.0）](/help/release-notes/maintenance/2025/2025-4-0.md)
          + [メンテナンスリリースノート（2025.3.0）](/help/release-notes/maintenance/2025/2025-3-0.md)
@@ -745,6 +746,7 @@ ht-degree: 98%
       + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
+      + [Adobe Experience Software Development Kit （AEM SDK）の機能を有効にする切り替え](/help/forms/enable-feature-toggle.md)
    + はじめに {#getting-started-forms}
       + [ユースケースと開発環境の設定](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [ローン申し込みフォームの作成](/help/forms/create-adaptive-form-tutorial.md)
