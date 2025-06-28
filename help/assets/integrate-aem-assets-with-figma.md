@@ -4,7 +4,7 @@ description: ' [!DNL AEM Assets]  と  [!DNL Figma]  を統合して、デザイ
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 41fc6cc1c852c25215a804c2d1f9c5872a46e0a4
+source-git-commit: 2644c849df32af14c70e686a803b690996812046
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 11%
@@ -101,4 +101,3 @@ Figma デザインの準備が整ったら、[ アセットをAEM Assets リポ�
 
 * [!DNL AEM] アセットを Figma に読み込む場合、サポートされる形式は **JPEG**、**PNG** です。
 * [!DNL Figma] から [!DNL AEM Assets] にデザインを書き出す場合、サポートされている形式は **PNG**、**PDF**、**JPG**、**SVG** です。
-

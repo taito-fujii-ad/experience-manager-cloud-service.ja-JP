@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 41fc6cc1c852c25215a804c2d1f9c5872a46e0a4
+source-git-commit: c267d99e7b88c252aeb866c659dbe978578d0ab6
 workflow-type: tm+mt
-source-wordcount: '6298'
+source-wordcount: '6312'
 ht-degree: 98%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 98%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [2025.5.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
          + [2025.4.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md)
          + [2025.3.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md)
          + [2025.2.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md)
@@ -682,6 +683,7 @@ ht-degree: 98%
       + [ビデオの編集](/help/assets/edit-videos-assets-view.md)
       + [レンディションの表示と管理](/help/assets/renditions.md)
       + [アセットメタデータの管理](/help/assets/metadata-assets-view.md)
+      + [管理ビューからAssets ビューへのメタデータフォームの読み込み](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
       + [名前を一括変更](/help/assets/bulk-rename-assets-view.md)
       + [一括メタデータ編集](/help/assets/bulk-metadata-edit.md)
       + [アセットを共有する](/help/assets/share-links-for-assets-view.md)
