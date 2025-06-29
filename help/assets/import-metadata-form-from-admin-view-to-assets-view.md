@@ -1,18 +1,18 @@
 ---
-title: メタデータフォ  [!DNL Admin View]  ムの読み込み先  [!DNL Assets View]
-description: この記事では、 [!DNL Assets View] の場所で使用可能なメタデータフォームを読み込む方法  [!DNL Admin View]  ついて説明します。
+title: メタデータフォームを  [!DNL Assets View] から  [!DNL Admin View]  に読み込む
+description: この記事では、 [!DNL Assets View] の場所からの場所にメタデータフォームを読み込む方法  [!DNL Admin View]  説明します。
 contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
-source-git-commit: 5c279f4a02f0d981e1ab9a0f32f60f76fb1418dd
+source-git-commit: fdd74e4d9b74600fd462e951046abfb1bb8e203b
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '593'
 ht-degree: 8%
 
 ---
 
-# [!DNL Admin View] メタデータフォームの [!DNL Assets View] への読み込み {#import-admin-view-metadata-forms-to-assets-view}
+# [!DNL Admin View] から [!DNL Assets View] へのメタデータフォームの読み込み {#import-metadata-forms-from-admin-view-to-assets-view}
 
 <table>
     <tr>
