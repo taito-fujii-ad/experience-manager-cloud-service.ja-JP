@@ -5,51 +5,14 @@ contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 97%
+source-wordcount: '1287'
+ht-degree: 100%
 
 ---
 
 # Brand Portal へアセットを公開 {#publish-assets-to-brand-portal}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup>Dynamic Media Prime<a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM AssetsUltimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM AssetsとEdge Delivery Servicesの統合 </b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i> 新規 </i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能 </b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Dynamic Media Prime</i></sup>Ultimateの新 <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b> 能 </b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -69,8 +32,8 @@ Adobe Experience Manager（AEM）Assets 管理者の場合、アセット、フ�
 >[!NOTE]
 >
 >AEM オーサーが過剰なリソースを占有しないように、できればピーク時を避け、時間をずらして公開することをお勧めします。
->アセットは、バッチで公開する必要があります。 バッチサイズの推奨は 15K です。
-> の場合 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]の場合、ラボ条件で観察される転送率は、1 時間あたり 1,000 アセットです。 この率は、平均サイズが 10 MB のアセットで測定されます。
+>>アセットは、バッチで公開する必要があります。 バッチサイズの推奨は 15K です。
+>> の場合 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]の場合、ラボ条件で観察される転送率は、1 時間あたり 1,000 アセットです。 この率は、平均サイズが 10 MB のアセットで測定されます。
 
 ## Brand Portal へのアセットの公開 {#publish-assets-to-bp}
 
@@ -130,12 +93,12 @@ AEM Assets から Brand Portal にアセットを公開する手順を次に示�
 >
 > * DAM-Users グループの既存のユーザーは、パス「/conf/global/settings/cloudconfigs/mediaportal」に対する読み取りアクセス権を持ちます。
 > * 新しいユーザー（または管理者以外のユーザー）は、brand portal に公開するために、次の権限が必要です。
-> パス：
-> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->`/libs : jcr:read`
->`/conf : jcr:read`
->`/content : jcr:read, crx:replicate`
->`/content/dam/ : jcr:read,modify, crx:replicate`
+>   > パス：
+>   > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>   >`/libs : jcr:read`
+>   >`/conf : jcr:read`
+>   >`/content : jcr:read, crx:replicate`
+>   >`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Brand Portal へのフォルダーの公開 {#publish-folders-to-brand-portal}
 

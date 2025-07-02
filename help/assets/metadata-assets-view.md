@@ -5,51 +5,14 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 1b27ddd6e63c55442550145466ae21d1d03d6463
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '2499'
-ht-degree: 96%
+source-wordcount: '2453'
+ht-degree: 100%
 
 ---
 
 # アセットビューのメタデータ {#metadata}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime と Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets と Edge Delivery Services の統合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI 拡張機能</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新規</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Dynamic Media Prime と Ultimate の有効化</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>検索のベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>メタデータのベストプラクティス</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>コンテンツハブ</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>OpenAPI 機能を備えた Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開発者向けドキュメント</b></a>
-        </td>
-    </tr>
-</table>
 
 メタデータとは、データに関するデータまたは説明のことです。例えば、アセットとしての画像には、撮影されたカメラに関する情報や著作権情報などを含めることができます。こうした情報が画像のメタデータです。メタデータは、効率的なアセット管理を行うために重要です。メタデータは、対象のアセットに使用できるすべてのデータのコレクションですが、必ずしもそのアセットに含まれているとは限りません。
 
@@ -251,25 +214,25 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 設定済みのルートタグを表示するには、メタデータフォームとルートタグ間のマッピングが実行されるアセットの詳細ページに移動します。
 
-## AI で生成されたメタデータを使用したコンテンツ検出の強化 {#ai-smart-tags}
+## AI で生成されたメタデータによるコンテンツ検出の強化 {#ai-smart-tags}
 
 AI は、手動の入力に依存するのではなく、デジタルアセットに説明的なタグを自動的に割り当てます。これらの AI で生成されたタグは、メタデータの品質を向上させ、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。例えば、アセットが画像の場合、AI はアセット内のオブジェクト、シーン、感情、さらにはブランドロゴを識別し、「夕日」、「ビーチ」、「休暇」、「笑顔」など、関連するタグを生成できます。 AI が生成するコンテンツは、セマンティック検索とレキシカル検索の両方の技術を活用することで、アセットの検索精度を向上させることができます。詳しくは、[Assets の検索](search-assets-view.md)を参照してください。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![AI で生成されたメタデータ ](/help/assets/assets/enhanced-smart-tags.png)
+![AI で生成されたメタデータ](/help/assets/assets/enhanced-smart-tags.png)
 
 ### AI で生成されたメタデータを有効にする方法 {#enable-ai-generated-metadata}
 
 AI で生成されたメタデータを有効にするには：
 
-* 最低限必要なAEMのリリースバージョンは `20626` です。
+* AEM のリリースバージョン `20626` 以上が必要です。
 
-* GenAI Rider 契約に署名する必要があります。 詳しくは、Adobe担当者にお問い合わせください。
+* GenAI Rider 契約に署名する必要があります。詳しくは、アドビ担当者にお問い合わせください。
 
   >[!IMPORTANT]
   >
-  > AI が生成したアセットのタイトルは、アセットのタイトルを定義していない場合にのみ、アセットカードに表示されます。 指定したアセットタイトルは上書きされません。
+  > アセットのタイトルを定義していない場合にのみ、AI で生成されたアセットのタイトルがアセットカードに表示されます。指定したアセットタイトルは上書きされません。
 
-### AI が生成したメタデータの使用 {#using-ai-generated-smart-tags}
+### AI で生成されたメタデータの使用 {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -282,7 +245,7 @@ AI で生成されたメタデータを有効にするには：
 
 1. 新しくアップロードされたアセットが処理されるまで待ちます。完了したら、アセットの詳細に移動します。
 
-1. 「**[!UICONTROL AI 生成]**」タブに移動します。互換性 [!DNL Experience Manager] ないバージョンや更新されていないバージョンの場合、このタブは表示されません。  次のフィールドがあります。
+1. 「**[!UICONTROL AI 生成]**」タブに移動します。[!DNL Experience Manager] のバージョンが非対応または更新されていない場合、このタブは表示されません。次のフィールドがあります。
 
    * **[!UICONTROL 生成されたタイトル]：**&#x200B;このタイトルは、アップロードされたアセットの中核となるアイデアを捉えた明確で簡潔な見出しとなり、一目でわかりやすくなります。アセットを追加する際に、（`dc:title` で）タイトルを指定すると、アセットの参照ビューに表示されます。空白のままにすると、AIによって生成されたタイトルが自動的に割り当てられます。
    * **[!UICONTROL 生成された説明]：**&#x200B;説明には、アセットの内容に関する簡潔でわかりやすい概要が記載されており、ユーザーや検索モジュールがその関連性をすばやく把握できるようにします。
