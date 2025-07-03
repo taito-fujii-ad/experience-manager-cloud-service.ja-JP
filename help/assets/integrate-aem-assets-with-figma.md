@@ -4,12 +4,13 @@ description: ' [!DNL AEM Assets]  と  [!DNL Figma]  を統合して、デザイ
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 3603a98dfee62db49f3201c8d75aa8eee4909cc1
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
+
 
 # [!DNL AEM Assets] と [!DNL Figma] の統合{#integrate-aem-assets-with-figma}
 
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 ## 開始する前に{#prerequisites-for-aem-assets-and-figma-integration}
 
-* 最低限必要なAEMのリリースバージョンは `19149` です。
+* AEM のリリースバージョン `19149` 以上が必要です。
 
 * [!DNL AEM Assets] を [!DNL Figma] と統合するには、有効な [!DNL AEM Assets] ライセンスと [!DNL Figma] ライセンスが必要です。
 

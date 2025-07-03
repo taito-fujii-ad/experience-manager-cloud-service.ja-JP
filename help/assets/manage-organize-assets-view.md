@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '1654'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -150,7 +150,7 @@ You can also create versions from the versions timeline. Select the latest versi
 
 1. アセットを選択し、ツールバーの「**[!UICONTROL 詳細]**」をクリックします。
 
-1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL ステータス]**ドロップダウンリストからアセットのステータスを選択します。可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。
+1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL ステータス]**&#x200B;ドロップダウンリストからアセットのステータスを選択します。可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。
 環境用に OpenAPI 機能を備えた Dynamic Media がプロビジョニングされている場合、アセットを `Approved` としてマークするとすぐに、Experience Manager Assets によって公開 URL が生成されます。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
