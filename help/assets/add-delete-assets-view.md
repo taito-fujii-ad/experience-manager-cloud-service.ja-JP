@@ -4,10 +4,10 @@ description: ' [!DNL Assets view] へのアセットのアップロード、ア�
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 次の方法を使用して、1 つ以上のアセットまたはアセットを含んだフォルダーをアップロードできます。
 
 * ユーザーインターフェイス上でアセットまたはフォルダーをドラッグし、画面の指示に従って操作します。
-* ツールバーの「**[!UICONTROL Assetsを追加]**」オプションをクリックし、ファイルをいくつかアップロードダイアログに追加します。
+* ツールバーの「**[!UICONTROL アセットを追加]**」オプションをクリックし、ファイルをいくつかアップロードダイアログに追加します。
 
 <!-- TBD: Update this GIF
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
