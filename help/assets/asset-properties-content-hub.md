@@ -4,7 +4,7 @@ description: ' [!DNL Content Hub] でアセットとプロパティをプレビ�
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
 ht-degree: 100%
 

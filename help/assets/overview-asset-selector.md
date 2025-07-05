@@ -4,9 +4,9 @@ description: アセットセレクターを使用して、アプリケーショ�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1562'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -286,4 +286,4 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
 >* [アセットセレクターと様々なアプリケーションの統合](/help/assets/integrate-asset-selector.md)
 >* [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
 >* [OpenAPI 機能を備えた Dynamic Media とのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [CommerceのAEM Assets統合を活用した製品ビジュアル ](https://experienceleague.adobe.com/ja/docs/commerce/product-visuals/overview)
+>* [Commerce の AEM Assets 統合を活用した製品ビジュアル](https://experienceleague.adobe.com/ja/docs/commerce/product-visuals/overview)

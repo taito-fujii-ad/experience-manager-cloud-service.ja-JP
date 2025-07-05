@@ -11,7 +11,8 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 100%
@@ -110,7 +111,7 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 
 この機能は、_CIF URL プロバイダーの設定_&#x200B;で有効にする必要があります。有効にすると、次の場合に、選択により代替値のスコアが高くなります。
 
-* 最初から特定のカテゴリの `url_path` の一部に一致する（ファジープレフィックスの一致）
+* 最初から特定のカテゴリの `url_path` の一部に一致する（ファジー接頭辞の一致）
 * または、任意の場所で特定のカテゴリの `url_key` と一致する（完全な部分一致）
 
 例えば、以下の [製品クエリ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) に対する応答について考えてみます。次のような場合：

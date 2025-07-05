@@ -5,7 +5,7 @@ hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
 source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3119'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # [!DNL Dynamic Media] テンプレート{#dynamic-media-templates}
 
-WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テンプレートを使用して、バナーやチラシ用のリアルタイムでカスタマイズ可能なテンプレートを作成します。[!DNL Dynamic Media] テンプレートを公開し、ダウンストリームアプリケーションで使用します。[!DNL Dynamic Media] テンプレートには、画像レイヤーとテキストレイヤーが含まれます。テンプレートの画像とテキストレイヤーにパラメーターを追加し、[[!DNL Dynamic Media]  URL](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) を使用してレイヤーの位置とサイズを変更し、コンテンツをリアルタイムで更新します。
+WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テンプレートを使用して、リアルタイムでカスタマイズ可能なバナーやチラシ用テンプレートを作成します。[!DNL Dynamic Media] テンプレートを公開し、ダウンストリームアプリケーションで使用します。[!DNL Dynamic Media] テンプレートには、画像レイヤーとテキストレイヤーが含まれます。テンプレートの画像とテキストレイヤーにパラメーターを追加し、[[!DNL Dynamic Media]  URL](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) を使用してレイヤーの位置とサイズを変更し、コンテンツをリアルタイムで更新します。
 
 主な機能は次のとおりです。
 
