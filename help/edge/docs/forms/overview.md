@@ -1,207 +1,135 @@
 ---
 title: AEM Forms の Edge Delivery Services の概要
-description: AEM Forms の Edge Delivery Services
+description: Edge Delivery Servicesを使用して、AEM Formsで高パフォーマンスのフォームを作成して配信し、迅速な開発と効率的なデータ収集を可能にする方法を説明します。
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '1033'
-ht-degree: 100%
+source-git-commit: 1ddf97f56e5a9b7c95959da47a748f5a6d128e43
+workflow-type: tm+mt
+source-wordcount: '864'
+ht-degree: 8%
 
 ---
+
 
 # AEM Forms の Edge Delivery Services
 
 
 AEM Forms の Edge Delivery Services は、作成者が新しいフォームを迅速に更新、公開、起動できる高速開発環境を可能にする、構成可能な一連のサービスです。これらのサービスは、エンゲージメントとコンバージョンを促進する、優れた効果の高いフォームエクスペリエンスを提供します。これらのフォームエクスペリエンスは、簡単に作成および開発できます。
 
-これらのサービスにより、次のことが可能になります。
+* **より高速なエクスペリエンス：** Formsはグローバルなコンテンツ配信ネットワーク（CDN）から配信されるので、ユーザーによるコンテンツの読み込みを迅速に行えます。
+* **迅速な開発：** 合理化された開発プロセスにより、更新を迅速化できます。 長いパイプラインビルドを待たずに、変更を公開できます。
+* **柔軟なオーサリング：** 様々なツールから選択して、ドキュメントベースのオーサリング（Microsoft Word、Google Docs/Sheets）やビジュアルWYSIWYGエディター（ユニバーサルエディター）などのフォームを作成できます。
 
-* **選択したツールを使用して登録エクスペリエンスを作成：**&#x200B;コンテンツソースを分離することでオーサリングの効率を高めます。標準では、ドキュメントベースのオーサリング（Microsoft SharePoint または Google Drive）と WYSIWYG オーサリング（ユニバーサルエディターまたはアダプティブフォームエディター）を使用できます。同じフォームサイト上で複数のコンテンツソースを操作し、Microsoft Excel、Google Sheets、ユニバーサルエディター、アダプティブフォームエディターなどの推奨オーサリングツールを使用できます。
+## 仕組み
 
-* **優れたデジタル登録エクスペリエンスを提供：**&#x200B;迅速な読み込みとレンダリングを行うデジタル登録エクスペリエンスを提供し、運用テレメトリによってフォームのパフォーマンスを継続的に監視します。読み込み時間の短縮とユーザーエクスペリエンスの最適化により、フォームの完成率とコンバージョン率が向上します。
+Edge Delivery Servicesを使用すると、フォームの構造とコンテンツをAEM as a Cloud Service、Microsoft SharePoint、Google Drive などのソースに格納できます。 このコンテンツは、グローバル CDN に公開されます。 ユーザーがサイトを訪問すると、最適なパフォーマンスを得るために、最も近い CDN エッジサーバーからフォームが直接提供されます。
 
-* **開発者にわかりやすいツールセットを使用：**AEM Forms の Edge Delivery Services は、
-プレーン HTML、最新の CSS、Vanilla JavaScript を使用して優れたエクスペリエンスを作成し、特定のフレームワークの急な学習曲線を回避します。基本的な web 開発スキルを持つ開発者は、フォームコンポーネントとエクスペリエンスをカスタマイズして簡単に作成できます。パイプラインの実行を待機する必要はありません。コードを GitHub にチェックインするだけで、変更が公開されます。
+![ コンテンツソース、CDN およびユーザーを示すシンプルなアーキテクチャ図](/help/forms/assets/eds-simplified-architecture.png)
+**FormsによるEdge Delivery Services アーキテクチャのシンプル化**
 
-## AEM Forms の Edge Delivery Services の概要 {#edge-overview}
+ユーザーが送信したデータは、シンプルなスプレッドシートから強力なAEM バックエンドに送信して、さらに処理することができます。
 
-AEM Forms の Edge Delivery Services を使用すると、web サイト上でフォームを作成する際の柔軟性を高めることができます。[WYSIWYG オーサリング](/help/forms/creating-adaptive-form-core-components.md)と[ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)を使用すると、コンテンツとフォームを作成できます。AEM Forms の Edge Delivery Services は、
-[アダプティブフォームブロック](/help/edge/docs/forms/create-forms.md)と呼ばれるフォームブロックを提供し、Edge Delivery Services サイトにフォームを追加します。
+## オーサリング方法の選択
 
-例えば、Microsoft Excel または Google Sheets で直接フォームを作成すると、これらのスプレッドシートが web サイト用のフォームに変換されます。新しいフォームやフォームコンテンツ（新しいフォームフィールドなど）は、再作成プロセスを必要とせずに web サイト上で即座に使用できます。
+Edge Delivery Services サイト用のフォームを作成する方法はいくつかあります。 最適な方法は、チームのスキル、フォームの複雑さ、プロジェクトの要件によって異なります。
 
-Microsoft Excel または Google Sheets（ドキュメントベースのオーサリング）でフォームを編集し、Edge Delivery Services に公開する方法を次の図に示します。また、WYSIWYG オーサリング（ユニバーサルエディターまたはアダプティブフォームエディター）を使用した AEM パブリッシング方法も示します。
+![ 決定ツリーは、フォームのオーサリング方法の選択に役立ちます。](/help/forms/assets/eds-authoring-selection.png)
+**フォームオーサリングのデシジョンツリー**
 
-![Edge Delivery Services と AEM に公開](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
+### ドキュメントベースのオーサリング
 
-AEM Forms の Edge Delivery Services では GitHub を利用しているので、ユーザーは自分の GitHub リポジトリから直接コードを管理およびデプロイできます。例えば、[Google Sheets](/help/edge/docs/forms/create-forms.md) または [Microsoft Excel](/help/edge/docs/forms/create-forms.md) でフォームを作成でき、GitHub リポジトリで CSS と JavaScript を使用してフォームのコンポーネントを開発できます。
+この手法を使用すると、[Microsoft Word またはGoogle Docs/シートを使用してフォームを作成する ](/help/edge/docs/forms/create-forms.md) ことができます。 特定のテーブル形式を使用して、ドキュメント内のフォームフィールド、ラベル、タイプを定義します。 Edge Delivery Servicesは、このドキュメントをインタラクティブなHTML フォームに変換します。
 
-フォームの準備が整ったら、Chrome ブラウザー拡張機能である [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) を使用して、コンテンツの更新をプレビューおよび公開できます。
+**機能：**
 
-![AEM Sidekick のインストール](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
+* 使い慣れたツール（Word、Google Docs、Google シート）でオーサリングします。
+* テキスト入力、メール、ドロップダウン、チェックボックス、ラジオボタンなどのフィールドを定義します。
+* 必須フィールドなど、基本的な検証ルールを設定します。
+* スパム対策としてGoogle reCAPTCHA を統合します。
+* ファイルアップロードのサポート。
+* データをスプレッドシートまたはメールアドレスに直接送信します。
+* GitHub を介したカスタムコードを使用した拡張で、高度なコンポーネントとスタイル設定が可能になります。
 
-[ドキュメントベースのオーサリング](#document-based-authoring-features)と [WYSIWYG オーサリング](#wysiwyg-authoring-features)のどちらを選択するかは、特定の要件によって異なります。
+**次の場合に最適：**
 
-* いくつかのフィールドで基本的な情報を収集するだけのシンプルなフォーム（お問い合わせフォーム、リードジェネレーションフォーム、サービスリクエストフォームなど）や、スプレッドシートを使用して迅速なデータ接続が必要な場合は、[ドキュメントベースのオーサリング](#document-based-authoring-features)が適しています。これらのフォームは、Google Sheet や Microsoft Excel でドキュメントを作成する場合と同様に作成できます。
+* 主にコンテンツの作成にドキュメントエディターを使用するチーム。
+* 単純なフォームから適度に複雑なフォームをすばやく作成します。
+* スプレッドシートまたはメールへの簡単なデータ収集。
 
-* 複数のパネル、複雑なルールとビジネスロジック、データ操作、外部システムとの統合、AEM 機能を使用した効率化されたワークフローを必要とするフォームなど、複雑なフォームの場合は、[WYSIWYG オーサリング](#wysiwyg-authoring-features)の方が適しています。
+ドキュメントベースのフォームからの送信は、通常、データを設定済みのスプレッドシートまたはメールアドレスにルーティングする [0&rbrace;AEM Forms送信サービス &rbrace; で処理されます。](/help/forms/forms-submission-service.md)
 
+### ユニバーサルエディターのオーサリング
 
-### ドキュメントベースのオーサリングと WYSIWYG オーサリングの主な機能
+[ ユニバーサルエディターは、ドラッグ&amp;ドロップ操作でフォームを作成するための最新のWYSIWYG インターフェイス ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) を提供します。
 
-ドキュメントベースのオーサリングには、基本的な機能セットが用意されています。WYSIWYG オーサリングでは、ドキュメントベースのオーサリングを超える追加機能をロック解除し、より複雑でインタラクティブなフォームを作成できます。ドキュメントベースのオーサリングと WYSIWYG オーサリングの両方の主な機能は次のとおりです。
+**機能：**
 
-#### ドキュメントベースのオーサリング機能
+* 事前定義済みのコンポーネントのライブラリを使用した、フォームの視覚的なドラッグアンドドロップによる構築。
+* リアルタイム検証と複雑なビジネスロジックを設定します（例：ユーザーの選択に基づいたフィールドの表示/非表示）。
+* 様々なデバイスのライブプレビュー。
+* コンテンツフラグメント、AEM as a Cloud Service ワークフロー、ユーザー権限などのAEM機能との深い統合。
+* 「Experience Builder」を介した、AI を利用したフォームの作成と編集。
 
-ドキュメントベースのオーサリングを使用すると、Microsoft Excel やGoogle Sheet などの使い慣れたツールを使用してフォームを作成できます。これらのフォームには、次の機能が用意されています。
+**次の場合に最適：**
 
-* ユーザーにわかりやすいエクスペリエンスを実現するアクセシブルなコンポーネント。
-* 一貫性のあるレンダリングを行う標準化された HTML 構造。
-* データの正確性を確保するルールと検証。
-* 追加情報を収集する添付ファイルのオプション。
-* スパム保護を実現する Google reCAPTCHA 統合。
-* 特定のニーズに合わせてカスタムフォームコンポーネントを作成する機能。
-* フォームデータを Microsoft Excel、Google Sheets、メールアドレスに直接送信します。
-* 運用テレメトリによるフォームのパフォーマンスの監視
+* 条件付きロジック、複数手順のパネルまたはパーソナライゼーションを使用して複雑なフォームを作成する。
+* ビジュアルツールを好むチーム（マーケター、ビジネスユーザーなど）。
+* データ処理およびワークフローのためにAEM バックエンドとの強力な統合が必要なプロジェクト。
 
-#### WYSIWYG オーサリング機能
+ユニバーサルエディターで作成されたFormsは、[Forms送信サービスを使用するか ](/help/forms/forms-submission-service.md) [ AEM ワークフロー、REST エンドポイントまたはデータベースへのデータの送信など、高度なデータ処理のために OOTB から提供される送信アクション ](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) を使用するように設定できます。
 
-WYSIWYG オーサリングには、フォームを作成する WYSIWYG インターフェイス（ユニバーサルエディターまたはアダプティブフォームエディター）が用意されており、ドキュメントベースのオーサリングのすべての機能に加えて、次の幅広い追加機能を提供します。
+### ドキュメントオーサリングページへのFormsの埋め込み
 
-* 複雑なロジックを作成する高度なルールエディター。
-* カスタム機能を実現するサーバーサイド拡張機能。
-* 簡単なフォームを作成し視覚化する WYSIWYG 編集エクスペリエンス。
-* 送信されたデータの改ざん防止アーカイブを作成するレコードのドキュメント機能。
-* 電子署名を行う Adobe Sign との統合。
-* フォーム送信時に Adobe Workfront Fusion シナリオをトリガーする Adobe Workfront Fusion との統合。
-* フォームの事前入力とデータの送信の様々なデータソースとの統合。
-* 様々なデータソースとのインタラクションとデータ構造を定義するフォームデータモデル（FDM）。
-* Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics、その他多くのデータソースへのデータ送信を含む、フォーム送信を処理する複数の送信アクションから選択する機能。
+[ ドキュメントオーサリング（DA） ](https://www.aem.live/developer/da-tutorial) は、Edge Delivery Servicesの web サイトコンテンツを管理するためにAdobeでホストされるサービスです。 DA 自体はフォーム作成ツールではありませんが、DA を使用して web ページを作成し、他の方法で作成されたフォームを埋め込むことができます。
 
-上記のすべての機能は、アダプティブフォームエディターからも使用できます。
+**仕組み：**
 
-基本的に、WYSIWYG オーサリング（ユニバーサルエディターと[アダプティブフォームエディター](/help/forms/creating-adaptive-form-core-components.md)）は、[ドキュメントベースのオーサリング](/help/edge/docs/forms/create-forms.md)の基盤の上に作成されており、複雑なフォームの作成および管理を行うより高度なツールキットを提供します。
+1. **フォームの作成：** ドキュメントベースのオーサリングまたはユニバーサルエディターを使用してフォームを作成します。
+2. **フォームを公開：** フォームが公開され、独自の URL でアクセス可能であることを確認します。
+3. **DA への埋め込み：** ドキュメントオーサリングページで、埋め込むフォームの URL を参照するブロックを追加します。
 
->[!NOTE]
->
->
-> WYSIWYG オーサリング機能は、早期導入プログラムで利用できます。詳しくは、作業用アドレスから aem-forms-ea@adobe.com にメールを送信して、機能へのアクセスをリクエストしてください。
+このアプローチは、Edge Delivery Services Sites のプライマリコンテンツ管理システムとしてドキュメントオーサリングを使用するチーム向けです。
 
-### AEM Forms の Edge Delivery Services
+## オーサリング方法の比較
 
-：フォームのオーサリング、公開、送信
-
-ドキュメントベースのオーサリングと WYSIWYG オーサリングを使用してフォームを作成、公開、送信するプロセスを次の図に示します。
-
-![ドキュメントベースのオーサリング](/help/edge/assets/document-based-authoring-workflow.png)
-
-![WYSIWYG オーサリング](/help/edge/assets/wysiwyg-authoring-workflow.png)
-
-## フォームの作成を開始
-
-* [AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/tutorial.md)
-* [Google Sheet または Microsoft Excel を使用したフォームの作成](/help/edge/docs/forms/create-forms.md)
-* [データの受け入れを開始するための Google Sheets または Microsoft Excel ファイルの設定](/help/edge/docs/forms/submit-forms.md)
-* [フォームを公開してデータの収集を開始](/help/edge/docs/forms/publish-forms.md)
-* [フォームの外観のカスタマイズ](/help/edge/docs/forms/style-theme-forms.md)
-* [繰り返し可能なセクションをフォームに追加する](/help/edge/docs/forms/repeatable-forms.md)
-* [フォーム送信後にカスタムのお礼のメッセージを表示](/help/edge/docs/forms/thank-you-page-form.md)
-* [アダプティブフォームブロックのコンポーネントとそのプロパティ](/help/edge/docs/forms/form-components.md)
-* [実際の使用のモニタリング](https://www.aem.live/developer/rum#authentication)
+| 条件 | ドキュメントベースのオーサリング | ユニバーサルエディター（WYSIWYG） | ドキュメントオーサリング （DA）におけるForms |
+|----------------------------------|---------------------------------------|-----------------------------------------|-------------------------------------------|
+| **プライマリ オーサリング ツール** | Word/Google Docs/Sheets | ブラウザー（AEM Universal Editor） | 該当なし（Formsは *埋め込み*） |
+| **チームスキルレベル** | ドキュメントエディターに精通している | ビジュアル Web ツールの操作に慣れている | ページコンテンツに DA を使用 |
+| **一般的なフォームの複雑さ** | シンプルから中程度 | 中規模から複雑、エンタープライズ・クラス | 埋め込まれたフォームに依存 |
+| **送信オプション** | Forms送信サービス （シート/メールへ） | Forms送信サービス、AEM パブリッシュ（ワークフロー、フォームデータモデル、サードパーティ統合） | 埋め込みフォームの設定に従う |
+| **AEMのバックエンドの統合** | 最小 | 高（AEM パブリッシュ送信付き） | 間接的（埋め込みユニバーサルエディターフォーム経由） |
+| **次の場合に最適…** | コンテンツチームによるシンプルなフォームの迅速な作成、迅速なデータキャプチャ。 | 視覚的な制御、複雑なフォーム、深いAEM統合を必要とするマーケターやビジネスユーザー。 | プライマリコンテンツが DA で管理されるサイト。 |
 
 <!-- 
+## Detailed Feature Comparison
 
-## Start creating forms
-
-<div>
-
-  <style>
-    .card-container {
-        width: calc(33.33% - 10px);;
-        margin: 5px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 5px;
-        box-sizing: border-box;
-        transition: background-color 0.3s ease; /* Adding transition effect */
-    }
-    .card-container:hover {
-        background-color: #f0f0f0; /* Changing background color on hover */
-    }
-</style>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Create a form using eds forms" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Create a form using Google Sheets or Microsoft Excel</b>
-        </a>
-        <p>Create forms that load and render quickly and automatically reflows on mobile devices.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Submit form to spreadsheet</b>
-        </a>
-        <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
-    </div>
-     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Customize a theme</b>
-        </a>
-        <p>Create a consistent brand image by applying the same theme across forms.</p>
-    </div>
-      <div class="card-container">
-        <a href="/help/edge/docs/forms/validate-forms.md">
-            <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Apply field validations</b>
-        </a>
-        <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
-    </div> 
-            <div class="card-container">
-        <a href="/help/edge/docs/forms/rules-forms.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use rules to add dynamic behaviour to a form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Use rules to add dynamic behaviour to a form</b>
-        </a>
-        <p>Reuse preconfigured fragments across multiple forms.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/translate-forms.md">  
-            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Translate a form</b>
-        </a>
-        <p>Extend the reach of your forms while keeping costs in check.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/repeatable-forms.md">  
-            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Add repeatable sections</b>
-        </a>
-        <p>Effortlessly create and add repeatable sections to a form.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/custom-components-forms.md"> 
-            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Create custom forms components using standard JavaScript and CSS"  style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Create custom components</b>
-        </a>
-        <p>Use standard JavaScript and CSS to create components and themes.</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/recaptacha-forms.md">  
-            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Use reCAPTCHA in an EDS Form" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">Use reCAPTCHA</b>
-        </a>
-        <p>Use OOTB reCAPTCHA integration for robust spam and bot protection.</p>
-    </div>
-
-
-</div>
-
-
-</br>
-
-
+| **Capability**                        | **Universal Editor (WYSIWYG)** | **Document-based Authoring** | **Document Authoring (DA)** |
+|-----------------------------------------|-------------------------------|-----------------------------|-----------------------------|
+| **Unified Composition with Sites**    | ✅                            |                              | ✅ (with embedded forms)     |
+| **Embedding Form Support**            | ✅                            | ✅                          | ✅ (embed from Universal Editor or Docs)   |
+| **Rules (Dynamic Behavior)**          | Advanced rules editor with custom functions | Limited: Show/hide, compute value, custom functions | Depends on embedded form     |
+| **Attachment Support**                | ✅                            | ℹ️ (Early Access)           | Depends on embedded form     |
+| **CAPTCHA Support**                   | reCAPTCHA Enterprise          | reCAPTCHA Enterprise       | Depends on embedded form     |
+| **Submission Features**               | REST, Email, FDM, Workflow, SharePoint, OneDrive, Azure Blob, Power Automate, Workfront Fusion (EA) | Only Spreadsheet            | Follows embedded form's setup |
+| **Data Schema**                       | FDM, Custom                   | Custom                      | Based on embedded form       |
+| **Pre-fill**                          | 💡 (via Wizard)               | ✅                          | Depends on embedded form     |
+| **Fragments**                         | ✅                            | ✅                          | Depends on embedded form     |
+| **Visual Rule Editor**                | ✅                            |                              |                              |
+| **Localization**                      | 💡 (via Sites)                | ℹ️ (Excel/Sheets manual)    | Depends on embedded form     |
+| **Template Support**                  | Only Initial Content          |                              |                              |
+| **Theme**                             | ℹ️ (at project level)         | ℹ️ (at project level)        | ℹ️ (based on hosting site)    |
+| **Custom Component**                  | ✅                            | ✅                          | ✅ (if embedded component supports it) |
+| **Experimentation**                   | ✅                            | ✅                          | Depends on embed context     |
+| **Submit Action**                     | ✅                            | Only Spreadsheet            | Based on embedded form       |
 -->
+
+
+
+## 次の手順
+
+* [ドキュメントベースのオーサリングを使用したフォームの作成](/help/edge/docs/forms/tutorial.md)
+* [Forms用ユニバーサルエディターについて](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [フォーム送信アクションの設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+* [ ドキュメントオーサリング（DA）について ](https://www.aem.live/developer/da-tutorial)
