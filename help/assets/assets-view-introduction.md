@@ -5,8 +5,8 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+workflow-type: tm+mt
 source-wordcount: '966'
 ht-degree: 100%
 
@@ -67,6 +67,7 @@ Assets as a Cloud Service で利用可能なペルソナベースのエクスペ
 
 [![ガイドを参照](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
+
 ### データ駆動型の決定を行うためのインサイト {#insights-data}
 
 コンテンツの速度に遅れを取らないようにするには、実用的なインサイトが不可欠です。アセットビューエクスペリエンスは、マイワークスペース内で高度なインサイトを提供し、アセットのパフォーマンス、オーディエンスの使用状況、エンゲージメントに関する貴重なデータを提供します。マーケターは、データ駆動型の決定を行い、コンテンツ戦略を最適化し、ダウンストリームの配信を調整して最適な結果を達成できます。有意義なインサイトにアクセスすることで、企業は競合他社に先んじて優れた成果を推進できます。
@@ -74,6 +75,7 @@ Assets as a Cloud Service で利用可能なペルソナベースのエクスペ
 ![インサイトの概要](assets/insights-overview.gif)
 
 [![ガイドを参照](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+
 
 ### 共同作業を加速する Adobe Photoshop Express の統合 {#accelerate-collaboration}
 

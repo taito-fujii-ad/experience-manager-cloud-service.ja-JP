@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: abc3e963cc3bffbdad4c1c067ad9e55984b1cef6
+source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
-source-wordcount: '6345'
+source-wordcount: '6362'
 ht-degree: 99%
 
 ---
@@ -230,6 +230,7 @@ ht-degree: 99%
    + ユニバーサルエディターのリリースノート {#univeral-editor}
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [リリースノート（2025.06.19）](/help/release-notes/universal-editor/2025/2025-06-19.md)
          + [リリースノート（2025.05.21）](/help/release-notes/universal-editor/2025/2025-05-21.md)
          + [リリースノート（2025.04.04）](/help/release-notes/universal-editor/2025/2025-04-04.md)
          + [リリースノート（2025.03.10）](/help/release-notes/universal-editor/2025/2025-03-10.md)
@@ -694,12 +695,13 @@ ht-degree: 99%
       + [コレクションを管理](/help/assets/manage-collections-assets-view.md)
       + [アセットの関連付け](/help/assets/asset-relations-for-assets-view.md)
       + [アセット、フォルダー、コレクションの監視](/help/assets/manage-notifications-assets-view.md)
-      + [レポートの管理](/help/assets/manage-reports-assets-view.md)
       + [再処理](/help/assets/reprocessing-assets-view.md)
       + [タグの管理](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
       + [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
       + [AEM Assets ビュー UI 拡張機能](/help/assets/aem-assets-view-ui-extensibility.md)
+
+      + [レポートの管理](/help/assets/manage-reports-assets-view.md)
    + コンテンツハブ {#content-hub}
       + [概要](/help/assets/product-overview.md)
       + [コンテンツハブの新機能](/help/assets/whats-new.md)
@@ -909,6 +911,7 @@ ht-degree: 99%
    + インタラクティブなコミュニケーション {#interactive-communocation}
       + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
+      + [AEM Forms API を使用した AFP 出力の生成](/help/forms/document-generation-afp-api.md)
       + [よくある質問](/help/forms/interactive-communications-faq.md)
    + Forms 中心のワークフロー {#create-form-centric-workflows}
       + [Forms 中心のワークフローの導入](/help/forms/aem-forms-workflow.md)
@@ -1469,7 +1472,8 @@ ht-degree: 99%
    + [追加の公開地域](/help/operations/additional-publish-regions.md)
    + [AEM as a Cloud Service のインフラストラクチャとサービスモニタリング](/help/operations/monitoring.md)
    + [メンテナンスタスク](/help/operations/maintenance.md)
-   + [セルフサービスの復元](/help/operations/restore.md)
+   + [コンテンツを復元](/help/operations/restore.md)
+   + [以前にデプロイしたコードを復元（Alpha）](/help/operations/restore-previous-code-deployed.md)
    + [非同期ジョブ](/help/operations/asynchronous-jobs.md)
    + [設定パイプラインの使用](/help/operations/config-pipeline.md)
    + [汎用 Lucene インデックスの削除](/help/operations/removal-generic-lucene-index.md)

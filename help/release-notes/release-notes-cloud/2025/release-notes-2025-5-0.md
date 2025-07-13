@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0 リリー�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0 リリースのリリースノート。'
 feature: Release Information
 role: Admin
-source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
+exl-id: b7a21533-9db1-4111-814c-cab917041be4
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '2108'
-ht-degree: 98%
+source-wordcount: '2162'
+ht-degree: 93%
 
 ---
 
@@ -113,7 +114,7 @@ AEM Assets は Figma とネイティブに統合されているので、AEM Asse
 
 ### プレリリース機能
 
-* [ユニバーサルエディター - フォームフラグメント](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)：ユニバーサルエディターでは、アダプティブフォームのフォームフラグメントを作成して再利用できるようになりました。これらのフラグメントは、一度作成したら複数のフォームに適用できる、再利用可能なフォームセクション（連絡先の詳細、同意フィールドなど）です。この機能により、フォームの作成が効率化され、一貫性が確保され、オーサリングの効率が向上します。
+* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成を促進し、一貫性を高め、スパムや自動不正使用に対する保護を向上させることができます。
 
 * [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
 
@@ -131,7 +132,7 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 #### Adobe Experience Platform（AEP）と Forms の統合
 
-Forms と AEP 間の統合機能が、早期導入者向けに提供されるようになりました。
+* [AEM FormsとAdobe Experience Platformの統合 ](/help/forms/aem-forms-aep-connector.md):AEM Forms to Adobe Experience Platform Connector を使用すると、Adaptive FormsとAdobe Experience Platformをシームレスに統合できます。 この機能を使用すると、フォームデータを XDM スキーマにマッピングし、リアルタイムでAEPに直接送信できます。 Adobe Experience Cloud ソリューション全体で、パーソナライゼーションおよびアクティベーションのユースケースのためのデータキャプチャを効率化します。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
@@ -236,7 +237,7 @@ Edge コンピューティングを使用すると、CDN レイヤーで JavaScr
 * コンテンツへのアクセスを許可する前に、ID プロバイダーを使用してユーザーを認証する
 * 位置情報、デバイスタイプまたはユーザー属性に基づくコンテンツのパーソナライズ
 * CDN と接触チャネルの間のミドルウェアとして機能させる
-* ブラウザーに配信する前に、サードパーティ API からの応答を再フォーマットする（および複数の API 応答を集計する）
+* サードパーティの API からの応答をブラウザーに配信する前に再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用して、サーバーレンダリングされたHTMLをエッジで作成および提供する
 
 AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)までメールでご連絡ください。

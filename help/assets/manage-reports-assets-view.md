@@ -4,9 +4,11 @@ description: アセットビューの「レポート」セクションのデー�
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1522'
+hide: true
+hidefromtoc: true
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+workflow-type: tm+mt
+source-wordcount: '1504'
 ht-degree: 100%
 
 ---
@@ -245,11 +247,11 @@ AEM Assets ビュー UI の「**レポートをスケジュール**」では、�
 
 * **アップロード**：過去 30 日間または 12 か月間に Assets ビュー環境にアップロードされたアセットの数が、折れ線グラフで表されます。
   ![インサイトのアップロード](/help/assets/assets/insights-uplods2.svg)
-  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
 
-* **ストレージ使用量**：Assets ビュー環境のストレージ使用量（バイト）が、棒グラフで表されます。
-  ![インサイトのアップロード](/help/assets/assets/insights-storage-usage1.svg)
-  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+* **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
+![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 

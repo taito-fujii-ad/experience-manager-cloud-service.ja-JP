@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
-workflow-type: ht
-source-wordcount: '1782'
-ht-degree: 100%
+source-git-commit: afae63ae84d3807cc3563f6b0fbff73931ff051b
+workflow-type: tm+mt
+source-wordcount: '1820'
+ht-degree: 97%
 
 ---
 
@@ -153,7 +153,11 @@ Experience Cloud ヘッダーは、常に画面の上部に表示されます。
 
 [ローカル開発目的でカスタム認証ヘッダーを設定](/help/implementing/universal-editor/developer-overview.md#auth-header)する必要がある場合は、認証ヘッダー設定アイコンを選択します。
 
-![認証ヘッダー設定ボタン](assets/authentication-header-settings.png)
+![ 認証ヘッダー設定ボタン ](assets/authentication-header-settings.png)
+
+>[!NOTE]
+>
+>ほとんどの場合、このボタンの値は限られているので、デフォルトでは非表示になっています。 必要な場合は、Adobe IDに関連付けられているメールアドレスからAdobe カスタマーサクセスマネージャーにメールを送信してください。
 
 #### エミュレーターの設定 {#emulator}
 
