@@ -4,11 +4,13 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -33,7 +35,7 @@ Forms送信サービスを使用すると、フォーム送信データを OneDr
 Forms Submission サービスを使用するための前提条件を以下に示します。
 
 * AEM プロジェクトに最新のアダプティブフォームブロックが含まれていることを確認します。
-* Forms送信サービスを使用するには、Git リポジトリが許可リストに追加されていることを確認してください。 Forms送信サービスを使用する [&#128279;](mailto:aem-forms-ea@adobe.com)許可リストに追加するには、mailto:aem-forms-ea@adobe.com&rbrace; と、GitHub の組織名およびリポジトリ名を入力してください。
+* Forms送信サービスを使用するには、Git リポジトリが許可リストに追加されていることを確認してください。 Forms送信サービスを使用する [許可リストに追加するには、](mailto:aem-forms-ea@adobe.com)mailto:aem-forms-ea@adobe.com&rbrace; と、GitHub の組織名およびリポジトリ名を入力してください。
 
 ## Forms送信サービスの設定
 
@@ -55,7 +57,7 @@ Google シートまたはMicrosoft Excel を使用してフォームを作成し
 
 >[!IMPORTANT]
 >
->**フォームを作成するシートには、名前の付け方に制限があります。 シート名として使用できるのは `helix-default` と `shared-aem` のみです。**
+>**フォームを作成するシートには、名前の付け方に制限があります。シート名として使用できるのは `helix-default` と `shared-aem` のみです。**
 
 #### &#x200B;2. スプレッドシートを有効にしてデータを受け入れます。
 

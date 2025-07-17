@@ -1,8 +1,8 @@
 ---
-source-git-commit: 6af7e8caa7be93da60e660468dd7d4f02a7e2c47
+source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 97%
+source-wordcount: '1637'
+ht-degree: 93%
 
 ---
 # スニペット {#snippets}
@@ -281,3 +281,11 @@ ht-degree: 97%
 >**AEM 向け Edge Delivery Services について検討したことはありますか？**
 >
 >既存のプロジェクトでは、このドキュメントで説明されている方法を引き続き使用できます。ただし、新規プロジェクトの場合は、[Edge Delivery Services](/help/edge/overview.md) を利用することをお勧めします
+
+## Adobeが提供するサイトテンプレート {#adobe-templates}
+
+サイトをすばやく作成できるように、Adobeには様々な目的に適した多数のテンプレートが用意されています。
+
+* [Edge Delivery Servicesを使用したAEM サイト ](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - ユニバーサルエディターを使用してAEM ページをオーサリングし、[ エッジ配信 ](/help/edge/overview.md) を通じて配信します
+* [Commerce用AEM オーサリングのEdge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - [ エッジ配信 ](/help/edge/overview.md) を介したコマースプロジェクトおよび配信用のユニバーサルエディターを使用してAEM ページをオーサリングします
+* [ 標準AEM サイトテンプレート ](https://github.com/adobe/aem-site-template-standard/releases) – 従来のAEM ページをオーサリングし、[ パブリッシュ配信 ](/help/sites-cloud/authoring/author-publish.md) を通じて配信します。

@@ -4,17 +4,17 @@ description: ユニバーサルエディターのルールエディターを使�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 99%
+source-wordcount: '2216'
+ht-degree: 97%
 
 ---
 
 
 # WYSIWYG オーサリングのルールエディターの概要
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセスをリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。 例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は adobe で、リポジトリ名は abc になります。</span>
+<span class="preview"> これは、アドビの <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features"> プレリリースチャネル </a> で利用できるプレリリース機能です。</span>
 
 
 ルールを作成できるルールエディターを使用して、動的なフォームの動作を追加できます。これらのルールにより、条件付きフィールドの表示が有効になり、ユーザー入力に基づいて計算が自動化され、全体的なユーザーエクスペリエンスが向上します。ルールエディターは、フォーム入力プロセスを効率化することで、正確性と効率性の両方を確保するのに役立ちます。
@@ -188,7 +188,7 @@ ht-degree: 99%
 
 ビジュアルルールエディターでルールを記述する方法を理解するには、税金計算フォームの簡単な例を考えます。
 
-![ルールエディターの例](/help/edge/docs/forms/assets/rule-editor-1.png)
+![ フォームフィールド表示の「When-Then」ロジックを含む条件付きルールの作成を示すルールエディターインターフェイスのスクリーンショット ](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 上記のフォームでは、ユーザーは総給与を入力します。この入力に基づいて条件付きフィールドが表示され、支払税が計算されます。
 
@@ -209,7 +209,7 @@ ht-degree: 99%
 
 ルールを記述するには、次の手順を実行します。
 
-### 1. フォームを作成
+### &#x200B;1. フォームを作成
 
 ユニバーサルエディターでフォームを作成するには：
 
@@ -223,9 +223,9 @@ ht-degree: 99%
    * 送信（「送信」ボタン）
 1. `Properties` を開いて、`Additional Deduction` フォームフィールドを非表示にします。
 
-   ![ルールエディターの例](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![ 総給与、婚姻ステータス、扶養子の入力フィールドを含む税金計算フォームのスクリーンショット。ルールが適用される前のフォーム構造を示しています ](/help/edge/docs/forms/assets/rule-editor2.png)
 
-### 2. フォームフィールドの条件付きルールを追加
+### &#x200B;2. フォームフィールドの条件付きルールを追加
 
 フォームを作成したら、総給与が 50,000 ドルを超える場合にのみ「`Additional Deduction`」フィールドを表示する最初のルールを記述します。条件付きルールを追加するには：
 
@@ -261,7 +261,7 @@ ht-degree: 99%
 >
 > または、「総給与」フィールドに When ルールを記述する代わりに、「追加控除」フィールド上に Show ルールを記述して、同じ動作を実装することもできます。
 
-### 3. フォームフィールドの計算ルールを追加
+### &#x200B;3. フォームフィールドの計算ルールを追加
 
 次に、`Gross Salary` と `Additional Deduction` の差である `Taxable Income` を計算するルールを記述します（該当する場合）。「**[!UICONTROL 課税所得]**」フィールドに計算ルールを追加するには、次の手順を実行します。
 
@@ -304,7 +304,7 @@ ht-degree: 99%
    ![ルールエディターの例 20](/help/edge/docs/forms/assets/rule-editor23.png)
 1. 「**[!UICONTROL 完了]**」を選択し、ルールを保存します。
 
-### 4. フォームをプレビュー
+### &#x200B;4. フォームをプレビュー
 
 これで、フォームをプレビューし、**総給与**&#x200B;を `60,000` として入力すると、「**追加控除**」フィールドが表示され、それに応じて「**課税所得**」と「**支払税**」が計算されます。
 

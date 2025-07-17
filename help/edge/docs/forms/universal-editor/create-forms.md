@@ -4,10 +4,10 @@ description: この記事では、フォーム作成ウィザードでコアコ�
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1687'
+ht-degree: 95%
 
 ---
 
@@ -49,11 +49,11 @@ AEM でフォームのオーサリングを開始し、Edge Delivery Services �
 
 AEM でのフォームのオーサリングと Edge Delivery Services での公開を行うには、次の手順に従います。
 
-[1. テンプレートを選択し、フォームを作成します](#choose-a-template-and-create-the-form)
+[&#x200B;1. テンプレートを選択し、フォームを作成します](#choose-a-template-and-create-the-form)
 
-[2. フォームをオーサリングします](#author-the-form)
+[&#x200B;2. フォームをオーサリングします](#author-the-form)
 
-[3. フォームを公開します](#publish-a-form)
+[&#x200B;3. フォームを公開します](#publish-a-form)
 
 ### テンプレートの選択とフォームの作成
 
@@ -79,13 +79,14 @@ AEM でのフォームのオーサリングと Edge Delivery Services での公�
 
    1. 「**名前**」と「**タイトル**」を指定します。
    1. **GitHub URL** を指定します。例えば、GitHub リポジトリの名前が `edsforms` で、アカウント `wkndforms` の下にある場合、URL は次のようになります。
+
       `https://github.com/wkndforms/edsforms`
 
    ![フォームを作成ウィザード](/help/edge/assets/create-form-wizard.png)
 
    「**[!UICONTROL 作成]**」をクリックすると、フォームがオーサリング用のユニバーサルエディターで開きます。
 
-   ![フォームを送信](/help/edge/assets/author-form.png)
+   ![ 左側にコンポーネントパレット、中央にフォームキャンバス、右側にプロパティパネルを使用して作成されるフォームを示すユニバーサルエディターのスクリーンショット ](/help/edge/assets/author-form.png)
 1. 「**[!UICONTROL 作成]**」をクリックしてフォームを作成します。これで、[ユニバーサルエディターを使用してフォームをオーサリング](#author-the-form)できます。
 
 >[!TAB コアコンポーネントベースのテンプレート]
@@ -130,12 +131,12 @@ Edge Delivery Services ベースのテンプレートのユニバーサルエデ
 
    ![コンテンツツリー](/help/edge/assets/content-tree.png)
 
-1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**リストから目的のコンポーネントを追加します。
+1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから目的のコンポーネントを追加します。
    ![コンポーネントを追加](/help/edge/assets/add-component.png)
 
    以下のスクリーンショットは、ユニバーサルエディターでオーサリングした `Registration Form` フォームを示しています。
 
-   ![お問い合わせフォーム](/help/edge/assets/contact-us.png)
+   ![ 名前、メール、電話、メッセージのフォームフィールドが適切なスタイルとレイアウトで表示されている、ユニバーサルエディターの入力済みお問い合わせフォームのスクリーンショット ](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >
@@ -219,7 +220,7 @@ Edge Delivery Services のフォームにアクセスするには、フォーム
 
 1. ユニバーサルエディターの右上隅にある「**[!UICONTROL 公開]**」ボタンをクリックして、フォームを公開します。
 
-![フォームを公開](/help/edge/assets/publish-form.png)
+![ フォーム公開オプションと確認ボタンを含む公開ダイアログを示すユニバーサルエディターのスクリーンショット ](/help/edge/assets/publish-form.png)
 
 >[!NOTE]
 >
