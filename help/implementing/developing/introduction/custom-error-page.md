@@ -4,10 +4,10 @@ description: AEM には、HTTP エラーを処理するための標準的なエ�
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+source-git-commit: de50d20dd4c17204ded1ff216d12520d04eafd04
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 97%
 
 ---
 
@@ -28,6 +28,10 @@ AEM には、HTTP エラーを処理するための標準的なエラーハン�
 >オーサーインスタンスで、[CQ WCM Debug Filter](/help/implementing/deploying/configuring-osgi.md) はデフォルトで有効になっています。これにより、常に応答コード 200 を返します。デフォルトのエラーハンドラーは、応答に対してフルスタックトレースを書き込むことで応答します。
 >
 >パブリッシュインスタンスでは、CQ WCM Debug Filter は、有効として設定されている場合も含めて&#x200B;**常に**&#x200B;無効になります。
+
+>[!NOTE]
+>
+>Dispatcherでのエラー処理について詳しくは、[CDN エラーページの設定 ](/help/implementing/dispatcher/cdn-error-pages.md) を参照してください。
 
 ## エラーハンドラーで表示されるページのカスタマイズ方法 {#how-to-customize-pages-shown-by-the-error-handler}
 
@@ -73,7 +77,7 @@ HTTP [500 内部サーバーエラー](https://www.w3.org/Protocols/rfc2616/rfc2
 >[!NOTE]
 >
 >AEM as Cloud Service では、バックエンドから 5XX エラーを受け取った場合、CDN は汎用のエラーページを返します。 バックエンドの実際の応答が通過できるようにするには、応答に `x-aem-error-pass: true` というヘッダーを追加する必要があります。
->これは、AEM または Apache／Dispatcher レイヤーからの応答に対してのみ機能します。中間のインフラストラクチャレイヤーから発生したその他の予期しないエラーの場合もやはり、汎用のエラーページが表示されます。
+>&#x200B;>これは、AEM または Apache／Dispatcher レイヤーからの応答に対してのみ機能します。中間のインフラストラクチャレイヤーから発生したその他の予期しないエラーの場合もやはり、汎用のエラーページが表示されます。
 
 >[!CAUTION]
 >
