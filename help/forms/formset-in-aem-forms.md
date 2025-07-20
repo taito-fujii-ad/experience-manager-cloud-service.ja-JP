@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2803'
 ht-degree: 99%
 
 ---
+
 
 # AEM Forms におけるフォームセット{#form-set-in-aem-forms}
 
@@ -139,7 +142,7 @@ AEM Forms では、フォームセットを作成、設定、管理するため�
 
 通常の JavaScript 関数に加えて、フォームセットは、フォームセット内のフォームのフィールドの値にアクセスできる fs.valueOf API も公開します。フォームセットの中のフォームフィールドの値にアクセスするには、この API を使用します。API 構文は fs.valueOf（formUid、fieldSOM）であり、ここでは、
 
-* formUid (string)：フォームセット内のフォームの固有 ID です。Forms Manager ユーザーインターフェイスでフォームセットを作成するときに指定できます。デフォルトでは、フォーム名です。
+* formUid (string)：フォームセット内のフォームの固有 ID です。Forms Manager ユーザーインターフェイスでフォームセットを作成するときに指定できます。デフォルトでは、これはフォーム名です。
 * fieldSOM (string)：formUid によって指定されたフォーム内のフィールドの SOM 式。SOM 式（スクリプティングオブジェクトモデル式）とは、特定のドキュメントオブジェクトモデル（DOM）内の値、プロパティ、メソッドを参照するときに使う式です。フィールドを選択しているときに Form Designer の「スクリプト」タブの下で表示できます。
 
 >[!NOTE]
@@ -338,7 +341,7 @@ prefillXML：O
 
 「rootElement」という名前はプレースホルダーでしかありません。実際の名前はフォームセットで使用されているフォームから選択されます。「rootElement」で始まるサブツリーは、フォームセットのフォーム内にフィールドのデータとサブフォームを含んでいます。rootElement とその子の構造を決定する複数の要因があります。
 
-事前入力 XML ではこのタグはオプションです。ただし、このタグがない場合、XML 全体が無視されます。
+事前入力 XML では、このタグはオプションですが、ない場合は、XML 全体が無視されます。
 
 ルート要素タグの名前
 
