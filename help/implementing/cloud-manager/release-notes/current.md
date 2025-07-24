@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
+source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 99%
+source-wordcount: '1209'
+ht-degree: 97%
 
 ---
 
@@ -39,9 +39,9 @@ AEM as a Cloud Service の Cloud Manager 2025.7.0 のリリース日は 2025年7
 
   [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)をご覧ください。
 
-## 早期導入プログラム {#private-beta-program}
+## Alpha/Beta プログラム {#private-beta-program}
 
-Cloud Manager の Alpha および Beta プログラムに参加すると、一般リリース前の新機能に特別早期アクセスできます。
+Cloud Managerのアルファおよびベータ版プログラムに参加すると、一般リリース前に、今後の機能を独占的に利用できます。
 
 現在、以下の機能が利用可能です。
 
