@@ -2,7 +2,7 @@
 source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
 workflow-type: tm+mt
 source-wordcount: '1637'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 # スニペット {#snippets}
@@ -44,7 +44,7 @@ ht-degree: 93%
 * [SharePoint ドキュメントライブラリへの送信](/help/forms/connect-forms-to-sharepoint-document-library.md)
 * [SharePoint リストへの送信](/help/forms/connect-forms-to-sharepoint-list.md)
 * [フォームデータモデルを使用して送信](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
-* [Azure Blob Storage に送信](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
 * [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
@@ -111,9 +111,9 @@ ht-degree: 93%
    </td>
    </tr>
    <tr>
-    <td>ES2022 のサポート </td>
-    <td>ES2022 はまだサポートされていません。サポートは、ES5 JavaScript機能に制限されています。 </td>
-    <td>最新のJavaScript機能（最大 ES2022 のレット関数と矢印関数など）は、カスタム関数でサポートされています。 
+    <td>ES2022 サポート </td>
+    <td>ES2022 はまだサポートされていません。サポートは、ES5 JavaScript 機能に制限されています。 </td>
+    <td>最新の JavaScript 機能（let 関数やアロー関数など、ES2022 まで）は、カスタム関数でサポートされています。 
    </td>
    </tr>
    </tr>
