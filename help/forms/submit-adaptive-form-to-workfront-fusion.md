@@ -3,13 +3,13 @@ title: Adobe Workfront Fusion とAEM Forms Submission の統合
 description: Adobe Workfront Fusion を使用すると、繰り返しのタスクに重点を置くのではなく、新しいタスクに重点を置くことができます。フォーム送信を使用して、Adobe Workfront Fusion をアダプティブフォームに接続できます。
 keywords: Adobe Workfront Fusion へのアダプティブフォームの送信、Adobe Workfront Fusion と AEM Forms Submission の統合、Adobe Workfront Fusion と AEM Forms の統合、Workfront Fusion と AEM Forms の統合、AEM Forms への Workfront Fusion の接続、AEM Forms Fusion への Workfront Fusion の接続 、AEM Forms への Workfront Fusion の接続方法?、フォームへの Workfront Fusion の接続
 topic-tags: author, developer
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
-workflow-type: ht
-source-wordcount: '1272'
-ht-degree: 100%
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+workflow-type: tm+mt
+source-wordcount: '1287'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ Workfront Fusion と AEM Forms の間の接続を確立するには、以下が�
 
 ## AEM Forms と Adobe Workfront Fusion の統合
 
-### 1. Workfront シナリオの作成 {#workflow-scenario}
+### &#x200B;1. Workfront シナリオの作成 {#workflow-scenario}
 
 Workfront シナリオを作成するには、次の手順に従います。
 
@@ -51,6 +51,7 @@ Workfront シナリオを作成するには、次の手順に従います。
 #### シナリオを作成 {#create-scenario}
 
 シナリオを作成するには：
+
 1. [Workfront Fusion アカウント](https://app-qa.workfrontfusion.com/)にログインします。
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」![共有アイコン](/help/forms/assets/Smock_ShareAndroid_18_N.svg)をクリックします。
 1. ページの右上隅にある「**[!UICONTROL 新規シナリオを作成]**」をクリックします。新しいシナリオを作成するページが画面に表示されます。
@@ -143,49 +144,56 @@ Web フックを追加するには、次の手順に従います。
 >
 > Workfront シナリオをアクティブ化しない場合、フォームの送信は検出されず、送信アクションを Workfront に設定すると送信が失敗します。
 
-### 2. Workfront Fusion 用のアダプティブフォームの送信アクションの設定
+### &#x200B;2. Workfront Fusion 用のアダプティブフォームの送信アクションの設定
 
-Workfront Fusion 用の送信アクションを、次に対して設定できます。
-* [新規のアダプティブフォーム](#new-af-submit-action)
-* [既存のアダプティブフォーム](#existing-af-submit-action)
+>[!BEGINTABS]
 
-#### Workfront Fusion 用の新しいアダプティブフォームの送信アクションの設定 {#new-af-submit-action}
+>[!TAB 基盤コンポーネント]
 
-Workfront Fusion 用に新しいアダプティブフォームの送信アクションを設定するには、次の手順に従います。
+Workfront Fusion の基盤コンポーネントに基づいてアダプティブフォームの送信アクションを設定するには：
 
-1. AEM インスタンスにログインします。
-1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**／**[!UICONTROL 作成]**／**[!UICONTROL アダプティブフォーム]**&#x200B;に移動します。**[!UICONTROL フォームを作成]**&#x200B;ウィザードが表示されます。
-1. 「**[!UICONTROL ソース]**」タブからアダプティブフォームテンプレートを選択します。
-1. 「**[!UICONTROL スタイル]**」タブからテーマを選択します。
+1. 編集用にアダプティブフォームを開き、アダプティブフォームのコンテナプロパティの「**[!UICONTROL 送信]**」セクションに移動します。
+1. **[!UICONTROL 送信アクション]** ドロップダウンリストから、「**[!UICONTROL Workfront Fusion シナリオを呼び出し]**」を選択します。
+   ![Workfront Fusion 用の送信アクション](/help/forms/assets/workfront-fusion-fc.png)
 
-   ![Workfront Fusion 用の送信アクション](/help/forms/assets/workfront-scenario-new-af.png)
+1. ドロップダウンリストから「**[!UICONTROL Workfront Fusion のシナリオ]**」を選択します。
+1. 「**[!UICONTROL 完了]**」をクリックします。
 
-1. 「**[!UICONTROL 送信]**」タブから「**[!UICONTROL WorkFront Fusion シナリオを呼び出し]**」を選択します。
-1. **[!UICONTROL プロパティ]**&#x200B;ウィンドウの「**[!UICONTROL オプション]**」タブから、作成した Web フックを選択します。　
+
+>[!TAB コアコンポーネント]
+
+Workfront Fusion でコアコンポーネントに基づくアダプティブフォームの送信アクションを設定するには：
+
+1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
+1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
+1. 「**[!UICONTROL 送信]**」タブをクリックします。
+1. **[!UICONTROL 送信アクション]** ドロップダウンリストから、「**[!UICONTROL Workfront Fusion シナリオを呼び出し]**」を選択します。
+
+   ![Workfront Fusion 用の送信アクション](/help/forms/assets/workfront-scenario-existing-af.png)
+1. ドロップダウンリストから「**[!UICONTROL Workfront Fusion のシナリオ]**」を選択します。
+1. 「**[!UICONTROL 完了]**」をクリックします。
+
+>[!TAB ユニバーサルエディター]
+
+ユニバーサルエディターを使用して作成されたアダプティブフォームの送信アクションを設定するには：
+
+1. アダプティブフォームを編集用に開きます。
+1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
+**フォームのプロパティ** ダイアログが表示されます。
 
    >[!NOTE]
    >
-   > Workfront シナリオの Web フック名は、**オプション**&#x200B;ドロップダウンリストに表示されます。
+   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
 
-1. 「**[!UICONTROL 作成]**」をクリックします。
-1. 新しいアダプティブフォームの名前を指定し、「**[!UICONTROL 作成]**」をクリックします。
+1. 「**送信**」タブをクリックし、「**[!UICONTROL Workfront Fusion シナリオを起動]**」送信アクションを選択します。
 
-#### Workfront Fusion 用に既存アダプティブフォームの送信アクションの設定 {#existing-af-submit-action}
+   ![Workfront Fusion 用の送信アクション](/help/forms/assets/workfront-fusion-ue.png)
 
-既存のアダプティブフォームの送信アクションを Workfront Fusion 用に設定するには、次の手順に従います。
-
-1. AEM インスタンスにログインします。
-1. **[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
-1. アダプティブフォームを選択し、編集モードでフォームを開きます。
-1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
-1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。アダプティブフォームコンテナダイアログボックスが開きます。
-
-   ![Workfront Fusion の送信アクション](/help/forms/assets/workfront-scenario-existing-af.png)
-
-1. 「**[!UICONTROL 送信]**」タブを開きます。
-1. **[!UICONTROL Workfront Fusion シナリオの呼び出し]**&#x200B;として、**[!UICONTROL 送信アクション]**&#x200B;を選択します。
 1. ドロップダウンリストから「**[!UICONTROL Workfront Fusion のシナリオ]**」を選択します。
-1. 「**[!UICONTROL 完了]**」をクリックします。
+1. **[!UICONTROL 保存して閉じる]** をクリックします。
+
+>[!ENDTABS]
 
 ## ベストプラクティス {#best-practices}
 
