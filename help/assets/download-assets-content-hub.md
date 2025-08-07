@@ -3,10 +3,10 @@ title: Content Hub からのアセットのダウンロード
 description: 1 つまたは複数のアセットとそのレンディションを Content Hub ポータルからダウンロードする方法について説明します。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
    または、アセットのサムネイルをクリックして「![ダウンロード](/help/assets/assets/download-icon.svg)」を選択し、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードすることもできます。
 
-1. 複数のアセットをダウンロードするには、アセットを選択し、![ダウンロード](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]** をクリックして、**[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスで選択したアセットのリストを確認します。アセットの横にある「![選択解除](/help/assets/assets/Close.svg)」をクリックして、リストから選択を解除します。1 つ以上のレンディションを選択し、「**[!UICONTROL ダウンロード]**」をクリックして、単一の ZIP ファイルとしてダウンロードします。**[!UICONTROL スマート切り抜き]**&#x200B;および&#x200B;**[!UICONTROL 静的レンディション]**を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
+1. 複数のアセットをダウンロードするには、アセットを選択し、![ダウンロード](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]** をクリックして、**[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスで選択したアセットのリストを確認します。アセットの横にある「![選択解除](/help/assets/assets/Close.svg)」をクリックして、リストから選択を解除します。1 つ以上のレンディションを選択し、「**[!UICONTROL ダウンロード]**」をクリックして、単一の ZIP ファイルとしてダウンロードします。**[!UICONTROL スマート切り抜き]**&#x200B;および&#x200B;**[!UICONTROL 静的レンディション]**&#x200B;を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
    ![複数のアセットのダウンロード](/help/assets/assets/download-multiple-assets-CH.png)
 ダウンロードの進行中も [!DNL Content Hub] を引き続き使用できます。Content Hub は、ダウンロードプロセス中にワークフローを中断しません。
    ![複数のアセットのダウンロード](/help/assets/assets/download-assets-notification-ch.png)
@@ -138,6 +138,10 @@ The dialog box that displays depends on whether the download list includes expir
   スマート切り抜きレンディションは、[OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできる場合にのみ表示され、ダウンロードできます。スマート切り抜きレンディションは、画像アセットに対してのみ使用できます。
 
   ![レンディションタイプ](/help/assets/assets/renditions-types.png)
+
+  >[!NOTE]
+  > 
+  > ダウンロードパネルには、カスタムの静的レンディションのみが表示されます。 デフォルトの `cq5dam.*` サムネールがContent Hubに表示されません。
 
 ### 動的レンディションの有効化 {#enable-dynamic-media-renditions}
 

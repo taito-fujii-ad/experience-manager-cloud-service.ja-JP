@@ -3,7 +3,7 @@ title: デプロイ [!DNL Content Hub]
 description: コンテンツハブを展開してアクティブ化し、様々なタイプの権限（アセットのアップロード、Adobe Express ユーザー）を持つユーザーにアクセス権を付与する方法と、ユーザーに管理者権限を付与する方法について説明します。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 367406ff325eb71a4c75018c4440eae6535f20dc
+source-git-commit: 772afa3fa409af63698585e139d1efdc026272d8
 workflow-type: tm+mt
 source-wordcount: '1586'
 ht-degree: 99%
