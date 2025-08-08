@@ -5,9 +5,9 @@ thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 145cd4961bd9c0c7bb7e39a1d6dae67f240ecb4d
+source-git-commit: ecb2638cfa65a0a2a24779723bdb301f9d3f1268
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ AEMは、状況と好みに基づいてお客様をサポートできます。 �
 
 #### &#x200B;1. Adobe Commerce as a Cloud Serviceとの統合 {#acaacs}
 
-これは、Edge Deliveryと [0&rbrace;Adobe Commerce ストアフロント &rbrace; を出発点として使用する場合に最適なソリューションです。 ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)ストアフロントには、Adobe Commerce サービス、API と事前統合されたボイラープレートが付属しており、ストアフロントを迅速に構築するための様々なCommerce ドロップインコンポーネントを提供します。
+Adobeでは、出発点としてEdge Deliveryと [0&rbrace;Adobe Commerce ストアフロント &rbrace; を使用することをお勧めします。 ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)ストアフロントには、Adobe Commerce サービス、API と事前統合されたボイラープレートが付属しており、ストアフロントを迅速に構築するための様々なCommerce ドロップインコンポーネントを提供します。
 
 サイズの適合：Adobe Commerce as a Cloud Serviceでの一般的なストアフロントのエクスペリエンス
 
