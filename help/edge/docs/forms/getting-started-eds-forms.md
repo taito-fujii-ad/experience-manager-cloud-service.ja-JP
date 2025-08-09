@@ -4,9 +4,9 @@ description: ユニバーサルエディターのオーサリングアプロー�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
-source-wordcount: '591'
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+workflow-type: tm+mt
+source-wordcount: '580'
 ht-degree: 100%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # AEM Edge Delivery Services で Forms を使い始める
 
-<span class="preview">これは、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">プレリリースチャネル</a>を通じて使用できるプレリリース機能です。</span>
+<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">pre-release channel</a>. </span>-->
 
 Adobe Experience Manager（AEM）Edge Delivery Services（EDS）を使用すると、非常に高速で拡張性の高い web エクスペリエンスをエッジから提供できます。このガイドでは、明確なレコメンデーション階層を持つ&#x200B;**これらのエクスペリエンス向けのフォームを作成および公開する方法**&#x200B;について説明します。
 
@@ -41,11 +41,11 @@ Adobe Experience Manager（AEM）Edge Delivery Services（EDS）を使用する�
 
 ユニバーサルエディターは、次の速度とエンタープライズグレードの機能を組み合わせた、マーケターやデザイナー向けの視覚的なドラッグ＆ドロップオーサリングツールです。
 
-* リアルタイムの WYSIWYG 編集とデバイスのプレビュー。
-* 高度なルールと検証 UI - コードは不要です。
-* AEM のアセット、ワークフロー、フォームデータモデル（FDM）との直接統合。
-* Vanilla JS／CSS のカスタムコンポーネントの開発者へのシームレスなハンドオフ。
-* 柔軟な送信ターゲット：**Forms 送信サービス（FSS）**&#x200B;を使用してシンプルに開始するか、ニーズの拡大に合わせて **AEM パブリッシュの送信アクション**&#x200B;に切り替えます。
+- リアルタイムの WYSIWYG 編集とデバイスのプレビュー。
+- 高度なルールと検証 UI - コードは不要です。
+- AEM のアセット、ワークフロー、フォームデータモデル（FDM）との直接統合。
+- Vanilla JS／CSS のカスタムコンポーネントの開発者へのシームレスなハンドオフ。
+- 柔軟な送信ターゲット：**Forms 送信サービス（FSS）**&#x200B;を使用してシンプルに開始するか、ニーズの拡大に合わせて **AEM パブリッシュの送信アクション**&#x200B;に切り替えます。
 
 > **レコメンデーション**：チームが 100％ドキュメント中心で、フォームが非常に基本的でない限り、すべての新しいフォームプロジェクトはユニバーサルエディターで開始します。
 
@@ -54,10 +54,10 @@ Adobe Experience Manager（AEM）Edge Delivery Services（EDS）を使用する�
 
 ドキュメントベースのオーサリングは、Microsoft Word、Google Docs、Google Sheets などの使い慣れたツールを使用して、シンプルで複雑さの少ないフォームを作成するのに最適です。この方法は、フォームをすばやく簡単に作成する必要があるコンテンツチームに最適です。
 
-* フォームフィールドをテーブル（ドキュメント）内または行（スプレッドシート）として定義します。
-* 基本的なフィールド検証と、スパム保護を実現する Google reCAPTCHA をサポートします。
-* フォーム送信は、Forms 送信サービスを通じてのみ処理されます。
-* 即時公開 - ソースドキュメントで行われた変更は、デプロイメントパイプラインを必要とせずに、すぐにサイトに反映されます。
+- フォームフィールドをテーブル（ドキュメント）内または行（スプレッドシート）として定義します。
+- 基本的なフィールド検証と、スパム保護を実現する Google reCAPTCHA をサポートします。
+- フォーム送信は、Forms 送信サービスを通じてのみ処理されます。
+- 即時公開 - ソースドキュメントで行われた変更は、デプロイメントパイプラインを必要とせずに、すぐにサイトに反映されます。
 
 
 ### ドキュメントオーサリング（DA）でのフォームの埋め込み

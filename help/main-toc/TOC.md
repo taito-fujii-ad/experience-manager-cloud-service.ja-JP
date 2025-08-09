@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e55162f7faf34f6bedf4e25dba9e1e91396fb8d
+source-git-commit: 56c51ea764cc59687766e7f8b069b083e0677af8
 workflow-type: tm+mt
-source-wordcount: '6553'
-ht-degree: 99%
+source-wordcount: '6609'
+ht-degree: 98%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 99%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [2025.6.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [2025.5.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
          + [2025.4.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md)
          + [2025.3.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md)
@@ -127,6 +128,7 @@ ht-degree: 99%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [現在](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
          + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
          + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
@@ -787,6 +789,7 @@ ht-degree: 99%
          + [コアコンポーネントに基づくアダプティブフォームの送信アクションを設定する](/help/forms/configure-submit-actions-core-components.md)
          + [Edge Delivery Services Formsの送信アクションを設定する](/help/forms/configure-submit-action-eds-forms.md)
          + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
+         + [アダプティブフォームとフォームデータモデルの統合](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
          + アダプティブフォームを Microsoft® SharePoint に接続{#connect-to-sharepoint}
             + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
@@ -841,6 +844,7 @@ ht-degree: 99%
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの例](/help/forms/rule-editor-core-components-usecases.md)
                + [アダプティブフォームでの非同期関数の使用](/help/forms/using-async-funct-in-rule-editor.md)
                + [コアコンポーネントに基づくフォーム用のビジュアルルールエディターの呼び出しサービスの機能強化](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [ルールエディターの機能強化](/help/forms/rule-editor-enhancements-use-cases.md)
             + コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要{#create-and-use-custom-function-core-component}
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の概要](/help/forms/create-and-use-custom-functions.md)
                + [コアコンポーネントに基づくアダプティブフォームのカスタム関数の作成と使用](/help/forms/custom-function-core-component-create-function.md)
@@ -1106,12 +1110,11 @@ ht-degree: 99%
       + [リダイレクト](/help/edge/docs/redirects.md)
    + フォームの作成 {#build-forms}
       + [概要](/help/edge/docs/forms/overview.md)
-      + [Edge Delivery Services Forms 用の送信設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [よくある質問](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG オーサリング {#universal-editor}
          + [Edge Delivery Services のフォームのユニバーサルエディターの概要 - 完全ガイド](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [ユニバーサルエディターを使用したオーサリングの開始方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [ユニバーサルエディターを使用した最初のフォーム作成方法 - ステップバイステップチュートリアル](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [送信後のガイドユーザー：ユニバーサルエディターでのリダイレクトと「ありがとうございます」メッセージの設定](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
          + [ユニバーサルエディターインターフェイスガイド：ツール、機能およびナビゲーションについて](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [フォームのモバイル化：ユニバーサルエディターのレスポンシブデザイン](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [美しいフォームの設計：ユニバーサルエディターのスタイル設定とテーマ設定ガイド](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
@@ -1121,6 +1124,7 @@ ht-degree: 99%
          + [フォームの公開およびデプロイ方法：ユニバーサルエディター公開ガイド](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [カスタムフォームコンポーネントの作成：ユニバーサルエディター開発者向けガイド](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [フォームデータモデルの統合：Forms とフォームデータモデルの統合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [事前入力サービスの設定：事前入力サービスを設定するための完全なステップバイステップガイド](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [再利用可能なモジュール型スタンドアロンセグメント：フォーム内でのフォームフラグメントの作成と使用](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
@@ -1142,6 +1146,8 @@ ht-degree: 99%
          + [フォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
          + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
          + [フォームのパフォーマンスの監視：運用テレメトリのガイド](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+      + [Edge Delivery Services Forms 用の送信設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [フォーム作成のベストプラクティス](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Edge Delivery リソース {#resources}
       + サイドキック {#sidekick}
@@ -1275,6 +1281,7 @@ ht-degree: 99%
          + [CI-CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Edge Delivery パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
@@ -1298,6 +1305,7 @@ ht-degree: 99%
          + [Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager への Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [最初の Edge Delivery サイトをワンクリックで作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [外部 Git リポジトリを使用するためのEdge Delivery サイトの設定](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
          + [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [コンテンツのソースの設定](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Cloud Manager での Edge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)

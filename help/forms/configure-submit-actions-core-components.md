@@ -5,7 +5,7 @@ keywords: アダプティブフォームの送信アクションの選択、ア�
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 67%
@@ -40,7 +40,7 @@ ht-degree: 67%
 * [Power Automate フローを呼び出す](/help/forms/forms-microsoft-power-automate-integration.md)
 * [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
 * [Workfront Fusion を起動する](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [フォームデータモデル（FDM）を使用して送信](/help/forms/using-form-data-model.md)
+* [フォームデータモデル（FDM）を使用して送信](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)

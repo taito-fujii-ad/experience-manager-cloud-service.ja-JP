@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 73%
+source-wordcount: '882'
+ht-degree: 72%
 
 ---
 
@@ -29,6 +29,8 @@ AEM Forms と Microsoft® OneDrive のシームレスな統合の利点の一部
 ## アダプティブフォームへの OneDrive の接続
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+<span> このビデオは、コアコンポーネントにのみ適用されます。 UE/基盤コンポーネントについては、の記事を参照してください。</span>
 
 OneDrive for AEM Forms の送信を設定するには、次の手順を実行します。
 

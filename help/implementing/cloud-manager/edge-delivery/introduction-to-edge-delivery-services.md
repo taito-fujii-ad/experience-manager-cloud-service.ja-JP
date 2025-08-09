@@ -4,10 +4,10 @@ description: Edge Delivery Services を使用して Cloud Manager プロジェ�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '798'
-ht-degree: 100%
+source-git-commit: 040c8af18353cbcb9242570e6bb3bac73928e2fa
+workflow-type: tm+mt
+source-wordcount: '822'
+ht-degree: 97%
 
 ---
 
@@ -80,11 +80,12 @@ Cloud Manager の **Edge Delivery の TODO リスト**&#x200B;は、オンボー
 | 1 | 製品コラボレーションチャネルに参加 | 「**今すぐリクエストを送信**」をクリックすると、会社のチャネルを作成するためのリクエストがアドビに送信されます。チャネルが既に存在する場合は、会社のチャネルに転送されます。 |
 | 2 | 前提条件を完了 | [基本を学ぶチュートリアルを表示](https://www.aem.live/developer/tutorial)を参照してください。 |
 | 3 | Edge Delivery サイトを追加または<br>今すぐサイトを作成 | [Edge Delivery サイトの追加](#eds-add-site)を参照してください。<br>[Cloud Manager での Edge Delivery サイトの作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)を参照してください。 |
-| 4 | ドメインを追加 | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
-| 5 | SSL 証明書を追加 | [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。 |
-| 6 | Edge Delivery サイトの CDN を設定 | [ドメインマッピングの追加](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)を参照してください。 |
-| 7 | プッシュ検証を設定 | [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)を参照してください。 |
-| 8 | 運用開始 | [運用開始チェックリスト](/help/edge/docs/go-live-checklist.md)を参照してください。 |
+| 4 | 外部 Git リポジトリを使用するためのEdge Delivery サイトの設定 | [ 外部 Git リポジトリを使用するためのEdge Delivery サイトの設定 ](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md) を参照してください。 |
+| 5 | ドメインを追加 | [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。 |
+| 6 | SSL 証明書を追加 | [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。 |
+| 7 | Edge Delivery サイトの CDN を設定 | [ドメインマッピングの追加](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)を参照してください。 |
+| 8 | プッシュ検証を設定 | [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)を参照してください。 |
+| 9 | 運用開始 | [運用開始チェックリスト](/help/edge/docs/go-live-checklist.md)を参照してください。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441562?learn=on&captions=jpn)
 

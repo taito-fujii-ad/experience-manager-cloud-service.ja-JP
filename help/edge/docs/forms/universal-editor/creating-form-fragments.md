@@ -4,18 +4,18 @@ description: ユニバーサルエディターでフォームフラグメント�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
-source-wordcount: '1401'
-ht-degree: 100%
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+workflow-type: tm+mt
+source-wordcount: '1347'
+ht-degree: 97%
 
 ---
 
 # ユニバーサルエディターでのフォームフラグメントの作成
 
-<span class="preview">この機能は、早期アクセスプログラムを通じて使用できます。アクセス権をリクエストするには、GitHub 組織名とリポジトリ名を記載したメールを公式アドレスから <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> に送信してください。例えば、リポジトリ URL が https://github.com/adobe/abc の場合、組織名は「adobe」、リポジトリ名は「abc」になります。</span>
+<!--<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview">これはプレリリース機能で、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通してアクセスできます。</span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). </span>-->
 
 Forms には、多くの場合、連絡先情報、ID の詳細、同意契約などの共通セクションが含まれています。フォーム開発者は、新しいフォームを作成するたびに、これらのセクションを作成しますが、この作業は繰り返し行われ、時間がかかります。
 こうした作業の重複を排除するには、ユニバーサルエディターでは、パネルやフィールドのグループなどの再利用可能なフォームセグメントを 1 回だけ作成し、様々なフォームで再利用する方法を提供しています。この再利用可能で、モジュール化されたスタンドアロンのセグメントは、フォームフラグメントと呼ばれています。例えば、従業員や管理者の連絡先の詳細など、同じ緊急連絡先フラグメントを、フォームの異なるセクションで使用できます。
@@ -24,17 +24,17 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
 ## Edge Delivery Services フォームフラグメントの機能
 
-* **フォームフラグメントとの一貫性の維持**
+- **フォームフラグメントとの一貫性の維持**
 フラグメントを様々なフォームに統合して、一貫性のあるレイアウトと標準化されたコンテンツを維持できます。
 
   >[!NOTE]
   >
   > 「1 回の変更でどこにでも反映」アプローチを使用すると、フラグメントに対する更新はプレビューモードのすべてのフォームに自動的に適用されます。ただし、公開モードで、変更を反映するには、フラグメントを公開するか、フォームを再公開する必要があります。
 
-* **フォーム内でフォームフラグメントを複数回追加**
+- **フォーム内でフォームフラグメントを複数回追加**
 フォーム内でフォームフラグメントを複数回追加し、そのデータバインディングプロパティをデータソースまたはスキーマに設定できます。
 
-* **フラグメント内でのフラグメントの使用**
+- **フラグメント内でのフラグメントの使用**
 ネストされたフォームフラグメントを作成できます。つまり、フラグメントを別のフラグメントに追加し、ネストされたフラグメント構造を持つことができます。
 
   >[!NOTE]
@@ -43,23 +43,23 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
 ## Edge Delivery Services フォームフラグメント使用時の考慮事項
 
-* フラグメントと、フラグメントを使用するフォームの両方に、同じ GitHub URL を追加する必要があります。
-* フォーム内のフォームフラグメントは編集できません。変更を行うには、スタンドアロンのフォームフラグメントを変更します。
+- フラグメントと、フラグメントを使用するフォームの両方に、同じ GitHub URL を追加する必要があります。
+- フォーム内のフォームフラグメントは編集できません。変更を行うには、スタンドアロンのフォームフラグメントを変更します。
 
 ## 前提条件
 
-* [GitHub リポジトリを設定](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)して、AEM 環境と GitHub リポジトリの間の接続を確立します。
-* 既に Edge Delivery Services を使用している場合は、最新バージョンの[アダプティブフォームブロック](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)を GitHub リポジトリに追加します。
-* AEM Forms オーサーインスタンスには、Edge Delivery Services に基づくテンプレートが含まれます。
-* AEM Forms as a Cloud Service オーサーインスタンスの URL と GitHub リポジトリをすぐに使用できる状態にします。
+- [GitHub リポジトリを設定](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)して、AEM 環境と GitHub リポジトリの間の接続を確立します。
+- 既に Edge Delivery Services を使用している場合は、最新バージョンの[アダプティブフォームブロック](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)を GitHub リポジトリに追加します。
+- AEM Forms オーサーインスタンスには、Edge Delivery Services に基づくテンプレートが含まれます。
+- AEM Forms as a Cloud Service オーサーインスタンスの URL と GitHub リポジトリをすぐに使用できる状態にします。
 
 ## Edge Delivery Services フォームフラグメントの操作
 
 ユニバーサルエディターで Edge Delivery Services フォームフラグメントを作成し、作成したフラグメントを Edge Delivery Services フォームに追加できます。Edge Delivery Services フォームフラグメントで実行できるアクションは次のとおりです。
 
-* [フォームフラグメントの作成](#creating-form-fragments)
-* [フォームへのフォームフラグメントの追加](#adding-form-fragments-to-a-form)
-* [フォームフラグメントの管理](#managing-form-fragments)
+- [フォームフラグメントの作成](#creating-form-fragments)
+- [フォームへのフォームフラグメントの追加](#adding-form-fragments-to-a-form)
+- [フォームフラグメントの管理](#managing-form-fragments)
 
 ### フォームフラグメントの作成
 
@@ -84,14 +84,14 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
    ![「フォームモデル」タブにモデルタイプを表示](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
-   * **フォームデータモデル（FDM）**：データソースから取得したデータモデルオブジェクトとサービスをフラグメントに統合します。フォームで複数のソースからのデータの読み取りと書き込みが必要な場合は、フォームデータモデル（FDM）を選択します。
+   - **フォームデータモデル（FDM）**：データソースから取得したデータモデルオブジェクトとサービスをフラグメントに統合します。フォームで複数のソースからのデータの読み取りと書き込みが必要な場合は、フォームデータモデル（FDM）を選択します。
 
-   * **JSON スキーマ**：データ構造を定義する JSON スキーマを関連付けることで、フォームをバックエンドシステムと統合します。これにより、スキーマ要素を使用して動的コンテンツを追加できます。
-   * **なし**：フォームモデルを使用しないで最初からフラグメントを作成するときに指定します。
+   - **JSON スキーマ**：データ構造を定義する JSON スキーマを関連付けることで、フォームをバックエンドシステムと統合します。これにより、スキーマ要素を使用して動的コンテンツを追加できます。
+   - **なし**：フォームモデルを使用しないで最初からフラグメントを作成するときに指定します。
 
    >[!NOTE]
    >
-   > ユニバーサルエディターでフォームまたはフラグメントをフォームデータモデル（FDM）と統合して、様々なバックエンドデータソースを使用する方法について詳しくは、[こちらをクリック](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)してください。
+   > ユニバーサルエディターでフォームまたはフラグメントをフォームデータモデル（FDM）に統合して様々なバックエンドデータソースを使用する方法については、[ ユニバーサルエディターでのフォームとフォームデータモデルの統合 ](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) を参照してください。
 
 1. （オプション）「**詳細**」タブでフラグメントの&#x200B;**公開日**&#x200B;または&#x200B;**非公開日**&#x200B;を指定します。
 
@@ -123,7 +123,7 @@ Forms には、多くの場合、連絡先情報、ID の詳細、同意契約�
 
    ![セクションに移動](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから&#x200B;**[!UICONTROL フォームフラグメント]**を追加します。
+1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから&#x200B;**[!UICONTROL フォームフラグメント]**&#x200B;を追加します。
    ![フォームフラグメントを追加](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    **[!UICONTROL フォームフラグメント]**&#x200B;コンポーネントを選択すると、フラグメントがフォームに追加されます。追加したフラグメントのプロパティは、この&#x200B;**プロパティ**&#x200B;を開いて設定できます。例えば、フラグメントのタイトルをこの&#x200B;**プロパティ**&#x200B;から非表示にします。
@@ -211,10 +211,8 @@ AEM Forms ユーザーインターフェイスを使用して、フォームフ�
 
 ## ベストプラクティス
 
-* フラグメント名が一意であることを確認します。同じ名前の既存のフラグメントが存在する場合、フラグメントは作成できません。
-* スタンドアロンのフォームフラグメント内の式、スクリプト、またはスタイルは、フォームの参照によって挿入されたときや、埋め込まれたときにも保持されます。
-* フォームを公開すると、フォーム内で参照によって挿入されたフォームフラグメントが自動的に公開されます。
+- フラグメント名が一意であることを確認します。同じ名前の既存のフラグメントが存在する場合、フラグメントは作成できません。
+- スタンドアロンのフォームフラグメント内の式、スクリプト、またはスタイルは、フォームの参照によって挿入されたときや、埋め込まれたときにも保持されます。
+- フォームを公開すると、フォーム内で参照によって挿入されたフォームフラグメントが自動的に公開されます。
 
-## 関連トピック
 
-{{universal-editor-see-also}}

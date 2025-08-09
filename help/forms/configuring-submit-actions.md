@@ -4,7 +4,7 @@ description: アダプティブフォームには、複数の送信アクショ�
 feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 54%
@@ -33,7 +33,7 @@ ht-degree: 54%
 * [Power Automate フローを呼び出す](/help/forms/forms-microsoft-power-automate-integration.md)
 * [SharePoint に送信](/help/forms/configure-submit-action-sharepoint.md)
 * [Workfront Fusion を起動する](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [フォームデータモデル（FDM）を使用して送信](/help/forms/using-form-data-model.md)
+* [フォームデータモデル（FDM）を使用して送信](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Azure Blob Storage への送信](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [REST エンドポイントに送信](/help/forms/configure-submit-action-restpoint.md)
 * [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
