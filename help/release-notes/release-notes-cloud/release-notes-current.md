@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: 1cb24ca4aabf3ccd12c514cc9d74ad0c1cc8e2fb
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 51%
+source-wordcount: '2271'
+ht-degree: 50%
 
 ---
 
@@ -48,10 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites の新機能 {#enhancements-sites}
 
-**コンテンツフラグメントの機能強化**
-
-* 子を持つコンテンツフラグメントをコピーできるようになりました。
-* フォルダー設定でカスタムワークスペースを設定して、コンテンツフラグメントをAdobe Targetの設定済みワークスペースに書き出すことができるようになりました。
+* 参照されたフラグメント（子）を含んだコンテンツフラグメントを 1 回の操作でコピーできるようになりました。 これにより、既存のコンテンツフラグメント構造を再利用して、新しいコンテンツを作成できます。
+* コンテンツフラグメント管理 UI で、選択したフラグメントの過去のワークフローと現在実行中のワークフローに関する詳細情報を使用して、コンテンツフラグメントのワークフローステータスを表示できるようになりました。
+* ライブコピーソースページの名前の変更または移動を行うと、名前が変更または移動に応じてライブコピーページをトリガーが再公開するようになりました。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -68,7 +67,6 @@ AEM Assetsのアセット参照ページで、[ カード表示またはリス�
 ![AI で生成されたタイトルの設定 ](/help/assets/assets/configure-title-ai-generated.png)
 
 また、AI で生成されたメタデータをフォルダーレベルで無効にすることも選択できるようになりました。
-
 
 ### コンテンツハブの新機能 {#new-features-content-hub}
 
@@ -181,6 +179,10 @@ API 統合ツールを使用すると、フォーム作成者は、ユーザー�
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
+
+### 権限管理のプリンシパルビュー {#principal-view}
+
+AEM では、ユーザーとグループに対する権限管理が導入されました。主な機能は従来の UI と同じですが、よりユーザーフレンドリーで効率的です。 詳しくは、[ 専用の記事 ](/help/security/touch-ui-principal-view.md) を参照してください。
 
 ### 更新された非推奨プロセス {#updated-deprecation-process}
 

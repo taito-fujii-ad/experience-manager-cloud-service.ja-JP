@@ -1,14 +1,14 @@
 ---
 title: Edge Delivery パイプラインの追加
 description: Edge Delivery パイプラインを追加し、コードをビルドして実稼動環境にデプロイする方法について説明します。
-index: false
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Private Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 hide: false
+index: false
 hidefromtoc: false
-source-git-commit: 96a619c6ab8f71034914b72a57bdb1e7f363fbc6
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 26%
@@ -26,9 +26,12 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 >
 >Edge Delivery パイプラインは、次の状況が発生するまで設定できません。
 >
->* 1 つのEdge Delivery Services サイトと 1 つのマッピングされたドメインを含むプログラムが作成されます。 それ以外の場合は、「Edge Delivery パイプラインを追加 **オプションがユーザーインターフェイスで無効に表示され** ツールチップに不足している要件が説明されます。<!-- CMGR‑69680 -->
+>* 1 つのEdge Delivery Services サイトと 1 つのマッピングされたドメインを含むプログラムが作成されます。 それ以外の場合は、「Edge Delivery パイプラインを追加 **オプションがユーザーインターフェイスで無効に表示され** ツールチップに不足している要件が説明されます。
 >* Git リポジトリには 1 つ以上の分岐があります。
 >* 本番環境とステージング環境が作成されます。
+
+<!-- CMGR‑69680 -->
+
 
 コードのデプロイを開始する前に、[!UICONTROL Cloud Manager] からパイプライン設定を行う必要があります。
 

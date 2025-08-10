@@ -6,13 +6,12 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: アダプティブフォームの事前入力、アダプティブフォームエッジ配信サービス、アダプティブフォームの自動入力
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1829'
 ht-degree: 4%
 
 ---
-
 
 # Edge Delivery Servicesを使用したアダプティブFormsでの事前入力サービスの設定
 
@@ -37,9 +36,9 @@ ht-degree: 4%
 事前入力プロセスには、次の 4 つの主なステップが含まれます。
 
 1. **ユーザーがフォームを開く**：ユーザーが URL またはナビゲーションを使用してアダプティブフォームにアクセスします
-2. **データSourceの特定**：事前入力サービスは、設定済みのデータソース（フォームデータモデルまたはドラフトサービス）を特定します。
-3. **データの取得**：システムは、コンテキスト、パラメーター、ユーザー ID に基づいて関連するユーザーデータを取得します
-4. **マッピングと表示**：データは、`bindRef` プロパティを使用してフォームフィールドにマッピングされ、入力されたフォームがユーザーに表示されます
+1. **データSourceの特定**：事前入力サービスは、設定済みのデータソース（フォームデータモデルまたはドラフトサービス）を特定します。
+1. **データの取得**：システムは、コンテキスト、パラメーター、ユーザー ID に基づいて関連するユーザーデータを取得します
+1. **マッピングと表示**：データは、`bindRef` プロパティを使用してフォームフィールドにマッピングされ、入力されたフォームがユーザーに表示されます
 
 この自動プロセスにより、関連情報が事前に入力されたフォームが表示されるので、ユーザーエクスペリエンスとフォームの完了率が大幅に向上します。
 
@@ -62,7 +61,6 @@ ht-degree: 4%
 - **JSON スキーマフォーム**：スキーマに準拠した JSON
 - **フォームデータモデル（FDM）フォーム**:FDM 構造に一致する JSON
 - **スキーマレスフォーム**：すべてのフィールドがバインド解除され、バインドされていない XML を使用します
-
 
 ## 前提条件
 
@@ -106,43 +104,43 @@ ht-degree: 4%
 
 ## フォームの事前入力サービスの設定
 
-
 +++フェーズ 1：フォームデータモデルの設定
 
 ### 手順 1：フォームデータモデルを作成する
 
 1. AEM Forms as a Cloud Service インスタンスにログインします
-2. **Adobe Experience Manager** / **Forms** / **データ統合** に移動します
-3. **作成**/**フォームデータモデル** を選択します。
-4. **Data Source設定** を選択し、設定済みの **Data Source** を選択します。
+1. **Adobe Experience Manager** / **Forms** / **データ統合** に移動します
+1. **作成**/**フォームデータモデル** を選択します。
+1. **Data Source設定** を選択し、設定済みの **Data Source** を選択します。
 
    ![ 作成されたフォームデータモデル ](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > フォームデータモデルの作成手順について詳しくは、「[ フォームデータモデルの作成 ](/help/forms/create-form-data-models.md)」を参照してください。
+   >フォームデータモデルの作成手順について詳しくは、「[ フォームデータモデルの作成 ](/help/forms/create-form-data-models.md)」を参照してください。
 
 ### 手順 2:FDM サービスの構成
 
 1. **Adobe Experience Manager** / **Forms** / **データ統合** に移動します
-2. フォームデータモデルを編集モードで開きます。
-3. データモデルオブジェクトを選択して、「**プロパティを編集**」をクリックします
-4. 選択したデータモデルオブジェクトに対して **読み取り** および **書き込み** サービスを設定
+1. フォームデータモデルを編集モードで開きます。
+1. データモデルオブジェクトを選択して、「**プロパティを編集**」をクリックします
+1. 選択したデータモデルオブジェクトに対して **読み取り** および **書き込み** サービスを設定
 
    ![ 読み取り/書き込みサービスの設定 ](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. サービス引数の設定：
+1. サービス引数の設定：
+
    - 読み取りサービス引数の「編集」アイコンをクリックします。
    - 引数を **ユーザープロファイル属性**、**リクエスト属性** または **リテラル値** にバインドします
    - 連結値を指定（例：ペット登録フォームの場合は `petid`）
 
    ![ ペット ID 引数を設定 ](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. **完了** をクリックして引数を保存し、**保存** をクリックして FDM を保存します
+1. **完了** をクリックして引数を保存し、**保存** をクリックして FDM を保存します
 
-       >[！注意 ]
-       >
-       > FDM サービスの設定について詳しくは、[ フォームデータモデル（FDM）の操作 ](/help/forms/work-with-form-data-model.md) を参照してください。
+   >[!NOTE]
+   >
+   > FDM サービスの設定について詳しくは、[ フォームデータモデル（FDM）の操作 ](/help/forms/work-with-form-data-model.md) を参照してください。
 
 +++
 
@@ -151,35 +149,36 @@ ht-degree: 4%
 ### 手順 3：アダプティブフォームを作成する
 
 1. **Adobe Experience Manager** / **Forms** / **Formsとドキュメント** に移動します
-2. **作成**/**アダプティブForms** を選択します。
-3. 「**Source**」タブで、Edge Delivery Servicesテンプレートを選択します。
+1. **作成**/**アダプティブForms** を選択します。
+1. 「**Source**」タブで、Edge Delivery Servicesテンプレートを選択します。
 
-       ![Edge Delivery Services テンプレート ] （/help/edge/assets/create-eds-forms.png） 
-   
-4. **作成** をクリックして **フォームを作成** ウィザードを開きます
-5. フォームの詳細を指定します。
+   ![Edge Delivery Services テンプレート](/help/edge/assets/create-eds-forms.png)
+
+1. **作成** をクリックして **フォームを作成** ウィザードを開きます
+1. フォームの詳細を指定します。
+
    - **名前**：フォームのわかりやすい名前を入力します
    - **タイトル**：わかりやすいタイトルを指定します
    - **GitHub URL**：リポジトリ URL を入力します（例：`https://github.com/wkndforms/edsforms`）
 
-6. 「**作成**」をクリックします
+1. 「**作成**」をクリックします
 
-       ![ スキーマベースのフォームを作成 ] （/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png） 
-   
+   ![スキーマベースのフォームを作成](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+
 オーサリング用にユニバーサルエディターでフォームを開きます。
 
 ### 手順 4：フォームデータのSourceを設定する
 
 1. フォームを選択し、「**プロパティ**」をクリックします
 
-       ![ フォームのプロパティを選択 ] （/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png） 
-   
+   ![ フォームプロパティの選択 ](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+
 2. 「**フォームモデル**」タブを開きます。
 3. **選択元** ドロップダウンから「**フォームデータモデル（FDM）**」を選択します。
 4. ドロップダウンから、作成したフォームデータモデル（PetFDM など）を選択します
 
-       ![ フォームモデルのタブを選択 ] （/help/edge/docs/forms/universal-editor/assets/select-form-model1.png） 
-   
+   ![「フォームモデル」タブを選択](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+
 5. 「**保存して閉じる**」をクリックします。
 6. フォームをユニバーサルエディターで編集用に開きます
 
@@ -193,6 +192,7 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
    ![ スキーマベースのフォームを示すユニバーサルエディターのスクリーンショット ](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. フォームフィールドにデータ連結を追加します。
+
    - フォームフィールドを選択
    - 「**プロパティ**」パネルで、「**バインド参照**」プロパティを見つけます
    - 適切なデータ連結の参照を選択
@@ -208,12 +208,14 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 ユニバーサルエディターでこれらの拡張機能が有効になっていることを確認します。
 
 1. **AEM フォームプロパティ拡張機能**
+
    - ユニバーサルエディターで **Extension Manager** を開く
    - **AEM フォームのプロパティ** 拡張機能を有効にします
 
    ![ フォームプロパティアイコン ](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **Data Source拡張機能**
+1. **Data Source拡張機能**
+
    - **データソース** アイコンが表示されない場合は、**データソース** 拡張機能を有効にします
 
    ![ ユニバーサルエディターExtension Managerのスクリーンショット ](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -232,8 +234,8 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 3. 「**事前入力** タブをクリックします
 4. **フォームデータモデル事前入力サービス** を選択します。
 
-       ![ 事前入力サービスを選択 ] （/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png） 
-   
+   ![ 事前入力サービスを選択 ](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+
 5. 「**保存して閉じる**」をクリックします。
 
 +++
@@ -247,14 +249,14 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 3. **HTMLとしてプレビュー** を選択します。
 4. URL にパラメーターを追加して事前入力をテストします。
 
-       https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
-   
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+
    **例：**
 
-       https://your-preview-url.com?petid=12345
-       
-       ![ 事前入力フォーム ] （/help/edge/docs/forms/universal-editor/assets/prefill-form.png） 
-   
+   https://your-preview-url.com?petid=12345
+
+   ![ 事前入力フォーム ](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+
 フォームは、指定されたパラメーターに基づいてデータを自動的に入力する必要があります。
 
 +++
@@ -306,11 +308,11 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 
 **基本的な事前入力テスト：**
 
-    https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **複数パラメーターのテスト：**
 
-    https://preview.example.com/form.html?userId=12345&amp;category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## トラブルシューティング
@@ -330,21 +332,25 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 +++デバッグ手順
 
 1. **FDM 設定の確認：**
+
    - サービスが正しく設定されているかどうかを確認します
    - FDM サービスの個別テスト
    - データソース接続の検証
 
 2. **フォーム設定を確認：**
+
    - フォームが正しい FDM に関連付けられていることを確認します
    - フィールド `bindRef` 値の検証
    - 事前入力なしのテスト フォームを最初に実行
 
 3. **データフローのテスト：**
+
    - ブラウザー開発者ツールを使用したネットワークリクエストの調査
    - コンソールでJavaScript エラーを確認します
    - 応答データ形式の検証
 
 4. **一般的なエラーメッセージ：**
+
    - 「事前入力サービスが見つかりません」: サービス設定を確認します
    - 「データバインディングに失敗しました」:`bindRef` の精度を確認します
    - 「無効なデータ形式」：データがスキーマと一致することを確認します
@@ -431,7 +437,6 @@ FDM のフォーム要素は、**コンテンツブラウザー** の **デー�
 フォームごとに 1 つのプライマリ事前入力サービスを設定できます。 ただし、1 つのフォームデータモデル内で異なるデータソースを組み合わせて、同様の機能を実現することができます。
 
 +++
-
 
 ## 関連トピック
 

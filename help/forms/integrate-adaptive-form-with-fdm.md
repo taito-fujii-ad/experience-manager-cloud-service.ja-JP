@@ -3,7 +3,7 @@ title: フォームのフォームデータモデル（FDM）をアダプティ�
 description: フォームデータモデル（FDM）に基づいたフォームの作成方法について説明します。FDM でデータモデルオブジェクトのサンプルデータを生成し、編集します。
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 31%
@@ -54,6 +54,7 @@ ht-degree: 31%
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
 1. **[!UICONTROL 送信アクション]** ドロップダウンリストから「**[フォームデータモデルを使用して送信]**」を選択します。
+
    ![ フォームデータモデルを使用して送信 ](/help/forms/assets/submit-uisng-fdm-cc.png)
 
 1. 作成した **[!UICONTROL 送信するデータモデル]** 設定を選択します。
@@ -66,15 +67,19 @@ ht-degree: 31%
 
 1. アダプティブフォームを編集用に開きます。
 1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
-**フォームのプロパティ** ダイアログが表示されます。
+
+   **フォームのプロパティ** ダイアログが表示されます。
 
    >[!NOTE]
    >
    > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
    > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+
 1. 「**送信**」タブをクリックし、「**[!UICONTROL フォームデータモデルを使用して送信]**」を選択します。
+
    ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
 「**添付ファイルを元の名前で保存**」を選択すると、添付ファイルは元のファイル名を使用してフォルダーに保存されます。 Azure Blob ストレージにレコードのドキュメント（DoR）を保存することもできます。
+
 1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
 1. **[!UICONTROL 保存して閉じる]** をクリックします。
 

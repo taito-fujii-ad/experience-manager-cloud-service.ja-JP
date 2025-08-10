@@ -1,14 +1,14 @@
 ---
-Title: How to configure submit action to Marketo Engage for forms?
-Description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
-Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: Forms 用にMarketo Engageに送信アクションを設定する方法
+description: アダプティブフォームの送信アクションを設定して、Marketo Engageにデータを送信する方法を説明します。
+keywords: Marketo engage へのデータの送信、「Marketo Engageに送信」として送信アクションを設定する
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 15%
+source-wordcount: '772'
+ht-degree: 14%
 
 ---
 

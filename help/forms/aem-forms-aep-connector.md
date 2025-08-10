@@ -6,7 +6,7 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '2047'
 ht-degree: 3%
@@ -251,7 +251,8 @@ A：現在、各フォームは 1 つのデータセットにのみ送信でき�
 **Q：処理可能なフォーム送信の数に制限はありますか。**
 回答：フォームの送信は、AEPのストリーミング取り込み [ 割り当て量とレート制限 ](https://experienceleague.adobe.com/ja/docs/experience-platform/data-lifecycle/api/quota) の影響を受けます。
 
-<!-- >
+<!-- 
+>
 **Q: Can form attachments be sent to AEP?**
 A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP. -->
 

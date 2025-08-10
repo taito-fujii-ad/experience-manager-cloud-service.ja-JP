@@ -1,13 +1,13 @@
 ---
-Title: How to integrate Marketo Engage with AEM Forms using Form wizard?
-Description: Learn how to integrate your Marketo Engage instance with AEM Forms using form wizard.
-Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: フォームウィザードを使用してMarketo EngageをAEM Formsと統合する方法
+description: フォームウィザードを使用してMarketo Engage インスタンスをAEM Formsと統合する方法について説明します。
+keywords: Marketo インスタンスとフォームの接続方法、フォームをMarketoに接続、フォームをMarketo Engageと統合、アダプティブフォームをMarketo インスタンスと統合します。
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1081'
 ht-degree: 8%
 
 ---

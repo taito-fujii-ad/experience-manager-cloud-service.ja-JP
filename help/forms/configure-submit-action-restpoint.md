@@ -1,15 +1,14 @@
 ---
-Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
-Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
+description: アダプティブフォームの送信時に Rest エンドポイントを設定する手順について説明します。
 keywords: AEM Forms REST エンドポイント、REST エンドポイントへの送信、REST URL へのデータの POST、REST エンドポイントアクションの設定
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 76%
+source-wordcount: '1481'
+ht-degree: 74%
 
 ---
 

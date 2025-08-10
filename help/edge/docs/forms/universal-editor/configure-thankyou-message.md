@@ -1,13 +1,13 @@
 ---
-title: リダイレクトページまたはお礼のメッセージの設定方法？
+title: リダイレクトページまたはありがとうメッセージの設定方法
 description: ユーザーにお礼のメッセージを表示したり、フォーム作成者がフォームの作成時に設定できる web ページにリダイレクトしたりする方法について説明します。
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 958891216e117acc03c50446ae92f85108d275a7
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 52%
+ht-degree: 50%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 52%
 
 >[!NOTE]
 >
-> * ユニバーサルエディターインターフェイスに「**フォームプロパティ**」アイコンが表示されない場合は、Extension Managerで「**フォームプロパティを編集**」拡張機能を有効にします。
-> * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
+>* ユニバーサルエディターインターフェイスに「**フォームプロパティ**」アイコンが表示されない場合は、Extension Managerで「**フォームプロパティを編集**」拡張機能を有効にします。
+>* ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
 
 ## リダイレクトまたは「ありがとうございます」メッセージの設定方法
 
@@ -37,9 +37,9 @@ ht-degree: 52%
 リダイレクトページまたはお礼のメッセージを設定するには、次の手順を実行します。
 
 1. アダプティブフォームを編集用に開きます。
-2. コンテンツツリーを開き、「**[!UICONTROL ガイドコンテナ]**」を選択します。
-3. アダプティブフォームコンテナのプロパティ（![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン）をクリックします。データモデルを設定するためのアダプティブフォームコンテナダイアログボックスが開きます。
-4. 「**[!UICONTROL 送信]**」タブを開きます。リダイレクトページまたはメッセージを設定するためのオプションが表示されます。
+1. コンテンツツリーを開き、「**[!UICONTROL ガイドコンテナ]**」を選択します。
+1. アダプティブフォームコンテナのプロパティ（![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン）をクリックします。データモデルを設定するためのアダプティブフォームコンテナダイアログボックスが開きます。
+1. 「**[!UICONTROL 送信]**」タブを開きます。リダイレクトページまたはメッセージを設定するためのオプションが表示されます。
 
    ![リダイレクトページまたはメッセージを設定するためのガイドコンテナの送信ダイアログ](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
@@ -56,5 +56,3 @@ ht-degree: 52%
 ![ 感謝祭 ](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 フォーム作成者は、フォーム送信後にユーザーがリダイレクトされるページを各フォームに設定することができます。
-
-

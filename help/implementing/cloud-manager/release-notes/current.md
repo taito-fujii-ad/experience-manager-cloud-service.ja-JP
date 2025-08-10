@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: cb841b9614ccf5c6bcfeef7524fd6306b3b1ac35
+source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 62%
+source-wordcount: '1308'
+ht-degree: 59%
 
 ---
 
@@ -25,11 +25,6 @@ AEM as a Cloud Service の Cloud Manager 2025.8.0 のリリース日は 2025年8
 
 次回のリリース予定は 2025年9月4日（PT）です。
 
-
-
-
-
-
 ## 新機能 {#what-is-new}
 
 * **Edge Delivery Services ライセンスは、セルフサービス方式で HIPAA プログラムに含めることができます**
@@ -42,7 +37,7 @@ AEM as a Cloud Service の Cloud Manager 2025.8.0 のリリース日は 2025年8
 
 * **新しいForms アドオンの自動プロビジョニング**
 
-  Sites のみのユーザーは、多くの場合、マーケティングフォームを構築するために軽量で低コストな方法を必要とします。 新しいAEM Forms Sites アドオンは、Sites プログラムに限定的なForms機能を追加することで、このニーズを満たします。 また、必要に応じて、AEM Formsの全製品への明確なアップグレードパスを作成します。<!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  Sites のみのユーザーは、多くの場合、マーケティングフォームを構築するために軽量で低コストな方法を必要とします。 新しいAEM Forms Sites アドオンは、Sites プログラムに限定的なForms機能を追加することで、このニーズを満たします。 また、AEM Formsの全製品への明確なアップグレードパスも作成されます。<!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   アドオン：
    * Sites プログラムに添付して、そのプログラムと共にデプロイします。Forms プログラムや権利付与は分離されません。
@@ -83,7 +78,6 @@ Cloud Managerのベータプログラムに参加すると、一般リリース�
 
 [AEM as a Cloud Service のコンテンツを復元](/help/operations/restore.md)も参照してください。
 
-
 ### 特殊なテスト環境 {#specialized-test-environment}
 
 Cloud Manager は、**専用のテスト環境**&#x200B;という新しい追加の環境タイプをサポートするようになりました。この環境は、運用開始前に、チームが実稼動環境に近い条件下で機能を検証するのに役立つように設計されています。この環境タイプは、*実稼動環境とステージング環境*、*開発環境*&#x200B;または&#x200B;*迅速な開発環境*&#x200B;環境とは異なり、高度な検証シナリオを実行することに焦点を当てたスペースが提供されます。
@@ -115,8 +109,7 @@ Azure DevOps Git リポジトリを Cloud Manager にオンボードできるよ
 
 ![リポジトリを追加ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信します。 使用する Git プラットフォームと、プライベート／パブリックまたはエンタープライズリポジトリ構造のいずれを使用するかを必ず含めてください。
-
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 **BYOG に関するよくある質問**
 
@@ -134,7 +127,7 @@ Cloud Managerで「**アクセストークンの管理**」を使用して、外
 
 [アクセストークンを管理](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)をご覧ください。
 
-この新機能をテストしてフィードバックを共有することに関心がある場合は、Adobe ID に関連付けられたメールアドレスから [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) にメールを送信してください。
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ### Edge Delivery 設定パイプラインを追加する {#add-eds-pipeline}
@@ -159,7 +152,7 @@ Edge Delivery Services を使用して作成されたサイトで設定パイプ
 
 [Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
 
-この新機能をテストしてフィードバックを共有したい場合は、Adobe ID に関連付けられたメールアドレスから [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) にメールを送信してください。
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ## バグ修正

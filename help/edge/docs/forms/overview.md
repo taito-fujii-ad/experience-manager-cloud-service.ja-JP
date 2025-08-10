@@ -4,7 +4,7 @@ description: ユニバーサルエディターのオーサリングアプロー�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
@@ -49,7 +49,9 @@ Adobe Experience Manager（AEM）Edge Delivery Services（EDS）を使用する�
 
 ### ユニバーサルエディター
 
-<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">pre-release channel</a>. </span>-->
+<!--
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features">pre-release channel</a>. </span>
+-->
 
 [ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)は、次の速度とエンタープライズグレードの機能を組み合わせた、マーケターやデザイナー向けの視覚的なドラッグ＆ドロップオーサリングツールです。
 
@@ -150,10 +152,10 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
         border-radius: 5px;
         padding: 5px;
         box-sizing: border-box;
-        transition: background-color 0.3s ease; /- Adding transition effect */
+        transition: background-color 0.3s ease; /* Adding transition effect */
     }
     .card-container:hover {
-        background-color: #f0f0f0; /- Changing background color on hover */
+        background-color: #f0f0f0; /* Changing background color on hover */
     }
 </style>
 
