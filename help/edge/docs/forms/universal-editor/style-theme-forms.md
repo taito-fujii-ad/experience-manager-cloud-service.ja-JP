@@ -4,26 +4,30 @@ description: Edge Delivery Services 経由で配信される AEM Forms のテー
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 83%
+source-wordcount: '2493'
+ht-degree: 55%
 
 ---
 
 # フォームの外観をカスタマイズ
 
-フォームは、web サイトでのユーザーのインタラクションに不可欠で、データを入力できるようにします。カスケーディングスタイルシート（CSS）を使用すると、フォームのフィールドのスタイル設定、フォームの視覚的表現の強化、ユーザーエクスペリエンスの向上を行うことができます。
+AEM Forms用Edge Delivery Servicesのフォームスタイル設定には、CSS カスタムプロパティ、ブロックベースのアーキテクチャ、コンポーネント固有のターゲティング戦略に関する高度な知識が必要です。 従来のフォームスタイル設定アプローチとは異なり、アダプティブ Forms ブロックは、Edge Delivery Servicesのパフォーマンスとアクセシビリティのメリットを維持しながら、一貫したテーマ設定を可能にする体系的な設計トークンシステムを実装します。
 
-アダプティブフォームブロックを使用すると、すべてのフォームフィールドで一貫した構造を作成できます。一貫性のある構造により、フィールドタイプとフィールド名に基づいてフォームフィールドの選択とスタイル設定を行う、CSS セレクターの開発が容易になります。
+アダプティブ Forms ブロックアーキテクチャは、すべてのフォームコンポーネントで標準化されたHTML構造を生成し、CSS のターゲティングとカスタマイズに対して予測可能なパターンを作成します。 この一貫性により、開発者は、Edge Delivery Servicesを非常に高速にするブロックベースのパフォーマンス最適化を維持しながら、複雑なフォーム実装全体に拡張できる包括的なスタイルシステムを実装できます。
 
-このドキュメントでは、様々なフォームコンポーネントの HTML 構造の概要を説明し、アダプティブフォームブロックのフォームフィールドのスタイルを設定する、様々なフォームフィールドの CSS セレクターの作成方法を理解するのに役立ちます。
+この包括的なガイドでは、CSS カスタムプロパティシステム、コンポーネントのEdge Delivery Services構造パターン、高度なスタイル設定手法など、HTML エコシステム内のフォームスタイル設定の技術的基礎について説明します。 このドキュメントでは、高度なブランド化されたフォームエクスペリエンスを作成するための理論的な理解と実践的な実装ガイダンスの両方を提供します。
 
-記事を最後まで読むと、次の内容を理解できます。
+## マスター内容
 
-- アダプティブフォームブロックに含まれているデフォルトの CSS ファイルの構造を理解できます。
-- 一般的なコンポーネントや、特定のコンポーネント（ドロップダウン、ラジオグループ、チェックボックスグループなど）を含め、アダプティブフォームブロックが提供するフォームコンポーネントの HTML 構造を理解できます。
-- CSS セレクターを使用して、フィールドタイプとフィールド名に基づいてフォームフィールドのスタイルを設定し、要件に基づいて一貫したスタイルを設定したり、独自のスタイルを設定したりする方法を学びます。
+**CSS カスタムプロパティのマスター**：カラースキーム、タイポグラフィスケール、間隔システム、レイアウトパラメーターなど、フォームの外観を制御する完全な変数システムについて説明します。 これらのプロパティを上書きおよび拡張して、包括的なブランドテーマを実装する方法を説明します。
+
+**コンポーネントアーキテクチャの理解**：各フォームコンポーネントタイプで使用されるHTML構造パターンに関する深い知識を得ることで、基盤となる機能やアクセシビリティ機能を損なうことなく、CSS の正確なターゲティングとカスタマイズを可能にします。
+
+**高度なスタイル設定手法**：状態ベースのスタイル設定、レスポンシブデザインの統合、Edge Delivery Servicesの高速読み込み特性を維持するパフォーマンスが最適化されたカスタマイズ戦略など、高度なスタイルパターンを実装します。
+
+**プロフェッショナルな実装戦略**：設計システムの統合、保守可能な CSS アーキテクチャ、複雑なスタイルシナリオのトラブルシューティング手法など、フォームスタイル設定に対する業界標準のアプローチを説明します。
 
 ## フォームフィールドタイプについて
 
@@ -45,57 +49,266 @@ ht-degree: 83%
 - フレックスボックス／グリッド：CSS [フレックスボックス](https://www.w3schools.com/css/css3_flexbox.asp)および[グリッドレイアウト](https://www.w3schools.com/css/css_grid.asp)は、レスポンシブで柔軟なデザインを作成するのに強力なツールです。
 
 
-## アダプティブフォームブロックのフォームのスタイル設定
 
-アダプティブフォームブロックは、標準化された HTML 構造を提供し、フォームコンポーネントの選択とスタイル設定のプロセスを簡素化します。
 
-- **デフォルトスタイルを更新**：フォームのデフォルトスタイルは、フォームの CSS ファイルを編集することで変更できます。 デフォルトのスタイルは、プロジェクトの GitHub リポジトリ（通常は `https://github.com/<your-github-username>/<your-repository>/tree/main/blocks/form/form.css`）で利用できます。 このファイルは、フォームの包括的なスタイル設定を提供し、複数ステップのウィザードフォームをサポートし、カスタマイズを容易にするために CSS カスタムプロパティの使用を強調します。
+## CSS カスタムプロパティを使用した包括的なフォームスタイル設定
 
-- **CSS スタイルパターン**:Edge Delivery Servicesでは、ブロックベースの CSS アーキテクチャを使用します。 次の推奨セレクターパターンを使用します。
+アダプティブFormsブロックは、カスタムプロパティ（CSS 変数）に基づいて構築された高度な CSS アーキテクチャを使用して、すべてのフォームコンポーネントに対して体系的なテーマ設定と一貫したスタイル設定を可能にします。 この構造を理解することは、フォームのカスタマイズとブランディングを効果的に行ううえで不可欠です。
 
-  **プライマリパターン （推奨）:**
+### forms.css アーキテクチャについて
 
-  ```css
-  /* Block-level styling - Form container */
-  .form {
-      /* Styles for the entire form block */
-      max-width: 600px;
-      margin: 0 auto;
-  }
-  
-  /* Form element styling */
-  .form form {
-      /* Styles for the actual <form> element */
-      padding: 2rem;
-  }
-  
-  /* Field wrapper styling by type */
-  .form .{Type}-wrapper input {
-      /* Styles for input fields */
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-  }
-  ```
+デフォルトのフォームスタイルは、プロジェクトリポジトリ（`/blocks/form/form.css`）に配置され、メンテナンス性、一貫性、カスタマイズの柔軟性を優先する構造化されたアプローチに従います。 このアーキテクチャは、次のいくつかの主要なコンポーネントで構成されます。
 
-  **コンテキスト固有のパターン（特異性がより高い場合）:**
+**CSS カスタムプロパティの基盤**：スタイルシステムは、`:root` レベルで定義された CSS カスタムプロパティに基づいて構築されており、すべてのフォームコンポーネントを通じて連鎖する一元的なテーマシステムを提供します。 これらの変数は、カラー、タイポグラフィ、間隔およびレイアウトプロパティのデザイントークンを設定します。
 
-  ```css
-  /* When you need higher specificity for main content area */
-  main .form .{Type}-wrapper input {
-      /* More specific targeting */
-      border-color: #007cba;
-  }
-  ```
+**ブロックベースの CSS 構造**:Edge Delivery Servicesは、`.form` クラスが、すべてのフォーム関連スタイルのプライマリ名前空間として機能するブロックベースのアーキテクチャを採用し、適切なスコープ分離を確保し、CSS の他のページコンポーネントとの競合を防ぎます。
+
+**コンポーネント固有のスタイル設定**：個々のフォームコンポーネントは、一貫性のあるラッパーパターン（`.{Type}-wrapper`）を使用してスタイル設定されます。このパターンは、デザインシステム全体の整合性を維持しながら、様々なフィールドタイプに対して予測可能なターゲティングを提供します。
+
+### CSS カスタムプロパティのリファレンスとカスタマイズ
+
+フォームのスタイルシステムには、フォームの外観と動作のあらゆる側面を制御する 50 を超える CSS カスタムプロパティが含まれています。 これらのプロパティを理解すると、デザインの一貫性を維持しながら、包括的なカスタマイズが可能になります。
+
++++ カラー変数とテーマ変数
+
+カラーシステムは、慎重に整理されたカスタムプロパティを通じて、フォームの完全な視覚的基盤を確立します。
+
+```css
+:root {
+    /* Primary color system */
+    --background-color-primary: #fff;
+    --label-color: #666;
+    --border-color: #818a91;
+    --form-error-color: #ff5f3f;
+    
+    /* Button color system */
+    --button-primary-color: #5F8DDA;
+    --button-secondary-color: #666;
+    --button-primary-hover-color: #035fe6;
+    
+    /* Form-specific color applications */
+    --form-background-color: var(--background-color-primary);
+    --form-input-border-color: var(--border-color);
+    --form-invalid-border-color: #ff5f3f;
+    --form-label-color: var(--label-color);
+}
+```
+
+**実践的なカスタマイズの例**：フォームにダークテーマを実装するには、ベースカラー変数を上書きします。
+
+```css
+:root {
+    --background-color-primary: #1a1a1a;
+    --label-color: #e0e0e0;
+    --border-color: #404040;
+    --form-error-color: #ff6b6b;
+    --button-primary-color: #4a9eff;
+}
+```
+
+この単一の変更は、システムがハードコードされた値ではなく変数参照を使用しているので、すべてのフォームコンポーネントに伝播されます。
+
++++
+
++++ 文字体裁と間隔の変数
+
+テキストの配置とレイアウトの間隔を設定する変数を使用すると、テキストの表示とレイアウトの間隔を包括的に制御できます。
+
+```css
+:root {
+    /* Font size system */
+    --form-font-size-m: 22px;
+    --form-font-size-s: 18px;
+    --form-font-size-xs: 16px;
+    
+    /* Component-specific typography */
+    --form-label-font-size: var(--form-font-size-s);
+    --form-label-font-weight: 400;
+    --form-title-font-weight: 600;
+    --form-input-font-size: 1rem;
+    
+    /* Spacing system */
+    --form-field-horz-gap: 40px;
+    --form-field-vert-gap: 20px;
+    --form-input-padding: 0.75rem 0.6rem;
+    --form-padding: 0 10px;
+}
+```
+
+**実用的なカスタマイズの例**：小さなタイポグラフィでよりコンパクトなフォームレイアウトを作成するには：
+
+```css
+:root {
+    --form-font-size-m: 18px;
+    --form-font-size-s: 14px;
+    --form-font-size-xs: 12px;
+    --form-field-horz-gap: 20px;
+    --form-field-vert-gap: 15px;
+    --form-input-padding: 0.5rem 0.4rem;
+}
+```
+
++++
+
++++ レイアウト変数と構造変数
+
+レイアウト変数は、フォームの寸法、グリッドの動作、コンポーネントの配置を制御します。
+
+```css
+:root {
+    /* Form layout */
+    --form-width: 100%;
+    --form-columns: 12;
+    --form-submit-width: 100%;
+    
+    /* Card-based components */
+    --form-card-border-radius: 4px;
+    --form-card-padding: 0.6rem 0.8rem;
+    --form-card-shadow: 0 1px 2px rgb(0 0 0 / 3%);
+    --form-card-hover-shadow: 0 2px 4px rgb(0 0 0 / 6%);
+    
+    /* Wizard-specific layout */
+    --form-wizard-padding: 0px;
+    --form-wizard-padding-bottom: 160px;
+    --form-wizard-step-legend-padding: 10px;
+}
+```
+
+**実用的なカスタマイズの例**：視覚的な深度を強化してカードスタイルのフォームを作成するには：
+
+```css
+:root {
+    --form-card-border-radius: 12px;
+    --form-card-padding: 1.5rem 2rem;
+    --form-card-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+    --form-card-hover-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+    --form-background-color: #f8f9fa;
+}
+
+.form {
+    background: var(--form-background-color);
+    border-radius: var(--form-card-border-radius);
+    box-shadow: var(--form-card-shadow);
+    padding: var(--form-card-padding);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+```
+
++++
+
+### CSS スタイル設定パターンとベストプラクティス
+
+アダプティブ Forms ブロックは、すべてのコンポーネントにわたって保守性、パフォーマンスおよび一貫性のあるスタイル設定を確実に行うための、特定の CSS パターンに従います。
+
++++ プライマリのスタイルパターン
+
+**ブロックレベルのフォームコンテナ**：全体的なレイアウトと背景のスタイル設定のプライマリフォームコンテナをターゲットに設定します。
+
+```css
+.form {
+    /* Form-wide styles */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--form-background-color);
+    padding: var(--form-padding);
+    border-radius: var(--form-card-border-radius);
+}
+```
+
+**コンポーネントラッパーパターン**：一貫性のあるラッパークラスを使用して、特定のフィールドタイプをターゲットに設定します。
+
+```css
+/* Text input fields */
+.form .text-wrapper input {
+    padding: var(--form-input-padding);
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    font-size: var(--form-input-font-size);
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Email input fields */
+.form .email-wrapper input {
+    padding: var(--form-input-padding);
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    font-size: var(--form-input-font-size);
+}
+
+/* Button styling */
+.form .button-wrapper button {
+    background-color: var(--form-button-background-color);
+    color: var(--form-button-color);
+    padding: var(--form-button-padding);
+    border: var(--form-button-border);
+    font-size: var(--form-button-font-size);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form .button-wrapper button:hover {
+    background-color: var(--form-button-background-hover-color);
+}
+```
+
++++
+
++++ 高度なカスタマイズパターン
+
+**フィールド固有のターゲティング**：固有のスタイル要件に対応するために、個々のフィールドを名前でターゲットに設定します。
+
+```css
+/* Style specific fields */
+.form .field-email input {
+    background-image: url('data:image/svg+xml;...'); /* Email icon */
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 40px;
+}
+
+.form .field-phone input {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+```
+
+**状態ベースのスタイル設定**：検証とインタラクションの状態を実装します。
+
+```css
+/* Validation states */
+.form .field-wrapper[data-valid="false"] input {
+    border-color: var(--form-error-color);
+    box-shadow: 0 0 0 2px rgba(255, 95, 63, 0.1);
+}
+
+.form .field-wrapper[data-valid="true"] input {
+    border-color: #28a745;
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.1);
+}
+
+/* Focus states */
+.form .text-wrapper input:focus,
+.form .email-wrapper input:focus {
+    outline: none;
+    border-color: var(--button-primary-color);
+    box-shadow: 0 0 0 2px rgba(95, 141, 218, 0.2);
+}
+```
+
++++
+
 
 ## コンポーネント構造
 
 アダプティブフォームブロックは、様々なフォーム要素に対して一貫した HTML 構造を提供し、スタイルと管理を簡単にします。スタイル設定の目的で CSS を使用してコンポーネントを操作できます。
 
-### 一般コンポーネント（ドロップダウン、ラジオグループ、チェックボックスグループを除く）：
++++ 一般コンポーネント（ドロップダウン、ラジオグループ、チェックボックスグループを除く）：
 
 ドロップダウン、ラジオグループ、チェックボックスグループを除くすべてのフォームフィールドには、次の HTML 構造があります。
 
-+++ 一般コンポーネントの HTML 構造
+#### 一般コンポーネントの HTML 構造
 
 ```HTML
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
@@ -128,34 +341,31 @@ ht-degree: 83%
 </div>
 ```
 
-+++
+#### 一般コンポーネントの CSS セレクター
 
-+++ 一般コンポーネントの CSS セレクター
-
-```CSS
-  
-  /* Primary Pattern: Target field wrapper by type */
-  .form .{Type}-wrapper {
-    /* Add your styles here */
+```css
+/* Primary Pattern: Target field wrapper by type */
+.form .{Type}-wrapper {
+    /* Container styling for specific field types */
     margin-bottom: 1rem;
     border-radius: 4px;
-  }
-  
-  /* Primary Pattern: Target input fields within wrapper */
-  .form .{Type}-wrapper input {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
+}
+
+/* Primary Pattern: Target input fields within wrapper */
+.form .{Type}-wrapper input {
+    /* Input field styling using CSS custom properties */
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    padding: var(--form-input-padding);
     border-radius: 4px;
     width: 100%;
-  }
-  
-  /* Context-specific: Target element by field name when higher specificity needed */
-  .form .field-{Name} input {
-    /* Add your styles here */
-    /* Use this pattern for specific field customization */
-  }
-  
+    font-size: var(--form-input-font-size);
+}
+
+/* Context-specific: Target element by field name when higher specificity needed */
+.form .field-{Name} input {
+    /* Field-specific customizations */
+    /* Use this pattern for unique styling requirements */
+}
 ```
 
 - `.form .{Type}-wrapper`：フィールドタイプに基づいてフィールドラッパー要素をターゲットに設定します。 例えば、`.form .text-wrapper` は、すべてのテキストフィールドコンテナをターゲットにします。
@@ -165,35 +375,37 @@ ht-degree: 83%
 
 **一般コンポーネントの CSS セレクターの例**
 
-```CSS
+```css
 /* Primary Pattern: Target all text input fields */
 .form .text-wrapper input {
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
-  width: 100%;
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    padding: var(--form-input-padding);
+    border-radius: 4px;
+    width: 100%;
+    font-size: var(--form-input-font-size);
+    background-color: var(--form-input-background-color);
 }
 
 /* Context-specific: Target field by name when higher specificity needed */
 .form .field-first-name input {
-  text-transform: capitalize;
-  border-color: #007cba;
+    text-transform: capitalize;
+    border-color: var(--button-primary-color);
 }
 
 /* Alternative with main context if needed */
 main .form .text-wrapper input {
-  /* Use only when you need higher specificity */
-  color: #333;
+    /* Use only when you need higher specificity */
+    color: var(--form-label-color);
 }
 ```
 
 +++
 
-### ドロップダウンコンポーネント
++++ ドロップダウンコンポーネント
 
 ドロップダウンメニューの場合、`input` 要素の代わりに `select` 要素を使用します。
 
-+++ ドロップダウンコンポーネントの HTML 構造
+#### ドロップダウンコンポーネントの HTML 構造
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -221,33 +433,35 @@ main .form .text-wrapper input {
 </div>
 ```
 
-+++
-
-+++ ドロップダウンコンポーネントの CSS セレクター
+#### ドロップダウンコンポーネントの CSS セレクター
 
 次の CSS に、ドロップダウンコンポーネントの CSS セレクターの例をいくつか示します。
 
-```CSS
+```css
 /* Primary Pattern: Target the dropdown wrapper */
 .form .drop-down-wrapper {
-  /* Add your styles here */
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
+    /* Container layout using flexbox */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--form-field-vert-gap);
 }
 
 /* Target the select element */
 .form .drop-down-wrapper select {
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: #fff;
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    padding: var(--form-input-padding);
+    border-radius: 4px;
+    background-color: var(--form-input-background-color);
+    font-size: var(--form-input-font-size);
+    color: var(--form-label-color);
 }
 
 /* Style the label */
 .form .drop-down-wrapper .field-label {
-  margin-bottom: 5px;
-  font-weight: bold;
+    margin-bottom: 5px;
+    font-weight: var(--form-label-font-weight);
+    color: var(--form-label-color);
+    font-size: var(--form-label-font-size);
 }
 ```
 
@@ -260,11 +474,11 @@ main .form .text-wrapper input {
 
 +++
 
-### ラジオグループ
++++ ラジオグループ
 
 ドロップダウンコンポーネントと同様に、ラジオグループにも独自の HTML 構造と CSS 構造があります。
 
-+++ ラジオグループの HTML 構造
+#### ラジオグループの HTML 構造
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -300,43 +514,50 @@ main .form .text-wrapper input {
 </fieldset>
 ```
 
-+++
-
-+++ ラジオグループの CSS セレクター
+#### ラジオグループの CSS セレクター
 
 - フィールドセットのターゲティング
 
-```CSS
-  main .form form .radio-group-wrapper {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
+```css
+/* Target radio group container */
+.form .radio-group-wrapper {
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    padding: var(--form-input-padding);
+    border-radius: 4px;
+    margin-bottom: var(--form-field-vert-gap);
+}
 ```
 
 このセレクターは、クラス radio-group-wrapper を持つフィールドセットをターゲットにします。これは、ラジオグループ全体に一般的なスタイルを適用する場合に便利です。
 
 - ラジオボタンラベルのターゲティング
 
-```CSS
-main .form form .radio-wrapper label {
-    font-weight: normal;
+```css
+/* Target radio button labels */
+.form .radio-wrapper label {
+    font-weight: var(--form-label-font-weight);
     margin-right: 10px;
-  }
+    color: var(--form-label-color);
+    font-size: var(--form-label-font-size);
+    cursor: pointer;
+}
 ```
 
 - 名前に基づいて、特定のフィールドセット内のすべてのラジオボタンラベルをターゲットにする
 
-```CSS
-main .form form .field-color .radio-wrapper label {
-  /* Your styles here */
+```css
+/* Target all radio button labels within a specific fieldset based on its name */
+.form .field-color .radio-wrapper label {
+    /* Field-specific radio label customizations */
+    /* Add your custom styles here */
 }
 ```
 
 +++
 
-### チェックボックスグループ
++++ チェックボックスグループ
 
-+++ チェックボックスグループの HTML 構造
+#### チェックボックスグループの HTML 構造
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -370,105 +591,141 @@ main .form form .field-color .radio-wrapper label {
 </fieldset>
 ```
 
-+++
-
-+++ チェックボックスグループの CSS セレクター
+#### チェックボックスグループの CSS セレクター
 
 - 外側のラッパーのターゲティング：これらのセレクターは、ラジオグループとチェックボックスグループの両方の最も外側にあるコンテナをターゲットにし、グループ構造全体に一般的なスタイルを適用できます。これは、間隔、整列、その他のレイアウト関連のプロパティを設定する場合に便利です。
 
-```CSS
-  
-  /* Primary Pattern: Targets radio group wrappers */
-  .form .radio-group-wrapper {
-    margin-bottom: 20px; /* Adds space between radio groups */  
+```css
+/* Primary Pattern: Targets radio group wrappers */
+.form .radio-group-wrapper {
+    margin-bottom: var(--form-field-vert-gap); /* Adds space between radio groups */
     display: flex;
     flex-direction: column;
-  }
+    border: var(--form-fieldset-border);
+    padding: var(--form-input-padding);
+}
 
-  /* Primary Pattern: Targets checkbox group wrappers */
-  .form .checkbox-group-wrapper {
-    margin-bottom: 20px; /* Adds space between checkbox groups */
+/* Primary Pattern: Targets checkbox group wrappers */
+.form .checkbox-group-wrapper {
+    margin-bottom: var(--form-field-vert-gap); /* Adds space between checkbox groups */
     display: flex;
     flex-direction: column;
-  }
+    border: var(--form-fieldset-border);
+    padding: var(--form-input-padding);
+}
 ```
 
 - ターゲットグループラベル：このセレクターは、ラジオとチェックボックスの両方のグループラッパー内の`.field-label` 要素をターゲットとします。これにより、これらのグループ専用のラベルのスタイルを設定でき、グループがさらに目立つようになります。
 
-```CSS
+```css
 /* Primary Pattern: Target group labels */
 .form .radio-group-wrapper legend,
 .form .checkbox-group-wrapper legend {
-  font-weight: bold; /* Makes the group label bold */
-  margin-bottom: 0.5rem;
-  font-size: var(--form-font-size-base);
+    font-weight: var(--form-title-font-weight); /* Makes the group label bold */
+    margin-bottom: 0.5rem;
+    font-size: var(--form-fieldset-legend-font-size);
+    color: var(--form-fieldset-legend-color);
+    padding: var(--form-fieldset-legend-padding);
+    border: var(--form-fieldset-legend-border);
 }
 ```
 
 - 個々の入力とラベルのターゲティング：これらのセレクターは、個々のラジオボタン、チェックボックスおよび関連するラベルをより詳細に制御できます。これらを使用して、サイズ調整や間隔の調整を行ったり、より明確な視覚スタイルを適用したりできます。
 
-```CSS
+```css
 /* Primary Pattern: Styling radio buttons */
 .form .radio-group-wrapper input[type="radio"] {
-  margin-right: 8px; /* Adds space between the input and its label */
-  margin-bottom: 4px;
+    margin-right: 8px; /* Adds space between the input and its label */
+    margin-bottom: 4px;
+    cursor: pointer;
 }
 
 /* Primary Pattern: Styling radio button labels */
 .form .radio-group-wrapper label {
-  font-size: var(--form-font-size-base); /* Changes the label font size */
-  display: flex;
-  align-items: center;
+    font-size: var(--form-label-font-size); /* Changes the label font size */
+    color: var(--form-label-color);
+    font-weight: var(--form-label-font-weight);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 /* Primary Pattern: Styling checkboxes */
 .form .checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 8px; /* Adds space between the input and its label */
-  margin-bottom: 4px;
+    margin-right: 8px; /* Adds space between the input and its label */
+    margin-bottom: 4px;
+    cursor: pointer;
 }
 
 /* Primary Pattern: Styling checkbox labels */
 .form .checkbox-group-wrapper label {
-  font-size: var(--form-font-size-base); /* Changes the label font size */
-  display: flex;
-  align-items: center;
+    font-size: var(--form-label-font-size); /* Changes the label font size */
+    color: var(--form-label-color);
+    font-weight: var(--form-label-font-weight);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 ```
 
 - ラジオボタンとチェックボックスの外観のカスタマイズ：この方法では、デフォルトの入力を非表示にし、`:before` および `:after` 擬似要素を使用して、「チェック済み」状態に基づいて外観を変更するカスタムビジュアルを作成します。
 
-```CSS
+```css
 /* Hide the default radio button or checkbox */
-main .form form .radio-group-wrapper input[type="radio"],
-main .form form .checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0;
-  position: absolute;
+.form .radio-group-wrapper input[type="radio"],
+.form .checkbox-group-wrapper input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
 }
 
 /* Create a custom radio button */
-main .form form .radio-group-wrapper input[type="radio"] + label::before {
-  /* ... styles for custom radio button ... */
+.form .radio-group-wrapper input[type="radio"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--form-input-border-color);
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: var(--form-input-background-color);
+    transition: all 0.2s ease;
 }
 
-main .form form .radio-group-wrapper input[type="radio"]:checked + label::before {
-  /* ... styles for checked radio button ... */
+.form .radio-group-wrapper input[type="radio"]:checked + label::before {
+    background-color: var(--button-primary-color);
+    border-color: var(--button-primary-color);
+    box-shadow: inset 0 0 0 3px var(--form-input-background-color);
 }
 
 /* Create a custom checkbox */
-main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before {
-  /* ... styles for custom checkbox ... */
+.form .checkbox-group-wrapper input[type="checkbox"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--form-input-border-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    background-color: var(--form-input-background-color);
+    transition: all 0.2s ease;
 }
 
-main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before {
-  /* ... styles for checked checkbox ... */
+.form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before {
+    background-color: var(--button-primary-color);
+    border-color: var(--button-primary-color);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="white" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 ```
 
 +++
 
-### パネル／コンテナコンポーネント
++++ パネル／コンテナコンポーネント
 
-+++ パネル／コンテナコンポーネントの HTML 構造
+#### パネル／コンテナコンポーネントの HTML 構造
 
 ```HTML
 <fieldset class="panel-wrapper field-{PanelName} field-wrapper">
@@ -510,16 +767,15 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 - フィールドセット内では、複数。{Type}-wrapper 要素（この場合は .text-wrapper と .password-wrapper）がパネル内の個々のフォームフィールドを表します。
 - 各ラッパーには、前の例と同様にラベル、入力フィールド、説明が含まれています。
 
-+++
 
-+++ パネル／コンテナコンポーネントの CSS セレクターの例
+#### パネル／コンテナコンポーネントの CSS セレクターの例
 
 1. パネルのターゲティング：
 
 ```CSS
-  /* Target the entire panel container */
+  /- Target the entire panel container */
   main .form form .panel-wrapper {
-    /* Add your styles here (e.g., border, padding, background color) */
+    /- Add your styles here (e.g., border, padding, background color) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
@@ -532,14 +788,14 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. パネルタイトルのターゲティング：
 
 ```CSS
-  /* Target the legend element (panel title) */
+  /- Target the legend element (panel title) */
   .panel-wrapper legend {
-    /* Add your styles here (e.g., font-weight, font-size) */
+    /- Add your styles here (e.g., font-weight, font-size) */
     font-weight: bold;
     font-size: 16px;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ddd; /* Optional: create a separation line */
+    border-bottom: 1px solid #ddd; /- Optional: create a separation line */
   }
 ```
 
@@ -549,9 +805,9 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. パネル内の個々のフィールドのターゲティング：　
 
 ```CSS
-/* Target all form field wrappers within a panel */
+/- Target all form field wrappers within a panel */
 main .form form .panel-wrapper .{Type}-wrapper {
-  /* Add your styles here (e.g., margin) */
+  /- Add your styles here (e.g., margin) */
   margin-bottom: 10px;
 }
 ```
@@ -561,24 +817,25 @@ main .form form .panel-wrapper .{Type}-wrapper {
 1. 特定のフィールドのターゲティング（オプション）：
 
 ```CSS
-  /* Target the username field wrapper */
+  /- Target the username field wrapper */
   main .form form .panel-wrapper .text-wrapper.field-username {
-    /* Add your styles here (specific to username field) */
+    /- Add your styles here (specific to username field) */
   }
 
-  /* Target the password field wrapper */
+  /- Target the password field wrapper */
   main .form form .panel-wrapper .password-wrapper.field-password {
-    /* Add your styles here (specific to password field) */
+    /- Add your styles here (specific to password field) */
   }
 ```
 
 - これらのオプションのセレクターを使用すると、パネル内の特定のフィールドラッパーをターゲットにして、ユーザー名フィールドをハイライト表示するなど、独自のスタイルを設定できます。
 
+
 +++
 
-### 繰り返し可能なパネル
++++ 繰り返し可能なパネル
 
-+++ 繰り返し可能なパネルの HTML 構造
+#### 繰り返し可能なパネルの HTML 構造
 
 ```HTML
 <fieldset class="panel-wrapper field-{PanelName} field-wrapper">
@@ -638,16 +895,15 @@ main .form form .panel-wrapper .{Type}-wrapper {
 
 - 一意の ID と名前：パネル内の各要素には、パネルのインデックスに基づく一意の ID（例：name-1、email-1）と name 属性（例：name=&quot;contacts[0].name&quot;）があります。これにより、複数のパネルが送信された場合に適切なデータ収集ができるようになります。
 
-+++
 
-+++ 繰り返し可能なパネルの CSS セレクター
+#### 繰り返し可能なパネルの CSS セレクター
 
 - すべての繰り返し可能なパネルのターゲティング：
 
 ```CSS
-  /* Target all panels with the repeatable attribute */
+  /- Target all panels with the repeatable attribute */
  main .form form .panel-wrapper[data-repeatable="true"] {
-    /* Add your styles here (e.g., border, margin) */
+    /- Add your styles here (e.g., border, margin) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
@@ -661,9 +917,9 @@ main .form form .panel-wrapper .{Type}-wrapper {
 - パネル内の個々のフィールドのターゲティング：
 
 ```CSS
-/* Target all form field wrappers within a repeatable panel */
+/- Target all form field wrappers within a repeatable panel */
 main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
-  /* Add your styles here (e.g., margin) */
+  /- Add your styles here (e.g., margin) */
   margin-bottom: 10px;
 }
 ```
@@ -673,19 +929,21 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
 - （パネル内の）特定のフィールドのターゲティング：
 
 ```CSS
-/* Target the name field wrapper within the first panel */
+/- Target the name field wrapper within the first panel */
 main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name {
-  /* Add your styles here (specific to first name field) */
+  /- Add your styles here (specific to first name field) */
 }
 
 /- Target all
 ```
 
+
 +++
 
-### ファイル添付
 
-+++ 添付ファイルの HTML 構造
++++ ファイル添付
+
+#### 添付ファイルの HTML 構造
 
 ```HTML
 <div class="file-wrapper field-{FileName} field-wrapper">
@@ -728,16 +986,15 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 - 入力要素の id 属性と name 属性は、添付ファイル名（claim_form）に一致します。
 - files-list セクションは、最初は空です。ファイルのアップロード時に JavaScript を使用して動的に設定されます。
 
-+++
 
-+++ 添付ファイルコンポーネントの CSS セレクター
+#### 添付ファイルコンポーネントの CSS セレクター
 
 - 添付ファイルコンポーネント全体のターゲティング：
 
 ```CSS
-/* Target the entire file attachment component */
+/- Target the entire file attachment component */
 main .form form .file-wrapper {
-  /* Add your styles here (e.g., border, padding) */
+  /- Add your styles here (e.g., border, padding) */
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 4px;
@@ -750,32 +1007,32 @@ main .form form .file-wrapper {
 - 特定の要素のターゲティング：
 
 ```CSS
-/* Target the drag and drop area */
+/- Target the drag and drop area */
 main .form form .file-wrapper .file-drag-area {
-  /* Add your styles here (e.g., background color, border) */
+  /- Add your styles here (e.g., background color, border) */
   background-color: #f0f0f0;
   border: 1px dashed #ddd;
   padding: 10px;
   text-align: center;
 }
 
-/* Target the file input element */
+/- Target the file input element */
 main .form form .file-wrapper input[type="file"] {
-  /* Add your styles here (e.g., hide the default input) */
+  /- Add your styles here (e.g., hide the default input) */
   display: none;
 }
 
-/* Target individual file descriptions within the list (populated dynamically) */
+/- Target individual file descriptions within the list (populated dynamically) */
 main .form form .file-wrapper .files-list .file-description {
-  /* Add your styles here (e.g., margin, display) */
+  /- Add your styles here (e.g., margin, display) */
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
 }
 
-/* Target the file name within the description */
+/- Target the file name within the description */
 main .form form .file-wrapper .files-list .file-description .file-description-name {
-  /* Add your styles here (e.g., font-weight) */
+  /- Add your styles here (e.g., font-weight) */
   font-weight: bold;
 }
 ```
@@ -785,15 +1042,16 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
 +++
 
 
+
 ## コンポーネントのスタイル設定
 
 フォームフィールドは、特定のタイプ（`{Type}-wrapper`）または個人名（`field-{Name}`）に基づいてスタイル設定できます。これにより、フォームの外観をより詳細に制御およびカスタマイズできます。
 
-### フィールドタイプに基づくスタイル設定
++++ フィールドタイプに基づくスタイル設定
 
 CSS セレクターを使用すると、特定のフィールドタイプをターゲットにし、スタイルを一貫して適用できます。
 
-+++ HTML 構造
+#### HTML 構造
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -832,34 +1090,33 @@ CSS セレクターを使用すると、特定のフィールドタイプをタ�
 - 各フィールドには、対応するラベル、入力要素、プレースホルダーや説明などの潜在的な追加要素があります。
 
 
-+++
 
 
-+++ CSS セレクターの例
+#### CSS セレクターの例
 
 ```CSS
-/* Primary Pattern: Target all text input fields */
+/- Primary Pattern: Target all text input fields */
 .form .text-wrapper input {
-  /* Add your styles here */
+  /- Add your styles here */
   width: 100%;
   padding: var(--form-input-padding);
 }
 
-/* Primary Pattern: Target all number input fields */
+/- Primary Pattern: Target all number input fields */
 .form .number-wrapper input {
-  /* Add your styles here */
-  letter-spacing: 2px; /* Example for adding letter spacing to all number fields */
+  /- Add your styles here */
+  letter-spacing: 2px; /- Example for adding letter spacing to all number fields */
   text-align: center;
 }
 ```
 
 +++
 
-### フィールド名に基づくスタイル設定
++++ フィールド名に基づくスタイル設定
 
 また、個々のフィールドを名前でターゲットにして、一意のスタイルを適用することもできます。
 
-+++ HTML 構造
+#### HTML 構造
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,118 +1140,343 @@ CSS セレクターを使用すると、特定のフィールドタイプをタ�
 </div>
 ```
 
-+++
 
-+++ CSS セレクターの例
+#### CSS セレクターの例
 
 ```CSS
-/* Primary Pattern: Target specific field by name */
+/- Primary Pattern: Target specific field by name */
 .form .field-otp input {
    letter-spacing: 2px;
    text-align: center;
    font-family: monospace;
 }
 
-/* Context-specific: Use higher specificity when needed */
+/- Context-specific: Use higher specificity when needed */
 main .form .field-otp input {
-   /* Use only when you need to override other styles */
+   /- Use only when you need to override other styles */
    font-weight: bold;
 }
 ```
 
 この CSS は、クラス `field-otp` を持つ要素内にあるすべての入力要素をターゲットとします。Edge Delivery Servicesのフォーム構造は、「アダプティブFormsのブロック規則」に従います。この規則では、名前が「otp」のフィールドの「field-otp」のように、コンテナはフィールド固有のクラスでマークされます。
 
-+++
 
-## CSS ファイル構造と参照
+## CSS ファイルの構造と実装
 
-### **既定のスタイルの場所**
+### **リファレンス実装**
 
-デフォルトのフォームスタイルは次の場所にあります。
+完全なフォームのスタイル設定の参照は、AEM Forms ボイラープレートリポジトリで利用できます。
 
 ```
 https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/blocks/form/form.css
 ```
 
-### **ローカルプロジェクト構造**
+このファイルは、CSS カスタムプロパティシステムの正規実装として機能し、すべてのフォームのスタイル設定の基盤となります。 これには、すべての CSS 変数、コンポーネントのスタイルパターン、レスポンシブデザイン実装に関する包括的な定義が含まれます。
 
-Edge Delivery Services プロジェクトで：
++++
+
++++ プロジェクトの統合
+
+Edge Delivery Services プロジェクトで、次の構造化アプローチを使用してフォームのスタイル設定を実装します。
 
 ```
-/blocks/form/form.css          // Main form block styles
-/styles/styles.css             // Global site styles
-/styles/lazy-styles.css        // Additional component styles
+/blocks/form/form.css          // Core form block styles (copied from boilerplate)
+/styles/styles.css             // Global site styles and CSS variable overrides
+/styles/lazy-styles.css        // Additional component enhancements
 ```
 
-### **カスタム CSS 統合**
++++
 
-1. **プロジェクトレベルのカスタマイズ**:`/styles/styles.css` にスタイルを追加する
-2. **フォーム固有のカスタマイズ**：フ `/blocks/form/form.css` ームの変更
-3. **コンポーネントオーバーライド**：カスタム CSS で適切な個別セレクターを使用します
++++ 実装方法
+
+**CSS カスタムプロパティオーバーライド**：グローバルスタイルのフォーム変数を上書きして、ブランド固有のテーマ設定を実装します。
+
+```css
+/* In /styles/styles.css */
+:root {
+    /* Brand-specific overrides */
+    --button-primary-color: #your-brand-color;
+    --form-background-color: #your-background;
+    --label-color: #your-text-color;
+}
+```
+
+**コンポーネント固有のカスタマイズ**:
+CSS 変数システムを維持しながら、コンポーネント固有のスタイル設定を追加します。
+
+```css
+/* Enhanced component styling */
+.form .text-wrapper input {
+    border-radius: var(--form-card-border-radius);
+    transition: all 0.2s ease;
+}
+
+.form .text-wrapper input:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 3px rgba(var(--button-primary-color), 0.1);
+}
+```
+
+**レスポンシブデザインの統合**：メディアクエリ内で CSS カスタムプロパティを利用して、一貫したレスポンシブ動作を実現します。
+
+```css
+@media (max-width: 768px) {
+    :root {
+        --form-input-padding: 0.875rem;
+        --form-field-vert-gap: 1rem;
+        --form-padding: 1rem;
+    }
+}
+```
+
++++
+
+### スタイル設定の完全な実装の例
+
+この節では、CSS カスタムプロパティを使用して、最新のブランドフォームを作成する方法を説明します。 実装は、理解とナビゲーションを容易にするために明確なサブセクションに分類されています。
+
+
+
++++ &#x200B;1. ブランドテーマの変数
+
+CSS カスタムプロパティを使用して、ブランドのカラーパレット、間隔およびタイポグラフィを定義します。
+
+```css
+/* Custom brand theme */
+:root {
+  /* Brand color system */
+  --brand-primary: #2563eb;
+  --brand-secondary: #64748b;
+  --brand-success: #059669;
+  --brand-error: #dc2626;
+  --brand-background: #f8fafc;
+  
+  /* Override form variables */
+  --background-color-primary: #ffffff;
+  --button-primary-color: var(--brand-primary);
+  --button-primary-hover-color: #1d4ed8;
+  --form-error-color: var(--brand-error);
+  --form-background-color: var(--brand-background);
+  --label-color: var(--brand-secondary);
+  --border-color: #d1d5db;
+  
+  /* Enhanced spacing */
+  --form-input-padding: 1rem;
+  --form-field-vert-gap: 1.5rem;
+  --form-padding: 2rem;
+  
+  /* Modern typography */
+  --form-font-size-s: 16px;
+  --form-label-font-weight: 500;
+}
+```
+
+
++++
+
++++ &#x200B;2. フォームコンテナのスタイル設定
+
+現代的な背景、境界線の半径、影をフォームコンテナに適用して、視覚的に訴えかけるようにします。
+
+
+```css
+/* Enhanced form container */
+.form {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+```
+
+
+
+
++++
+
++++ 3.入力フィールドのスタイル
+
+テキスト、メール、数値入力フィールドのスタイルを設定して、クリーンで現代的な外観を実現します。
+
+
+```css
+/* Modern input styling */
+.form .text-wrapper input,
+.form .email-wrapper input,
+.form .number-wrapper input {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--form-input-padding);
+    font-size: 16px;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+```
+
+
++++
+
++++ 4.追加カスタマイズ
+
+必要に応じて特定のフィールド、状態またはコンポーネントをターゲット設定することで、フォームのスタイル設定をさらに拡張できます。 詳細パターンについては、前の節を参照してください。
+
+```css
+/* Custom brand theme */
+:root {
+    /* Brand color system */
+    --brand-primary: #2563eb;
+    --brand-secondary: #64748b;
+    --brand-success: #059669;
+    --brand-error: #dc2626;
+    --brand-background: #f8fafc;
+    
+    /* Override form variables */
+    --background-color-primary: #ffffff;
+    --button-primary-color: var(--brand-primary);
+    --button-primary-hover-color: #1d4ed8;
+    --form-error-color: var(--brand-error);
+    --form-background-color: var(--brand-background);
+    --label-color: var(--brand-secondary);
+    --border-color: #d1d5db;
+    
+    /* Enhanced spacing */
+    --form-input-padding: 1rem;
+    --form-field-vert-gap: 1.5rem;
+    --form-padding: 2rem;
+    
+    /* Modern typography */
+    --form-font-size-s: 16px;
+    --form-label-font-weight: 500;
+}
+
+/* Enhanced form container */
+.form {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+/* Modern input styling */
+.form .text-wrapper input,
+.form .email-wrapper input,
+.form .number-wrapper input {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--form-input-padding);
+    font-size: 16px;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.form .text-wrapper input:focus,
+.form .email-wrapper input:focus,
+.form .number-wrapper input:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Enhanced button styling */
+.form .button-wrapper button[type="submit"] {
+    background: linear-gradient(135deg, var(--brand-primary) 0%, #1d4ed8 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.form .button-wrapper button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+```
+
+この包括的なアプローチにより、CSS カスタムプロパティを使用して、アダプティブ Forms ブロックシステムの構造の整合性とアクセシビリティ機能を維持しながら、高度なテーマ設定を可能にする方法が示されます。
+
++++
 
 ## CSS の問題のトラブルシューティング
 
-### **CSS 特異性の問題**
++++ CSS 特異性の問題
 
 ```css
-/* ❌ Problem: Styles not applying */
+/- ❌ Problem: Styles not applying */
 .text-wrapper input {
   color: red;
 }
 
-/* ✅ Solution: Match or exceed existing specificity */
+/- ✅ Solution: Match or exceed existing specificity */
 .form .text-wrapper input {
   color: red;
 }
 
-/* ✅ Alternative: Use higher specificity when needed */
+/- ✅ Alternative: Use higher specificity when needed */
 main .form .text-wrapper input {
   color: red;
 }
 ```
 
-### **CSS 変数の上書きの問題**
++++
+
++++ CSS 変数の上書きの問題
 
 ```css
-/* ❌ Problem: Variables not working */
+/- ❌ Problem: Variables not working */
 .form {
-  --form-border-color: blue; /* Local scope only */
+  --form-border-color: blue; /- Local scope only */
 }
 
-/* ✅ Solution: Define in root scope */
+/- ✅ Solution: Define in root scope */
 :root {
-  --form-border-color: blue; /* Global scope */
+  --form-border-color: blue; /- Global scope */
 }
 ```
 
-### **一般的なセレクターのエラー**
++++
+
++++ 一般的なセレクターのエラー
 
 ```css
-/* ❌ Incorrect: Assumes direct nesting */
+/- ❌ Incorrect: Assumes direct nesting */
 .form form input {
-  /* This might miss inputs in wrappers */
+  /- This might miss inputs in wrappers */
 }
 
-/* ✅ Correct: Target actual structure */
+/- ✅ Correct: Target actual structure */
 .form .text-wrapper input {
-  /* Targets actual HTML structure */
+  /- Targets actual HTML structure */
 }
 
-/* ❌ Avoid: Unnecessary specificity */
+/- ❌ Avoid: Unnecessary specificity */
 main .form form .text-wrapper input {
-  /* Too specific, harder to override */
+  /- Too specific, harder to override */
 }
 
-/* ✅ Preferred: Balanced specificity */
+/- ✅ Preferred: Balanced specificity */
 .form .text-wrapper input {
-  /* Easier to maintain and override */
+  /- Easier to maintain and override */
 }
 ```
 
-### **フォームステートのスタイル設定**
++++
+
++++ フォームステートのスタイル設定
 
 ```css
-/* Validation states */
+/- Validation states */
 .form .field-wrapper.error input {
   border-color: var(--form-error-color);
 }
@@ -1003,25 +1485,28 @@ main .form form .text-wrapper input {
   border-color: var(--form-success-color);
 }
 
-/* Loading state */
+/- Loading state */
 .form[data-submitting="true"] {
   opacity: 0.7;
   pointer-events: none;
 }
 
-/* Disabled state */
+/- Disabled state */
 .form input:disabled {
   background-color: var(--form-input-disabled-background);
   cursor: not-allowed;
 }
 ```
 
++++
+
 ### **コンポーネント固有のベストプラクティス**
 
-#### **ボタンのスタイル設定**
+
++++ ボタンのスタイル
 
 ```css
-/* Primary buttons */
+/- Primary buttons */
 .form .button-wrapper button[type="submit"] {
   background-color: var(--form-focus-color);
   color: white;
@@ -1030,7 +1515,7 @@ main .form form .text-wrapper input {
   border-radius: var(--form-border-radius);
 }
 
-/* Secondary buttons */
+/- Secondary buttons */
 .form .button-wrapper button[type="reset"] {
   background-color: transparent;
   color: var(--form-text-color);
@@ -1038,16 +1523,18 @@ main .form form .text-wrapper input {
 }
 ```
 
-#### **レスポンシブフォームデザイン**
++++
+
++++ レスポンシブフォームデザイン
 
 ```css
-/* Mobile-first approach */
+/- Mobile-first approach */
 .form {
   width: 100%;
   padding: 1rem;
 }
 
-/* Tablet and up */
+/- Tablet and up */
 @media (min-width: 768px) {
   .form {
     max-width: var(--form-max-width);
@@ -1055,6 +1542,8 @@ main .form form .text-wrapper input {
   }
 }
 ```
+
++++
 
 ## ベストプラクティスのまとめ
 

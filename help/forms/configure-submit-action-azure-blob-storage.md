@@ -1,14 +1,14 @@
 ---
+title: AEM アダプティブFormsを Azure Blob Storage に接続する方法
 description: AEM Formsで Azure Blob Storage 設定を作成し、アダプティブForms内で使用して、効率的なデータストレージを実現する方法について説明します。
 keywords: AEM Forms との Azure Blob Storage の統合、Azure ストレージへのデータの送信、AEM Forms での Azure ストレージ設定の作成、アダプティブフォーム送信アクションでの Azure Blob Storage の使用
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
-title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 66%
+source-wordcount: '818'
+ht-degree: 65%
 
 ---
 

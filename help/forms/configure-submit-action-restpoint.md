@@ -1,13 +1,13 @@
 ---
+title: アダプティブフォームの REST エンドポイントへの送信の送信アクションを設定する方法
 description: アダプティブフォームの送信時に Rest エンドポイントを設定する手順について説明します。
 keywords: AEM Forms REST エンドポイント、REST エンドポイントへの送信、REST URL へのデータの POST、REST エンドポイントアクションの設定
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
-title: アダプティブフォームの送信アクションの設定方法
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1471'
 ht-degree: 74%
 
 ---
