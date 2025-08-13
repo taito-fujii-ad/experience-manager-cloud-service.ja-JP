@@ -4,7 +4,7 @@ description: ユニバーサルエディターでフォームフラグメント�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 40%
@@ -12,12 +12,6 @@ ht-degree: 40%
 ---
 
 # ユニバーサルエディターでのフォームフラグメントの作成
-
-<!--
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). </span>
--->
 
 フォームフラグメントは、開発作業の繰り返しを排除し、組織のフォーム全体で一貫性を確保する、再利用可能なコンポーネントです。 フォームごとに連絡先情報、住所の詳細、同意契約などの一般的なセクションを再作成する代わりに、これらの要素をフラグメントとして一度作成し、複数のフォームで再利用できます。
 

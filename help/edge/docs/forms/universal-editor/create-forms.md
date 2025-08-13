@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 5%
@@ -41,10 +41,12 @@ ht-degree: 5%
 
 **決定ガイダンス：**
 
+![ テンプレート選択の決定 ](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - 複雑なワークフローやAEMの深い統合に **コアコンポーネント** を使用する場合や、既存のAEM アセットを活用する場合は、
 - パフォーマンス、シンプルさ、最新の開発手法を実現するには、**Edge Delivery Services** を使用します。
 
-![ テンプレート選択の決定 ](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *適切なテンプレートタイプを選択するための決定フローチャート*
 
 ## 前提条件

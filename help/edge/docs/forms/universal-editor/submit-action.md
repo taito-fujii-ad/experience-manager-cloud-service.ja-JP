@@ -4,9 +4,9 @@ description: アダプティブフォームには、複数の送信アクショ�
 keywords: アダプティブフォームの送信アクションを選択する方法、アダプティブフォームを sharepoint リストに接続する方法、アダプティブフォームを sharepoint ドキュメントライブラリに接続する方法、アダプティブフォームをフォームデータモデル（FDM）に接続する方法
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: d221959bbf19a874ec65eb414c4c49811df291ca
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 50%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 50%
 | AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service（Edge Delivery Services） | この記事 |
 
-## 概要
 
 フォーム送信は、ユーザージャーニーでの重要な最終ステップです。ここで収集されたデータが処理され、アクションが実行されます。このドキュメントでは、ユニバーサルエディターでのアダプティブフォームの送信アクションの設定と管理に関する包括的なガイドを提供します。
 

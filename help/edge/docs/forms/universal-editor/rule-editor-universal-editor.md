@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 1%
@@ -664,7 +664,7 @@ Formsは、データ収集、リードの選定、ユーザーエンゲージメ
 
 +++
 
-+++ 次の手順
+## 次の手順
 
 **推奨される学習パス**:
 
@@ -680,4 +680,3 @@ Formsは、データ収集、リードの選定、ユーザーエンゲージメ
 - 追加機能を有効にするための [0&rbrace;Extension Managerガイド](/help/implementing/developing/extending/extension-manager.md)
 - 包括的なフォーム開発ガイダンスのための [0&rbrace;Edge Delivery Services forms&rbrace;](/help/edge/docs/forms/overview.md)
 
-+++

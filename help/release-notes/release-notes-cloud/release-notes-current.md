@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 1cb24ca4aabf3ccd12c514cc9d74ad0c1cc8e2fb
+source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2269'
 ht-degree: 50%
 
 ---
@@ -177,12 +177,11 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 API 統合ツールを使用すると、フォーム作成者は、ユーザーのインタラクションに基づいて外部 REST API からデータを自動的に取得して入力する、動的でインテリジェントなフォームを作成できます。 このコードなしの統合機能は、静的フォームをレスポンシブなデータ収集インターフェイスに変換します。
 
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### 権限管理のプリンシパルビュー {#principal-view}
+### 権限管理のノードビュー {#node-view}
 
-AEM では、ユーザーとグループに対する権限管理が導入されました。主な機能は従来の UI と同じですが、よりユーザーフレンドリーで効率的です。 詳しくは、[ 専用の記事 ](/help/security/touch-ui-principal-view.md) を参照してください。
+AEMでは、ノードビュー権限管理が導入されています。 主な機能は従来の UI と同じですが、よりユーザーフレンドリーで効率的です。 詳しくは、[ 専用の記事 ](/help/security/touch-ui-principal-view.md) を参照してください。
 
 ### 更新された非推奨プロセス {#updated-deprecation-process}
 
