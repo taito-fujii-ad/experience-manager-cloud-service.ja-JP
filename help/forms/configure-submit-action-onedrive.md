@@ -8,7 +8,7 @@ role: User, Developer
 source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 68%
+ht-degree: 92%
 
 ---
 
@@ -70,7 +70,7 @@ AEM Forms を Microsoft® OneDrive ストレージに接続するには、以下
 
 ### アダプティブフォームでの OneDrive 設定の使用 {#use-onedrive-configuartion-in-af}
 
-アダプティブフォームで作成した OneDrive ストレージ設定を使用して、データまたは生成されたレコードのドキュメントを OneDrive フォルダーに保存できます。
+アダプティブフォームで作成した OneDrive ストレージ設定を使用して、データまたは生成済みレコードのドキュメントを OneDrive フォルダーに保存できます。
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ AEM Forms を Microsoft® OneDrive ストレージに接続するには、以下
 基盤コンポーネントに基づくアダプティブフォームで OneDrive ストレージ設定を使用するには、次の手順を実行します。
 
 1. 編集用にアダプティブフォームを開き、アダプティブフォームのコンテナプロパティの「**[!UICONTROL 送信]**」セクションに移動します。
-1. **[!UICONTROL 送信アクション]** ドロップダウンリストから「**[!UICONTROL OneDrive に送信]**」を選択します。
+1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL OneDrive に送信]**」を選択します。
    ![OneDrive GIF](/help/forms/assets/wubmit-to-onedrive-fc.png){width=50%,height=50%}
 OneDrive にレコードのドキュメント（DoR）を保存することもできます。
 1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
@@ -100,7 +100,7 @@ OneDrive にレコードのドキュメント（DoR）を保存することも�
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
-1. **[!UICONTROL 送信アクション]** ドロップダウンリストから「**[!UICONTROL OneDrive に送信]**」を選択します。
+1. **[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL OneDrive に送信]**」を選択します。
    ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
 OneDrive にレコードのドキュメント（DoR）を保存することもできます。
 1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
@@ -108,21 +108,21 @@ OneDrive にレコードのドキュメント（DoR）を保存することも�
 
 >[!TAB ユニバーサルエディター]
 
-ユニバーサルエディターで作成されたアダプティブフォームで OneDrive ストレージ設定を使用するには、次の手順を実行します。
+ユニバーサルエディターでオーサリングされたアダプティブフォームで OneDrive ストレージ設定を使用するには、次の手順を実行します。
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
-**フォームのプロパティ** ダイアログが表示されます。
+1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
+**フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]
    >
-   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Managerで **フォームプロパティを編集** 拡張機能を有効にします。
-   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については [&#128279;](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)Extension Manager機能のハイライト &rbrace; の記事を参照してください。
-1. **送信** タブをクリックし、**[!UICONTROL OneDrive に送信]** を選択します。
+   > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Manager で&#x200B;**フォームプロパティを編集**&#x200B;拡張機能を有効にします。
+   > * ユニバーサルエディターで拡張機能を有効または無効にする方法については、[Extension Manager 機能のハイライト](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)の記事を参照してください。
+1. 「**送信**」タブをクリックし、「**[!UICONTROL OneDrive に送信]**」を選択します。
    ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
-「**添付ファイルを元の名前で保存**」を選択すると、添付ファイルは元のファイル名を使用してフォルダーに保存されます。 Azure Blob ストレージにレコードのドキュメント（DoR）を保存することもできます。
+「**添付ファイルを元の名前で保存**」を選択した場合、添付ファイルは元のファイル名を使用してフォルダーに保存されます。Azure Blob Storage にレコードのドキュメント（DoR）を保存することもできます。
 1. データを保存する場所に「**[!UICONTROL ストレージ設定]**」を選択します。
-1. **[!UICONTROL 保存して閉じる]** をクリックします。
+1. 「**[!UICONTROL 保存して閉じる]**」をクリックします
 
 >[!ENDTABS]
 

@@ -4,7 +4,7 @@ description: このチュートリアルは、新しい Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 98%
@@ -112,7 +112,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
 
    1. AEM Forms ボイラープレートを使用して以前に作成した GitHub リポジトリに移動します。
    1. `fstab.yaml` ファイルをルートフォルダーに追加します。
-   1. 参照を、AEM ユーザーと共有したフォルダーのパス（forms@adobe.com）に追加します。
+   1. AEM ユーザー（forms@adobe.com）と共有したフォルダーへのパスを含む参照を追加します。
 
       ![Google Drive のサンプルコンテンツ](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -132,7 +132,7 @@ AEM Forms ボイラープレートテンプレートを使用すると、Adaptiv
       Microsoft SharePoint でのファイル管理について詳しくは、[Adobe SharePoint の使用方法](https://www.aem.live/docs/setup-customer-sharepoint)を参照してください。
 
 
-   1. 参照を追加したら、`fsatb.yaml` ファイルをコミットします。これで問題なく見えます。 ビルドの問題が発生した場合は、[GitHub ビルド問題のトラブルシューティング](#troubleshooting-github-build-issues)を参照してください。
+   1. 参照を追加し、すべてが正しく表示されたら、`fsatb.yaml` ファイルをコミットします。ビルドの問題が発生した場合は、[GitHub ビルド問題のトラブルシューティング](#troubleshooting-github-build-issues)を参照してください。
 
       ![更新された fsatab.yaml ファイルのコミット](/help/edge/assets/commit-updated-fstab-yaml.png)
 
@@ -241,7 +241,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. GitHub プロジェクトのクローンを作成します。次のコマンドを使用して、GitHub からプロジェクトリポジトリのクローンを作成します。 &lt;owner> リポジトリの所有者と &lt;repo> リポジトリ名を置き換えます。
+1. GitHub プロジェクトの複製：次のコマンドを使用して、GitHub からプロジェクトリポジトリを複製します。`<owner>` をリポジトリ所有者、`<repo>` をリポジトリ名に置き換えます。
 
    ```
    git clone https://github.com/<owner>/<repo>

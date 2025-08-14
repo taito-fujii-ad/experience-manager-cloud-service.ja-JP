@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2308'
 ht-degree: 98%
@@ -247,19 +247,19 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 次のコードを JavaScript ファイルに追加して、REST サービスエンドポイントから受け取った応答とヘッダーをブラウザーコンソールに表示します。
 
    ```javascript
-       /**
-       * Custom Error handler
-       * @name customErrorHandler Custom Error Handler Function
-       * @errorHandler
-       */
-       function customErrorHandler(response, headers)
-       {
-           console.log("Custom Error Handler processing start...");
-           console.log("response:"+JSON.stringify(response));
-           console.log("headers:"+JSON.stringify(headers));
-           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
-           console.log("Custom Error Handler processing end...");
-       }
+        /**
+        * Custom Error handler
+        * @name customErrorHandler Custom Error Handler Function
+        * @errorHandler
+        */
+        function customErrorHandler(response, headers)
+        {
+            console.log("Custom Error Handler processing start...");
+            console.log("response:"+JSON.stringify(response));
+            console.log("headers:"+JSON.stringify(headers));
+            guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
+            console.log("Custom Error Handler processing end...");
+        }
    ```
 
    >[!NOTE]
@@ -273,8 +273,6 @@ dataRef の値は、フォームコンポーネントの&#x200B;**[!UICONTROL �
 
 
 1. 変更を追加し、コミットして、リポジトリにプッシュします。
-
-<!--
 
 <!--
 1. Save the `function.js` file.

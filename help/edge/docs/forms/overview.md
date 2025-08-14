@@ -4,7 +4,7 @@ description: ユニバーサルエディターのオーサリングアプロー�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
@@ -110,7 +110,6 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
 | Submit to AEM workflows/FDM | ✅ | – | Via UE embed |
 | Custom components (JS/CSS) | ✅ | ✅ | Via embed |
 | Localization via Sites | ✅ | Manual | Via embed |
-
 -->
 
 ## 次の手順
@@ -124,8 +123,7 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
 これで、AEM Edge Delivery Services を使用して最初のパフォーマンスの高いフォームを作成する準備が整いました。
 
 
-<!-- 
-
+<!--
 ## Start creating forms
 
 - [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
@@ -137,8 +135,6 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
 - [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 - [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 - [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
-
-<!-- 
 
 ## Start creating forms
 
@@ -229,6 +225,5 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
 
 
 </br>
-
 
 -->

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0 リ�
 feature: Release Information
 role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
-source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2162'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ AEM Assets では [AI を使用して、タイトル、説明、キーワード�
 
 **Figma との統合**
 
-AEM Assets は Figma とネイティブに統合されているので、AEM Assets に保存されているアセットに Figma ユーザーインターフェイスから直接アクセスできます。AEM Assets で管理されているコンテンツを Figma キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。Figma コミュニティページで利用可能な AEM Assets コネクタにアクセスするには、[ここ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)をクリックします。
+AEM Assets は Figma とネイティブに統合されているので、デザイナーは AEM Assets に保存されているアセットに Figma ユーザーインターフェイスから直接アクセスできます。AEM Assets で管理されているコンテンツを Figma キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。Figma コミュニティページで利用可能な AEM Assets コネクタにアクセスするには、[ここ](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)をクリックします。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
@@ -114,7 +114,7 @@ AEM Assets は Figma とネイティブに統合されているので、AEM Asse
 
 ### プレリリース機能
 
-* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成を促進し、一貫性を高め、スパムや自動不正使用に対する保護を向上させることができます。
+* [ アダプティブFormsおよびフォームフラグメント用のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：ユニバーサルエディターでは、アダプティブFormsと再利用可能なフォームフラグメントの両方の作成がサポートされるようになりました。 作成者は、フォームの作成、送信アクションの設定、reCAPTCHA 検証の追加を、すべてシンプルなWYSIWYG オーサリング環境で視覚的に行えます。 この機能により、フォームの作成が迅速化され、一貫性が高まり、ススパムや自動化による悪用からの保護が強化されます。
 
 * [SharePoint ドキュメントライブラリ - 添付ファイルを元のファイル名で保存](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：フォームの添付ファイルを SharePoint ドキュメントライブラリに保存する際に、元のファイル名を使用して保存するオプションが追加されました。この機能強化により、アップロードしたファイルの識別と管理が簡素化されます。
 
@@ -132,7 +132,7 @@ AEM Forms 早期アクセスプログラムでは、最先端のイノベーシ�
 
 #### Adobe Experience Platform（AEP）と Forms の統合
 
-* [AEM FormsとAdobe Experience Platformの統合 ](/help/forms/aem-forms-aep-connector.md):AEM Forms to Adobe Experience Platform Connector を使用すると、Adaptive FormsとAdobe Experience Platformをシームレスに統合できます。 この機能を使用すると、フォームデータを XDM スキーマにマッピングし、リアルタイムでAEPに直接送信できます。 Adobe Experience Cloud ソリューション全体で、パーソナライゼーションおよびアクティベーションのユースケースのためのデータキャプチャを効率化します。
+* [AEM FormsとAdobe Experience Platformの統合](/help/forms/aem-forms-aep-connector.md)：AEM Forms to Adobe Experience Platform Connector を使用すると、アダプティブフォームとAdobe Experience Platformをシームレスに統合できます。 この機能を使用すると、フォームデータを XDM スキーマにマッピングし、リアルタイムで AEP に直接送信できます。 Adobe Experience Cloud ソリューション全体で、パーソナライゼーションおよびアクティベーションのユースケースのためのデータキャプチャを効率化します。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 

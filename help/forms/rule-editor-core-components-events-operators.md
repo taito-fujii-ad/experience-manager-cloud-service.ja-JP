@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2333'
+source-wordcount: '2327'
 ht-degree: 50%
 
 ---
@@ -68,12 +68,11 @@ AEM Forms as a Cloud では、複雑な条件やアクションを簡単に定�
 
 `Action 2 on Object B;`
 `AND`
-&#39;オブジェクト C のアクション 3;
+`Action 3 on Object C;`
 
 `Else, do the following:`
 
 `Action 2 on Object C;`
-_
 
 ラジオボタンやリストなどの複数値コンポーネントに対してルールを作成する場合、オプションが自動的に取得され、それらのオプションを使用してルールを作成できるようになりました。これらのオプションの値を再入力する必要はありません。
 

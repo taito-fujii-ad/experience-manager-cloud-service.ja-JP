@@ -4,7 +4,7 @@ description: AEM as a Cloud Serviceでのログのベンダーへの転送につ
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 5%
@@ -19,22 +19,6 @@ ht-degree: 5%
 
 ログベンダーのライセンスを持つお客様、またはログ製品をホストするお客様は、AEM ログ（Apache/Dispatcherを含む）および CDN ログを、関連するログ出力先に転送することができます。 AEM as a Cloud Serviceは、次のログ出力先をサポートしています。
 
-&lt;html>
-&lt;style>
-table &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-&rbrace;
-th, td &lbrace;
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-&rbrace;
-&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +93,6 @@ th, td &lbrace;
     </tr>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >
@@ -200,14 +183,7 @@ AEMと Apache/DispatcherAEMのログを、専用のエグレス IP などの高�
 一部の組織は、ログ宛先で受信できるトラフィックを制限し、他の組織は HTTPS （443）以外のポートを使用する必要がある場合があります。  その場合は、ログ転送設定をデプロイする前に [ 詳細ネットワーク ](/help/security/configuring-advanced-networking.md) を設定する必要があります。
 
 次の表を使用して、ポート 443 を使用しているかどうか、および固定 IP アドレスからログを表示する必要があるかどうかに基づいて、高度なネットワーク設定とログ設定の要件を確認してください。
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-&rbrace;
-&lt;/style>
+
 <table>
   <tbody>
     <tr>
@@ -239,7 +215,6 @@ table, th, td &lbrace;
       <td>はい</td>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >ログが 1 つの IP アドレスから表示されるかどうかは、高度なネットワーク設定の選択によって決まります。  これを容易にするには、専用のエグレスを使用する必要があります。
@@ -270,6 +245,7 @@ data:
 CDN ログの場合は、[Fastly ドキュメント – 公開 IP リスト ](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/) で説明しているように、IP アドレスを許可リストに登録できます。 その共有 IP アドレスのリストが大きすぎる場合は、https サーバーまたは（Adobe以外の） Azure Blob Store にトラフィックを送信し、そこで既知の IP から最終的な宛先にログを送信するロジックを記述することを検討します。
 
 >[!NOTE]
+>
 >CDN ログが、AEM Cloud Service ではなく Fastly から直接送信されることが原因で、AEM ログと同じ IP アドレスから表示することはできません。
 
 ## 宛先設定のログ記録 {#logging-destinations}
@@ -304,15 +280,15 @@ S3 ログフォワーダーを使用するには、AWS IAM ユーザーに S3 �
 IAM ポリシーでは、ユーザーが `s3:putObject` を使用できるようにする必要があります。  例：
 
 ```json
-{
-   "Version": "2012-10-17",
-   "Statement": [{
-       "Effect": "Allow",
-       "Action": [
-           "s3:PutObject"
-       ],
-       "Resource": "arn:aws:s3:::your_bucket_name/*"
-   }]
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
 }
 ```
 
@@ -512,6 +488,7 @@ New Relicへのログ転送では、New Relic HTTPS API を取り込みに利用
 ```
 
 >[!NOTE]
+>
 >New Relicへのログ転送は、顧客が所有するNew Relic アカウントでのみ使用できます。
 >
 >アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
@@ -538,6 +515,7 @@ Dynatraceへのログ転送では、Dynatrace HTTPS API を取り込みに利用
 ```
 
 >[!NOTE]
+>
 > アクセスをリクエストするには、[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) にメールを送信します。
 
 ### Splunk {#splunk}
@@ -630,6 +608,7 @@ Adobeによってそのように設定されたお客様は、都合のよいと
 設定をすべての環境にデプロイして、すべての環境をセルフサービスで制御できるようにすることをお勧めしますが、必須ではありません。 そうしないと、Adobeで設定された環境と、セルフサービス方式で設定された環境を忘れてしまう可能性があります。
 
 >[!NOTE]
+>
 >Splunk インデックスに送信された `sourcetype` フィールドの値が変更された可能性があるので、それに応じて調整します。
 >
 >Adobe サポートが以前に設定した環境にログ転送をデプロイすると、最大で数時間ログの重複が発生する場合があります。 これは最終的に自動解決されます。

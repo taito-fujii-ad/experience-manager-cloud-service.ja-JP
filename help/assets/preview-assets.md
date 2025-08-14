@@ -2,9 +2,10 @@
 title: AEM Sites ページで使用する前にアセットをプレビューする
 description: OpenAPI 機能を備えた Dynamic Media を使用すると、Adobe Experience Manager（AEM） Sites のプレビューページでアセットをプレビューできます。 このアセットプレビューを使用すると、アセットを公開する前に（更新されたアセットを含む）作成者ページを公開前に、作成者および関係者がアセットの更新を確認および検証できます。
 role: Admin, User
-source-git-commit: e343cc5754ec5565e57a5a932d59d7bfe78c6027
+exl-id: 6f071ca9-0f84-45fc-a6b3-047cca9d5e65
+source-git-commit: 3f3e091d09b94418fc2cda0bd3b3ce950555b7a9
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Dynamic Media with OpenAPI capabilities] を使用すると、[!DNL Adobe Experience Manager (AEM) Sites] オーサーページで使用可能なアセットを、公開する前にプレビューできます。 アセットのプレビューは、サイトのオーサー層とプレビュー層で使用できます。
 
-[AEM Sites プレビューページでアセットをプレビュー ](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) するには、プレビューするアセットを追加するか、ライブサイトページで使用可能な既存のアセットを置き換えて、サイトのオーサーページを更新します。 次に、更新されたオーサーページをプレビュー層に公開して、プレビュー URL を生成します。
+[AEM Sites プレビューページでアセットをプレビュー ](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) するには、プレビューするアセットを追加するか、ライブサイトページで使用可能な既存のアセットを置き換えて、サイトのオーサーページを更新します。 更新されたオーサーページをプレビュー層に公開して、プレビュー URL を生成します。
 
 プレビューページを関係者と共有して、更新されたアセットの視覚的な品質とコンテキストの整合性に関するフィードバックを収集します。 フィードバックに基づいてアセットを絞り込みます。 レビューサイクル中に、アセットの複数のバージョンを作成および管理します。
 
@@ -44,7 +45,7 @@ ht-degree: 0%
    1. [!UICONTROL &#x200B; 情報パネル &#x200B;] で、**[!UICONTROL ステータス]** を **[!UICONTROL プレビュー]** に設定し、「**[!UICONTROL 保存]**」をクリックします。
       ![プレビュー](/help/assets/assets/preview-boat-at-bay.png)
 
-1. Sites オーサリングページに移動します。 [AEM ページエディターでリモートアセットにアクセス ](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) の手順を実行し、アセットセレクターパネルを使用して最近プレビュー（ステータス）に設定したアセットを選択します。
+1. Sites オーサリングページに移動します。 最近プレビュー（ステータス）に設定したアセットをアセットセレクターパネルで選択するには、[AEM ページエディターでのリモートアセットへのアクセス ](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) の手順を実行します。
 
    >[!NOTE]
    >
@@ -74,4 +75,3 @@ ht-degree: 0%
 
    ![ ページが公開されました ](/help/assets/assets/the-page-has-been-publushed.png)
 公開に成功すると、確認メッセージ **[!UICONTROL ページが公開されました]** が表示されます。 パブリッシュ層で公開済みのページに移動して、更新がライブであり、コンテンツが期待どおりに表示されることを確認します。
-

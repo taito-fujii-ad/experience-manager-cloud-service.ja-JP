@@ -7,15 +7,15 @@ role: User, Developer
 source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
-# 基盤コンポーネントに基づくアダプティブFormsの送信アクション
+# 基盤コンポーネントに基づくアダプティブフォームの送信アクション
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=ja) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=ja) |
 | AEM as a Cloud Service（基盤コンポーネント） | この記事 |
 | AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service（Edge Delivery Services） | [ここをクリックしてください](/help/forms/configure-submit-action-eds-forms.md) |
@@ -23,11 +23,11 @@ ht-degree: 54%
 <!--
 **Applies to**: ✔️ Adaptive Form Foundation Components. ❌ [Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).-->
 
-[ 基盤コンポーネントをベースにしたアダプティブForms](/help/forms/creating-adaptive-form.md) は、様々な [ 標準の送信アクション ](#submit-actions-supported-by-adaptive-forms-based-on-foundation-components) をサポートしています。 送信アクションは、ユーザーがアダプティブフォームの **[!UICONTROL 送信]** ボタンをクリックしたするときにトリガーされます。
+[基盤コンポーネントに基づくアダプティブフォーム](/help/forms/creating-adaptive-form.md)は、様々な[標準の送信アクション](#submit-actions-supported-by-adaptive-forms-based-on-foundation-components)をサポートしています。送信アクションは、ユーザーがアダプティブフォームの「**[!UICONTROL 送信]**」ボタンをクリックするときにトリガーされます。
 
-## 基盤コンポーネントに基づくFormsの送信アクション
+## 基盤コンポーネントに基づくフォームの送信アクション
 
-基盤コンポーネントに基づくアダプティブFormsでは、次の送信アクションがサポートされています。
+基盤コンポーネントに基づくアダプティブフォームでは、次の送信アクションがサポートされています。
 
 * [メールを送信](/help/forms/configure-submit-action-send-email.md)
 * [Power Automate フローを呼び出す](/help/forms/forms-microsoft-power-automate-integration.md)
@@ -39,20 +39,20 @@ ht-degree: 54%
 * [OneDrive に送信](/help/forms/configure-submit-action-onedrive.md)
 * [AEM ワークフローを起動](/help/forms/configure-submit-action-workflow.md)
 * [Marketo Engage に送信](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [Adobe Experience Platform（AEP）への送信 ](/help/forms/aem-forms-aep-connector.md)
+* [Adobe Experience Platform（AEP）に送信](/help/forms/aem-forms-aep-connector.md)
 
-また、基盤コンポーネントに基づくアダプティブフォームを他のストレージ設定に送信することもできます。
+基盤コンポーネントに基づくアダプティブフォームを他のストレージ設定に送信することもできます。
 
 * [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
 * [Microsoft へのアダプティブフォームの接続](/help/forms/ms-dynamics-odata-configuration.md)
 
-さらに、特定の組織要件に合わせて [ デフォルトの送信アクションをカスタマイズ ](/help/forms/custom-submit-action-form.md) することもできます。
+さらに、[デフォルトの送信アクションをカスタマイズ](/help/forms/custom-submit-action-form.md)して、特定の組織要件に合わせることができます。
 
 ### 基盤コンポーネントに基づくフォームの送信アクションの設定
 
 サイドバーにあるアダプティブフォームコンテナプロパティの「**[!UICONTROL 送信]**」セクションで、送信アクションを設定できます。
 
-![AEM Forms送信アクション ](/help/forms/assets/submit-form-foundation-component.png)
+![AEM Forms 送信アクション](/help/forms/assets/submit-form-foundation-component.png)
 
 <!-- [!NOTE]
 >

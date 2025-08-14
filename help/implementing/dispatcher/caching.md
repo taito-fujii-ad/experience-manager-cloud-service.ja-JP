@@ -4,10 +4,10 @@ description: AEM as a Cloud Service でのキャッシュの基本について
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 4a586a0022682dadbc57bab1ccde0ba2afa78627
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '3071'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,14 +20,13 @@ Dispatcher 設定にルールを適用して、デフォルトのキャッシュ
 
 ## キャッシュ {#caching}
 
-AEM as a Cloud Service CDN での HTTP 応答のキャッシュは、接触チャネルからの HTTP 応答ヘッダー `Cache-Control`、`Surrogate-Control` または `Expires` によって制御されます。
+AEM as a Cloud Service CDN での HTTP 応答のキャッシュは、オリジンからの HTTP 応答ヘッダー `Cache-Control`、`Surrogate-Control`、`Expires` によって制御されます。
 
 これらのキャッシュヘッダーは、通常、mod_headers を使用して、AEM Dispatcher vhost 設定で行われますが、AEM パブリッシュ自体で実行されるカスタム Java™ コードで設定することもできます（[CDN キャッシュを有効にする方法](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)を参照）。
 
 CDN リソースのキャッシュキーには、クエリパラメーターを含む完全なリクエスト URL が含まれているので、異なるクエリパラメーターごとに様々なキャッシュエントリが生成されます。不要なクエリパラメーターを削除することを考慮します。キャッシュヒット率の向上について詳しくは、[以下を参照](#marketing-parameters)してください。
 
-`Cache-Control` に `private`、`no-cache` または `no-store` が含まれる接触チャネル応答は、AEM as a Cloud Service の CDN によってキャッシュされません（詳しくは、[CDN キャッシュを無効にする方法
-](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)を参照してください）。また、Cookie を設定する応答、つまり `Set-Cookie` 応答ヘッダーを持つ応答は、CDN によってキャッシュされません。
+`private` に `no-cache`、`no-store`、`Cache-Control` を含むオリジン応答は、AEM as a Cloud Serviceの CDN によってキャッシュされません（詳しくは [CDN キャッシュを無効にする方法 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) を参照）。  また、Cookie を設定する応答、つまり `Set-Cookie` 応答ヘッダーを持つ応答は、CDN によってキャッシュされません。
 
 ### HTML/Text {#html-text}
 

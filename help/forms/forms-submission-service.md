@@ -8,7 +8,7 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 1%
@@ -147,8 +147,6 @@ Forms送信サービスには、2 つの設定方法があります。 ワーク
 
 
 3. **プロジェクトフォルダーの共有** を `forms@adobe.com` と共有する（編集権限が必要）
-
-+++
 
 +++
 
@@ -369,6 +367,7 @@ Postmanは、API 送信をテストするための使いやすいインターフ
 1. Postmanでの **新しい POST リクエストの作成**
 2. **エンドポイントを設定します：** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
 3. **プレースホルダーを置換：**
+
    - 実際→フォーム ID を `{id}` します
    - `[repository]` → GitHub リポジトリ名
    - `[organization]` → GitHub 組織/ユーザー名

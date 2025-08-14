@@ -4,7 +4,7 @@ description: AEM Forms の Edge Delivery Services のテーマとスタイルの
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 98%
@@ -476,7 +476,7 @@ ht-degree: 98%
 ```
 
 - fieldset 要素は、パネルコンテナとして機能し、クラス panel-wrapper と、パネル名（field-login）に基づいてスタイル設定する追加クラスがあります。
-- 凡例要素（&lt;legend>）は、「ログイン情報」というテキストとクラスフィールドラベルを持つパネルタイトルとして機能します。data-visible=&quot;false&quot; 属性を JavaScript で使用すると、タイトルの表示／非表示を制御できます。
+- 凡例要素（`<legend>`）は、「Login Information」というテキストとクラスのフィールドラベルを含むパネルタイトルとして機能します。 data-visible=&quot;false&quot; 属性を JavaScript で使用すると、タイトルの表示／非表示を制御できます。
 - フィールドセット内では、複数の{Type}-wrapper 要素（この場合は .text-wrapper と .password-wrapper）がパネル内の個々のフォームフィールドを表します。
 - 各ラッパーには、前の例と同様にラベル、入力フィールド、説明が含まれています。
 

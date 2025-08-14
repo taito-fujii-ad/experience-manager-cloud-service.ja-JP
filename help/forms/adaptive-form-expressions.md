@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '2686'
-ht-degree: 100%
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
+source-wordcount: '2682'
+ht-degree: 97%
 
 ---
 
@@ -212,9 +212,9 @@ GuideBridge は、ブラウザーのメモリーモデルでアダプティブ�
 
 #### 様々な式での GuideBridge の使用方法 {#guidebridge-usage-in-various-expressions}
 
-* フォームフィールドをリセットするには、ボタンのクリック式で `guideBridge.reset()` API をトリガーします。同様に、クリック式として呼び出すことができる送信 API `guideBridge.submit()`**があります。**
+* フォームフィールドをリセットするには、ボタンのクリック式で `guideBridge.reset()` API をトリガーします。同様に、クリック式 `guideBridge.submit()` として呼び出すことができる送信 API があります。
 
-* `setFocus()` API を使用して、様々なフィールドまたはパネル間でフォーカスを設定できます（パネルの場合、フォーカスは自動的に最初のフィールドに設定されます）。`setFocus()` には、パネル間ナビゲーション、前／次のトラバーサル、特定のフィールドへのフォーカスの設定など、幅広いオプションが用意されています。例えば、次のパネルに移動するには、`guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;) を使用します。
+* `setFocus()` API を使用して、様々なフィールドまたはパネル間でフォーカスを設定できます（パネルの場合、フォーカスは自動的に最初のフィールドに設定されます）。`setFocus()` には、パネル間ナビゲーション、前/次のトラバーサル、特定のフィールドへのフォーカスの設定など、幅広いオプションが用意されています。 例えば、次のパネルに移動するには、`guideBridge.setFocus(this.panel.somExpression, 'nextItem')` を使用します。
 
 * アダプティブフォームやその特定のパネルを検証するには、`guideBridge.validate(errorList, somExpression).` を使用します。
 
@@ -269,7 +269,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 特定のフィールドタイプのカスタムパターンを作成して、同じタイプの他のフィールドに再利用するには、以下の手順を実行します。
 
 1. オーサーインスタンスで CRXDE Lite に移動します。
-1. カスタムパターンを管理するためのフォルダーを作成します。/apps ディレクトリの下で、タイプ sling:folder のノードを作成します。例えば、`customPatterns` という名前でノードを作成します。このノードの下で、タイプ `nt:unstructed` の別のノードを作成して、`textboxpatterns` という名前を付けます。このノードには、追加したい様々なカスタムパターンが含まれています。
+1. カスタムパターンを管理するためのフォルダーを作成します。/apps ディレクトリの下に、タイプ sling:folder のノードを作成します。 例えば、`customPatterns` という名前でノードを作成します。このノードの下で、タイプ `nt:unstructed` の別のノードを作成して、`textboxpatterns` という名前を付けます。このノードには、追加したい様々なカスタムパターンが含まれています。
 1. 作成したノードの「プロパティ」タブを開きます。例えば、`textboxpatterns` の「プロパティ」タブを開きます。このノードに `guideComponentType` プロパティを追加して、その値を *fd/af/components/formatter/guideTextBox* に設定します。
 
 1. このプロパティの値は、パターンを定義するフィールドに応じて変わります。数値フィールドの場合、`guideComponentType` プロパティの値は、*fd/af/components/formatter/guideNumericBox* です。日付選択フィールドの値は、*fd/af/components/formatter/guideDatepicker* す。

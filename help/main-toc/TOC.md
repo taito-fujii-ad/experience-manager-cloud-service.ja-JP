@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3004d7fe69a0666d5747967519ea08e35ca020a4
+source-git-commit: 2038e0884718a2c0cd0b661ebe0426540a32e35a
 workflow-type: tm+mt
-source-wordcount: '6592'
-ht-degree: 97%
+source-wordcount: '6605'
+ht-degree: 98%
 
 ---
 
@@ -266,6 +266,7 @@ ht-degree: 97%
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [パブリッシュ層でのAEM as a Cloud Serviceの Open ID Connect サポート](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [AEM as a Cloud Service の IMS 統合の設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [権限管理のプリンシパルビュー](/help/security/touch-ui-principal-view.md)
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
@@ -786,11 +787,11 @@ ht-degree: 97%
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
          + [アダプティブフォームの XML スキーマのデザイン](/help/forms/adaptive-form-xml-schema-form-model.md)
       + アダプティブフォームの送信アクションの設定 {#set-submit-action}
-         + [アダプティブFormsでサポートされている送信アクション](/help/forms/aem-forms-submit-action.md)
-         + [基盤コンポーネントに基づいたアダプティブフォームの送信アクションの設定](/help/forms/configuring-submit-actions.md)
-         + [コアコンポーネントに基づくアダプティブフォームの送信アクションを設定する](/help/forms/configure-submit-actions-core-components.md)
-         + [Edge Delivery Services Formsの送信アクションを設定する](/help/forms/configure-submit-action-eds-forms.md)
-         + [アダプティブフォームのメール送信アクションの送信を設定する](/help/forms/configure-submit-action-send-email.md)
+         + [アダプティブフォームでサポートされている送信アクション](/help/forms/aem-forms-submit-action.md)
+         + [基盤コンポーネントに基づくアダプティブフォームの送信アクションの設定](/help/forms/configuring-submit-actions.md)
+         + [コアコンポーネントに基づくアダプティブフォームの送信アクションの設定](/help/forms/configure-submit-actions-core-components.md)
+         + [Edge Delivery Services Forms 用の送信アクションの設定](/help/forms/configure-submit-action-eds-forms.md)
+         + [アダプティブフォームの「メールを送信」送信アクションの設定](/help/forms/configure-submit-action-send-email.md)
          + [アダプティブフォームとフォームデータモデルの統合](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
          + アダプティブフォームを Microsoft® SharePoint に接続{#connect-to-sharepoint}
@@ -799,10 +800,10 @@ ht-degree: 97%
             + [SharePoint リストへの送信](/help/forms/connect-forms-to-sharepoint-list.md)
             + [認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定](/help/forms/configure-sharepoint-site-limited-access.md)
          + [Adobe Workfront Fusion へのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-         + [Azure Blob Storage にアダプティブフォームを送信する](/help/forms/configure-submit-action-azure-blob-storage.md)
-         + [アダプティブフォームの REST エンドポイント送信アクションへの送信を設定する](/help/forms/configure-submit-action-restpoint.md)
+         + [Azure Blob Storage へのアダプティブフォームの送信](/help/forms/configure-submit-action-azure-blob-storage.md)
+         + [アダプティブフォームの REST エンドポイント送信アクションへの送信の設定](/help/forms/configure-submit-action-restpoint.md)
          + [Microsoft へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
-         + [AEM アダプティブフォームと AEM ワークフローを統合する](/help/forms/configure-submit-action-workflow.md)
+         + [AEM アダプティブフォームと AEM ワークフローの統合](/help/forms/configure-submit-action-workflow.md)
          + [AEM Forms と Adobe Experience Platform（AEP）の統合](/help/forms/aem-forms-aep-connector.md)
          + アダプティブフォームと Adobe Marketo Engage の統合{#integrate-adaptive-form-with-market-engage}
             + [Adobe Marketo Engage と AEM Forms の統合](/help/forms/integrate-form-to-marketo-engage.md)

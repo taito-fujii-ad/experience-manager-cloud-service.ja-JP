@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6727'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -487,7 +487,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL プラス]**」を選択します。
 
-   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**&#x200B;[!UICONTROL &#x200B; Spouse Salary （配偶者の給与）]&#x200B;**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
+   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**[!UICONTROL  Spouse Salary （配偶者の給与）]**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -799,7 +799,7 @@ AEM セキュリティおよび堅牢化ガイドラインの一環として、4
 
 ![複雑な式](assets/complexexpression.png)
 
-ルール内で条件をドラッグアンドドロップして編集することもできます。条件の前のハンドル（![handle](assets/drag-handle.svg)）を選択し続けます。次に示すようにポインターが手の形になったら、ルール内の任意の場所に条件をドラッグ＆ドロップします。ルール構造が変化します。
+ルール内で条件をドラッグアンドドロップして編集することもできます。条件の前のハンドル（![handle](assets/drag-handle.svg)）を選択し続けます。次に示すようにポインターがハンドシンボルになったら、ルール内の任意の場所に条件をドラッグ＆ドロップします。ルール構造が変化します。
 
 ![Drag-and-drop](assets/drag-and-drop.png)
 
