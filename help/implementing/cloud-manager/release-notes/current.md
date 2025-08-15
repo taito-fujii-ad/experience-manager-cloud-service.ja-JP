@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
+source-git-commit: c6493d05c60c01b4840c8f12d06aa4508bdbb534
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 59%
+source-wordcount: '1403'
+ht-degree: 55%
 
 ---
 
@@ -26,6 +26,12 @@ AEM as a Cloud Service の Cloud Manager 2025.8.0 のリリース日は 2025年8
 次回のリリース予定は 2025年9月4日（PT）です。
 
 ## 新機能 {#what-is-new}
+
+* **Adobe Experience Hub近日公開予定**
+
+  2025 年 8 月 19 日（PT）より、AdobeはすべてのAdobe Experience Manager ユーザーに対して新しいExperience Hubの段階的なロールアウトを開始します。
+
+  Experience Hubは、状況に応じたパーソナライズされたエクスペリエンスを提供し、ユーザーの目標達成を支援する統合的な出発点です。 このロールアウトは 2025 年 8 月 26 日（PT）までに終了し、すべてのユーザーが使用できるようになります。 新しいExperience Hubには、[experience.adobe.com](https://experience.adobe.com/) から直接アクセスできます。 詳しくは、[Adobe Experience Hub](/help/implementing/cloud-manager/aem-home.md) を参照してください。
 
 * **Edge Delivery Services ライセンスは、セルフサービス方式で HIPAA プログラムに含めることができます**
 
@@ -91,7 +97,12 @@ Cloud Manager は、**専用のテスト環境**&#x200B;という新しい追加
 
 ![「専用のテスト環境」ラジオボタンが選択された「環境を追加」ダイアログボックス](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-この新機能をテストしてフィードバックを共有することに関心がある場合は、Adobe ID に関連付けられたメールアドレスから [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)にメールを送信してください。
+>[!NOTE]
+>
+>Adobeでは、十分な数の参加者に達したため、専用テスト環境のクローズドベータ版アクセスリクエストを行いました。 この機能は、一般公開に備えています。
+
+<!--
+If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ### 独自の Git の導入（BYOG） {#gitlab-bitbucket-azure-vsts}
@@ -152,7 +163,7 @@ Edge Delivery Services を使用して作成されたサイトで設定パイプ
 
 [Edge Delivery パイプラインの追加 ](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) を参照してください。
 
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
+この新機能をテストしてフィードバックを共有したい場合は、Adobe ID に関連付けられたメールアドレスから [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) にメールを送信してください。
 
 
 ## バグ修正

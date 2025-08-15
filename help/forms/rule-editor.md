@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: ht
-source-wordcount: '6727'
-ht-degree: 100%
+source-git-commit: 2830f06817b65a2ae059c1381a9d5588b661d74e
+workflow-type: tm+mt
+source-wordcount: '6649'
+ht-degree: 99%
 
 ---
 
@@ -375,7 +375,7 @@ When （オプション）：
 
 ### C. フォームオブジェクトと関数の切り替え {#c-form-objects-and-functions-toggle-br}
 
-切り替えボタンをタップすると、フォームオブジェクトと関数ペインが切り替わります。
+切替スイッチボタンをタップすると、フォームオブジェクトと関数ペインが切り替わります。
 
 ### D. ルールのビジュアルエディター {#visual-rule-editor}
 
@@ -404,7 +404,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ## ルールを記述 {#write-rules}
 
-ルールを記述するには、ビジュアルルールエディターまたはコードエディターを使用します。ルールエディターの初回起動時は、ビジュアルエディターモードで開きます。コードエディターモードに切り替えて、ルールを作成することができます。ただし、コードエディターからルールを変更や記述した場合は、コードエディターをクリアしない限り、同じルールをビジュアルエディターから表示することはできません。次回ルールエディターを起動すると、前回ルールを作成した際に使用したモードで開きます。
+ビジュアルルールエディターを使用してルールを記述できます。
 
 最初に、ビジュアルエディターを使用してルールを作成する方法を説明します。
 
@@ -487,7 +487,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL プラス]**」を選択します。
 
-   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**[!UICONTROL  Spouse Salary （配偶者の給与）]**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
+   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**&#x200B;[!UICONTROL &#x200B; Spouse Salary （配偶者の給与）]&#x200B;**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
