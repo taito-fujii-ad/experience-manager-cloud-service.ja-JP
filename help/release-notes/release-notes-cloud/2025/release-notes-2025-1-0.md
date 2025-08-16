@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.1.0 リ�
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1703'
 ht-degree: 92%
 
 ---
@@ -68,7 +68,7 @@ AEM コンテンツフラグメントエディターの最新化された新し�
 
 AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のようになりました。
 
-* ビジュアル編集用の[ユニバーサルエディター](/help/edge/wysiwyg-authoring/authoring.md)。
+* ビジュアル編集用の[ユニバーサルエディター](https://www.aem.live/docs/aem-authoring)。
 * フォームベース編集用の[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。
 
 #### PWA の機能 {#pwa-features}

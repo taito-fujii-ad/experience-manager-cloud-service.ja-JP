@@ -4,9 +4,9 @@ description: Edge Delivery Services を使用して Cloud Manager プロジェ�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 040c8af18353cbcb9242570e6bb3bac73928e2fa
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '823'
 ht-degree: 97%
 
 ---
@@ -85,7 +85,7 @@ Cloud Manager の **Edge Delivery の TODO リスト**&#x200B;は、オンボー
 | 6 | SSL 証明書を追加 | [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。 |
 | 7 | Edge Delivery サイトの CDN を設定 | [ドメインマッピングの追加](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)を参照してください。 |
 | 8 | プッシュ検証を設定 | [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)を参照してください。 |
-| 9 | 運用開始 | [運用開始チェックリスト](/help/edge/docs/go-live-checklist.md)を参照してください。 |
+| 9 | 運用開始 | [運用開始チェックリスト](https://www.aem.live/docs/go-live-checklist)を参照してください。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441562?learn=on&captions=jpn)
 

@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c6493d05c60c01b4840c8f12d06aa4508bdbb534
+source-git-commit: 05cd6bd0a4e4a65ac81053e6058cfd39cbd08148
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 55%
@@ -139,7 +139,6 @@ Cloud Managerで「**アクセストークンの管理**」を使用して、外
 [アクセストークンを管理](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)をご覧ください。
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
-
 
 ### Edge Delivery 設定パイプラインを追加する {#add-eds-pipeline}
 

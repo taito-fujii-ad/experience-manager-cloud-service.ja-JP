@@ -1,7 +1,7 @@
 ---
-source-git-commit: 70363b7dce1f7df5e933d99f8f9af7f6e6c702b3
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1623'
 ht-degree: 98%
 
 ---
@@ -234,7 +234,7 @@ ht-degree: 98%
 >
 >SPA エディターは、新しいプロジェクトでは[非推奨（廃止予定）になりました](/help/implementing/developing/hybrid/spa-editor-deprecation.md)。アドビでは既存のプロジェクトに対して引き続きサポートしますが、新しいプロジェクトには使用しないでください。AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のようになりました。
 >
->* ヘッドレスコンテンツを視覚的に編集する[ユニバーサルエディター](/help/edge/wysiwyg-authoring/authoring.md)。
+>* ヘッドレスコンテンツを視覚的に編集する[ユニバーサルエディター](https://www.aem.live/docs/aem-authoring)。
 >* ヘッドレスコンテンツをフォームベースで編集する[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。
 
 ## ユニバーサルエディター{#ue-see-also}
