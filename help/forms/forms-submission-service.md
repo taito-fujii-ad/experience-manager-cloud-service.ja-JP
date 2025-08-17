@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
+source-git-commit: 1eae2bed903a1dace808a85ad984065351f3a41d
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 1%
@@ -145,8 +145,6 @@ Forms送信サービスには、2 つの設定方法があります。 ワーク
 
 
 3. **プロジェクトフォルダーの共有** を `forms@adobe.com` と共有する（編集権限が必要）
-
-+++
 
 +++
 
