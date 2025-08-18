@@ -4,7 +4,7 @@ description: ユニバーサルエディターのオーサリングアプロー�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
@@ -121,7 +121,6 @@ Microsoft Excel または Google Sheets（ドキュメントベースのオー�
 
 
 これで、AEM Edge Delivery Services を使用して最初のパフォーマンスの高いフォームを作成する準備が整いました。
-
 
 <!--
 ## Start creating forms
