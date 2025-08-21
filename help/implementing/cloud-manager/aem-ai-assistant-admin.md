@@ -1,24 +1,32 @@
 ---
-title: Adobe Experience Managerでの AI アシスタントの設定
+title: AEMでの AI アシスタントの設定
 description: Adobe Experience ManagerでAdmin Consoleを使用して AI アシスタントをセットアップおよび設定する方法について説明します。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+badge: label="Beta" type="Positive"
 hide: true
+index: false
 hidefromtoc: true
 exl-id: a7f3dc14-29f7-473a-9870-d52393e6fa6e
-source-git-commit: e853e7b46c762ab724d5eecb344897a83e4fb724
+source-git-commit: 7779f24244cce198e1c6a9b243a616c96f05ac8d
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1099'
 ht-degree: 3%
 
 ---
 
-# Adobe Experience Managerでの AI アシスタントの設定 {#aem-ai-asst-admin-setup}
+# AEMでの AI アシスタントの設定 {#aem-ai-asst-admin-setup}
 
-組織内のユーザーがAEM（Adobe Experience Manager） AI アシスタントの機能を使用するには、管理者がアクセス、権限、設定を行う必要があります。
+<!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
 
-AEM AI アシスタントの設定プロセスは、次の手順で構成されます。
+AEM（Adobe Experience Manager）で AI アシスタントを使用するには、Admin Console レベルでオプトインする必要があります。 製品管理者がユーザーグループを作成（または選択）し、新しい「AI アシスタント」権限を付与します。 そのグループに追加されたユーザーは誰でも、AEM全体の AI アシスタントにすぐにアクセスできます。 企業全体での可用性が目標の場合、管理者はそのグループにすべてのユーザーを割り当てるだけです。
+
+従業員の観点からは、組織内のAdobe Experience Managerの製品管理者を特定して、AI 対応のユーザーグループに追加するようリクエストするプロセスは簡単です。 そのグループに表示されると、次回ログインしたときにアシスタント アイコンが自動的に表示されます。
+
+管理者は、通常のCloud Manager ガバナンスを念頭に置く必要があります。 プロファイルの作成、ユーザーグループの管理、権限の編集を行うには、Admin Consoleの製品管理者権限を保持します。 ユーザーがアシスタントの組み込みの **サポートチケットを作成** 機能も必要な場合は、同じ個人またはグループに標準の **サポート管理者** ロール（標準のAdmin Console ロール）を追加します。
+
+AEMでの AI アシスタントの設定プロセスは、次の手順で構成されます。
 
 1. [Adobe Admin Consoleで新しい製品プロファイルを作成 ](#create-profile) します。
 1. [AI アシスタントの製品ナレッジ権限を有効にします ](#enable-permission)。
@@ -49,9 +57,9 @@ AEM AI アシスタントの設定プロセスは、次の手順で構成され�
 
    | テキストフィールド | 推奨値 |
    | --- | --- |
-   | 製品プロファイル名 | `AEM AI Assistant` （または好ましい記述名） |
+   | 製品プロファイル名 | `AI Assistant in AEM` （または好ましい記述名） |
    | 表示名（オプション） | `AI Assistant` |
-   | 説明（オプション） | `Product profile for managing AEM AI Assistant access` |
+   | 説明（オプション） | `Product profile for managing AI Assistant in AEM access` |
    | 通知 | 組織の環境設定に基づいてを設定します |
 
 
@@ -61,7 +69,7 @@ AEM AI アシスタントの設定プロセスは、次の手順で構成され�
 
 リファレンス記事：[ 新しい製品プロファイルへのカスタム権限の割り当て ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
-1. Admin Consoleで、新しく作成した製品プロファイルの名前（`AEM AI Assistant`）をクリックします
+1. Admin Consoleで、新しく作成した製品プロファイルの名前（`AI Assistant in AEM`）をクリックします
 
    ![スクリーンショット](/help/implementing/cloud-manager/assets/ai-assistant-console.png)
 
@@ -102,8 +110,8 @@ AEM AI アシスタントの設定プロセスは、次の手順で構成され�
 
    | オプション | 推奨値 |
    | --- | --- |
-   | ユーザーグループ名 | `AEM AI Assistant` （または好みの名前） |
-   | 説明（オプション） | `User group for managing AEM AI Assistant access` |
+   | ユーザーグループ名 | `AI Assistant in AEM` （または好みの名前） |
+   | 説明（オプション） | `User group for managing AI Assistant in AEM access` |
 
    ![ ユーザーグループの新規作成ページ ](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
 
@@ -125,18 +133,18 @@ AI アシスタントのアクセス要件を満たす場合は、新しいグ�
 
 1. **ユーザーグループ** ページの **グループ名** テーブルで、新しく作成したユーザーグループ名または既存のユーザーグループ名をクリックします。
 
-   ![ テーブルにAEM AI Assistant のユーザーグループ名を表示するユーザーグループページ ](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
+   ![ テーブル内のAEM ユーザーグループ名に AI アシスタントが表示されているユーザーグループページ ](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
 
-1. **2&rbrace;AEM AI アシスタント** の「ユーザーグループ **ページで、「** ユーザー **」タブをクリックしてから「** ユーザーを追加 **」をクリックします。**
+1. **AEMの AI アシスタント** の **ユーザーグループ** ページで、「**ユーザー**」タブをクリックしてから「**ユーザーを追加**」をクリックします。
 
-   ![ 「ユーザー」タブと「ユーザーを追加」ボタンが表示されているAEM AI Assistant のユーザーグループ ](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
+   ![ 「ユーザー」タブと「ユーザーを追加」ボタンが表示されているAEM ユーザーグループページの AI アシスタント ](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
 
-1. **`Add users to this user group`** ページで、AEM AI アシスタントへのアクセスを必要とするユーザーを検索して選択します。
+1. **`Add users to this user group`** ページで、AEMの AI アシスタントにアクセスする必要があるユーザーを検索して選択します。
 
    ![ このユーザーグループにユーザーを追加するページ ](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
 1. ページの右下隅にある「**保存**」をクリックします。
-1. 次に、製品プロファイルをユーザーグループに割り当てます &rbrack; （#assign-product-profile）。
+1. ここで、[ 製品プロファイルをユーザーグループに割り当てる ](#assign-product-profile) 必要があります。
 
 >[!TAB ユーザーの一括追加]
 
@@ -144,7 +152,7 @@ Admin Consoleのバルクアップロード機能を使用できます。
 
 1. ユーザー情報を含む CSV ファイルを準備します。
 1. 効率的な一括追加には、**`Add users by CSV`** オプションを使用します。
-1. 次に、製品プロファイルをユーザーグループに割り当てます &rbrack; （#assign-product-profile）。
+1. ここで、[ 製品プロファイルをユーザーグループに割り当てる ](#assign-product-profile) 必要があります。
 
 >[!ENDTABS]
 
@@ -155,10 +163,10 @@ Admin Consoleのバルクアップロード機能を使用できます。
 
 リファレンス記事：[ エンタープライズユーザーの製品プロファイルの管理 ](https://helpx.adobe.com/jp/enterprise/using/manage-product-profiles.html)
 
-1. [4 - ユーザーグループにユーザーを追加 ](#add-users) からAEM AI アシスタントのユーザーグループを開いている間に、「**割り当てられた製品プロファイル**」タブをクリックします。
+1. [4 - ユーザーグループにユーザーを追加 ](#add-users) からAEM ユーザーグループの AI アシスタントで、「**割り当てられた製品プロファイル**」タブをクリックします。
 1. **プロファイルを割り当て** をクリックします。
 
-   ![ 「製品プロファイルが割り当て済み」タブが選択されたAEM AI アシスタントのユーザーグループページ ](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
+   ![ 「製品プロファイルが割り当てられた」タブが選択されているAEM ユーザーグループページの AI アシスタント ](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
 
 1. **製品とプロファイルを割り当て** ページの **製品プロファイルを選択** ダイアログボックスで、**AI アシスタント** の製品プロファイルを検索して選択します。
 
@@ -167,7 +175,7 @@ Admin Consoleのバルクアップロード機能を使用できます。
 1. ダイアログボックスの右下隅付近にある「**適用**」をクリックします。
 1. **製品とプロファイルの割り当て** ページの右下隅付近にある「**保存**」をクリックします。
 
-   ![AEM AI Assistant ユーザーグループに割り当てられている AI アシスタントの製品プロファイルが表示されます ](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
+   ![AEM ユーザーグループで AI アシスタントに割り当てられて表示される AI アシスタントの製品プロファイル ](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
 
 
 ## 設定の確認
@@ -187,6 +195,7 @@ Admin Consoleのバルクアップロード機能を使用できます。
 
 ## 関連トピック
 
+* [AEMの AI アシスタント](/help/implementing/cloud-manager/aem-ai-assistant.md)
 * [Adobe Experience Platformのアクセス制御 ](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/overview)
 * [Cloud Managerのカスタム権限](/help/implementing/cloud-manager/custom-permissions.md)
 

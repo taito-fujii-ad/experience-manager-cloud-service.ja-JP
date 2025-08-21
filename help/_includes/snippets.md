@@ -1,5 +1,5 @@
 ---
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: a90a561146901171d7e3eefecc5a98c73aa79f14
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 98%
@@ -131,8 +131,7 @@ ht-degree: 98%
    </tr>
    </tr>
   </tbody>
-  <table>
-  </tbody>
+<table>
 
 ## ルールエディター関連項目 {#see-also-rule-editor}
 

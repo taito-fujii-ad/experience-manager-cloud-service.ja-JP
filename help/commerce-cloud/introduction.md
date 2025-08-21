@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: ecb2638cfa65a0a2a24779723bdb301f9d3f1268
+source-git-commit: 80f1c9548b8b87dc6280e0e95988d84a8376f7ab
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 1%
@@ -53,11 +53,11 @@ Adobeでは、カスタム統合を構築する場合に、Edge Delivery Service
 
 ### 独自のストアフロントの使用（ヘッドレス AEM統合） {#own-storefront}
 
-既存のストアフロント（React JS で構築など）があり、コンテンツの管理と配信（コンテンツフラグメント）、アセットおよびコンテキスト内編集（ユニバーサルエディター）にAdobe Experience Managerを使用する場合。 統合の出発点は、[Adobe Experience Manager as a ヘッドレス CMSの概要 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/introduction) および [CIF アドオン ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content) です。 CIF アドオンを使用すると、商品データをAEM（AEM UI 内で商品を検索、参照、検索する）にシームレスに統合し、コマース固有のエクスペリエンスを構築できます。
+既存のストアフロント（React JS で構築など）があり、コンテンツの管理と配信（コンテンツフラグメント）、アセットおよびコンテキスト内編集（ユニバーサルエディター）にAdobe Experience Managerを使用する場合。 統合の出発点は、[Adobe Experience Manager as a ヘッドレス CMSの概要 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/introduction) および [CIF アドオン ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content) です。 CIF アドオンを使用すると、商品データをAEM（AEM UI 内で商品を検索、参照、検索する）にシームレスに統合し、コマース固有のエクスペリエンスを構築できます。
 
 ### AEM CIF ストアフロント {#cif}
 
-Adobeの推奨事項と参照アーキテクチャは、Edge Delivery Servicesを使用することです。 AEM CIF コアコンポーネントを含むCIF ストアフロントは、現在メンテナンスモードになっており、新しいプロジェクトでは使用しないでください。 参照については、[CIFのドキュメントを参照してください。](/help/commerce-cloud/cif-introduction.md)
+Adobeの推奨事項と参照アーキテクチャは、Edge Delivery Servicesを使用することです。 AEM CIF コアコンポーネントを含むCIF ストアフロントは、現在メンテナンスモードになっており、新しいプロジェクトでは使用しないでください。 参照については、[CIFのドキュメントを参照してください。](/help/commerce-cloud/cif-storefront/introduction.md)
 
 >[!NOTE]
 >

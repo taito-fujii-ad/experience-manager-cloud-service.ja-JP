@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2025.07.31 リリースノート
-description: ユニバーサルエディター 2025.07.31 リリースのリリースノートです。
+title: ユニバーサルエディター 2025.08.14 リリースノート
+description: ユニバーサルエディター 2025.08.14 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: f3003f8e607121c8dd9a8ccef5e0d5a3dd35255f
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 56%
+source-wordcount: '233'
+ht-degree: 69%
 
 ---
 
 
-# ユニバーサルエディター 2025.07.31 リリースノート {#release-notes}
+# ユニバーサルエディター 2025.08.14 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2025 年 7 月 31 日リリースのリリースノートです。
+ユニバーサルエディターの 2025 年 8 月 14 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -22,15 +22,8 @@ ht-degree: 56%
 
 ## 新機能 {#what-is-new}
 
-* [ 認証ヘッダーツールバーオプション ](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) は、[ リリース 2025.07.09 で導入された機能トグルの後ろに残っています。](/help/release-notes/universal-editor/2025/2025-07-09.md)
-   * ただし、この時点では、デフォルトで有効になっています。
 * [RTE 早期導入ユーザー ](#new-rte) の新機能
-   * ダークモードのサポートを追加しました。
-   * テキストの配置のサポートが追加されました。
-      * デフォルトで無効。ヘッドレスプロジェクトでのみ使用できます
-   * インデントのサポートを追加しました。
-      * デフォルトで無効。ヘッドレスプロジェクトでのみ使用できます
-   * Shift+Enter キーを押すと、ブレーク（`<br>`）が挿入されるようになりました。
+   * RTE リンクダイアログでターゲットを無効にする設定オプションが追加されました。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -49,10 +42,9 @@ ht-degree: 56%
 
 ## その他の改善点 {#other-improvements}
 
-* 早期導入 RTE の修正
-   * リスト内で Enter キーを押すと、新しいリスト項目（`<li>`）が作成されるようになりました。
-* リモート DAM を使用する際に、ビデオが正しく更新されるようになりました。
-* 6.5 LTS のサービスサポートが追加されました。
+* [ 新しい RTE](#new-rte) での全画面スクロールの問題が修正されました。
+* 条件付きフィールドを編集する際の永続アクションが修正されました。
+* バリエーション間を切り替えられるように `aem-content-fragment` が有効になりました。
 
 ## 非推奨（廃止予定） {#deprecations}
 
