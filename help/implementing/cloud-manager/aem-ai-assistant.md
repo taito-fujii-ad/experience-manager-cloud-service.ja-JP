@@ -8,7 +8,7 @@ badge: label="Beta" type="Positive"
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 86281f539656ccdcb267a2de3aa0d40c0c8e637d
+source-git-commit: 99f4e5731d5631981986a783534c820ad8f7088a
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -217,3 +217,4 @@ To learn more about using the AEM Forms AI Assistant , see the [AEM Forms AI Ass
 * **"Configure this form to submit data to the Customer Relationship Management system"**
 
 This specialized AEM Forms AI Assistant represents the next evolution in form building, combining the power of AI with AEM's robust forms capabilities to streamline your form creation workflow.
+-->
