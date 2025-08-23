@@ -6,10 +6,10 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: fb33696ae7987081c7ee4cd35a233f54aaaa4c65
+source-git-commit: 4ed2444dac60fe08ae3de13f62aa7a400c06473a
 workflow-type: tm+mt
 source-wordcount: '1545'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -125,7 +125,7 @@ Forms送信サービスには、2 つの設定方法があります。 ワーク
 | メソッド | 次に最適 | 所要時間 | 技術レベル |
 |--------|----------|---------------|-----------------|
 | **[手動設定](#manual-configuration)** | コンテンツ作成者、1 回限りの設定 | 10～15 分 | 初心者 |
-| **[API 設定](#api-configuration)** | 開発者、自動ワークフロー | 5 ～ 10 分 | 中級者 |
+| **[API 設定](#api-configuration)** | 開発者、自動ワークフロー | 5～10 分 | 中級者 |
 
 +++
 
