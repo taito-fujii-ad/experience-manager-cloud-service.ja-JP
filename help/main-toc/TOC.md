@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 174e7a7591714e60b508a2d29ffdd4ccddf528db
+source-git-commit: 43e2abd67486b5c4b93f4022b57533d269d60c92
 workflow-type: tm+mt
-source-wordcount: '6520'
+source-wordcount: '6541'
 ht-degree: 97%
 
 ---
@@ -233,6 +233,7 @@ ht-degree: 97%
    + ユニバーサルエディターのリリースノート {#univeral-editor}
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [リリースノート（2025.08.14）](/help/release-notes/universal-editor/2025/2025-08-14.md)
          + [リリースノート（2025.07.31）](/help/release-notes/universal-editor/2025/2025-07-31.md)
          + [リリースノート（2025.07.09）](/help/release-notes/universal-editor/2025/2025-07-09.md)
          + [リリースノート（2025.06.19）](/help/release-notes/universal-editor/2025/2025-06-19.md)
@@ -1194,18 +1195,21 @@ ht-degree: 97%
          + [AEM を使用したヘッドレスのオーサリングの基本](/help/journey-headless/author/basics.md)
          + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
          + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
-+ AI アシスタント {#ai-assistant-in-aem}
++ AI アシスタント {#ai-assistant}
    + [AEMでの AI アシスタントの設定](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
    + [AEMの AI アシスタントについて](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + 生成 AI {#generative-ai}
    + [AEM as a Cloud Service の生成 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
-   + [AEMの AI アシスタント – 設定](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
-   + [AEMの AI アシスタント（Beta）](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Formsの AI アシスタント（Forms Experience Builder）（早期導入）](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [AEM Formsの AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-   + [AEM Formsの AI アシスタント – はじめに](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+   + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEMでの AI アシスタントの設定](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+   + [AEM Forms 用 AI アシスタント（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+   + [AEM Forms用 AI アシスタントの概要](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM Forms用 AI アシスタントの基本を学ぶ（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+   + [AEM Forms AI アシスタント – プロンプトライブラリ](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [Forms Experience Builder - ベストプラクティス](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+   + [Forms Experience Builder - トラブルシューティングガイド](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '3145'
+source-wordcount: '3143'
 ht-degree: 99%
 
 ---
@@ -26,7 +26,7 @@ AEM Forms を使用すると、フォーム開発者は AEM サイトページ�
 
 AEM ページエディターを使用すると、複数のフォームをすばやく作成して AEM Sites ページに追加できます。AEM ページエディターを使用すると、コンテンツ作成者は、動的な動作、検証、データ統合、レコードのドキュメントの生成、ビジネスプロセスの自動化など、アダプティブフォームのコンポーネントを活用して、Sites ページ内にシームレスなデータキャプチャのエクスペリエンスを作成できます。また、バージョン管理、ターゲティング、翻訳、マルチサイトマネージャーなど、AEM Sites ページの様々な機能を使用できます。
 
-AEM Forms にはア&#x200B;**[!UICONTROL ダプティブフォームコンテナおよびアダプティブフォーム**&#x200B;[!UICONTROL （埋め込みコンポーネント）]&#x200B;**が用意されています。]** 以下を使用できます。 **[!UICONTROL アダプティブForms — 埋め込み (v2)]** 既存のアダプティブフォームを追加するコンポーネント、またはアダプティブFormsエディターを使用してフォームを作成するコンポーネント **[!UICONTROL アダプティブフォームコンテナ]** をクリックして、エクスペリエンスフラグメントページまたはAEM Sitesページ内に新しいフォームを作成します。
+AEM Forms にはア&#x200B;**[!UICONTROL ダプティブフォームコンテナおよびアダプティブフォーム**&#x200B;[!UICONTROL （埋め込みコンポーネント）]&#x200B;**が用意されています。]**&#x200B;以下を使用できます。 **[!UICONTROL アダプティブForms — 埋め込み (v2)]** 既存のアダプティブフォームを追加するコンポーネント、またはアダプティブFormsエディターを使用してフォームを作成するコンポーネント **[!UICONTROL アダプティブフォームコンテナ]** をクリックして、エクスペリエンスフラグメントページまたはAEM Sitesページ内に新しいフォームを作成します。
 
 ![AEM Sites ページでのアダプティブフォームの例](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -77,7 +77,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 ### AEM Cloud Service 環境でのアダプティブフォームコアコンポーネントの有効化
 
-[アダプティブフォームコアコンポーネントがお使いの AEM Forms as a Cloud Service 環境で有効になっている](enable-adaptive-forms-core-components.md)ことを確認します。
+お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
 
 ### AEM Sites ページまたはエクスペリエンスフラグメントに、アダプティブフォームクライアントライブラリを追加
 
@@ -128,7 +128,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 1. [デプロイメントパイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=ja)して、クライアントライブラリを AEM as a Cloud Service 環境にデプロイします。
 
-### アダプティブFormsを有効にする – AEM Sites ページまたはエクスペリエンスフラグメントの埋め込み（v2）
+### AEM Sites ページまたはエクスペリエンスフラグメントのアダプティブフォーム – 埋め込み（v2）の有効化
 
 テンプレートのポリシーで&#x200B;**[!UICONTROL アダプティブフォーム - 埋め込み（v2）]**&#x200B;コンポーネントを有効にするには、次の手順を実行します。
 

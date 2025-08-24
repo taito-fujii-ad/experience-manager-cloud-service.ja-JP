@@ -5,10 +5,10 @@ keywords: アダプティブフォームのスタイル設定コアコンポー�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2816'
-ht-degree: 100%
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+workflow-type: tm+mt
+source-wordcount: '2803'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ Forms as Cloud Service が提供する、コアコンポーネントベースの
 
 ### 環境の設定
 
-* ローカル開発と Cloud Service 環境での[アダプティブフォームコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)
+* お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
 * Cloud Service 環境用に[フロントエンドデプロイメントパイプライン](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=ja)を設定します。または、後でパイプラインを設定することもできるため、デプロイメントパイプラインを設定する前に、テーマのテストと調整に優先順位を付けることができます。
 
 <!-- 
@@ -96,7 +96,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 まず、テーマを使用して、コアコンポーネントベースのアダプティブフォームのブランドエクスペリエンスを作成するプロセスから始めましょう。
 
-#### 1. テーマの複製 {#download-a-theme-core-components}
+#### &#x200B;1. テーマの複製 {#download-a-theme-core-components}
 
 コアコンポーネントベースのアダプティブフォームのテーマを複製するには、次のいずれかのテーマを選択します。
 
@@ -125,7 +125,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    コマンドを正常に実行すると、マシンの `aem-forms-theme-canvas` フォルダーにテーマのローカルコピーが作成されます。
 
 
-#### 2. テーマの名前の設定 {#set-name-of-theme}
+#### &#x200B;2. テーマの名前の設定 {#set-name-of-theme}
 
 1. IDE でテーマフォルダーを開きます。例えば、Visual Studio Code Editor の `aem-forms-theme-canvas` フォルダーを開きます。
 
@@ -169,7 +169,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * テーマに対する時間の経過に伴う変更や機能強化が正確に反映されるよう、`Package.json` ファイルと `Package-lock.json` ファイルのテーマ `version` を更新することをお勧めします。
 * 使用方法、インストール手順、その他の関連する詳細についての重要な情報は、`ReadMe` ファイルでテーマ名を更新することをお勧めします。
 
-#### 3. テーマのカスタマイズ {#customize-the-theme}
+#### &#x200B;3. テーマのカスタマイズ {#customize-the-theme}
 
 個々のコンポーネントをカスタマイズしたり、テーマのグローバル変数を使用してテーマのレベルを変更したりすることができます。グローバル変数に対して行った変更は、すべての個々のコンポーネントに影響を与えます。例えば、グローバル変数を使用してアダプティブフォームのすべてのコンポーネントの境界線の色を変更したり、明るい塗りつぶしの色とボタンコンポーネントを使用して CTA（コールトゥアクション）を設定したりできます。
 
@@ -211,7 +211,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    >
    > テーマレベルとコンポーネントレベルの両方でスタイルを定義する場合は、コンポーネントレベルで定義されたスタイルが優先されます。
 
-#### 4. カスタマイズされたテーマのテスト {#test-the-theme}
+#### &#x200B;4. カスタマイズされたテーマのテスト {#test-the-theme}
 
 ローカル環境で変更をプレビューおよびテストし、様々な AEM コンポーネントの要件に応じてテーマをカスタマイズするには、次の手順を実行します。
 
@@ -311,7 +311,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 最新の変更を含むアダプティブフォームをプレビューできます。テーマフォルダーでの変更内容が完了したら、フロントエンドパイプラインを使用して、AEM Cloud Service 環境にテーマをデプロイします。
 
-#### 5. テーマのデプロイ {#deploy-the-theme}
+#### &#x200B;5. テーマのデプロイ {#deploy-the-theme}
 
 フロントエンドパイプラインを使用して Cloud Service 環境にテーマをデプロイするには、以下を行います。
 
@@ -380,7 +380,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. Cloud Service 環境に応じて、「**[!UICONTROL 実稼動以外のパイプラインを追加]**」または「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。ここでは「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。
 1. **[!UICONTROL 設定]**&#x200B;手順に含まれる「**[!UICONTROL 実稼動パイプラインを追加]**」ダイアログで、パイプラインの名前を指定します。例えば、`customcanvastheme` という名前にします。
 1. 「**[!UICONTROL 続行]**」をクリックします。
-1. **[!UICONTROL ソースコード]**の手順で、
+1. **[!UICONTROL ソースコード]**&#x200B;の手順で、
 **[!UICONTROL ターゲットデプロイメント]**／**[!UICONTROL フロントエンドコード]**&#x200B;オプションを選択します。
 1. 最新の変更を含む&#x200B;**[!UICONTROL リポジトリ]**&#x200B;と **[!UICONTROL Git ブランチ]**&#x200B;の値を選択します。ここで選択したリポジトリ名は `custom-canvas-theme-repo` で、Git ブランチは `main` です。
 1. 変更がルートフォルダーにある場合は、`/` として「**[!UICONTROL コードの場所]**」を選択します。
@@ -443,11 +443,6 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja)
 
-
->[!MORELIKETHIS]
->
->* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
-
 -->
 
 
@@ -458,4 +453,3 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [アダプティブフォーム（コアコンポーネント）におけるレコードのドキュメントを生成する](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [繰り返し可能なセクションを使用してアダプティブフォームを作成する](/help/forms/create-forms-repeatable-sections.md)
 * [サンプルのテーマテンプレートおよびフォームデータモデル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ja)
-* [AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)

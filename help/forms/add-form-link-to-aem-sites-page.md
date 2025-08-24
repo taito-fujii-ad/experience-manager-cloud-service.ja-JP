@@ -4,10 +4,10 @@ description: AEM Sites ページにフォームリンクを追加する方法に
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
-source-git-commit: ad4feedf07be86680ba0b3193d9110a1e277298a
-workflow-type: ht
-source-wordcount: '534'
-ht-degree: 100%
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 前提条件
 
-フォームポータルコンポーネントの様々な機能を探索する前に、お使いの環境でコアコンポーネントが有効になっていることを確認します。お使いの環境でコアコンポーネントを有効にする方法について詳しくは、[こちらをクリック](/help/forms/enable-adaptive-forms-core-components.md)してください。
+フォームポータルコンポーネントの様々な機能を探索する前に、お使いの環境でコアコンポーネントが有効になっていることを確認します。お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
 
 最新のコアコンポーネントを環境にデプロイすると、フォームポータルコンポーネントにオーサリング環境でアクセスできます。
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 **リンク**&#x200B;ポータルコンポーネントを Sites ページに追加するには、次の手順を実行します。
 
 1. AEM Sites ページを&#x200B;**編集**&#x200B;モードで開きます。
-1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**に移動します。
+1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**&#x200B;に移動します。
    ![テンプレートポリシーの編集](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. 「**[!UICONTROL ポリシー]**」をクリックし、**[AEM アーキタイププロジェクト名] - フォームおよび通信ポータル**&#x200B;の下にある「**[!UICONTROL リンク]**」チェックボックスをオンにします。

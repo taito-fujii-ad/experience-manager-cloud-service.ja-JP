@@ -4,10 +4,10 @@ description: コアコンポーネントベースのアダプティブフォー�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: b0c2523a6ca8b097cb7cc101b71162c06e424e52
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 16%
+source-wordcount: '1373'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 ## 前提条件
 
-* [環境でのアダプティブフォームコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)。
+* お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
 
   最新のコアコンポーネントを環境にデプロイすると、フォームポータルコンポーネントにオーサリング環境でアクセスできます。
 
@@ -41,11 +41,11 @@ ht-degree: 16%
    ![Azure ストレージ設定フォルダーを選択 ](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. 「**[!UICONTROL タイトル]**」フィールドで設定のタイトルを指定します。
-1. 「**[!UICONTROL Azure ストレージアカウント]**」フィールドと「**[!UICONTROL Azure アクセスキー]**」フィールドで [!DNL Azure] ストレージアカウントの名前を指定します。
+1. 「[!DNL Azure]Azure ストレージアカウント **[!UICONTROL 」フィールドと「]** Azure アクセスキー **[!UICONTROL 」フィールドで]** ストレージアカウントの名前を指定します。
 
    ![Azure ストレージ設定](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
-   `Azure Storage Account` のテキストボックスに `Connection String` と入力し、`Azure Access key` のテキストボックスに `Azure Key` と入力します。
+   `Connection String` のテキストボックスに `Azure Storage Account` と入力し、`Azure Key` のテキストボックスに `Azure Access key` と入力します。
 
 1. 「**保存**」をクリックします。
 
@@ -80,7 +80,7 @@ ht-degree: 16%
 1. **[!UICONTROL ページ情報]**／**[!UICONTROL テンプレートを編集]**&#x200B;に移動します。
    ![テンプレートポリシーの編集](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. **[!UICONTROL ポリシー]** をクリックし、**[AEM アーキタイププロジェクト名 ] - Formsとコミュニケーションポータル** の下にある **[!UICONTROL ドラフトと送信]** チェックボックスを選択します。
+1. **[!UICONTROL ポリシー]** をクリックし、**[!UICONTROL AEM アーキタイププロジェクト名]** - Formsとコミュニケーションポータル **[の下にある ] ドラフトと送信** チェックボックスを選択します。
 
    ![ポリシーの選択](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
@@ -123,7 +123,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
-> **フォームを保存** ルールを使用してフォームをドラフトとして保存するには [&#128279;](https://github.com/adobe/aem-core-forms-components) コアコンポーネントのバージョンが 3.0.24 以降に設定されていることを確認します。
+> [ フォームを保存 ](https://github.com/adobe/aem-core-forms-components) ルールを使用してフォームをドラフトとして保存するには **&#x200B;**&#x200B;コアコンポーネントのバージョンが 3.0.24 以降に設定されていることを確認します。
 
 フォームをドラフトとして保存するには、ボタンなどのフォームコンポーネントに **フォームを保存** ルールを作成します。 ボタンをクリックすると、ルールがトリガーされ、フォームがドラフトとして保存されます。 ボタンコンポーネントに **フォームを保存** ルールを作成するには、次の手順を実行します。
 
@@ -153,17 +153,17 @@ ht-degree: 16%
 
 1. 「**[!UICONTROL ドラフトを自動的に保存]**」チェックボックスをオンにして、フォームをドラフトとして自動保存できるようにします。
 1. **[!UICONTROL 環境設定を保存]** を **一定の間隔でドラフトを保存** として設定し、特定の時間間隔の後にフォーム <!--based on the occurrence of an event or--> ージを自動保存します。
-1. 指定した間隔でフォームの自動保存をトリガーにする期間を設定する場合は **時間間隔を** 保存間隔の頻度（秒）で指定します。
+1. 指定した間隔でフォームの自動保存をトリガーにする期間を設定する場合は **[!UICONTROL 時間間隔を]** 保存間隔の頻度（秒）で指定します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
 ## ドラフト&amp;送信コンポーネントを使用して、Sites ページでドラフト/送信済みフォームを表示する
 
 保存されたドラフトまたは送信されたフォームを表示するには、**ドラフトと送信**&#x200B;Forms ポータルコンポーネントを使用します。
-[ ドラフトと送信コンポーネントの設定ダイアログ **で**&#x200B;[!UICONTROL &#x200B; タイプを選択 &#x200B;]&#x200B;**が** ドラフトForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、ドラフトとして保存されたフォームは Sites ページに表示されます。 ドラフトを開くには、省略記号（...）をクリックしてフォームを完成させます。
+**[!UICONTROL ドラフトと送信コンポーネントの設定ダイアログ]** で **タイプを選択** が [ ドラフトForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、ドラフトとして保存されたフォームは Sites ページに表示されます。 ドラフトを開くには、省略記号（...）をクリックしてフォームを完成させます。
 
 ![下書きアイコン](assets/drafts-component.png)
 
-[ ドラフト&amp;送信コンポーネントの設定ダイアログ **で**&#x200B;[!UICONTROL &#x200B; タイプを選択 &#x200B;]&#x200B;**が** 送信済みForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、送信済みフォームが表示されます。 送信されたフォームは表示できますが、編集することはできません。
+**[!UICONTROL ドラフト&amp;送信コンポーネントの設定ダイアログ]** で **タイプを選択** が [ 送信済みForms](#configure-properties-of-the-drafts--submissions-component) として選択されている場合、送信済みフォームが表示されます。 送信されたフォームは表示できますが、編集することはできません。
 
 ![送信アイコン](assets/submission-listing.png)
 

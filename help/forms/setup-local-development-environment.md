@@ -4,16 +4,16 @@ description: Adobe Experience Manager Forms as a Cloud Service 用のローカ�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a070e945f23641cfdfd71511366e5b2c16ec22e8
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2762'
-ht-degree: 100%
+source-wordcount: '2759'
+ht-degree: 99%
 
 ---
 
 # AEM Forms 用のローカル開発環境を設定 {#overview}
 
-[!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] 環境を設定する場合は、開発環境、ステージング環境および実稼動環境をクラウドに設定します。また、ローカル開発環境を設定および構成することもできます。
+[!DNL &#x200B; Adobe Experience Manager Forms] as a [!DNL &#x200B; Cloud Service] 環境を設定する場合は、開発環境、ステージング環境および実稼動環境をクラウドに設定します。また、ローカル開発環境を設定および構成することもできます。
 
 ローカル開発環境を使用すると、クラウド開発環境にログインせずに次の操作を実行できます。
 
@@ -272,7 +272,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 >[!NOTE]
 >
 > AEM Forms as a Cloud Service で Microsoft® Dynamics 365 および Salesforce フォームデータモデル（FDM）を取得して使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトを設定します。
-> Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
+> &#x200B;> Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
 
@@ -368,8 +368,9 @@ Dispatcher を設定する詳細な手順については、「[ローカル Disp
 
 AEM Forms as a Cloud Service のアダプティブフォームのコアコンポーネントを有効にすると、AEM Forms Cloud Service インスタンスを使用して、複数のチャネルへのコアコンポーネントベースのアダプティブフォームとヘッドレスフォームの作成、公開、配信を開始できます。ヘッドレスアダプティブフォームを使用するには、アダプティブフォームコアコンポーネントが有効な環境が必要です。
 
-手順については、[AEM Forms as a Cloud Service およびローカル開発環境でのアダプティブフォームコアコンポーネントの有効化](/help/forms/enable-adaptive-forms-core-components.md)を参照してください。
-
+>[!NOTE]
+>
+> お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
 
 ## ローカル開発環境のアップグレード {#upgrade-your-local-development-environment}
 
