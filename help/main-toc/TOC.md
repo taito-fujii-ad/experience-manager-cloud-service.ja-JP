@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 43e2abd67486b5c4b93f4022b57533d269d60c92
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '6541'
-ht-degree: 97%
+source-wordcount: '6549'
+ht-degree: 96%
 
 ---
 
@@ -950,6 +950,10 @@ ht-degree: 97%
       + [HTML5 フォームのスクリプティングのサポート](/help/forms/scripting-support.md)
       + [AEM Forms におけるフォームセット](/help/forms/formset-in-aem-forms.md)
    + インタラクティブなコミュニケーション {#interactive-communocation}
+      + [インタラクティブ通信エディターの概要](/help/forms/interactive-communication/Introduction-to-Interactive-Communication-Editor.md)
+      + [インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
       + [AEM Forms API を使用した AFP 出力の生成](/help/forms/document-generation-afp-api.md)
@@ -1202,8 +1206,6 @@ ht-degree: 97%
    + [AEM as a Cloud Service の生成 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
    + [バリエーションを生成](/help/generative-ai/generate-variations.md)
-   + [アシスタント（ベータ版限定）](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEMでの AI アシスタントの設定](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
    + [AEM Forms 用 AI アシスタント（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-overview.md)
    + [AEM Forms用 AI アシスタントの概要](/help/edge/docs/forms/forms-ai-assistant.md)
    + [AEM Forms用 AI アシスタントの基本を学ぶ（Forms Experience Builder）](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
@@ -1214,7 +1216,6 @@ ht-degree: 97%
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
       + [ナビゲーション](/help/implementing/cloud-manager/navigation.md)
-      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
       + [Experience Hub](/help/implementing/cloud-manager/experience-hub.md)
       + プログラム {#programs}
          + [プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)

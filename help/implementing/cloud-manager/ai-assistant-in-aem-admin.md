@@ -4,13 +4,13 @@ description: Adobe Experience ManagerでAdmin Consoleを使用して AI アシ�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive"
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: aafd21c894cb909635af285bb833baa9223ae630
+exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1096'
 ht-degree: 3%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 3%
 # AEMでの AI アシスタントの設定 {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
+
+<!-- badge: label="Beta" type="Positive" -->
 
 AEM（Adobe Experience Manager）で AI アシスタントを使用するには、Admin Console レベルでオプトインする必要があります。 製品管理者がユーザーグループを作成（または選択）し、新しい「AI アシスタント」権限を付与します。 そのグループに追加されたユーザーは誰でも、AEM全体の AI アシスタントにすぐにアクセスできます。 企業全体での可用性が目標の場合、管理者はそのグループにすべてのユーザーを割り当てるだけです。
 
@@ -194,6 +196,6 @@ Admin Consoleのバルクアップロード機能を使用できます。
 
 ## 関連トピック
 
-* [AEMの AI アシスタント](/help/implementing/cloud-manager/aem-ai-assistant.md)
+* [AEMの AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 * [Adobe Experience Platformのアクセス制御 ](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/overview)
 * [Cloud Managerのカスタム権限](/help/implementing/cloud-manager/custom-permissions.md)
