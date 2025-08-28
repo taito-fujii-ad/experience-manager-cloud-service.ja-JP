@@ -4,11 +4,8 @@ description: AI アシスタントを使用して回答を見つけ、Adobe Expe
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
-index: false
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: 10d1788e222843c0c382ecf021f3c85c6bc09af9
+source-git-commit: d0578e139c26372123e305e5d2ccf270ee5cec6c
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 1%
@@ -34,7 +31,7 @@ AEMに直接埋め込まれ、AEM Experience Hub、Cloud Managerおよびオー�
 
 次の 3 分 39 秒のビデオでは、AEMの AI アシスタントの手順を順を追って説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470356?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## AEMの AI アシスタントにアクセスできます{#get-access}
 
