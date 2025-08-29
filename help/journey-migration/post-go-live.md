@@ -4,10 +4,10 @@ description: 問題を監視し、パフォーマンスを向上させる方法�
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
+source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM のトラブルシューティング"
 >abstract="継続的な開発とログの管理に関するベストプラクティスを確認します。AEM に関する問題のトラブルシューティングに役立つ、Developer Console や CRXDE Lite などのツールについて説明します。"
->additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="ログへのアクセスと管理"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="ログへのアクセスと管理"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
 
 このジャーニーは最後の部分です。移行が完了した後で、問題を監視してパフォーマンスを向上させる方法を確認します。一時ファイルを確実にクリーンアップ、継続的な開発のベストプラクティスを確認し、ログを管理します。

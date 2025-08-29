@@ -7,13 +7,13 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+exl-id: 50709c68-8666-47da-8788-fad793d870e6
+source-git-commit: bf7f0a838d7826aacf27520ae09057c1214f8d73
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 2%
 
 ---
-
 
 # インタラクティブ通信エディターの概要
 
@@ -74,4 +74,3 @@ AEM Forms Interactive Communication Guide
 * Tutorials & Videos:
 Visit Adobe Experience League and explore the "Forms" section for step-by-step videos and use-case-based tutorials.
 -->
-
