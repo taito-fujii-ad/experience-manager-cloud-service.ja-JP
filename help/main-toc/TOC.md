@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 94a20e8e95edf603227bfadd07e4b4c62e6421e6
+source-git-commit: 95ec735cc1f95a23f0fea14aef2fc4011058d317
 workflow-type: tm+mt
-source-wordcount: '6552'
-ht-degree: 96%
+source-wordcount: '6557'
+ht-degree: 98%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 96%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [2025.7.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md)
          + [2025.6.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [2025.5.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
          + [2025.4.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md)
@@ -269,7 +270,7 @@ ht-degree: 96%
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [パブリッシュ層でのAEM as a Cloud Serviceの Open ID Connect サポート](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
+   + [パブリッシュ層での AEM as a Cloud Service の Open ID Connect のサポート](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [AEM as a Cloud Service の IMS 統合の設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [権限管理のプリンシパルビュー](/help/security/touch-ui-principal-view.md)
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
@@ -1037,7 +1038,7 @@ ht-degree: 96%
    + サードパーティのストアフロント {#thrid-party-storefront}
       + [はじめに](/help/commerce-cloud/third-party-storefront/introduction.md)
    + CIF ストアフロント {#cif-storefront}
-      + [CIFについて](/help/commerce-cloud/cif-storefront/introduction.md)
+      + [CIF の概要](/help/commerce-cloud/cif-storefront/introduction.md)
       + [AEM Content and Commerce as a Cloud Service の主な変更点](/help/commerce-cloud/cif-storefront/changes.md)
       + コマースジャーニー {#journeys}
          + コンテンツ作成者ジャーニー {#author}
@@ -1085,19 +1086,19 @@ ht-degree: 96%
       + [概要](/help/edge/docs/forms/overview.md)
       + WYSIWYG オーサリング {#universal-editor}
          + [Forms の Edge Delivery Services のユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [AEM Formsのユニバーサルエディターインターフェイスの操作](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [ユニバーサルエディターを使用したAEM FormsのEdge Delivery Servicesの概要](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Edge Delivery Servicesを使用したアダプティブFormsの作成と公開](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [ユニバーサルエディターを使用したレスポンシブFormsの作成](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [AEM Forms のユニバーサルエディターインターフェイスの操作](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [ユニバーサルエディターでの AEM Forms の Edge Delivery Services の基本を学ぶ](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Edge Delivery Services を使用したアダプティブフォームの作成と公開](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [ユニバーサルエディターを使用したレスポンシブフォームの作成](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [AEM Forms の Edge Delivery Services のテーマとスタイルのカスタマイズ](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [ユニバーサルエディターの動的Forms用のルールエディター](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [ユニバーサルエディターの動的フォーム用ルールエディター](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [WYSIWYG ベースのオーサリング用のフォームフラグメントを作成する方法](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [アダプティブフォームの送信アクションの設定方法](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [リダイレクトページまたはありがとうメッセージの設定方法](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
-         + [ユニバーサルエディターでのGoogle reCAPTCHA のFormsへの追加](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [リダイレクトページまたはお礼のメッセージの設定方法](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
+         + [ユニバーサルエディターでフォームに Google reCAPTCHA を追加する](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [ユニバーサルエディターでフォームのフォームデータモデル（FDM）を統合する方法](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [アダプティブフォームフィールドの事前入力方法](/help/edge/docs/forms/universal-editor/prefill-form.md)
-         + [Edge Delivery Servicesを使用したアダプティブFormsの公開](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [Edge Delivery Services を使用したアダプティブフォームの公開](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [EDS フォームのカスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
@@ -1218,42 +1219,42 @@ ht-degree: 96%
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
       + [ナビゲーション](/help/implementing/cloud-manager/navigation.md)
-   + プログラム {#programs}
-      + [プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
-      + [実稼動プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-      + [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-      + [サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-      + [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-      + [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-      + [環境を休止状態にする](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-   + AEM アプリケーションプロジェクトの作成 {#create-application-project}
-      + [プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-      + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
-   + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
-   + [特殊なテスト環境（ベータ版）](/help/implementing/cloud-manager/specialized-test-environment.md)
-   + コードの管理 {#managing-code}
-      + [Maven プロジェクトのバージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-      + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-      + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-      + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-      + [外部リポジトリの追加（ベータ版）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-      + [外部リポジトリのアクセストークンの管理（ベータ版）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
-      + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-      + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-      + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-      + [複数のリポジトリの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-      + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-      + [GitHub チェック設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
-      + [GitHub チェック注釈](/help/implementing/cloud-manager/managing-code/github-annotations.md)
-   + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
-   + Cloud Manager CI/CD パイプライン {#cicd-pipelines}
-      + [CI-CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-      + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-      + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-      + [Edge Delivery パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
-      + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
-      + [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
+      + プログラム {#programs}
+         + [プログラムとプログラムタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+         + [実稼動プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+         + [サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+         + [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [環境を休止状態にする](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+      + AEM アプリケーションプロジェクトの作成 {#create-application-project}
+         + [プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+         + [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
+      + [特殊なテスト環境（ベータ版）](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + コードの管理 {#managing-code}
+         + [Maven プロジェクトのバージョン処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+         + [Cloud Managerでのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [Adobe リポジトリの追加](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [プライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [外部リポジトリの追加（ベータ版）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [外部リポジトリのアクセストークンの管理（ベータ版）](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Git サブモジュールのサポート](/help/implementing/cloud-manager/managing-code/git-submodules.md)
+         + [Cloud Manager での Git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [複数のリポジトリの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [GitHub チェック設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [GitHub チェック注釈](/help/implementing/cloud-manager/managing-code/github-annotations.md)
+      + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
+      + Cloud Manager CI/CD パイプライン {#cicd-pipelines}
+         + [CI-CD パイプラインの概要](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Edge Delivery パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+         + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [パイプライン変数](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
       + テスト結果の理解 {#test-results}
          + [概要](/help/implementing/cloud-manager/overview-test-results.md)
@@ -1275,7 +1276,7 @@ ht-degree: 96%
          + [Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager への Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [最初の Edge Delivery サイトをワンクリックで作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
-         + [外部 Git リポジトリを使用するためのEdge Delivery サイトの設定](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
+         + [外部 Git リポジトリを使用するために Edge Delivery サイトを設定](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
          + [Edge Delivery サイト用のプッシュ検証の設定](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [コンテンツのソースの設定](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [Cloud Manager での Edge Delivery サイトの管理](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
