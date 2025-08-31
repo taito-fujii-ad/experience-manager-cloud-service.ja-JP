@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 659351c76c53631834d20b032b6dff2a3b017ac4
 workflow-type: tm+mt
-source-wordcount: '2298'
-ht-degree: 82%
+source-wordcount: '2390'
+ht-degree: 79%
 
 ---
 
@@ -231,6 +231,17 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 +++
 
+### 破損したルールの処理
+
+参照されているフィールドを移動または削除すると、ルールが機能しないことがあります。 この場合、ルールエディターは影響を受けるルールに赤いドットインジケーターを付けます。
+
+* フィールドを（あるパネルから別のパネルに）移動すると、関連するルールが壊れる場合があります。 この場合は、ルールを開いて再度保存します。 ルールが自動的に復元されます。
+
+* フィールドを削除すると、ルールを修復できなくなります。
+
+  問題を理解するには、ルールエディターでルールステータスにポインタを合わせて、エラーメッセージを表示します。
+
+  ![ 壊れたルール ](/help/forms/assets/rule-editor-broken-rules.png)
 
 <!-- ### Using code editor {#using-code-editor}
 
