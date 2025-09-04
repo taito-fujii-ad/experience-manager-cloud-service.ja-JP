@@ -4,10 +4,10 @@ description: クライアントサイドでのデータ収集を監視できる�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
+source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 56%
+source-wordcount: '1134'
+ht-degree: 48%
 
 ---
 
@@ -104,3 +104,14 @@ Here are key considerations for customers to keep in mind when interpreting thei
    Adobeでは、運用上のテレメトリを使用することをお勧めします。これは、大きなメリットがあるためです。また、Adobeを使用すると、web サイトのパフォーマンスを向上させて、デジタルエクスペリエンスを最適化するのに役立ちます。 このサービスは、シームレスに設計され、web サイトのパフォーマンスに影響を与えません。
 
    オプトアウトすると、web サイトのトラフィックエンゲージメントを向上させる機会を逃す可能性があります。ただし、問題が発生した場合は、[ という名前の環境変数を ](/help/implementing/cloud-manager/environment-variables.md#add-variables) という値に設定する `AEM_OPTEL_DISABLED`Cloud Managerで設定する `true` ことで、運用テレメトリを無効にできます。 後で運用テレメトリを再度有効にする場合は、その環境変数を再度削除するだけです。
+
+1. **コンテンツセキュリティポリシーを nonce で使用できますか？
+
+   運用上のテレメトリのサポートには、コンテンツセキュリティポリシーを nonce でサポートする実験的機能が含まれています。 この機能を有効にするには、[ という名前の ](/help/implementing/cloud-manager/environment-variables.md#add-variables)Cloud Managerの環境変数を `AEM_OPTEL_NONCE` 値 `true` に設定します。 後で再度無効にする場合は、その環境変数を再度削除します。
+
+   この機能で問題が発生した場合は、Adobe サポートにお問い合わせください。
+
+1. **特定のページに対してのみ運用上のテレメトリを有効にするにはどうすればよいですか？**
+
+   デフォルトでは、運用上のテレメトリは、リポジトリの `/content` フォルダーの下にあるすべてのページに対して有効になっています。 [ という名前の ](/help/implementing/cloud-manager/environment-variables.md#add-variables)Cloud Managerの環境変数を設定 `AEM_OPTEL_INCLUDED_PATHS` して、リポジトリ内のコンマ区切りのパスのリストを追加すると、オペレーショナルテレメトリはそれらのページに対してのみ有効になります。 さらに、除外するリポジトリ内のパスのリストに `AEM_OPTEL_EXCLUDED_PATHS` を設定できます。 これらの 2 つの設定の組み合わせにより、運用上のテレメトリを含めるかどうかを、要件に合わせて調整できます。
+
