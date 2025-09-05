@@ -3,9 +3,9 @@ title: OpenAPI 機能を使用した Dynamic Media を使用した画像の最�
 description: OpenAPI 機能を備えた Dynamic Media の画像最適化機能を使用して、公開配信前にその場で画像を最適化する方法を説明します
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 5a01aff1d6c10d86e2faef22da2dbe724e24e673
+source-git-commit: 3d5ae3bae9635625912a4afb2f74d002cd0ab670
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -76,13 +76,10 @@ https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:ae
 #### AEM Sitesでのオーサリング時のプリセットの使用{#use-presets-during-authoring-in-aem-sites}
 
 [!DNL Image Presets] のサポートが有効になっている場合、作成者はオーサリングページでページ [!DNL AEM Sites] 編集中に [!DNL Dynamic Media] を選択できます。
-
 オーサリングページで画像プリセットを使用するには、次の手順を実行します。
-
 1. Sites オーサリングページに移動します。
 1. [ パネルを使用してアセットを選択するには、「AEM ページエディターでリモートアセットにアクセス ](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) の節の手順を実行し [!DNL Asset Selector] す。
-1. [!DNL asset selector] ントロールパネルで、「プリセット **[!UICONTROL タイプ]** まで下にスクロールし、「`Preset=Preset Name` 画像の修飾子 **[!UICONTROL 」フィールドで]** を指定します。
-
+1. [!DNL asset selector] ントロールパネルで、下にスクロールして **[!UICONTROL プリセットタイプ]** を表示し、「`Preset=Preset Name` 画像の修飾子 **[!UICONTROL 」フィールドで]** を指定して **[!UICONTROL 完了]** をクリックします。
    ![ プリセット ](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## スマートイメージング{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
