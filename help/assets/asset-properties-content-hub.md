@@ -3,10 +3,10 @@ title: ' [!DNL the Content Hub] でのアセットとそのプロパティのプ
 description: ' [!DNL Content Hub] でアセットとプロパティをプレビューする方法について説明します。'
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
+source-git-commit: 45e731d2286b07db5852138ae1ac914a56b13a6a
+workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -38,10 +38,10 @@ ht-degree: 100%
 * **D：**&#x200B;前または次のアセットに進む
 * **E：**&#x200B;アセットの数
 * **F：**&#x200B;アセットのダウンロード
-* **G：**[!DNL Adobe Express] を使用したアセットを編集
+* **G：**&#x200B;[!DNL Adobe Express] を使用したアセットを編集
 * **H：**&#x200B;アセットの情報を折りたたむまたはプレビュー
 * **I：**&#x200B;アセットを共有
-* **J：**[!DNL Collection] にアセットを追加
+* **J：**&#x200B;[!DNL Collection] にアセットを追加
 * **K：**&#x200B;プレビュー画面を閉じる
 * **L：**&#x200B;タイトル、形式、サイズ、解像度、タグ、カラータグ、スマートタグを含むアセットの情報。
 
@@ -56,44 +56,50 @@ ht-degree: 100%
       <th><strong>サポートされる形式</strong></th>
      </tr>
      <tr>
-      <td>画像</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL JPEG]</li> 
-            <li>[!UICONTROL PNG]</li> 
-            <li>[!UICONTROL SVG]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>ビデオ</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL Quicktime]</li>  
-            <li>[!UICONTROL MP4]</li> 
-        </ul>
-      </td>
-     </tr>
-      <tr>
-      <td>ドキュメント</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL txt]（プレーン）</li>  
-            <li>[!UICONTROL Doc/Docx]</li> 
-            <li>[!UICONTROL XML]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>メディアを印刷</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL PDF]</li>  
-        </ul>
-      </td>
-     </tr>  
+        <td rowspan="3"> 画像 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> ビデオ </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> ドキュメント </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt]（プレーン）</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+    </tr>
+    <tr>
+        <td rowspan="2"> メディアを印刷 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+    </tr>
     </tbody>
-   </table>
+</table>
 
 ### 派生プロパティ {#derived-properties}
 
@@ -103,9 +109,9 @@ ht-degree: 100%
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **スマートタグ：**[!DNL The Content Hub] は、Adobe Sensei のスマートコンテンツサービスを使用して、タグベースの構造の認識アルゴリズムを使用してアセットのトレーニングを行います。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。スマートタグを使用すると、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。スマートタグは、画像に含まれないアセット情報の例です。デフォルトで、[!DNL Experience Manager Assets] はアセットにスマートタグを自動的に適用します。
+* **スマートタグ：**&#x200B;[!DNL The Content Hub] は、Adobe Sensei のスマートコンテンツサービスを使用して、タグベースの構造の認識アルゴリズムを使用してアセットのトレーニングを行います。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。スマートタグを使用すると、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。スマートタグは、画像に含まれないアセット情報の例です。デフォルトで、[!DNL Experience Manager Assets] はアセットにスマートタグを自動的に適用します。
 
-* **カラータグ：**[カラータグ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=ja)は、アドビの Sensei AI 機能を用いてアセット内で自動識別されるカラーを使用して、アセットを認識するのに役立ちます。
+* **カラータグ：**&#x200B;[カラータグ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=ja)は、アドビの Sensei AI 機能を用いてアセット内で自動識別されるカラーを使用して、アセットを認識するのに役立ちます。
 
 * アップロード日
 
