@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 98182e835e10b0b29aa2ae21c2a02562ca64111a
+source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 90%
+source-wordcount: '1125'
+ht-degree: 89%
 
 ---
 
@@ -41,15 +41,12 @@ AEM as a Cloud Service の Cloud Manager 2025.9.0 のリリース日は 2025年9
 
   Cloud Managerは、GitHub、Bitbucket、Azure DevOps、GitLab をまたいだプライベートリポジトリを使用した設定パイプラインをサポートするようになりました。 [ プライベートリポジトリのプルリクエストチェック ](/help/implementing/cloud-manager/managing-code/github-check-config.md) を参照してください。
 
-* **Cloud Manager では、ECDSA （Elliptic Curve Digital Signature Algorithm） SSL 証明書のサポートが追加されました**
+<!--
+### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
 
-  Cloud Managerで ECDSA 証明書がサポートされるようになりました。 この機能は、より小さな鍵サイズで強力なセキュリティを提供し、CDN の設定において、軽量で最新の暗号技術をお客様が活用できるようにします。<!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
+Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
 
-### ステージング専用パイプラインと実稼動専用パイプライン {#staging-production-only-pipelines}
-
-[ステージング専用パイプラインと実稼動専用パイプライン](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)のサポートが導入され、フルスタックの実稼動デプロイメントパイプラインをより小さな特殊なデプロイメントに分割できるようになりました。
-
-この新機能をテストしてフィードバックを共有することに興味がある場合は、Adobe ID に関連付けられたメールアドレスから `Grp-cloudmanager_splitpipelines@adobe.com` にメールを送信します。
+If you are interested in testing this new feature and sharing your feedback, send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. -->
 
 
 ## Beta プログラム {#private-beta-program}
