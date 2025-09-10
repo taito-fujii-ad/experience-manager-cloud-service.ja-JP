@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
+source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 89%
+source-wordcount: '1137'
+ht-degree: 88%
 
 ---
 
@@ -33,13 +33,13 @@ AEM as a Cloud Service の Cloud Manager 2025.9.0 のリリース日は 2025年9
 
   ![SSL 証明書の更新 ](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **プライベートリポジトリ用の Azure DevOps のサポートが追加されました**
+* **Azure DevOps （プライベートリポジトリ）のサポートが追加されました**
 
   ドキュメントの更新には、Azure DevOps で独自の Git を取り込むための設定手順や、プルリクエストの検証が含まれています。 [Cloud Managerへの外部リポジトリの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md) を参照してください。
 
-* **プライベートリポジトリのプルリクエストチェック**
+* **独自の Git （BYOG）サポートを設定パイプライン（プライベートリポジトリ）に拡張**
 
-  Cloud Managerは、GitHub、Bitbucket、Azure DevOps、GitLab をまたいだプライベートリポジトリを使用した設定パイプラインをサポートするようになりました。 [ プライベートリポジトリのプルリクエストチェック ](/help/implementing/cloud-manager/managing-code/github-check-config.md) を参照してください。
+  Cloud Managerは、GitHub、Bitbucket、Azure DevOps、GitLab をまたいだプライベートリポジトリを使用した設定パイプラインをサポートするようになりました。 このサポートにより、開発サイクルがさらに加速します。 [ プライベートリポジトリのプルリクエストチェック ](/help/implementing/cloud-manager/managing-code/github-check-config.md) を参照してください。
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}

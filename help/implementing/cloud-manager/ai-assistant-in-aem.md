@@ -1,6 +1,6 @@
 ---
 title: AEMの AI アシスタント
-description: AI アシスタントを使用して回答を見つけ、Adobe Experience Managerで使用可能なソリューションのトラブルシューティングを行います。
+description: AI アシスタントを使用して回答を見つけ、Adobe Experience Manager で使用可能なソリューションのトラブルシューティングを行います。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -8,7 +8,7 @@ exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
 source-git-commit: e10b760bccc7d544dbf3fe7055a038ff9ad92a81
 workflow-type: tm+mt
 source-wordcount: '1245'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
