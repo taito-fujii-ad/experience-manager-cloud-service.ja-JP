@@ -4,10 +4,10 @@ description: ページエディターは引き続きAdobeでサポートされ�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 16%
+source-wordcount: '1068'
+ht-degree: 15%
 
 ---
 
@@ -42,7 +42,7 @@ AEMの長い歴史の中で [ ページエディター ](/help/sites-cloud/autho
 |---|---|---|---|---|
 | [ 配信を公開 ](/help/sites-cloud/authoring/author-publish.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | コアコンポーネントおよび従来のAEM プロジェクトでの使用に推奨 | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 従来のAEM ページは、通常、ユニバーサルエディターでそのままレプリケートするのが難しい、いくつかのページエディター固有の機能に依存します。 |
 | [Edge Delivery](/help/edge/overview.md) | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
-| [ ヘッドレス配信 ](/help/headless/introduction.md) | [!BADGE &#x200B; 一部利用可能 &#x200B;]{type=Caution} | ユニバーサルエディターに置き換えて [ 非推奨 ](/help/implementing/developing/hybrid/spa-editor-deprecation.md) となった [SPA エディター ](/help/implementing/developing/hybrid/introduction.md) でのみ | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | ユニバーサルエディターを使用すると、開発者は、特定のフレームワーク要件や実装制約を課すことなく、独自の web アプリを持ち込むことができます。 |
+| [ ヘッドレス配信 ](/help/headless/introduction.md) | [!BADGE &#x200B; 一部利用可能 &#x200B;]{type=Caution} | ユニバーサルエディターに置き換えて [ 非推奨 ](/help/implementing/developing/hybrid/introduction.md) となった [SPA エディター ](/help/implementing/developing/hybrid/spa-editor-deprecation.md) でのみ | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | ユニバーサルエディターを使用すると、開発者は、特定のフレームワーク要件や実装制約を課すことなく、独自の web アプリを持ち込むことができます。 |
 
 ### 永続性 {#persistence}
 
@@ -63,7 +63,7 @@ AEMの長い歴史の中で [ ページエディター ](/help/sites-cloud/autho
 | ブロックの切り取り/コピー/貼り付け | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 計画済み |
 | スタイルの適用 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | スタイルは、[ スタイルシステム ](/help/sites-cloud/authoring/page-editor/style-system.md) を使用してコンポーネントに適用できます。 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | スタイルは、通常のコンポーネント（またはコンテンツフラグメント）プロパティを使用して適用できます。 ユニバーサルエディターでは同じスタイルピッカーは使用できませんが、複数選択ウィジェットを使用すると、非常に類似した UX を実現できます。 |
 | レイアウトの適用 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | サイトでは、[AEM レスポンシブグリッド ](/help/implementing/developing/introduction/responsive-design.md) を実装して、作成者が 3 つの事前定義済みブレークポイントにわたってコンポーネントのサイズを変更できるようにする必要があります。 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | レイアウトは通常のコンポーネント（またはコンテンツフラグメント）プロパティを使用して適用できますが、レスポンシブグリッドはサポートされていません。 |
-| 取り消し/やり直し | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 計画済み |
+| 取り消し/やり直し | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
 | 公開（プレビューにも対応） | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  |
 | [ワークフローを開始](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} |  | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | 拡張機能として使用できます |
 | コメント中 | [!BADGE &#x200B; 使用可能 &#x200B;]{type=Positive} | [ 注釈 ](/help/sites-cloud/authoring/page-editor/annotations.md) の使用 | [!BADGE &#x200B; 利用不可 &#x200B;]{type=Negative} | 計画済み |
@@ -87,7 +87,7 @@ AEMの長い歴史の中で [ ページエディター ](/help/sites-cloud/autho
 ユニバーサルエディターには多くの利点があり、新規プロジェクトに最適なソリューションです。
 
 * **ビジュアル編集：** ページエディターと同様に、作成者はプレビュー内でコンテンツを直接編集でき、変更が訪問者エクスペリエンスにどのように影響するかを即座に確認できます。
-* **今後の校正：** AEM のロードマップでは、ビジュアルエディターとしてユニバーサルエディターが優先されています。これを採用することで、最新のイノベーションと機能強化にアクセスできます。
+* **将来性の検証：AEMのロードマップでは** ユニバーサルエディターがビジュアルエディターとして優先されます。 これを採用することで、最新のイノベーションと機能強化にアクセスできます。
 * **よりシンプルな統合：**&#x200B;ユニバーサルエディターを使用するのに AEM 固有の SDK は必要ないので、テクニカルスタックのロックインが軽減されます。
 * **独自のアプリを導入：**&#x200B;ユニバーサルエディターは任意の web フレームワークやアーキテクチャをサポートしているので、複雑なリファクタリングを必要とせずに導入できます。
 * **拡張性：**&#x200B;ユニバーサルエディターは、生成 AI、Workfront などとの統合を含む強力な[拡張フレームワーク](/help/implementing/universal-editor/extending.md)のメリットを受けます。

@@ -4,10 +4,10 @@ description: ユニバーサルエディターでフォームフラグメント�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1693'
+ht-degree: 97%
 
 ---
 
@@ -76,9 +76,12 @@ Edge Delivery Services のフォームフラグメントは、モジュール形
 
 ユニバーサルエディターで Edge Delivery Services フォームフラグメントを作成し、作成したフラグメントを Edge Delivery Services フォームに追加できます。Edge Delivery Services フォームフラグメントで実行できるアクションは次のとおりです。
 
-- [フォームフラグメントの作成](#creating-form-fragments)
-- [フォームへのフォームフラグメントの追加](#adding-form-fragments-to-a-form)
-- [フォームフラグメントの管理](#managing-form-fragments)
+- [ユニバーサルエディターでのフォームフラグメントの作成](#creating-form-fragments-in-universal-editor)
+   - [フォームフラグメントについて](#understanding-form-fragments)
+   - [前提条件](#prerequisites)
+   - [Edge Delivery Services フォームフラグメントの操作](#working-with-edge-delivery-services-form-fragments)
+   - [ベストプラクティス](#best-practices)
+   - [概要](#summary)
 
 +++ フォームフラグメントの作成
 
@@ -156,7 +159,7 @@ Edge Delivery Services のフォームフラグメントは、モジュール形
 
    ![セクションに移動](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから&#x200B;**[!UICONTROL フォームフラグメント]**を追加します。
+1. 「**[!UICONTROL 追加]**」アイコンをクリックし、**アダプティブフォームコンポーネント**&#x200B;リストから&#x200B;**[!UICONTROL フォームフラグメント]**&#x200B;を追加します。
    ![フォームフラグメントを追加](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    **[!UICONTROL フォームフラグメント]**&#x200B;コンポーネントを選択すると、フラグメントがフォームに追加されます。追加したフラグメントのプロパティは、この&#x200B;**プロパティ**&#x200B;を開いて設定できます。例えば、フラグメントのタイトルをこの&#x200B;**プロパティ**&#x200B;から非表示にします。
@@ -174,6 +177,10 @@ Edge Delivery Services のフォームフラグメントは、モジュール形
    フォームフラグメントは、フォームへの参照により追加され、スタンドアロンのフォームフラグメントと同期を維持します。
 
    ![ユニバーサルエディター内の従業員フォームに連絡先詳細フラグメントが正常に統合され、フラグメントの構造が再利用時にどのように維持されるかを示すスクリーンショット](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+
+   >[!NOTE]
+   >
+   > **フラグメントを編集** ボタンを使用すると、ユーザーはフォームフラグメントに直接移動して編集できます。
 
    **プレビュー**&#x200B;モードでフォームをプレビューして、フォームがどのように表示されるかを確認できます。
 
@@ -246,7 +253,7 @@ AEM Forms ユーザーインターフェイスを使用して、フォームフ�
     </tbody>
     </table>
 
-+++
++++ 
 
 ## ベストプラクティス
 
@@ -285,10 +292,10 @@ Edge Delivery Services のフォームフラグメントを活用して開発効
 
 **次の手順：**
 
-- 組織で一般的に使用されるフラグメントのライブラリを作成
-- フラグメントの使用に関する命名規則とガバナンスポリシーを確立
+- 組織で一般的に使用されるフラグメントのライブラリを作成します。
+- フラグメントを使用するための命名規則とガバナンスポリシーを確立します。
 - 動的なデータ駆動型フラグメントの[フォームデータモデル](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)との高度な統合を探索
-- 一貫性のあるユーザーエクスペリエンスを実現するためにフラグメントベースのフォームテンプレートを実装
+- フラグメントベースのフォームテンプレートを実装して、一貫性のあるユーザーエクスペリエンスを実現します。
 
 フォームには、一貫性のあるユーザーエクスペリエンスを確保しながら、プロジェクト間で効率的に拡張するモジュール形式のメンテナンス可能なアーキテクチャのメリットを活用できるようになりました。
 

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> ルールエディターの機能強化は、Edge Delivery サービスFormsにも適用できます。
+> この機能強化は、[Edge Delivery Services Formsのルールエディター ](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) にも適用できます。
 
 次に、これらの機能を使用して、パーソナライズされたエクスペリエンスをユーザーに提供する方法を理解するのに役立つ具体的なユースケースについて、各方法を詳しく説明します
 
