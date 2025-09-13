@@ -4,9 +4,9 @@ description: EDS フォームのカスタムコンポーネントの作成
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 4%
 
 ---
@@ -120,12 +120,14 @@ Forms ブロックのカスタムコンポーネントは、**MVC （Model-View-
 #### 関数のシグネチャ：
 
 ```javascript
-export default function decorate(element, fieldJson, container, formId) {
-// element: The HTML structure of the OOTB component you are extending
-// fieldJson: The JSON field definition (all authorable properties)
-// container: The parent element (fieldset or form)
-// formId: The id of the form
-// ... your logic here ...
+export default function decorate(element, fieldJson, container, formId) 
+{
+  // element: The HTML structure of the OOTB component you are extending
+  // fieldJson: The JSON field definition (all authorable properties)
+  // container: The parent element (fieldset or form)
+  // formId: The id of the form
+
+  // ... your logic here ...
 }
 ```
 
@@ -141,18 +143,20 @@ export default function decorate(element, fieldJson, container, formId) {
 
 ### 関数のシグネチャ：
 
-```JavaScript
+```javascript
 import { subscribe } from '../../rules/index.js';
-
 export default function decorate(fieldDiv, fieldJson, container, formId) {
-// Access custom properties defined in the JSON
-const { initialText, finalText, time } = fieldJson?.properties;
-// ... setup logic ...
-subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(() => {
-// React to custom event (e.g., resetCardOption)
-// ... logic ...
-}, 'resetCardOption');
-});
+  // Access custom properties defined in the JSON
+  const { initialText, finalText, time } = fieldJson?.properties;
+
+  // ... setup logic ...
+
+  subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => {
+    fieldModel.subscribe(() => {
+      // React to custom event (e.g., resetCardOption)
+      // ... logic ...
+    }, 'resetCardOption');
+  });
 }
 ```
 
@@ -175,6 +179,8 @@ subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(()
 #### 1.1 ファイルとフォルダ
 
 最初の手順では、カスタムコンポーネントの必要なファイルを設定し、リポジトリのコードにワイヤリングします。 このプロセスは、**AEM Forms基礎モード CLI** によって自動的に実行されます。これにより、基礎モードを設定して必要なファイルをワイヤリングする作業が迅速になります。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
 1. ターミナルを開き、フォームプロジェクトのルートに移動します。
 2. 次のコマンドを実行します。
@@ -247,28 +253,39 @@ blocks/form/
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
 
-export default function decorate(element, fieldJson, container, formId) { element.classList.add('card');
-element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => { const image = createOptimizedPicture('https://main--afb--
-jalagari.hlx.live/lab/images/card.png', 'card-image'); radioWrapper.appendChild(image);
-});
-return element;
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => {
+    const image = createOptimizedPicture(
+      'https://main--afb--jalagari.hlx.live/lab/images/card.png',
+      'card-image'
+    );
+    radioWrapper.appendChild(image);
+  });
+
+  return element;
 }
 ```
 
 **cards.css のカスタムコンポーネントの実行時の動作を追加**
 
 ```javascript
-.card .radio-wrapper { min-width: 320px;
-/* or whatever width fits your design */ max-width: 340px;
-background: #fff;
-border-radius: 16px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-flex: 0 0 auto;
-scroll-snap-align: start; padding: 24px 16px;
-margin-bottom: 0;
-position: relative;
-transition: box-shadow 0.2s; display: flex;
-align-items: flex-start; gap: 12px;
+.card .radio-wrapper {
+  min-width: 320px; /* or whatever width fits your design */
+  max-width: 340px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 24px 16px;
+  margin-bottom: 0;
+  position: relative;
+  transition: box-shadow 0.2s;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 ```
 
@@ -287,64 +304,49 @@ API を呼び出すと、フィールドモデルが設定され、変更をリ�
 次に、前の手順のビューコードを関数に変換し、`cards.js` の subscribe 関数内でこれを呼び出します。
 
 ```javascript
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { subscribe } from '../../rules/index.js';  
-function createCard(element, enums) {  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-    if (enums[index]?.name) {  
+      label.textContent = enums[index]?.name;
+    }
 
-      let label = radioWrapper.querySelector('label');  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-      if (!label) {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-        label = document.createElement('label');  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-        radioWrapper.appendChild(label);  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      }  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
+  });
 
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-
-    });  
-    return element;  
-
-} 
+  return element;
+}
 ```
 
 **Subscribe 関数を使用して、cards.js のイベントの変更をリッスンする**
@@ -360,88 +362,65 @@ export default function decorate(element, fieldJson, container, formId) {
 **cards.js でのフィールドモデル API の使用**
 
 ```javascript
- 
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-import { subscribe } from '../../rules/index.js';  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-  
+      label.textContent = enums[index]?.name;
+    }
 
-  
+    // Attach index to input element for later reference
+    radioWrapper.querySelector('input').dataset.index = index;
 
-function createCard(element, enums) {  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-    if (enums[index]?.name) {  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-      let label = radioWrapper.querySelector('label');  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      if (!label) {  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
 
-        label = document.createElement('label');  
+    element.addEventListener('change', (e) => {
+      e.stopPropagation();
+      const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];
+      fieldModel.value = value.name;
+    });
+  });
 
-        radioWrapper.appendChild(label);  
-
-      }  
-
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    radioWrapper.querySelector('input').dataset.index = index;  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-        element.addEventListener('change', (e) => {  
-
-            e.stopPropagation();  
-
-            const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];  
-
-            fieldModel.value = value.name;  
-
-        });  
-
-    });  
-
-    return element;  
-} 
+  return element;
+}
 ```
 
 次に示すように、カスタムカードコンポーネントが表示されます。
 
 ![ カードカスタムコンポーネント ](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## 変更のコミットとプッシュ
+### 3.変更のコミットとプッシュ
 
 カスタムコンポーネントのJavaScriptと CSS を実装し、ローカルで検証したら、変更内容をコミットして Git リポジトリにプッシュします。
 
@@ -451,7 +430,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 いくつかの簡単な手順で、複雑なカスタムカード選択コンポーネントを正常に作成しました。
 
-## カスタムコンポーネントを作成するための手動または従来の方法
++++ **カスタムコンポーネントを作成するための手動または従来の方法**
 
 従来の方法では、次に説明する手順を手動で実行します。
 
@@ -482,23 +461,29 @@ git add . && git commit -m "Add card custom component" && git push
 7. コンポーネントをフォームビルダーでバリアントとして登録し、バリアント プロパティを設定する。または
    コンポーネントの名前に JSON で `fd:viewType/:type` 力します。例えば、`fd:viewType` の `definitions[]` 値をカードとして、`id="form` を持つオブジェクトのコンポーネント配列に追加します。
 
-   ```javascript
-   {
-   "definitions": [
-   {
-   "title": "Cards",
-   "id": "cards", "plugins": {
-   "xwalk": {
-   "page": {
-   "resourceType":
-   "core/fd/components/form/radiobutton/v1/radiobutton", "template": {
-   "jcr:title": "Cards",
-   "fieldType": "radio-button", "fd:viewType": "cards",
-   "enabled": true, "visible": true}
+   ```
+       {
+     "definitions": [
+       {
+         "title": "Cards",
+         "id": "cards",
+         "plugins": {
+           "xwalk": {
+             "page": {
+               "resourceType": "core/fd/components/form/radiobutton/v1/radiobutton",
+               "template": {
+                 "jcr:title": "Cards",
+                 "fieldType": "radio-button",
+                 "fd:viewType": "cards",
+                 "enabled": true,
+                 "visible": true
+               }
+             }
+           }
+         }
+       }
+     ]
    }
-   } }
-   }
-   ]}
    ```
 
 8. **mappings.js の更新**：システムで認識および読み込まれるように、コンポーネントの名前を **OOTBomponentDecorators** （OOTB スタイルコンポーネントの場合）または **customComponents** リストに追加します。
@@ -534,6 +519,8 @@ git add . && git commit -m "Add card custom component" && git push
 
 これで、カスタムコンポーネントをフォームに追加できます。
 
++++
+
 ## 複合コンポーネントの作成
 
 複合コンポーネントは、複数のコンポーネントを組み合わせて作成します。
@@ -546,81 +533,44 @@ git add . && git commit -m "Add card custom component" && git push
 このコンポジション構造は、各コンポーネントの JSON ファイル内のテンプレートとして定義されます。 次の例では、利用条件コンポーネント用のテンプレートを定義する方法を示します。
 
 ```javascript
-{ 
-
-  "definitions": [ 
-
-    { 
-
-      "title": "Terms and conditions", 
-
-      "id": "tnc", 
-
-      "plugins": { 
-
-        "xwalk": { 
-
-          "page": { 
-
-            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions", 
-
-            "template": { 
-
-              "jcr:title": "Terms and conditions", 
-
-              "fieldType": "panel", 
-
-              "fd:viewType": "tnc", 
-
-              "text": { 
-
-                "value": "Text related to the terms and conditions come here.", 
-
-                "sling:resourceType": "core/fd/components/form/text/v1/text", 
-
-                "fieldType": "plain-text", 
-
-                "textIsRich": true 
-
-              }, 
-
-              "approvalcheckbox": { 
-
-                "name": "approvalcheckbox", 
-
-                "jcr:title": "I agree to the terms & conditions.", 
-
-                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox", 
-
-                "fieldType": "checkbox", 
-
-                "required": true, 
-
-                "type": "string", 
-
-                "enum": [ 
-
-                  "true" 
-
-                ] 
-
-              } 
-
-            } 
-
-          } 
-
-        } 
-
-      } 
-
-    } 
-
-  ], 
-
-  ... 
-
-} 
+{
+  "definitions": [
+    {
+      "title": "Terms and conditions",
+      "id": "tnc",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions",
+            "template": {
+              "jcr:title": "Terms and conditions",
+              "fieldType": "panel",
+              "fd:viewType": "tnc",
+              "text": {
+                "value": "Text related to the terms and conditions come here.",
+                "sling:resourceType": "core/fd/components/form/text/v1/text",
+                "fieldType": "plain-text",
+                "textIsRich": true
+              },
+              "approvalcheckbox": {
+                "name": "approvalcheckbox",
+                "jcr:title": "I agree to the terms & conditions.",
+                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox",
+                "fieldType": "checkbox",
+                "required": true,
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  ...
+}
 ```
 
 ## ベストプラクティス

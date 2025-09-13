@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2025.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
+source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1138'
 ht-degree: 88%
 
 ---
@@ -29,7 +29,7 @@ AEM as a Cloud Service の Cloud Manager 2025.9.0 のリリース日は 2025年9
 
 * **Adobeが管理するドメイン検証証明書の手動更新**
 
-  Cloud Managerまたはパブリック API からAdobeが管理するドメイン検証（DV）証明書を手動で更新して、証明書を事前に更新できるようになりました。<!-- CMGR-68738 -->
+  Cloud Managerまたはパブリック API から失敗したAdobe管理ドメイン検証（DV）証明書を手動で更新して、証明書を事前に更新できるようになりました。<!-- CMGR-68738 -->
 
   ![SSL 証明書の更新 ](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
