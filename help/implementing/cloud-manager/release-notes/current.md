@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -27,19 +27,19 @@ AEM as a Cloud Service の Cloud Manager 2025.9.0 のリリース日は 2025年9
 
 ## 新機能 {#what-is-new}
 
-* **Adobeが管理するドメイン検証証明書の手動更新**
+* **アドビが管理するドメイン検証証明書を手動で更新**
 
   Cloud Managerまたはパブリック API から失敗したAdobe管理ドメイン検証（DV）証明書を手動で更新して、証明書を事前に更新できるようになりました。<!-- CMGR-68738 -->
 
-  ![SSL 証明書の更新 ](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
+  ![SSL 証明書の更新](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **Azure DevOps （プライベートリポジトリ）のサポートが追加されました**
+* **Azure DevOps（プライベートリポジトリ）のサポートが追加されました**
 
-  ドキュメントの更新には、Azure DevOps で独自の Git を取り込むための設定手順や、プルリクエストの検証が含まれています。 [Cloud Managerへの外部リポジトリの追加 ](/help/implementing/cloud-manager/managing-code/external-repositories.md) を参照してください。
+  ドキュメントの更新には、Azure DevOps を使用した独自の Git の導入の設定手順とプルリクエストの検証が含まれます。[Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/external-repositories.md)を参照してください。
 
-* **独自の Git （BYOG）サポートを設定パイプライン（プライベートリポジトリ）に拡張**
+* **独自の Git の導入（BYOG）サポートが設定パイプライン（プライベートリポジトリ）に拡張されました**
 
-  Cloud Managerは、GitHub、Bitbucket、Azure DevOps、GitLab をまたいだプライベートリポジトリを使用した設定パイプラインをサポートするようになりました。 このサポートにより、開発サイクルがさらに加速します。 [ プライベートリポジトリのプルリクエストチェック ](/help/implementing/cloud-manager/managing-code/github-check-config.md) を参照してください。
+  Cloud Manager は、GitHub、Bitbucket、Azure DevOps、GitLab をまたいだプライベートリポジトリを使用した設定パイプラインをサポートするようになりました。このサポートにより、開発サイクルがさらに高速化されます。[プライベートリポジトリのプルリクエストチェック](/help/implementing/cloud-manager/managing-code/github-check-config.md)を参照してください。
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -135,13 +135,13 @@ Cloud Managerで「**アクセストークンの管理**」を使用して、外
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-### Edge Delivery設定パイプラインを追加 {#add-eds-pipeline}
+### Edge Delivery 設定パイプラインの追加 {#add-eds-pipeline}
 
 Edge Delivery Services を使用して作成されたサイトで設定パイプラインがサポートされるようになりました。これにより、Cloud Service 環境以外でもこの機能を利用できます。 **設定パイプライン**&#x200B;を使用すると、トラフィックフィルタリングルールや web アプリケーションファイアウォール（WAF）設定などの設定を管理できます（該当する場合）。 [サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
 
 **最近の機能強化**
 
-* Edge Delivery設定パイプラインで、Cloud Manager パイプライン変数を通じてシークレットがサポートされるようになりました。
+* Edge Delivery 設定パイプラインは、Cloud Manager パイプライン変数を通じて秘密鍵をサポートするようになりました。
 * Edge Delivery Services パイプラインの&#x200B;**デプロイ済みコード**&#x200B;列に&#x200B;**設定**&#x200B;と表示され、設定専用のデプロイメントを即座に特定できるようになりました。 <!-- CMGR‑69681 -->
 * プログラムに 1 つ以上のEdge Delivery サイトと 1 つのマッピング済みドメインが含まれると、Cloud Managerは **Edge Delivery パイプラインを追加**&#x200B;を表示します。 そうでない場合、そのオプションは無効として表示され、ツールチップで不足している要件が説明されます。 <!-- CMGR‑69680 -->
 * 「**Edge Delivery**」タブには、新しい「**Edge Delivery パイプライン**」ウィジェットが表示され、各パイプラインの名前、ステータス、リポジトリ、ブランチがリストされます。 <!-- (CMGR-69052) -->
@@ -162,7 +162,7 @@ Edge Delivery Services を使用して作成されたサイトで設定パイプ
 
 ## バグ修正 {#bug-fixes}
 
-9 月のCloud Manager リリースには重要なバグ修正はありません。
+9 月の Cloud Manager リリースには重要なバグ修正はありません。
 
 
 <!-- ## Known issues {#known-issues} -->
